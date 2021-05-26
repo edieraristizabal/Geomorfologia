@@ -1,0 +1,1032 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Cartografía Geomorfológica</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/Serif.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+		<link rel="stylesheet" href="dist/style.css">
+
+
+
+		<style>
+				  
+			.primera #marca-agua{
+				display:none;
+				}
+
+			.primera #lecture{
+				display:none;
+				}
+
+			#clock {
+				font-size: 20px;
+				color: #51483D;
+				width: 120px;
+				margin: 0px;
+				text-align: center;
+				border: 2px solid black;
+				border-radius: 20px;
+				}
+
+
+			.reveal section p {
+				font-size: 0.7em;
+				  }
+
+			.reveal section li {
+				font-size: 0.6em;
+				  }
+
+			.reveal .slide-number {
+				right: 150px;
+				 bottom: 3px}
+
+			.reveal h3 {
+				text-align: left;
+				  }
+
+		</style>
+
+	</head>
+	<body>
+
+		<script>
+			setInterval(showTime, 1000);
+			function showTime() {
+				let time = new Date();
+				let hour = time.getHours();
+				let min = time.getMinutes();
+				let sec = time.getSeconds();
+				am_pm = "am";
+	
+				if (hour > 12) {
+					hour -= 12;
+					am_pm = "pm";
+				}
+				if (hour == 0) {
+					hr = 12;
+					am_pm = "am";
+				}
+	
+				hour = hour < 10 ? "0" + hour : hour;
+				min = min < 10 ? "0" + min : min;
+				sec = sec < 10 ? "0" + sec : sec;
+	
+				let currentTime = hour + ":"
+					+ min + ":" + sec + am_pm;
+	
+				document.getElementById("clock")
+					.innerHTML = currentTime;
+			}
+	
+			showTime();
+		</script>
+
+<div class="reveal">
+	<div class="slides">
+	
+		<div id="marca-agua"><img style="border:none;box-shadow:none;width:60px;position:absolute;top:0%;right:0%;"src="https://i.pinimg.com/564x/8a/d1/27/8ad12724bdc797e03a9c4561134fc176.jpg"/><p id="date"></p></div>
+		<!--<div id="lecture" style="font-size:20px;position:absolute;top:100%;right:32%;">Machine Learning (Introducción)</div>-->
+		<div id="clock" style="font-size:20px;position:absolute;top:98%;right:0%;">0:00:00</div>
+		<section data-background-color= "#ffffff"; data-state="primera">
+		  <h1 style="font-size: 50px; color:black">CARTOGRAFÍA GEOMORFOLÓGICA</h1>
+		  <p>
+		  <h4><a href="https://edieraristizabal.github.io/">Prof. Edier Aristizábal</a></h4>
+		  </p>
+			<img src="https://i.pinimg.com/564x/f8/5b/28/f85b28f72a65d9c64d8c5e4a7bac57aa.jpg" alt="unal.jpg" width="600"/>
+			<p id="demo" style="position:absolute;top:100%;right:40%;color: gray;"></p>
+			<script>
+			var d = new Date();
+			var months = ["Jan.","Feb.","Mar.","Apr.","May.","Jun.","Jul.","Aug.","Sept.","Oct.","Nov.","Dec."];
+			document.getElementById("demo").innerHTML = months[d.getMonth()] + " " +d.getDate()+" / "+d.getFullYear();
+			</script>
+		</section>
+
+				<section>
+					<section><h1>Cartografía básica</h1></section>
+					
+					<section>
+						<img src="https://www.researchgate.net/profile/Arie-Seijmonsbergen/publication/26435688/figure/fig3/AS:668932180549644@1536497268785/Geomorphological-map-Malbun-Principality-of-Liechtenstein_W640.jpg" width="650">
+						<p><strong>Cartografía</strong>: Es el conjunto de estudios y operaciones científicas, art´ısticas y técnicas que
+							intervienen, a partir de los resultados de las observaciones directas o de la
+							explotación de una documentación, en el establecimiento de mapas, planos y
+							otras formas de expresión, así como en su utilización. (Joly, 1979)
+						</p>
+					</section>
+					<section>
+						<img src="https://www.e-education.psu.edu/geog160/sites/www.e-education.psu.edu.geog160/files/image/Chapter03/TheCartographicProcess.png" width="700">
+					</section>
+					<section>
+						<h3>Cartografía básica</h3>
+						<img src="https://image.slidesharecdn.com/conceptosbsicosdecartografa-140203160355-phpapp02/95/conceptos-bsicos-de-cartografa-7-638.jpg?cb=1391443520" width="1000">
+					</section>
+
+					<section>
+						<h3>Convenciones fuera de escala</h3>
+						<img src="https://4.bp.blogspot.com/-9aYzRWpCSZE/WvMCnAxHe3I/AAAAAAAAB9M/LiHZVqiKDNU0PMKHZmiojKD6qKrMTMSdQCLcBGAs/s320/referencias.PNG" width="500">
+					</section>
+				</section>
+
+				<section>
+					<section><h1>Sistema de Coordenadas Geográficas</h1></section>
+
+					<section>
+						<h3>Convenciones fuera de escala</h3>
+						<img src="https://cbsestudy.com/osclass/oc-content/uploads/0/115.png" width="1000">
+					</section>
+					
+					<section>
+						<img src="https://static.educalingo.com/img/en/800/geoid.jpg" width="650">
+						<p><strong>Geoide</strong>: el geoide es la superficie equipotencial que coincidiría con la superficie media del 
+							océano de la Tierra si los océanos y la atmósfera estuvieran en equilibrio. "Figura matemática de la Tierra", 
+							una superficie lisa pero altamente irregular que no corresponde a la superficie real de la corteza terrestre.
+						</p>
+					</section>
+					<section>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Geoid_height_red_blue_averagebw.png/800px-Geoid_height_red_blue_averagebw.png" width="850">
+					</section>
+
+					<section>
+						<h3>Altura</h3>
+						<img src="https://www.researchgate.net/profile/Richard-Snay/publication/273133676/figure/fig1/AS:294934641954819@1447329306491/Relationship-between-orthometric-height-ellipsoid-height-and-geoid-height_W640.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>European Petroleum Survey Group (EPSG)</h3>
+						<img src="http://www.gisandbeers.com/wp-content/uploads/2018/09/Conversion-de-codigos-EPSG.jpg" width="900">
+						<a href="https://spatialreference.org/ref/epsg/">EPSG</a>
+					</section>
+
+					<section>
+						<h3>Proyección a coordenadas planas</h3>
+						<img src="https://i.stack.imgur.com/sSI68.gif" width="600">
+					</section>
+
+					<section>
+						<h3>Proyección a coordenadas planas</h3>
+						<img src="https://image.slidesharecdn.com/mapprojectionsandmapscales-140207120532-phpapp01/95/map-projections-and-map-scales-3-638.jpg?cb=1391774763" width="800">
+					</section>
+
+					<section>
+						<h3>Proyección a coordenadas planas</h3>
+						<img src="https://1.bp.blogspot.com/-X9zVlxcbMFs/XxxrIay7trI/AAAAAAAAJSw/MT3gZy0CsxIJ3ZjDKmKDAB2lNE0UladSQCLcBGAsYHQ/s640/Proyeccion%2Bcartogr%25C3%25A1fica.jpg" width="900">
+					</section>
+				</section>
+
+				<section>
+					<section><h1>Escala</h1></section>
+
+					<section>
+						<img src="https://www.researchgate.net/profile/Kasturi-Kanniah/publication/237197710/figure/fig4/AS:299407913308165@1448395817186/Illustration-of-the-geometrical-instantaneous-field-of-view-IFOV-reconstructed-by_W640.jpg" width="600">
+					</section>
+
+					<section>
+						<img src="https://image.slidesharecdn.com/escala-141011042337-conversion-gate02/95/la-escala-en-los-mapas-4-638.jpg?cb=1413358856" width="850">
+					</section>
+
+					<section>
+						<img src="https://image.slidesharecdn.com/elmapatopogrfico-120111154048-phpapp02/95/el-mapa-topogrfico-23-638.jpg?cb=1461917805" width="800">
+					</section>
+				</section>
+
+				<section>
+					<section><h1>Planchas IGAC</h1></section>
+
+					<section>
+						<h3>Planchas 1:500.000</h3>
+						<img src="images/planchas500k.png" width="500">
+					</section>
+
+					<section>
+						<h3>Planchas 1:100.000</h3>
+						<img src="images/planchas100k.png" width="1000">
+					</section>
+
+					<section>
+						<h3>Planchas 1:50.000</h3>
+						<img src="images/planchas50k.png" width="1000">
+					</section>
+
+					<section>
+						<h3>Planchas 1:25.000</h3>
+						<img src="images/planchas25k.png" width="1000">
+					</section>
+
+					<section>
+						<h3>Planchas 1:10.000</h3>
+						<img src="images/planchas10k.png" width="1000">
+					</section>
+
+					<section>
+						<h3>Planchas 1:2.000</h3>
+						<img src="images/planchas2k.png" width="1000">
+					</section>
+
+					<section>
+						<img src="https://www.igac.gov.co/sites/igac.gov.co/files/igac_0.jpg" width="300">
+						<p></p>
+						<a style="text-align: center;" href="https://geoportal.igac.gov.co/contenido/consulta-de-planchas">Planchas IGAC</a>
+					</section>
+
+					<section>
+						<img src="https://geoportal.igac.gov.co/sites/geoportal.igac.gov.co/files/geoportal/igac_open_data.png" width="1000">
+						<a href="https://geoportal.igac.gov.co/contenido/datos-abiertos-cartografia-y-geografia">Datos Abiertos del IGAC</a>
+					</section>
+				</section>
+
+				<section>
+					<section><h1>Ejemplos</h1></section>
+
+					<section>
+						<h3>Elementos de un mapa</h3>
+						<img src="https://mixdyr.files.wordpress.com/2020/07/elementos_indispensables_en_cartografia_tematica_rfranco-4.png" width="750">
+					</section>
+
+					<section>
+						<h3>Mapas temáticos - Geológico</h3>
+						<img src="https://mixdyr.files.wordpress.com/2020/07/ejemplo_plancha_geologica_sgc.png" width="800">
+					</section>
+
+					<section>
+						<h3>Escala gráfica & Norte</h3>
+						<img src="https://mixdyr.files.wordpress.com/2020/07/elementosmapa_barradeescala_rf.png" width="350">
+						<img src="https://mixdyr.files.wordpress.com/2020/07/nortes_mapas.png" width="350">
+					</section>
+				</section>
+
+				<section>
+					<section><h1>Cartografía geomorfológica</h1></section>
+
+					<section>
+						<img src="images/metocarto.png" width="850">
+						<figcaption>Fuente: van Zuidam (1985)</figcaption>
+					</section>
+
+					<section>
+						<img src="images/metocarto1.png" width="850">
+						<figcaption>Fuente: van Zuidam (1985)</figcaption>
+					</section>
+
+					<section>
+						<h3>Mapa geomorfología</h3>
+						<img src="https://www.mapsof.net/uploads/static-maps/geomorphological_map_of_Victoria.png" width="850">
+					</section>
+
+					<section>
+						<img src="https://blogs.egu.eu/divisions/gm/files/2021/03/Fig.-1.jpg" width="500">
+					</section>
+
+					<section>
+						<h3>Procesos morfodinámicos</h3>
+						<img src="https://www.researchgate.net/profile/Monica-Bini/publication/235354431/figure/fig2/AS:341191196463109@1458357729050/Geomorphological-map_W640.jpg" width="350">
+						<figcaption>Fuente: Ribolini et al. (2011)</figcaption>
+					</section>
+
+					<section>
+						<h3>Geomorfologia fluvial</h3>
+						<img src="https://cdn.shoplightspeed.com/shops/602804/files/5401945/meandering-mississippi-river-print-14.jpg" width="600">
+					</section>
+
+					<section>
+						<h3>Geomorfología 3D</h3>
+						<img src="https://blogs.egu.eu/divisions/gm/files/2021/03/JointPost_featured_Levan-700x400.png" width="850">
+					</section>
+
+					<section>
+						<h3>Sketch</h3>
+						<img src="https://media.springernature.com/lw785/springer-static/image/chp%3A10.1007%2F978-3-319-19159-1_7/MediaObjects/978-3-319-19159-1_7_Fig6_HTML.gif" width="700">
+					</section>
+
+					<section>
+						<h3>Sketch</h3>
+						<img src="https://www.insideindonesia.org/images/cache/204e19dd1e731146ee7556466c314d52_w725.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Perfiles</h3>
+						<img src="http://geology.isu.edu/wapi/geostac/Field_Exercise/topomaps/images/tic_sm.gif" width="500">
+					</section>
+
+					<section>
+						<h3>Perfiles</h3>
+						<img src="http://geology.isu.edu/wapi/geostac/Field_Exercise/topomaps/images/dots.gif" width="800">
+					</section>
+
+					<section>
+						<h3>Perfiles</h3>
+						<img src="http://geology.isu.edu/wapi/geostac/Field_Exercise/topomaps/images/prof.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Perfiles</h3>
+						<img src="https://d32ogoqmya1dw8.cloudfront.net/images/quantskills/methods/quantlit/topoprofile.gif" width="600">
+					</section>
+
+					<section>
+						<h3>Perfiles</h3>
+						<img src="https://i.pinimg.com/originals/3a/3d/c4/3a3dc49802b392d73e4bc54c5b8c1f4b.png" width="1000">
+					</section>
+
+				</section>
+
+				<section>
+					<section><h1>Trabajo en grupo</h1></section>
+
+					<section>
+						<h3>Cuenca</h3>
+						<img src="https://i.pinimg.com/564x/33/78/b8/3378b834b6cd014d3693fe8b617e4110.jpg" width="1000">
+					</section>
+
+					<section>
+						<h3>Mapa geomorfológico de la cuenca</h3>
+						<img src="https://blogs.egu.eu/divisions/gm/files/2021/03/Fig.-1.jpg" width="450">
+					</section>
+
+					<section>
+						<h3>Modelo digital del terreno</h3>
+						<img src="https://desktop.arcgis.com/en/arcmap/10.5/tools/spatial-analyst-toolbox/GUID-F7126CF0-5666-4C0C-976E-8F29FB7AE0AB-web.gif" width="700">
+					</section>
+
+					<section>
+						<h3>Modelo digital del terreno</h3>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Modelare_3D_pentru_Bazinul_Hidrografic_al_Paraului_Latorita.gif" width="600">
+					</section>
+
+					<section>
+						<h3>Cuenca</h3>
+						<img src="images/cuencatrabajo1.png" width="1000">
+					</section>
+
+				</section>
+
+				<section>
+					<section><h1>Cartografía geomorfológica</h1></section>
+
+					<section>
+						<img src="images/metocarto.png" width="850">
+						<figcaption>Fuente: van Zuidam (1985)</figcaption>
+					</section>
+
+					<section>
+						<h3>Mapa geomorfológico analítico</h3>
+						<img src="https://www.mapsof.net/uploads/static-maps/geomorphological_map_of_Victoria.png" width="800">
+					</section>
+
+					<section>
+						<h3>Mapa geomorfológico pragmático</h3>
+						<img src="https://www.researchgate.net/publication/284455133/figure/fig4/AS:393473086771211@1470822702999/Geomorphological-hazard-map-PAI-commune-of-Malborghetto-Valbruna-Italy-Autorita-di.png" width="800">
+					</section>
+
+				</section>
+
+				<section>
+					<section><h1>Clasificación taxonómica</h1></section>
+
+					<section>
+						<h3>Fisiografía vs Terreno</h3>
+						<p><strong>Fisiografía:</strong> estudio de la génesis y evolución de las formas de land forms ---> vegetación y 
+						uso del suelo. La fisiografía no solo describe los aspectos relativos a la litosfera (relieve, materiales, 
+						edad de las formaciones superficiales, proceso morfogenéticos), como lo hace la geomorfología, sino que 
+						también describe los relativos al agua, el clima y los seres vivos.</p>
+						<strong>Terrain:</strong> 
+						<ul>
+						<li>Describe una división natural del terreno que puede ser distinguida en fotografías aéreas y que puede ser verificada 
+							en campo.</li>
+						<li>Es una unidad donde los grupos se interrelacionan en términos de geoformas, litología y suelo. 
+						<li>Difiere de la otras unidades por que las geoformas son evidentemente diferentes o los fenómenos asociados con la 
+							geoformas difieren.</li>
+						<li>En términos de GIS puede ser descrita como la localización geográfica en polígonos o entidades en las cuales se 
+							relacionan un único grupo de atributos.</li>
+						 <li>Es una unidad de leyenda de un mapa temático convencional.</li>
+						</ul>
+						<figcaption>Fuente: Meijerink (1988)</figcaption>
+
+					</section>
+
+					<section>
+						<h3>Niveles de precepción</h3>
+						<img src="https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-3-319-19159-1_6/MediaObjects/978-3-319-19159-1_6_Fig7_HTML.gif" width="550">
+					</section>
+
+					<section>
+						<h3>Niveles de precepción</h3>
+						<img src="http://publica2.una.ac.cr/revistas/Geografica/E-24-18/image/Art_8_Fig_2.jpg" width="660">
+						<figcaption>Fuente: Modificado Ross (1992)</figcaption>
+					</section>
+					
+					<section>
+						<h3>Niveles de precepción</h3>
+						<img src="https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-3-319-19159-1_6/MediaObjects/978-3-319-19159-1_6_Fig6_HTML.gif" width="800">
+						<figcaption>Fuente: Zinck (1988)</figcaption>
+					</section>
+
+				</section>
+
+				<section>
+					<section><h1>Clasificación fisiográfica</h1></section>
+
+					<section>
+						<img src="https://www.researchgate.net/profile/Jose-Eduardo-Fuentes-Delgado/publication/304379557/figure/fig6/AS:376541700739077@1466785945675/Figura-7-Sistema-de-clasificacion-fisiografica-Botero-y-Villota-1992-Con-las.png" width="700">
+					</section>
+
+					<section>
+						<h1>Provincia fisiográfica</h1>
+						<img src="https://image.slidesharecdn.com/clasificacinfisiograficadelterreno-150609181648-lva1-app6891/95/clasificacin-fisiografica-del-terreno-8-638.jpg?cb=1433873871" width="450">
+					</section>
+
+					<section>
+						<h1>Clasificacion fisiografica</h1>
+						<img src="https://image.slidesharecdn.com/igacmemoriatecnicaseptiembre20142014-150206103043-conversion-gate01/95/igzonificacion-ecologica-de-los-terrenos-al-oriente-de-neiva-8-638.jpg?cb=1423218813" width="750">
+					</section>
+
+				</section>
+
+				<section>
+					<section><h1>Clasificación de terrenos</h1></section>
+
+					<section>
+						<p><strong>Definición:</strong> La clasificación de terrenos corresponde al arreglo y agrupamiento de diferentes
+							áreas de la superficie terrestre en una variedad de categorías (provincia, sistema,
+							unidades y componentes) basados en la similitud de los atributos, tipo de superficie
+							y sus alrededores.</p>
+						<img src="https://developers.google.com/maps/documentation/gaming/images/elevation2.png" width="800">
+					</section>
+
+					<section>
+						<h1>Ajustada para Colombia</h1>
+						<img src="https://www.researchgate.net/profile/Mario-Andres-Cardenas/publication/309674137/figure/fig12/AS:668880108269593@1536484853951/Figura-10-Jerarquizacion-de-la-geomorfologia-segun-la-escala-de-trabajo-INGEOMINAS.jpg" width="700">
+						<figcaption>Fuente: Velasquez (1999); Ingeominas (2000)</figcaption>
+					</section>
+
+					<section>
+						<img src="https://i.pinimg.com/564x/c6/32/87/c63287f4aeeb733d86d1d4527263954a.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Metodología IDEAM 1:100.000</h3>
+						<img src="https://i.pinimg.com/564x/29/33/2d/29332dc81e85e7674b9c54a556b414df.jpg" width="800">
+					</section>
+
+				</section>
+
+				<section>
+					<section><h1>Geoformas</h1></section>
+
+					<section>
+						<h3>Geoforma</h3>
+						<p>Concepto genérico que designa todos los tipos de formas del relieve independiente
+							de su origen, de su dimensión y de su nivel de abstracción.</p>
+						<p style="font-size: 22px; text-align: center;"><strong>Paisaje</strong> (Landscape) --> agregado de <strong>Geoformas</strong> (Landform) --> forma + proceso + historia</p>
+						<img src="https://i.pinimg.com/originals/bb/03/65/bb03655a27c1567a9b30dfb43756849c.png" width="850">
+					</section>
+
+					<section>
+						<h3>Atributos de geoformas</h3>
+						<p>Los atributos son características usadas para la descripción, identificación y clasificación de las
+							geoformas.</p>
+						<ul>
+							<p><strong>Morfología:</strong> el relieve general</p>
+							<li>Morfografía para describir la geometría y aspectos de las geoformas</li>
+							<li>Morfometría para medir cuantitativamente las dimensiones de las geoformas</li>
+							<p><strong>Morfogenéticos:</strong> para determinar el origen y la evolución de la geoformas</p>
+							<li>Morfoestructura pasiva: la litología y estructuras relacionadas con procesos
+								denudacionales</li>
+							<li>Morfoestructura dinámica: la dinámica endógena</li>
+							<li>Morfodinámica: la dinámica exógena</li>
+							<p><strong>Morfocronológicos:</strong> para circunscribir el contexto temporal en que se originaron las geoformas</p>
+							<li>Datación relativa</li>
+							<li>Datación absoluta</li>
+							<p><strong>Morfoarreglo:</strong> el arreglo espacial y la interrelación de las diferentes geoformas y los procesos
+								relacionados.</p>
+						</ul>
+						<figcaption>Fuente: Zinck (1988) & van Zuidam (1985)</figcaption>
+					</section>
+
+				</section>
+
+				<section>
+
+					<section><h1>Intro Sensores Remotos</h1></section>
+
+					<section>
+						<p>Los Sensores Remotos (teledetección) es el arte, ciencia y tecnología de observar un objeto,
+							escena o fenómeno por técnicas basadas en instrumentos. El termino remoto se refiere a la
+							observación realizada a una distancia sin contacto físico con el objeto de interés. Se puede
+							utilizar herramientas de detección y despliegue en tiempo real o una herramienta que registra la
+							energía, la cual es emitida o reflejada desde el objeto o la escena en observación. La energía
+							puede ser luz u otra forma de radiaciones electromagnética, campos de fuerza o energía
+							acústica. Fuente: ITC</p>
+						<img src="https://www-calipso.larc.nasa.gov/about/images/atrain_wOCOandGlory.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Espectro electromagnético</h3>
+						<img src="https://oliverbullen.com/content/images/2020/10/Energy-increases.jpg" width="1000">
+					</section>
+
+					<section>
+						<h3>Ventanas atmosféricas</h3>
+						<img src="https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/1095/2016/11/03155014/OSC_Astro_05_02_Radiation2.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Radar vs Óptico</h3>
+						<img src="https://satelliteprome.com/wp-content/uploads/2020/08/SAR.jpg" width="1000">
+					</section>
+
+					<section>
+						<h3>Imagen --> formato raster</h3>
+						<img src="https://annefou.github.io/metos_python/fig/raster_concept.png" width="700">
+					</section>
+
+					<section>
+						<h3>Digital Terrain Model (DTM)</h3>
+						<img src="https://rednex4x4.files.wordpress.com/2011/02/4.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Digital Terrain Model (DTM)</h3>
+						<img src="https://www.researchgate.net/profile/J-Perez-Pena/publication/280493745/figure/fig2/AS:284580788621322@1444860755958/High-resolution-digital-elevation-model-DEM-of-the-D-dar-landslide-derived-from-LIDAR.png" width="800">
+					</section>
+					
+				</section>
+
+				<section>
+					<section><h1>Herramientas de análisis</h1></section>
+
+					<section>
+						<img src="https://www.proyectobyte.com/wp-content/uploads/2015/02/Google-Eart-Pro-Gratis-620x260.jpg.webp" width="800">
+					</section>
+
+					<section>
+						<img src="https://www.researchgate.net/profile/Parthesh-Bulbule/publication/313103729/figure/fig3/AS:456494299783168@1485848130501/Google-earth-elevation-profile.png" width="800">
+					</section>
+
+					<section>
+						<img src="https://i0.wp.com/acolita.com/wp-content/uploads/2020/10/Descargar-gratis-un-DEM-ALOS-PALSAR.jpg?fit=1280%2C908&ssl=1" width="850">
+					</section>
+				</section>
+
+				<section>
+					<section><h1>Morfografía</h1></section>
+
+				</section>
+
+				
+				<section>
+					<section><h1>Morfometría</h1></section>
+
+					<section>
+						<p>La medida y análisis de las características de geoformas que son aplicable a cualquier superficie
+							continua. En general la Geomorfometría provee una base para la comparación cuantitativa de
+							diferentes paisajes, y puede adaptar m´etodos de an´alisis de superficie por fuera de la
+							geomorfología.</p>
+						<img src="https://d3i71xaburhd42.cloudfront.net/ecf1ea6c6add7bc04b1f1e283489282d324df479/2-Figure1-1.png" width="450">
+					</section>
+
+					<section>
+						<h3>Variables morfométricas</h3>
+						<p>Una variable (atributo) morfométrica (topográfica) es un solo valor de una
+							función bivariada que describe las propiedades de la superficie topográfica.</p>
+						<p>Existen 5 tipos principales de variables morfométricas:</p>
+						<ul>
+							<li>Variables locales</li>
+							<li>Variables no locales</li>
+							<li>Líneas estructurales</li>
+							<li>Variables solares</li>
+							<li>Variables combinadas</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Variables morfométricas locales</h3>
+						<p>Es un solo valor de una función bivariado que describe la geometría de la
+							superficie topográfica en la vecindad de un punto dado de la superficie.</p>
+						<img src="images/" width="1000">
+					</section>
+
+					<section>
+						<h3>Pendiente</h3>
+						<img src="http://downloads2.esri.com/MappingCenter2007/blog/June08Images/slope2.png" width="500">
+					</section>
+
+					<section>
+						<h3>Pendiente</h3>
+						<img src="https://www.e-education.psu.edu/natureofgeoinfo/sites/www.e-education.psu.edu.natureofgeoinfo/files/image/slope_grid.gif" width="400">
+						<img src="https://www.e-education.psu.edu/natureofgeoinfo/sites/www.e-education.psu.edu.natureofgeoinfo/files/image/slope_algorithm.gif" width="400">
+					</section>
+
+					<section>
+						<h3>Pendiente</h3>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Grades_degrees.svg" width="700">
+					</section>
+
+					<section>
+						<h3>Pendiente</h3>
+						<img src="https://www.goldensoftware.com/images/easyblog_images/66/1-examplemap.png" width="700">
+					</section>
+
+					<section>
+						<h3>Aspecto</h3>
+						<img src="https://slideplayer.com/slide/6261079/21/images/66/Example+for+Aspect+a+b+c+d+e+f+g+h+i.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Aspecto</h3>
+						<img src="https://docs.qgis.org/3.4/en/_images/aspect_2.png" width="700">
+					</section>
+
+					<section>
+						<h3>Slope & Aspecto</h3>
+						<img src="https://www.goldensoftware.com/images/easyblog_images/66/4-Diablo.png" width="700">
+					</section>
+
+					<section>
+						<h3>Curvatura</h3>
+						<img src="https://media.cheggcdn.com/study/f10/f10ed666-1e29-47b0-8ae0-50281dc6ba4a/509940-12.9-71IE1.png" width="700">
+					</section>
+
+					<section>
+						<h3>Curvatura</h3>
+						<img src="https://www.monolithic.org/vault/img/2011/05/10/4dc92b6dc29e0684730009b7/medium/radofcurv.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Curvatura</h3>
+						<img src="https://www.intechopen.com/media/chapter/67619/media/F1.png" width="700">
+					</section>
+
+					<section>
+						<h3>Curvatura plana</h3>
+						<img src="http://www.et-st.com/et_surface/userguide/Raster/images40/plan_curvature1.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Curvatura perfil</h3>
+						<img src="http://www.et-st.com/et_surface/userguide/Raster/images40/prof_curvature2.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Curvatura general</h3>
+						<img src="http://www.et-st.com/et_surface/userguide/Raster/images40/gen_curvature1.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Curvatura general</h3>
+						<img src="https://www.nrcs.usda.gov/Internet/FSE_MEDIA/nrcseprd1343238.png" width="700">
+					</section>
+
+					<section>
+						<h3>Variables morfométricas no locales</h3>
+						<p>Es un solo valor de una función bivariado que describe la geometría de la
+							superficie topográfica en la vecindad de un punto dado de la superficie.</p>
+						<img src="images/" width="1000">
+					</section>
+
+					<section>
+						<h3>DEM hidrológicamente correcto</h3>
+						<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0166248108000019-gr002.jpg" width="450">
+					</section>
+
+					<section>
+						<h3>DEM hidrológicamente correcto</h3>
+						<img src="https://www.researchgate.net/profile/Aizhong-Ye/publication/320645454/figure/fig1/AS:558017206644737@1510053077658/A-detailed-example-of-drainage-network-extraction-and-sub-basin-partitioning-a-Original_W640.jpg" width="550">
+					</section>
+
+					<section>
+						<h3>Área acumulada</h3>
+						<img src="https://www.researchgate.net/profile/Roger-Moussa/publication/251425262/figure/fig1/AS:669956236644369@1536741422697/a-Identification-of-the-drainage-direction-of-each-pixel-from-a-digital-elevation-model_W640.jpg" width="530">
+					</section>
+
+					<section>
+						<h3>Área acumulada</h3>
+						<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs12517-016-2795-x/MediaObjects/12517_2016_2795_Fig4_HTML.gif" width="800">
+					</section>
+
+					<section>
+						<h3>Área acumulada</h3>
+						<img src="https://i.ytimg.com/vi/Ro-RRzMMw-c/maxresdefault.jpg" width="800">
+					</section>
+
+				</section>
+
+				<section>
+					<section><h1>Parámetros morfométricos de cuencas</h1></section>
+
+					<section>
+						<img src="https://www.researchgate.net/publication/326515067/figure/tbl1/AS:672971022667776@1537460203392/Morphometric-parameters-and-their-mathematical-expressions_W640.jpg" width="600">
+					</section>
+
+					<section>
+						<h3>Forma de la cuenca</h3>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQOjJjZEVxx7q0idVUt9KptlhvnrJ6gN1vaQ&usqp=CAU" width="600">
+					</section>
+
+					<section>
+						<h3>Forma de la cuenca</h3>
+						<img src="https://www.bbc.co.uk/staticarchive/6ea28799574bf387186aa98ae6161114875978ee.gif" width="600">
+					</section>
+
+					<section>
+						<h3>Forma de la cuenca</h3>
+						<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-018-06210-4/MediaObjects/41467_2018_6210_Fig2_HTML.png?as=webp" width="600">
+					</section>
+
+					<section>
+						<h3>Torrencialidad</h3>
+						<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs11069-020-04346-5/MediaObjects/11069_2020_4346_Fig1_HTML.png" width="800">
+					</section>
+
+					<section>
+						<img src="https://www.researchgate.net/publication/344776156/figure/fig5/AS:948777162661891@1603217511121/Circular-correlation-plot-for-all-variables-with-T-and-nT-catchments_Q320.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Torrencialidad</h3>
+						<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs11069-020-04346-5/MediaObjects/11069_2020_4346_Fig9_HTML.png" width="700">
+					</section>
+
+					<section>
+						<h3>Indice de Hack</h3>
+						<img src="https://www.researchgate.net/profile/Ezatollah-Ghanavati-2/publication/323581896/figure/fig3/AS:601188118560768@1520345825606/SL-index-changes-along-Alamarvdasht-river-long-profile-and-faults_W640.jpg" width="800">
+						<figcaption>Fuente: Ghanavati (2016)</figcaption>
+					</section>
+
+					<section>
+						<h3>Transport laws</h3>
+						<p>slope-dependent transport as <b>diffusive</b> because the rate of transport depends on the topographic gradient (solpe).
+						<b>Diffusion-like process </b>tend to reduce relief and fill in local depressions:</p>
+						$q_s=DS^n$
+						<p>Processes for which the upslope drainage area influences rates of sediment transport are considered <b>advective</b> 
+						because the entrained material generally moves along with (and thus is advected by) flows that increase down-stream. 
+						Advective processes tend to incise valleys and create relief:</p>
+						$q_s=KA^mS^n$
+						<p>where S is local channel slope, A is the contributing drainage area that serves as a proxy for
+							local discharge, K is a variable that incorporates incision process–, substrate-, climate-, and
+							hydrology-dependent variables (Whipple, 2004), and m and n are positive constants that
+							are functions of basin hydrology, channel geometry, and specific incision process (Howard et
+							al., 1994; Whipple and Tucker, 1999; Whipple et al., 2000).</p>
+					</section>
+
+					<section>
+						<h3>River profile analysis</h3>
+						<p>Diffusive processes dominate small drainage areas, producing convex rounded hillslopes near drainage divides, 
+							whereas advective processes dominate large drainage areas, producing integrated, concave valley systems.</p>
+
+							<p>The change in channel bed elevation at any
+								point along the longitudinal profile with respect
+								to time, dz/dt, reflects a competition between
+								the rates of rock uplift and channel incision with
+								respect to base level. T</p>
+								$\frac{dz}{dt}=U-E=U-KA^mS^n$
+							<p>where U is the rock uplift rate.</p>
+					</section>
+
+					<section>
+						<h3>River profile analysis</h3>
+						<p>For a steady-state
+							landscape, where river incision rate is equal to
+							the rock uplift rate, dz/dt = 0, and equation can
+							be solved for equilibrium channel slope, S, at a
+							given drainage area, A,</p>
+						<p>Rock uplift (U) = River incision (E) --> steady state</p>
+						
+						<p><b>Flint´s law: </b></p>
+						$S=K_sA^{-\theta}$
+						<p>where ks describes the channel steepness, and
+						   θ describes the channel concavity (the rate of
+						   change of local channel slope as a function of
+						   increasing drainage area; Hack, 1957; Flint,
+						   1974; Tarboton et al., 1989). The coefficient ks
+						   and the exponent θ (m/n) are referred to as the channel
+						   steepness index and channel concavity index,
+						   respectively (Snyder et al., 2000).</p>
+					</section>
+
+					<section>
+						<h3>River profile analysis</h3>
+						$k_s=(\frac{U}{K})^{1/n}$<br>
+						$\theta=m/n$<br>
+						$\frac{dz}{dx}=(\frac{E}{K})^{1/n}A^{-m/n}$<br>
+						$z=(\frac{E}{K(A_0)^m})^{1/n}\chi$<br>
+						$\chi=\int_0^x(\frac{A_0}{A(x)})^{m/n}dx$
+												
+						<p>The slope of the χ‐z plot is $k_s$</p>
+					</section>
+
+					<section>
+						<h3>River basins and river profiles in equilibrium and disequilibrium</h3>
+						<img src="https://science.sciencemag.org/content/sci/343/6175/1248765/F1.large.jpg?width=800&height=600&carousel=1" width="700">
+						<figcaption>Fuente: Willett et al. (2014)</figcaption>
+					</section>
+
+					<section>
+						<h3>River basins and river profiles in equilibrium and disequilibrium</h3>
+						<img src="https://agupubs.onlinelibrary.wiley.com/cms/asset/34078441-85ac-439e-bbc6-98c3e7da6995/jgrf20651-fig-0001-m.png" width="600">
+						<figcaption>Fuente: Whipple et al. (2016)</figcaption>
+					</section>
+				</section>
+
+				<section>
+					<section><h1>Métodos datación</h1></section>
+
+					<section>
+						<h3>Métodos de datación</h3>
+						<img src="https://ars.els-cdn.com/content/image/3-s2.0-B978012386913500003X-f03-02-9780123869135.jpg" width="750">
+					</section>
+
+				</section>
+
+				<section>
+						<section><h1>Métodos relativos</h1></section>
+
+					<section>
+						<h3>Métodos de datación</h3>
+						<img src="https://i0.wp.com/truthsnitch.com/wp-content/uploads/2017/06/relative-dating-vs-absolute-dating-venn-diagram.jpg?resize=506%2C414" width="720">
+					</section>
+
+					<section>
+						<h3>Métodos de datación</h3>
+						<img src="https://clarkscience8.weebly.com/uploads/2/6/3/7/2637711/dating.jpg?593" width="550">
+					</section>
+
+					<section>
+						<h3>Métodos de datación</h3>
+						<img src="http://earthsci.org/space/space/geotime/radate/RadioactiveDecayAssumptions.gif" width="500">
+					</section>
+
+					<section>
+						<h3>Métodos de datación</h3>
+						<img src="https://ars.els-cdn.com/content/image/3-s2.0-B978012386913500003X-f03-01-9780123869135.jpg" width="850">
+					</section>
+
+					<section>
+						<h3>Métodos de datación</h3>
+						<img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780081005248000208-f19-01-9780081005248.jpg" width="850">
+					</section>
+
+
+					<section>
+						<h3>Lichenometry</h3>
+						<img src="http://www.glaciers.pdx.edu/Thesis/Heard/lichen.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Lichenometry</h3>
+						<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0033589409000106-gr7.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Criterios temporales</h3>
+						<img src="images/tabla_parra.png" width="700">
+						<figcaption>Fuente: Dr. Eduardo Parra</figcaption>
+					</section>
+				</section>
+
+				
+				<section>
+					<section><h1>Métodos absolutos</h1></section>
+
+					<section>
+						<h3>Métodos de datación</h3>
+						<img src="https://www.studyhash.com/wp-content/uploads/2018/03/Radioactive-dating-or-Radio-isotope-dating.jpeg" width="850">
+					</section>
+
+				</section>
+
+				<section>
+					<section><h1>Isótopos cosmogénicos</h1></section>
+
+					<section>
+						<h3>Rayos cósmicos & Espalación</h3>
+						<img src="https://www.sciencenews.org/wp-content/uploads/2015/11/112815_cc_particles50yago_free.jpg" width="850">
+					</section>
+
+					<section>
+						<h3>Rayos cósmicos & Espalación</h3>
+						<img src="https://www.pnas.org/content/109/16/5967/F1.large.jpg" width="450">
+					</section>
+
+					<section>
+						<h3>Meteóricos e <i>in situ</i>> </h3>
+						<img src="https://e-rocks.com/sites/erocks/files/blog-images/11437/Be10.jpg" width="340">
+					</section>
+
+					<section>
+						<h3>Carbono 14</h3>
+						<img src="https://sites.google.com/site/lahsscience2/_/rsrc/1484755898863/home/earth-science/radioactive-dating-lab/carbon-14.gif" width="400">
+					</section>
+
+					<section>
+						<h3>Cosmogénicos</h3>
+						<img src="https://wps.prenhall.com/wps/media/objects/439/449969/Media_Portfolio/Chapter_18/FG18_06.JPG" width="850">
+					</section>
+
+					<section>
+						<h3>Cosmogénicos</h3>
+						<img src="https://whatisnuclear.com/img/half-life.png" width="800">
+					</section>
+
+					<section>
+						<h3>Cosmogénicos</h3>
+						<img src="https://images.slideplayer.com/2/724630/slides/slide_10.jpg" width="750">
+					</section>
+
+					<section>
+						<h3>Cosmogénicos</h3>
+						<img src="https://useruploads.socratic.org/DskyI18kRnybFCksySjr_half-life-graph.jpg" width="750">
+					</section>
+
+					<section>
+						<h3>Cosmogénicos</h3>
+						<img src="https://useruploads.socratic.org/yjATkLbtT2CJX8q0Xv0Q_DecayKinetics.gif" width="700">
+					</section>
+
+					<section>
+						<h3>Cosmogénicos</h3>
+						<img src="http://www.worldfossilsociety.org/wp-content/uploads/2019/01/103919232_pir1-2.png" width="850">
+					</section>
+
+				</section>
+
+				<section>
+					<section><h1>Luminiscencia</h1></section>
+
+					<section>
+						<h3>Luminiscencia</h3>
+						<img src="https://media.springernature.com/original/springer-static/image/prt%3A978-3-642-35344-4%2F10/MediaObjects/978-3-642-35344-4_10_Part_Fig1-35_HTML.gif" width="800">
+					</section>
+
+				</section>
+						
+				
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/menu/menu.js"></script>
+		<script src="plugin/math/math.js"></script>
+
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				slideNumber: 'c/t',
+				hash: true,
+				math: {
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+				menu: {
+					side: 'left', // 'left' or 'right'.
+					width: 'normal', // 'normal', 'wide', 'third', 'half', 'full', or
+					numbers: false,
+					titleSelector: 'h1, h2, h3',
+					useTextContentForMissingTitles: false,
+					hideMissingTitles: false,
+					markers: true,
+					custom: false,
+					themes: true,
+					themesPath: 'dist/theme/',			
+					transitions: false,  // ['None', 'Fade', 'Slide']
+					openButton: true,
+					openSlideNumber: true,
+					keyboard: true,
+					sticky: false,
+					autoOpen: true,
+					delayInit: false,
+					openOnInit: false,
+					loadIcons: true
+						},
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealMath ],
+				dependencies: [
+				
+								]
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,2921 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Geomorfología</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/Serif.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+		<link rel="stylesheet" href="dist/style.css">
+
+
+
+		<style>
+				  
+			.primera #marca-agua{
+				display:none;
+				}
+
+			.primera #lecture{
+				display:none;
+				}
+
+			#clock {
+				font-size: 20px;
+				color: #51483D;
+				width: 120px;
+				margin: 0px;
+				text-align: center;
+				border: 2px solid black;
+				border-radius: 20px;
+				}
+
+
+			.reveal section p {
+				font-size: 0.7em;
+				  }
+
+			.reveal section li {
+				font-size: 0.6em;
+				  }
+
+			.reveal .slide-number {
+				right: 150px;
+				 bottom: 3px}
+
+			.reveal h3 {
+				text-align: left;
+				  }
+
+		</style>
+
+	</head>
+	<body>
+
+		<script>
+			setInterval(showTime, 1000);
+			function showTime() {
+				let time = new Date();
+				let hour = time.getHours();
+				let min = time.getMinutes();
+				let sec = time.getSeconds();
+				am_pm = "am";
+	
+				if (hour > 12) {
+					hour -= 12;
+					am_pm = "pm";
+				}
+				if (hour == 0) {
+					hr = 12;
+					am_pm = "am";
+				}
+	
+				hour = hour < 10 ? "0" + hour : hour;
+				min = min < 10 ? "0" + min : min;
+				sec = sec < 10 ? "0" + sec : sec;
+	
+				let currentTime = hour + ":"
+					+ min + ":" + sec + am_pm;
+	
+				document.getElementById("clock")
+					.innerHTML = currentTime;
+			}
+	
+			showTime();
+		</script>
+
+		<div class="reveal">
+			<div class="slides">
+			
+				<div id="marca-agua"><img style="border:none;box-shadow:none;width:60px;position:absolute;top:0%;right:0%;"src="https://i.pinimg.com/564x/8a/d1/27/8ad12724bdc797e03a9c4561134fc176.jpg"/><p id="date"></p></div>
+				<!--<div id="lecture" style="font-size:20px;position:absolute;top:100%;right:32%;">Machine Learning (Introducción)</div>-->
+				<div id="clock" style="font-size:20px;position:absolute;top:98%;right:0%;">0:00:00</div>
+				<section data-background-color= "#ffffff"; data-state="primera">
+				  <h1 style="font-size: 60px; color: black;">GEOMORFOLOGÍA</h1>
+				  <p>
+				  <h4><a href="https://edieraristizabal.github.io/">Prof. Edier Aristizábal</a></h4>
+				  </p>
+					<img src="https://i.pinimg.com/564x/f8/5b/28/f85b28f72a65d9c64d8c5e4a7bac57aa.jpg" alt="unal.jpg" width="600"/>
+					<p id="demo" style="position:absolute;top:100%;right:40%; color: gray;"></p>
+					<script>
+					var d = new Date();
+					var months = ["Jan.","Feb.","Mar.","Apr.","May.","Jun.","Jul.","Aug.","Sept.","Oct.","Nov.","Dec."];
+					document.getElementById("demo").innerHTML = months[d.getMonth()] + " " +d.getDate()+" / "+d.getFullYear();
+					</script>
+				</section>
+
+				<section>
+					<section><h1>Motivación</h1></section>
+					
+					<section>
+						<img src="https://static.educalingo.com/img/en/800/landscape.jpg" width="750">
+						<p style="text-align: center;"><strong>Geomorfología</strong>: Ciencia que estudia la forma de la superficie de la Tierra y los
+							procesos que las originan.</p>
+					</section>
+	
+					<section>
+						<h2>Por qué estudiar la geomorfología?</h2>
+						<h3>Entender el paisaje es clave para:</h3>
+						<ul>
+							<li>Entender los hábitat de los
+								organismos
+								(incluyendo los
+								humanos)
+							</li>
+							<li>Ordenar el
+								territorio
+								</li>
+							<li>Evaluar las
+								amenazas</li>
+							<li>Evaluar los
+								impactos
+								ambientales</li>
+							<li>Intervenir el territorio adecuadamente
+								</li>
+							<li>La geomorfología nos provee de una nueva forma del ver el paisaje…</li>
+							<img src="https://www.dailyhindnews.com/wp-content/uploads/2021/04/1618544568_How-to-View-Google-Earths-Timelapse-Imagery-in-3D.jpg" width="700">
+						</ul>
+					</section>
+
+					<section>
+							<img src="http://www.geosci.usyd.edu.au/users/prey/Teaching/Geos-3003/geos3003pict/Hypsographic.jpg" width="880">
+							<p>La mayor parte de la superficie terrestre es agua, y la mayor parte de la
+								superficie terrestre continental es menor a 2 km de altura</p>
+					</section>
+					<section>
+						<img src="https://s.w-x.co//util/image/w/landscape_al_0002996_gilliganm.jpg?crop=16:9&width=980&format=pjpg&auto=webp&quality=60" width="800">
+						<p>Pero la mejor razón de todas para estudiar geomorfología es por que el
+							paisaje es simplemente fascinante e increíblemente bello...por lo tanto entenderlo debe ser igual.</p>
+					</section>
+				</section>
+
+				<section>
+					<section><h1>Curso</h1></section>
+
+					<section>
+						<p>La información del curso, tales como programa, lecturas recomendadas y
+							demás podrá ser consultado en Classroom:</p>
+						<img src="images/classroom.png" width="1000">
+						<a style="font-size:70%;" href="https://classroom.google.com/u/0/c/NjI0Mjg5NTg3NTda">https://classroom.google.com/u/0/c/NjI0Mjg5NTg3NTda</a>
+						<p style="text-align: center;color:blue;">Class code: [zap5jhd]</p>
+					</section>
+
+					<section>
+						<p><strong>Objetivo: </strong>El curso de geomorfología está orientado para estudiantes de ciencias
+							ambientales que deseen adquirir conocimientos sobre los procesos
+							end´ogenos y ex´ogenos que modelan las geoformas de la superficie
+							terrestre, y la relaci´on suelo-relieve.</p>
+						<p><strong>Alcance: </strong>El alcance de este curso es comprender los procesos de modelación
+							del paisaje con sus geoformas asociadas, y aplicar dichos
+							conocimientos en cartografía.</p>
+						<p>Curso teórico (50%) y práctico (50%) de 3 créditos académicos, lo
+							que significa 9 horas semanales de dedicación en promedio durante
+							todo el semestre... eso significa unas semanas menos horas y otras
+							muchas mas horas.</p>
+					</section>
+					<section>
+						<h3>Cronograma</h3>
+						<img src="images/crono1.png" width="800">
+					</section>
+					<section>
+						<h3>Cronograma</h3>
+						<img src="images/crono2.png" width="800">
+					</section>
+					<section>
+						<h3>Resumen</h3>
+						<img src="images/abstract.png" width="900">
+					</section>
+				</section>
+				
+				<section>
+					<section><h1>Aprender a aprender...</h1></section>
+
+					<section>
+						<h3>Cuánto tiempo se requiere para aprender algo nuevo?</h3>
+						<img src="images/curva.png" width="1000">
+					</section>
+
+					<section>
+						<h3>Cómo aprendemos?</h3>
+						<img src="https://www.educationcorner.com/images/learning-pyramid2.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Cómo aprendemos?</h3>
+						<img src="https://i.pinimg.com/564x/59/56/30/5956308ad5068bd2923a8b1b8c5e6647.jpg" width="900">
+					</section>
+
+					<section>
+						<h3>Cómo aprendemos?</h3>
+						<img src="https://i.pinimg.com/564x/60/1e/f3/601ef353d4c0b64f3e7315e16ae22daa.jpg" width="500">
+					</section>
+				</section>
+
+				<section><img src="https://blogs.egu.eu/divisions/gd/files/2021/03/ocean_floor-700x400.jpeg" width="1000"></section>
+
+				<section>
+					<section><h1>Conceptos claves</h1></section>
+					
+					<section>
+						<img src="http://geoinfo.amu.edu.pl/wpk/geos/GEO_1/geo_images/Fig1.1.gif" width="800">
+					</section>
+
+					<section>
+						<img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780124095489093878-f09387-01-9780124095489.jpg" width="1000">
+					</section>
+
+					<section>
+						<img src="https://www.intechopen.com/media/chapter/57063/media/F1.png" width="1000">
+					</section>
+
+					<section>
+						<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0169555X18300709-gr1.jpg" width="600">
+					</section>
+
+					<section>
+						<h3>Sistemas en geomorfología</h3>
+						<img src="https://i.pinimg.com/564x/f2/c0/c5/f2c0c57dc0d1f35ae830d95f3a7d685a.jpg" width="900">
+					</section>
+
+					<section>
+						<h3>Diffusive - Advective processes</h3>
+						<img src="https://i.pinimg.com/564x/be/62/1a/be621a49214ce53ae18de5f15bb09cfc.jpg" width="865">
+					</section>
+
+					<section>
+						<h3>Diffusive - Advective processes</h3>
+						<img src="https://www.uvm.edu/~geomorph/geol151/2008/lectures/week9_slopes1/wk9_for_web/wk9_for_web-Images/2.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Equilibrio dinámico</h3>
+						<img src="https://images.slideplayer.com/16/5015412/slides/slide_3.jpg" width="750">
+					</section>
+
+					<section>
+						<h3>Equilibrio dinámico</h3>
+						<img src="https://d3i71xaburhd42.cloudfront.net/4149365678a57cf9ba66a7f853cad724aa52d623/18-Figure14-1.png" width="800">
+					</section>
+
+					<section>
+						<h3>Umbrales en geomorfología</h3>
+						<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0169555X1730212X-gr1.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Feedback</h3>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMOqLi-1_wdqr1IRfeIaGHYuUEYZxp_OPSPw&usqp=CAU" width="1000">
+					</section>
+
+					<section>
+						<h3>Magnitud-Frecuencia</h3>
+						<img src="https://i.pinimg.com/564x/3b/90/a6/3b90a6d3326687c1f4285ce2a3024afd.jpg" width="550">
+					</section>
+					
+				</section>
+
+				<section>
+					<section><h1>Geomorfología histórica</h1></section>
+
+					<section>
+						<h3>Evolución de la geomorfología</h3>
+						<img src="https://i.pinimg.com/564x/e5/24/4e/e5244eb49eb28b424fbf1cfba3c49a31.jpg" width="900">
+					</section>
+
+					<section>
+						<h3>Evolución de la geomorfología</h3>
+						<img src="https://i.pinimg.com/564x/ad/fd/7f/adfd7f0417e07d8746694a1a292d7043.jpg" width="900">
+					</section>
+
+					<section>
+						<h3>Evolución de la geomorfología</h3>
+						<img src="https://i.pinimg.com/564x/4f/fb/1c/4ffb1c94cc9f3a3ad73e63e99466bfa6.jpg" width="600">
+					</section>
+
+					<section>
+						<p><b>Paisaje</b> --> agregado de <b>Geoformas</b> --> Historia + Forma + Procesos</p>
+						<img src="https://i.pinimg.com/564x/17/23/20/1723207626ec66f4121387879b61ccd0.jpg" width="800">
+					</section>
+
+				</section>
+
+				<section>
+					<section><h1>Evolución del paisaje</h1></section>
+
+					<section>
+						<h3>El Ciclo Geográfico</h3>
+						<img src="https://www.examrace.com/Study-Material/Geography/Geomorphology/posts/Slope-Evolution-YouTube-Lecture-Handouts/Image-of-Davis-Cyle-of-Erosion.webp" width="1000">
+					</section>
+
+					<section>
+						<h3>Ciclo Geomorfológico</h3>
+						<img src="https://image.slidesharecdn.com/williammorrisdavis-180201063021/95/davis-theory-william-morris-davis-geomophology-chapter-3-638.jpg?cb=1517466677" width="800">
+					</section>
+
+					<section>
+						<h3>Retroceso de las laderas</h3>
+						<img src="https://i.pinimg.com/originals/34/45/cb/3445cb8e4f26e9289f7ee45c4661a1a2.png" width="800">
+					</section>
+
+					<section>
+						<h3>Retroceso de las laderas</h3>
+						<img src="https://i.pinimg.com/564x/63/76/9b/63769b97a486327d566b378e23d74360.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Paisajes maduros</h3>
+						<img src="https://cdn.theculturetrip.com/wp-content/uploads/2018/03/mountains.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Penillanura (Peniplain) o Pedillanura (Pediplain)</h3>
+						<p><b>Peniplain: </b>slopes within landscapes decline through time - maximum slope angles slowly lessen. 
+							So topography is reduced, little by little, to an extensive flat region close to baselevel - 
+							a peneplain-with occasional hills, called <b>monadnocks</b>.</p>
+						<p><b>Pediplain: </b>Penck's model of slope retreat was adopted by Lester Charles King, who, in another 
+							model of landscape evolution, proposed that slope retreat produces <b>pediments</b> and that, where 
+							enough pediments form, a pediplain results.</p>
+						<img src="https://qph.fs.quoracdn.net/main-qimg-bb49cc4ef676eca7ac4bd36e0b5ca10a" width="600">
+					</section>
+
+					<section>
+						<h3>Penillanura</h3>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Store_Mosse_Stora_Gungflyet.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Pedillanura</h3>
+						<img src="https://www.fodors.com/wp-content/uploads/2018/12/02_Uluru101__WhyisitsometimescalledAyersrock__dreamstime_xl_34710920.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Palimpsests</h3>
+						<p>Compuesto de un mosaico de geoformas activas y relictos (inactivas) de diferentes
+							edades. Episodios sucesivos de eventos que cambian el paisaje (cambio climático,
+							glaciación, movimientos en masa, deforestación) pueden tener diferentes
+							manifestaciones espaciales y temporales, y pueden generar marcas muy diferentes.</p>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHJQidvwKQFmmEg4TnfCp3WV3trk8sShcKn6ZFpOIuPuqyynxTVwwVPtFMIpKSjE5a5p8&usqp=CAU" width="650">
+					</section>
+
+					<section>
+						<h3>Paisaje dinámico</h3>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Interactions_and_feedback_pathways_for_tectonics_and_erosional_processes.pdf/page1-1200px-Interactions_and_feedback_pathways_for_tectonics_and_erosional_processes.pdf.jpg" width="1000">
+					</section>
+
+					<section>
+						<h3>Paisaje dinámico</h3>
+						<img src="https://www.researchgate.net/profile/Sean-Willett/publication/235431560/figure/fig1/AS:670016039030793@1536755680940/Interactions-and-feedback-pathways-for-tectonics-climate-and-erosional-processes.png" width="700">
+					</section>
+
+					<section>
+						<h3>Procesos geomorfológicos</h3>
+						<img src="https://www.clearias.com/up/geomorphic-processes-mind-map.jpg" width="1000">
+					</section>
+
+				</section>
+
+				<section>
+					<section><h1>Geomorfología tectónica</h1></section>
+
+					<section>
+						<h3>Geoformas al interior del continente</h3>
+						<img src="http://www.insugeo.org.ar/libros/misc_21/07_fig07-1.jpg" width="1000">
+					</section>
+
+					<section>
+						<h3>Geoformas al interior del continente</h3>
+						<p>Los <b>cratones</b> son antiguas superficies continentales de baja elevación y bajo relieve
+							que se caracterizan por su prolongada estabilidad tectónica. Cuando los cratones
+							son expuestos se utiliza el término escudos, y cuando son cubiertos inconformemente por 
+							delgadas cubiertas sedimentarias se utiliza el termino <b>plataforma</b></p>
+						<img src="" width="1000">
+					</section>
+
+					<section>
+						<h3>Plateaux</h3>
+						<p>Extensive area of flat upland usually bounded by an escarpment (i.e., steep slope) on all sides but 
+							sometimes enclosed by mountains. The essential criteria for plateaus are low relative relief and 
+							some altitude</p>
+						<img src="https://sites.google.com/site/mountainsdnh5780/_/rsrc/1474388216856/facts-about-mountains/plateau-mountains-erosion-mountains/Plateau_%28PSF%29.png?height=125&width=400" width="1000">
+					</section>
+
+					<section>
+						<h3>Plateaux</h3>
+						<img src="https://cdn.britannica.com/18/189518-050-EDC55CF4/processes-shortening-thermal-expansion-plateaus-formation.jpg" width="1000">
+					</section>
+
+					<section>
+						<h3>Plateaux</h3>
+						<img src="https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-81-322-1539-4_8/MediaObjects/978-81-322-1539-4_8_Fig27_HTML.gif" width="1000">
+					</section>
+
+					<section>
+						<h3>Plateaux</h3>
+						<img src="https://www.researchgate.net/profile/Kacper-Jancewicz/publication/342350433/figure/fig1/AS:908717419659266@1593666524874/Evolution-of-residual-hills-in-tablelands-as-usually-presented-The-background-photo.jpg" width="1000">
+					</section>
+
+					<section>
+						<h3>Plateaux</h3>
+						<img src="https://cdn.britannica.com/90/118890-050-C5989AAC/Columbia-Plateau-area-lava-flows-Washington-Oregon.jpg" width="1000">
+					</section>
+
+					<section>
+						<h3>Plateaux</h3>
+						<img src="https://cdn.britannica.com/87/98187-050-29EB069F/Southern-Plateau-China-Tibet-Mount-Everest.jpg" width="1000">
+					</section>
+
+					<section>
+						<h3>Márgenes Activas vs Pasivas</h3>
+						<img src="https://qph.fs.quoracdn.net/main-qimg-1bafb2c05e2588c3cb21c480756e9a8b" width="1000">
+					</section>
+
+					<section>
+						<h3>Márgenes Activas vs Pasivas</h3>
+						<img src="https://earthsurface.readthedocs.io/en/latest/_images/active_passive.png" width="1000">
+					</section>
+
+					<section>
+						<h3>Formación Márgenes Pasivas</h3>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Rifting_to_Spreading_Transition.jpg" width="1000">
+					</section>
+
+					<section>
+						<h3>Evolución Márgenes Pasivas</h3>
+						<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0012825208000871-gr1.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Evolución Márgenes Pasivas</h3>
+						<img src="https://www.researchgate.net/profile/Colin-Pain/publication/336797489/figure/fig6/AS:817747931959306@1571977708965/The-basic-geomorphology-of-passive-margins-with-mountains-Ris-7-Osnovnye.png" width="1000">
+					</section>
+
+					<section>
+						<h3>Marco geotectónico</h3>
+						<img src="https://earthsurface.readthedocs.io/en/latest/_images/plates.png" width="1000">
+					</section>
+
+					<section>
+						<h3>Paisaje dinámico</h3>
+						<img src="https://earthsurface.readthedocs.io/en/latest/_images/braun.png" width="1000">
+					</section>
+
+					<section>
+						<h3>Márgenes activas</h3>
+						<img src="https://earthsurface.readthedocs.io/en/latest/_images/platemvt.png" width="1000">
+					</section>
+
+					<section>
+						<h3>Márgenes activas</h3>
+						<img src="http://s3.thingpic.com/images/iD/4TyztpfSHvX8MBJHh4urN2nQ.jpeg" width="1000">
+					</section>
+
+					<section>
+						<h3>Márgenes activas</h3>
+						<img src="https://fitz6.files.wordpress.com/2017/04/66917-image2bshowing2bthe2bthree2bmain2btectonic2bplates2bboundary2btypes2band2bassociated2bvolcanoes2band2bearthquakes.jpg" width="1000">
+					</section>
+
+					<section>
+						<h3>Márgenes divergente</h3>
+						<img src="https://qph.fs.quoracdn.net/main-qimg-23632fa9d0846e0fa9c2683994a07490" width="700">
+					</section>
+
+					<section>
+						<h3>Rift continental</h3>
+						<img src="https://www.nps.gov/articles/images/fig-2-3-basin-and-range-rio-grande-rift-new-x10-10x_2.jpg" width="350">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/USA_Region_West_relief_location_map.jpg/240px-USA_Region_West_relief_location_map.jpg" width="400">
+					</section>
+
+					<section>
+						<h3>Rift continental</h3>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/EAfrica.png/300px-EAfrica.png" width="500">
+						<img src="https://geology.com/articles/east-africa-rift/figure1-400.jpg" width="400">
+					</section>
+
+					<section>
+						<h3>Rift continental</h3>
+						<img src="https://i.pinimg.com/originals/f5/a6/d0/f5a6d061d40f42cd21cdad43e20a41da.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Rift continental</h3>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/8/81/ATJ_map_%28color%29.jpg" width="430">
+						<img src="https://media.sciencephoto.com/image/c0133993/800wm" width="400">
+					</section>
+
+					<section>
+						<h3>Rift oceánico</h3>
+						<img src="https://wps.prenhall.com/wps/media/objects/1268/1299368/ocean_profile.gif" width="700">
+					</section>
+
+					<section>
+						<h3>Márgenes convergentes</h3>
+						<img src="http://courses.missouristate.edu/emantei/creative/contdrift/3conbound.jpg" width="430">
+					</section>
+
+					<section>
+						<h3>Márgenes convergentes</h3>
+						<img src="https://cdn.thinglink.me/api/image/576969350896943105/1240/10/scaletowidth" width="600">
+					</section>
+
+					<section>
+						<h3>Continente - Continente</h3>
+						<img src="https://www.researchgate.net/profile/Edison-Navarrete/publication/320410516/figure/fig19/AS:614353212542983@1523484628340/Figura-310-Convergencia-de-Placa-Continental-con-Placa-Continental-Figura-tomada-de.png" width="800">
+					</section>
+
+					<section>
+						<h3>Oceano - Continente</h3>
+						<img src="http://pachangivoigt.weebly.com/uploads/2/4/8/8/24885411/8560731.png?501" width="800">
+					</section>
+
+					<section>
+						<h3>Oceano - Oceano</h3>
+						<img src="https://volcanodiscovery.de/uploads/pics/subduction.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Márgenes transformantes</h3>
+						<img src="https://www.nps.gov/subjects/geology/images/san-andreas-transform-plate-boundary-10x.jpg?maxwidth=1200&autorotate=false" width="500">
+					</section>
+
+					<section>
+						<h3>Márgenes transformantes</h3>
+						<img src="https://thumbor.forbes.com/thumbor/711x850/https://blogs-images.forbes.com/trevornace/files/2016/10/salton-trough-fault-california.jpg?width=960" width="380">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Salton_Trough.jpg/400px-Salton_Trough.jpg" width="550">
+					</section>
+
+					<section>
+						<h3>Hotspot</h3>
+						<img src="http://www.uoguelph.ca/geology/geol2250/glossary/HTML%20files/hotspot.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Hotspot</h3>
+						<img src="https://2.bp.blogspot.com/-_5X4gsiW3Pw/WpWg-_k6RlI/AAAAAAAAPCA/bOv8G7JpmQE9Ec6l7l6tbAkexr6ZpdcVwCLcBGAs/s1600/Another%2Bclue%2Bfor%2Bfast%2Bmotion%2Bof%2Bthe%2BHawaiian%2Bhotspot__15.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Isostacia</h3>
+						<img src="https://estaticos.muyinteresante.es/uploads/images/article/5fe08a0e5bafe8f472c3d18a/iceberg-mas-grande_0.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Isostacia</h3>
+						<p>Levantamiento vertical o subsidencia de la corteza en respuesta a cambios en el
+							espesor. A medida que material es adicionado, el espesor de la corteza aumenta
+							y se hunde mas dentro del manto, y a medida que el material es erosionado, la
+							corteza se adelgaza, y material formado a profundidades sube hacia la superficie</p>
+						<img src="https://s3.amazonaws.com/dev-hmhco-vmg-craftcms-public/_cliffsnotes/assets/30862.gif" width="500">
+					</section>
+
+					<section>
+						<h3>Isostacia</h3>
+						<img src="http://www.pasqualerobustini.com/wp-content/uploads/2014/10/ptatt-airy.gif" width="700">
+					</section>
+
+					<section>
+						<h3>Isostacia</h3>
+						<img src="https://i.pinimg.com/564x/66/c4/e6/66c4e668502094573ea5cceb25c979f5.jpg" width="450">
+					</section>
+
+					<section>
+						<h3>Isostacia</h3>
+						<img src="https://i.pinimg.com/564x/1b/7b/a7/1b7ba7ebfee342d14e4ccfc81951c185.jpg" width="800">
+					</section>
+
+					<section>
+						<img src="https://o.quizlet.com/wtBEFjT8czdE6-eU6ts2Eg.jpg" width="850">
+					</section>
+
+					<section>
+						<h3>Isostacia</h3>
+						<img src="https://openpress.usask.ca/app/uploads/sites/29/2018/03/isostasy_rebound.png" width="1000">
+					</section>
+
+				</section>
+
+				<section>
+					<section><h1>Geomorfología Estructural</h1></section>
+
+					<section>
+						<img src="https://i.pinimg.com/originals/39/e5/9f/39e59f8d25087b89ddf1d4a44ac3755d.jpg" width="800">
+					</section>
+					
+					<section>
+						<img src="https://i.pinimg.com/originals/06/da/f6/06daf60cd90a2bf079f79da69b6eb6eb.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Rumbo & Buzamiento</h3>
+						<img src="https://geobax.com/wp-content/uploads/2019/02/Buzamiento.jpg" width="600">
+					</section>
+
+					<section>
+						<h3>Tipos de fallas</h3>
+						<img src="https://www.thoughtco.com/thmb/F09c8v2LD3ZDxFch2JdT5EXN2_I=/3492x2619/smart/filters:no_upscale()/GettyImages-141483279-56c966b53df78cfb378dbcca.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Tipos de fallas</h3>
+						<img src="https://i.ytimg.com/vi/sITd_MZxs4w/sddefault.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Graben & Horst</h3>
+						<img src="http://www.tulane.edu/~sanelson/images/horstgraben.gif" width="800">
+					</section>
+
+					<section>
+						<h3>Marco extensional</h3>
+						<img src="https://www.nps.gov/npgallery/GetAsset/d54e04bc-a6b2-4ed4-b96c-afc7bbfd5dd6/proxy/hires" width="800">
+					</section>
+
+					<section>
+						<h3>Marco extensional</h3>
+						<img src="https://www.nps.gov/npgallery/GetAsset/b09f3a4a-3779-46e9-a13a-e6081b1a0af5/proxy/hires" width="800">
+					</section>
+
+					<section>
+						<h3>Marco extensional</h3>
+						<img src="https://www.everythingselectric.com/wp-content/uploads/geology-15.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Marco extensional</h3>
+						<img src="https://www.ldeo.columbia.edu/res/pi/tcn/LDEO_Cosmogenic_Nuclide_Lab/Canyonlands_files/droppedImage.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Marco extensional</h3>
+						<img src="https://www.researchgate.net/profile/Richard-Gloaguen/publication/230717934/figure/fig13/AS:267985969479691@1440904242420/Drainage-response-to-uplift-along-a-fault-by-migrating-laterally-in-a-down-tilt.png" width="600">
+					</section>
+
+					<section>
+						<h3>Faceta triangular</h3>
+						<img src="https://docplayer.es/docs-images/66/56231906/images/19-3.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Faceta triangular</h3>
+						<img src="https://1.bp.blogspot.com/-a0on2xSZ1UA/VwnVgslZOQI/AAAAAAAAAWU/2bNXlWfyoQcgb3LBMSW-S2_3_nXpigoiQ/s1600/facetas%2Btriangulares.png" width="800">
+					</section>
+
+					<section>
+						<h3>Evolución Faceta triangular</h3>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAN0qZQnqxdKC6Daw6jWgDbzPsRdc7Ke_ElwDZrH_TxRufMZZBpH1hhhFWxtBiohY6LNo&usqp=CAU" width="700">
+					</section>
+			
+					<section>
+						<h3>Fallas de rumbo</h3>
+						<img src="https://gotbooks.miracosta.edu/gonp/carrizo/images/geomorphic_features.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Shutter ridge</h3>
+						<img src="https://1.bp.blogspot.com/--toWONZ0TYw/WDiQlytMpYI/AAAAAAAARj4/G2XGUO7_uyofhVChdpAhqngAQnC3GY9NgCLcB/s1600/Garlock_OffsetDrainageL.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Shutter ridge</h3>
+						<img src="https://serc.carleton.edu/download/images/31075/geomorphology_el_paso_peaks.v2.png" width="800">
+					</section>
+
+					<section>
+						<h3>Shutter ridge</h3>
+						<img src="https://scontent.feoh1-1.fna.fbcdn.net/v/t1.6435-9/110318217_2549319751837038_1791730765107566557_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=00jCUX-502YAX_wqdw7&_nc_ht=scontent.feoh1-1.fna&oh=d639d94ce4c270329e1730fd83f0424f&oe=60C49287" width="800">
+					</section>
+
+					<section>
+						<h3>Pressure ridge & Sag pond</h3>
+						<img src="https://igppweb.ucsd.edu/~dkilb/NG/SaltonSea/FAQ_files/stepover2.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Pressure ridge & Sag pond</h3>
+						<img src="https://th-thumbnailer.cdn-si-edu.com/Z1Oy4lw9yQMaFpH2ATfjidTqqMk=/fit-in/1072x0/https://tf-cmsv2-photocontest-smithsonianmag-prod-approved.s3.amazonaws.com/406d2f46a555a57d6bc23b00ea0c8661f023f63f.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Saddle</h3>
+						<img src="https://alinguistinfrance.files.wordpress.com/2017/04/b5_1211.gif" width="800">
+					</section>
+
+					<section>
+						<h3>Saddle</h3>
+						<img src="https://live.staticflickr.com/4897/32740960808_536ddb24c8_b.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Relieve plegado</h3>
+						<img src="https://laulima.hawaii.edu/access/content/group/dbd544e4-dcdd-4631-b8ad-3304985e1be2/book/chapter10/folding.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Relieve plegado</h3>
+						<img src="https://cdn.britannica.com/89/489-004-E4D1154B/expressions-anticlines-synclines.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Relieve plegado</h3>
+						<img src="https://slideplayer.com/slide/12701893/76/images/4/Fold+geometry+Folds+can+described+by+hinge+geometry.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Relieve Jurásico</h3>
+						<img src="https://lh5.googleusercontent.com/-1JA6BY0dR74/VELnNzs35gI/AAAAAAAAAX0/PCSWPysu31A/s1600/38jurrassique.png" width="800">
+					</section>
+
+					<section>
+						<h3>Relieve Jurásico</h3>
+						<img src="https://docplayer.es/docs-images/56/39460171/images/48-0.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Relieve Jurásico</h3>
+						<img src="https://i.redd.it/gtxboh1vv5o31.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Relieve Apalachense</h3>
+						<img src="http://1.bp.blogspot.com/-9hur-XeZng4/VhQFGoqBU8I/AAAAAAAANxk/8I2WDwNjlsU/s1600/2015-10-06_192915.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Relieve Apalachense</h3>
+						<img src="https://i.pinimg.com/originals/64/75/a1/6475a1ee59c5d7d644998efe32f42d8b.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Relieve Apalachense</h3>
+						<img src="https://eoimages.gsfc.nasa.gov/images/imagerecords/36000/36054/susquehanna_etm_2001294.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Cuesta & Hogback</h3>
+						<img src="https://i.pinimg.com/originals/cf/9f/39/cf9f3905da26a575604d81ca351cf303.gif" width="800">
+					</section>
+
+					<section>
+						<h3>Cuesta & Hogback</h3>
+						<img src="https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-81-322-1539-4_8/MediaObjects/978-81-322-1539-4_8_Fig26_HTML.gif" width="800">
+					</section>
+
+					<section>
+						<h3>Cuesta </h3>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJTIzXfEvqmg-fT_vN_qYQcBKMgV2_RErNwkArRsnltcx5k3pL51hPPyadHlvkcKKlHX0&usqp=CAU" width="800">
+					</section>
+
+					<section>
+						<h3>Cuesta </h3>
+						<img src="https://www.peakbagger.com/photo/p11039L.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Hogback</h3>
+						<img src="https://www.researchgate.net/profile/Ghafor-Hamasur/publication/316735816/figure/fig12/AS:491496169316352@1494193226495/Fig-2-23-Hog-back-in-the-limestone-of-Fatha-Formation-at-the-east-of-Sola-village-the.png" width="800">
+					</section>
+
+					<section>
+						<h3>Hogback</h3>
+						<img src="https://www.digopaul.com/wp-content/uploads/related_images/2015/09/09/hogbacks_2.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Río & Estructuras</h3>
+						<img src="https://ars.els-cdn.com/content/image/1-s2.0-S009830040000011X-gr1.gif" width="800">
+					</section>
+
+					<section>
+						<h3>Río & Estructuras</h3>
+						<img src="http://enciclopedia.us.es/images/thumb/1/15/Red_hidrogr%C3%A1fica_de_una_cuesta.png/400px-Red_hidrogr%C3%A1fica_de_una_cuesta.png" width="800">
+					</section>
+
+					<section>
+						<h3>Río & Estructuras</h3>
+						<img src="https://3.bp.blogspot.com/-V6OOqy1chyM/V853x0QQhYI/AAAAAAAABP8/rWamfVRWYM4FrJ8KwDJVcvnnEZoQDjFdwCLcB/s640/uj.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Valle cataclinal</h3>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/PSM_V07_D409_A_cataclinal_valley.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Río & Estructuras</h3>
+						<img src="https://www.diccionario.geotecnia.online/wp-content/uploads/2020/05/Anaclinal-ri%CC%81o.png" width="800">
+					</section>
+
+					<section>
+						<h3>Río & Estructuras</h3>
+						<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUTEhMWFhUXGBsbGRgXFx8fIRogGhsYHh0aHyAbHyggIRolIB0bITEhJSorLi8uHh8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAH4BkAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAABQIDBAYBB//EAEUQAAICAQMCBAMFBAcGBAcAAAECAxESAAQhBTETIkFRMmFxBiNCgZEUUnKhFTNigpKisRYkQ1PB0YOTstI0dKOz0+Hw/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APuOjRo0Bo0aNAaNGjQGjRo0Bo0aNAaNGjQGjRo0Bo1i3HU4UOLSLl+6Dbf4RZ/lrKesZMEjhkZiLGQCCvch/OB/d0FL/aKP9q/ZlGTggGmFjyqxOP7ihltvTIe+nmufl20iMrBY1dnagis5uSi7F2KgClBNr+EAc0NQ6pudtEB+0bl2JIUIJCCxPZQkON+vf0BvgHQPNxvI4+ZJET+JgP8AU6r328jhQvIaWwOxJJYgKAACSSSAABrlYQDIsiQRgdxGMOR5gWZvhZuCO9XYU1k+pw+HJDFHu428GNwyEqHjcBWxV+5CoTwzgA4I1m9B1m2mDqGAYA/vKyn27MAR+mr9ZtpJGyjwmUqBQwIIr0AritVdXaQQSmEEyYNgBXxUa78cHnQbtGuSiTeR0IxIsbNdyyK7KFEY+8LuSFb7xqUk8L8JJAet1eHsr+IfaIFyPrgDX56BhrF1TdeFC8gGRVTiv7zdlX6s1D89VjeSt8G3YfORlUfyLN+q6o3G5kHEksEX9kAufyJK8/3dBD7Ob+aZHaZQKdkHlxNocXtQ7jhgQDlz7e7onSDbAyEh2nZb4PMYod2JQJwT6W3z70F37DFK3jRxLgMljYcNlQImaQ8qPRTyQCTRy8odRu93HEucjqiihkzADngCzqcEyuoZCGUiwQbBHuNc8hTctFHuHKyRMTiGMZkOHlYFWBBCuckHYn2onphoPdGl3WN4Yo7XHJmVVz7AsQCTyOALar9NLelfaEyOkZQFmLDNCKIGRWQKSW8NlCnLtboLN8B0ejVcpNGhZrge/wAtcx0PbnbyO253CWVFW4AJbzOWDMbYNYB48prQdXo0qk6/tQC3jIQOSVOVACyTjdADnTCKQMAykEEAgjkEHsR8tBbo0aNAaNGjQGjRo0Bo0aNAaNGjQGjRo0Bo0aNAaNGjQGjRo0Bo0aNAaNGjQGjRo0Bo0aVSblpSUgNAGmlqwCO6pfDOPc+UH3II0Fm83jZeFCA0nFk/DGD+Jvn7KOT8hZGT+jAXCuJJeLd5HOPyAjHks+wWgPy1ZLE8KnBoo4xzkys7EnuTTAlifmSTWpbNJCjNO5Ab8PCYj3tfMGPqMjXHPfQe7aQXUKokKE5MBQYj8KVQoHu3bihZusm43EZMhTcGRwLMUbxggXQJKrmFHvZ/XjVW6k2QW1VZm7KSrSizwBlyO/pY1ji62Y7WGBmkLYsZCFJbmqCgrXFBQRQN+50GobmKOFgyTTtIQMGV/vGN1GnjkDHj34FknudLZcHQmSG0dCCiDHGJiFJTsVAJDFzTEi/Kqi/E3pk8VpGDSilV1U4oDTLiCwxjyCqzAlmb1UYAbendOLlpSAzMchCXAEYPc8DLJmDNTcA1wCtAPdjAZcH3GHfFFHDScAW2Xwhgobwx6CjfILeJFXGWVsSaCl6Vhlf3bFWxaiTX/U86lBtwykSEZ0ASKDAfEMsSRkDzY4uyKutZMGlFLIsyr2ayh54PnjtGPuuI+eg86jsDeTQxSkmg6qVdbPHIDdvU2o+mk+6nZFwhkkXcBwvMxkANrS+G0rgkg16VyxxA026phAQIj4bMpsKtqi2MpCqkHtwD7kaw7fYBVt38LhlLNS45encOZHWibbj0APYKnkRtxE25aN37YsVGTN5QkKM3KK2RLmyTVEgUOoZo3uJXor3CGiPlx2+mub3fQk3EhKySLwqrikixhEjbwxVhCVlYyBh24ArvrTvpxsNqBwSWPwKwVLDOzBVWRlRVB9D7k83oJS7YSNSRSSRju7Skq59hk5IQHuQvPbtd7LMdKG20BY0ABZJPb1Tn8tL+nyeOoAjlDH4mkkJRSDTACxkR2rAC+/YgWydV26yfsu0aH9oIawmP3YWsmYDu4vhO5PegCQGX7Tybl8o4WjcLRaPEgynhhBnkRbKGY2tVjYxJuvZ7hWhjxaTEJmC44Klr8SRQLDRtflNEn4ro1M1GpZleMoVCWfMxJDUTyWd7OfH4gF5BJZ9G2o8zgKrtIzS4Gqaz92QRyOSSeLYlh8WgT9a30O2xR4/HDRk07FhWQrkIys7m2Beq8/mA1o2ExbMwDdxoj4kWrfhVh5JwXAphwn04IoW7yAI5j/3eQPR8KWo2pSzKFIBVgCe2N8mzqEM00ArwWjSyR4YV05Y8vbBgx73lVV20FO73W6djGpjdfefav5SBZJGQFKCp7ck0DqGx6gJCTLv1ibtigiQ18QUmRWPwspoH1Oo9MR5xWA+I5ZqfUE4uhb4FZiKyNstVSltX7r7MxJ9404WzZ8XzJkWcsQjviLDVQ/cUnKiCFo2sLSCxLOtcl85A5PYDL7tQO5qvT2NsttBj/VbRIx8yi/8A2w2sfTt5CAil46jTBPDlMh7AX8AGVKOefX31TuvtDtdsSXO6LV3aKbHmvVlEQP6aCX2kXGJdulnMs8hJ5wUhnY13BZkUgejGtZSSyNsQ3hmTlQzDJUDJ46D3K5AiuMZFrhdTj3olbxnHkkVDWQ8iKzBUbnhy9u1cAIwPwWRtuCS8xDGwkebFWAUD4ZBSrK3lPB5II96DounbFIYxGiqoH7qhQT6mhxzrZpNC26VQQVkX2l+7kH1ZQUY/RVHzOrf6UK/1kEy/MKJB+XhFm/loGmoJIDyCCPcc6SdT3Ue5jfbLIUeVSvnRkbE/HiJF5YJkQKPzFXpLt9ssEwEm9hFSFn+9CHhvKDGmKEmIRobAApiAS1gO40aXL1zantuYT/4q/wDfQOubU9tzD/5q/wDfQMdGl0PW9q7BU3ELMTQVZVJJ9gAbvTHQGjRo0Bo0aNAaNGjQeVr3Ro0Bo0aNAaNGjQGjRo0GbfOwjcpWQVit+4Br+euf6d9o5JJRaIkJjV8pGKNji1yAFSMch2YrS4myWxHQ7rcLGuTHjsABZJPYADkk+w0q38O4njZWVIkIBI5kegQaoUobiqth9dBnk6zHOaDHwq7RglpfzX4E+pDH+yPixjr6xEhQwAsVK1Ba7BUjXH6CxepxdBBbLwGJu7kZYxd3aiAFrs3TVpp03ZFMXIiiy7qsQViT2DNm1nQKJZdzPzhJa3gVUIAStZfeBh6kWHPHbvqg9KMzsJZYlNA4mQysgXkknysp+edflxrpjs1lJM0Q4NKGOVgepX4QSbPrxV88BFvBtiSkMSsBZaRhmqVZIjVyVLcGqpRR7lSugytJsnDIJ/2yQBcgJBQrsXdBYUG+CWPPAJ40bjp8Ma5FU84AXBMMCCSVF+a6AOR89i+w8te82pDxiFFaQMGuW1DRyI6vkaLALSkHnzUAR8Kttv0tQD4TZlrydAtBiO1nLFOFFBSaCWSBWg5w7dYXXxQ6OpJEoOQBbIcH8IY4hgceQApJAI6CHq2IZZF8N1/4oBkVcsWIIoOFPqOQK+LgHTfcBFweSIsaxLBQxXj1rmjZHlB7+g0tm6XA/MCIVHdYpmio+pAQ42fYgfXQeSdUhdh4nhM44DQzqH/Qsjj+EE6N3BGFEpZ2JIVVeNcmJ7KGxVv7xavnrBuemsAAxlCA4qkhVzTGyFGMhc8XWQoD0F6W9M+zy+KSlkgMjhcF8rY+TIWR2ObKw9VWyDYN2ZwTNMQ2L44gOy+JSkE4qSI0psbu2b8LVq+Pr6qoSGJnxPJY82aJbFAzd2/FjzYu9Qi6TtigCwszcWfBaqvkKJKT5WbPvZvWzcRJaf7nFkfKgfHID1oKGAUDk+YfqQCGCHq+4kbFHUkngooAAtuWJ8QrYxPKjkm6rnenTt0bLyxtwQFkQScEUfMoj4PqKPYc99NxGwoAqq41QXsfcc1XyrSjq+0AT72fcPkQqxxyeGXbmlUxhW+vmqgSeAdBdu3i2qs6pGJZK5AC5kD4mI7Io5J5oe5ItQ/RllRfGVlcPlHOop45CbE1kfiuinKqAEIIvS5vs1EShgldd3ywmEjSoOzGJxI1tDWIPqbF0WA0wjnkdf2fEpIuJdcr8E+YFldqV86JjLAnIlmrEhQ92ceb+JIWDh2VcaOcikB5EBu41x7GzXFeRSWcXVtuHPisokXNTLgyIcCAwzby8EgVkaN6u2kOQpGOAPwuvniI5ABYHt6WDweDVaQbn7IKG8RYwWuzJCVSUm5TlTriXYyHIlxdKfQDQPt25kWnjZozyrwuGBFcEjgmxzVMPrpTuAFGESlCGxbEA58rZpVCYqGBsgWwCni71pvViUI7sqABQkseLdqVVkQhD6dr+uq+j5uHnADNZxQdgXOXmJ9iVJPcVXdTkDjpu0EMYFnsLLHtx259B/3Pc6pTfxZORMHJPAUZ4UKAAS/WyT8/lrmuv9H3JlM4ZSqBQC5qyqvIZB96ECs5SIowPlHcDnTTpO9laUW8rRhBQCIQWZnsu8Yw8oKKAjdw13V6BrgI6eWZz/EQos8VSgX9Desn2m3a/srgX98PDXjnzggkA+oFmj3qvXV0Uwac5WSpKoArELxyzMBiGPI78D5sRpT1HeM7l418QraxRqQGZFYCaRS3AcnheQfuyQaJ0CG5NjcYXxNrKeRECTFILJHNkglSO3mX3YHxOn6bMpwSKbJioZnC5xyFrZmIBtbOXqPbmqGXbbeLeOrNGHUR+ZWNo4GaxKQSTwWkvIWGU8ChrLD0eWOUvs5XjOJ8TbS83wAGDWbAqrBBPALihQbvtL15o5FgVFa1BYurFTln5OFK3ijt5mThfXnXnSi0mfhxFAjBTi7Rd1VwVj8ycqymmIIuiNLtt1h4mK7vayAsRXKMLAIDBpMcuOKDyHnV/TusbCByyrHt0oAtIHiPuTTRiM2RyVbmvloIfayXLcRRiRvuI83PqC9lWDDlXwimHlH4vQE24+zW0kTY7dY2CsUDsZFZ+ZLdr84N5MeSTrnpJmmmlJtRNKiRiqLIfuzYIyAxjmbj94HiiddtvI0K+csqj1VmX5fhINfLQSjVgFzxdvUquI+tFiQPzOqdvFNdyOvr5VXiua5PN9ter01O4aX/AM6T/wB2qqSNKldUDAghpSbPydyG7emgx73ZTMrn8QHltryMZDxsFACqS/f5AacbecOiuvKsoYfQixqjZSwDyROh9aD5H69ydV9H8qvF/wAuRlH8Jp0A+QVgv5aBlo0aNAaNGjQGjRo0Bo0aNAaNGjQGjXhGvdAax7reBKUDKRvhQdz7k+yj1Y/zJAOfqPUscljGTKLY0SIxV2wXkmuQg5PyHOlkURlVTGrsjEM8zuFaTE8UUNhO5qgO1AXkAY7FA0jM58SReCwHkj90X5+55PvXAA28QuGVZnIBAAVlXmubfFCfS7/1Opp1PboMI2DY8YxKXr5VGDX56UdQ6ncoyTLFhhEWHBsfeMkebtR5FqMeDV8gHEm8mALfs5IA+EOuZsgVXwfP4/TVXUoSfvJJUjROQ2CkoSKJyclb5I4X1rS/fdSmVGd2ZVAJGKJHdD4fvizE+nCDSvqsqUGLqHBDIzeJJ5h2xeVkjAPYhRyCRXOg8l2kczm23JU2UMskuMjg2oK/1aIT3QKOOGoWupdP3fiRCSNsI3KF2ePhCVjGKjsTiXQ1agn4hgFM+kKJIzI5cK65NCI/W8T4irYtTdxg3wbFDBeh6dK9DlZEPGaUMePQXRS+BRsdqNXoFcOwJalVmyClmkYnIheCzKaNejJ8Njy0BTOMQRHFiFbHHNhiWB5oOAAav3v1786vj264YwvjTHlcTzZsNY5579j89Z99JKEKyIjhvLaMymz8vQf3/wA9BaY5kW438QeivVn5BwR/mv66XdT3oZ1CQqz5lUdgpNoLbAkhbFN3YHyng6zbqaKKzEUSgFVkxDSk0HIJDWiCiWAY8N7czg2CmNpJnAVh5ecSVAUBcnJYK1WRfmuz3I0F8PTpJWMjMQTS3m3K0LOShWskfCpVOQfN67/AEEYWFRfABbsOPiaq8oHZRXoBQ7chB0/cLzHPm7Ly8I7MwJbIohDBHogFhagLYBbLp991JOFdI77hZnWyfcKuZvn20F+234Xh50kagKjWzfqaUsdURYyklEmcWRbyMq9+RRazX8NcV6a9h3+QMfhuxIvFEMYCnjvIVv6rrx+oMtJ9xFQ8qly7UPaNAP5HQXbnarGpZZTBGOWCKnPzOSsSe3z7a5hYtz4yTwzPLIS48GXEgR+Qlc1AEcgBByUEXSsTwdNHMkzZK0khiu0MXhLlQIKiTzeKAQVLZJ9DTDxd2Rl4KokeAp2NEKhN5FubyzyXuoBJ8zVoKYd+UwZbxGYWIHFswST4pYWHs23cG8+y2WUfTkceHNHnk2fiqeGYg88EMtAkDuKrm9Y9jtZLWamWVkUGsS4QUFLh1BJaiW9RwvNXpigeMFTACjdzC3a15JU4kcivJZ5HGgp38k0XlY+NEQe9qwoCvOoCDm+WK9+4rnL+2CRPD8YDLsu4QG65AWSsHFDv5j87Grdn1B/Ng5ZVNEEeIV7EKcalVqIJDox576073ceHC7FEjkYGq5Hb+sawvlUcm64Feo0CveSeUQqYy2TB1pnUN4ZPwM1FFtVqwM3XseNMYNhOkSqZJGoAFUCqT75O7E33tlN88awdNaMAlphG/lAXixjfAU8viS4JN2+bVwoVlHKLDXuZSORalB+hEaEfW9BGPbxRnOdYlrlWkmLtf1k7fQHXHHYyxsZY2d5JEOTbeN/jkLM/3kcVOiPjjk10KsAm+72REjeL4Kra8SHHI+3Ydq+eoHeN4lkhIgPMHXHkjgWT37EnsBxyTwHOdX+0G4ZMRHJtkZlQPIrh2yPawuEZPayx78c1rX0/cK6yYFovIhC2itEVUhYgRdLVURkOJO3I1dv9+srhhTwxluRTBuMZX9mVFYoBzbM3BwrSLedMdXB295ESFiqfeKUKLRp/NC1DyUzenIGIB5tovDj8QiQyTOJM4lAGRUJ2IoZKMqcVbHm6072cLLkztbNX7wHA48pYhT74961zGw+1IBBkKRse+ZIRjf79sYjZIwkHBFA8HWn7VdPafwmZsUUdgniKS7Lnl922NICFcVy3eu4MZZcSYzODZqp4uGv0BAQHuB66x9U6Pt1glkmiVQiOzLC7orhVJOSrSmx6MD+ej7OLIEf/AHiN5DiAPFMqjEDI0SuORJ8o4AC9zdy+2ADQRRyOFEkqZUSMglyMo7Gjh+nv20CX7OFxNtkkXElJGNc3LFHFGQCRQAylIQcfFwKI12fT7KhiGsju+ORFki8eB37UNIPs8reJIzrYhRQigcq0xaSQAE+gMaAegU/vUH8G5XyqEdb4A8MgD9BQ0GzWHebFZfjJIo+Xgrf7xBHJHsePlqe9DEAKqsCaYN2xo3x6n5aTS9PfBR+zpkat0SMFRfIxZyMvS7Yevy0DRtgLTFioQUqrwL96HevY8a9Ax3Hykj/nGf8AqH/y60bZMUUURQHBr/pxf01l6twEl/5bhj/CbRvyCsW/IaBjo0aNAaNGjQGjRo0Bo0aNAaNGjQGk3Xt3KvhxxDzSE2QCSFWrqlbkkgWaAF83WnOknWNp4s0K2vwyE5JkCLj4qwL+tj5aBRDvHwCrIka8+UFVY8m7H3zs13fYk366rkEYYrLIzE0QJAFoHgAftTMSDi3wr7/LTIbPEDISBAeTJMsSgfww0D9GGt2zigIZdtjGe5eJB/6ipUn9dAkMMkmOEbsAbIYO6sKIoiYxJVm/Kp7DWqfYzBPPKIVsUFJPzoLEsfPpXm03/YAPNk7uO2cjVfpajy/y0BJR5nkFLzjHH3A9OSxP5UdAv6d0eFra5TzVsDET/hCsR/FetUexok7cwoOxYR5MT622Q5+t6jutzE5AniCp3DTFAPyUsT+oGoy7tSoXb+JQ/wCVEKI9gzgRj66Cnd9NLSExoVJ4kZ6MclAi2QOCW570PS7oV7JupQRGUpxz/u8qMa7WVlCmvyP11a+6lRAH8ONTxlPICx+RVAFP5NrJt46FI0hH7u2hESfkz/8AR9B51HdRUGaFi4+JmhlQ8euccbV+ul8HVVnzWH9oZVByX71s25pQzLQTtZJF3zwpBZ7TpchVM4Yi4At5naVsq5IB7C/Zte7xpCjKksryC6WKPFLHpkRx7fHoMmx2W4LEmBVUsCVZlVTioCikzIRTyFPcgHj4Q3G3ncnxHVAD5TGgJqgTy+XrY+EdtUrtypzECIRf3k8mTL6cfFxX9saobfMzqPGaRSGv9mjsAgriCfPVgtzkO2g07jYGyMDL7maYhT/dUEf5RrFs9wMnRZUjxbHHbRWewNk0wrnviKIPtrQduG77e+eDupb5/sj7zn5eXWo7abHmXEDssEYH5W5b+QGg8l6dCGUyZOzHEZsxB4LVXwj4fb0GvJNxAgMcUiIwPKxKGYf3FBN/Mg6zvsWccwZf/MylgPmEXNb/AE1ui3kEYCBkBHdIxdH1pVs6BcNrkSRHuJC1WZH8JTQoWq4ntx8B1kk2byyEo8FqQzQK+VMKCyFipogCscKbjkEXpxBtYpCS0cjDv99kR9Arnj/CNT3U8cahFljiPoKF16gLY5/I/TQYoepSoalgKXduqMRf71R5ir92Ghd54ptSXK8ZbeYGv4kYjn5ENrTCqV4jzykA95D4Y4+QVLH1saWb+WPcHzRbeSrxPhNuDX91QF/xHQaooJJl85Bxa6ljNj2IYCOj8wDXvrBiGkZkBcIyhM2JskfdR835cj4xY2eIzzXlu2nTKBCbY8/vMsKD5ARFm/UajH0W1LvjAqs5IDScUWXPIyBeRzZXsdA4SOZfIgjCgCmYsxPuSoC83f4v9dVbxKUifcqqkUwARQQfQ+Jka/PSZ+mbOiXbcTgCycpMeBzZWkr6mtMun7IR/wDw+yii+bFFJ+f3Ycn8yNACaBvhM03p5TIyn0qxUejwHo+BtI42rhpSo59z4Ycn6WPy1DxQhZTu0UlixSJQWs9+CXP+XVG6UO0eKbiQ5ciV8FcYsCCjlbqw3CH4dBn6YwRmi/4y4kK7cqaKp8PxI5zcnm2aTtVDfDCqLncgD0BIoFqFuiwq6Zi7GwR5jdd9Yd5tGYYRwpCUJrwY2buKIsiOOj6iz2B7gEa9zO64NMrxBRy8VsPkKBNEdyCrr7Me+gm+winIaQRSWDjNCWV+PQFb9P7f5aW7L7OyRi9nuZUUceHKpXsSezLgLur8Mngc8cvtn1PbOQY5oyW7i1BbtyRwb41l6pHLQzVX7hXjEist/wAIc/8ATQLJ06l2lgg3C5GuFJx9LJZBl70levHYYGlebcN40eEkSCGKJPNg0wNs1EizHRBIxGJ5NHXW7SB8hfjIByQXV1b5W1v8/TXKz77Hc7uVEW0OWWPmYwxspXjlsja/ka57A6+zYUwzFWC3M45vyhcVUdx+EL9bv109gZKCoVodgCNKulRYbKFRVlEJPhlgWemZio5osSflet7LHGodwileMsQKvjj2v20G3RqiRSQMWx5B7A2PbnWfqTEJkJFQAgksaBHtkbrmvT5cXegu3u0WVSjXRrsa7azT9NDCsyLXBu1MvPFenc8iu+pftwbiBopD3I8Wv9A3/TUI97JkwkiKqCArIS+V+tBbA9OfX9dBd0mcvEhb4hat/EhKt/mB1t0u2Xlmmj9DjIvyDDEgf3kLf3tMdAaNGjQGjRo0Bo0aNAaNGjQGlXUJSs8RCs3kl4Wr7xfvED9TprpT1bp5leNwkbhA3lk7W2NEcHkV7euggOrozU4Sh+EN4j380jDAfqdePvHm/qUmABIJ8iAkGiDncgr5KNEm33hNK8MaeioDf+JlI/y6r/oyTuyxuT3zlcgn3xxx/RdBmdAGBeSBWBsAs87gj1XIij9F1ePvLAO5mxNHnwQpoGiBg1UQezd9a4Y9wgpItuo9ldh/omqJtlK7WY4ue4E0gDdhZUKAxoAWb7aDO+3jQ+YbWE2rEDzOcSGBvyG7HsdNF6llRjjkce+OI/WQrY+YvWU7XcKKgTbRe/DH+QC8/P8AlrLB0ncBAjPmFACjxmUAAUP6uNSfzJ0Gncyyqc5JIYVqqY5833F4AGrFc/y0bfdea1aec+yoFTn2JCqf8R0L0+VR92kETHu62W/Vk5P1vUP6MmPxlH/jeQg/3eE/y6C5Zd1TkrGi3aliWYLiLBVBRN32Y+mqspX9Z3/gRYV/+p95+YJ1rVNwBQ8EACgKav8AUcakE3Pq0P8Ahb/3aDLDtIYxnOkStfDPIZDX8UgsH5DWjJJjSvJQH4Cyqf74Av6A6p2/T5ENqu3B9SIzf65Wde7zbbt0KiWJLrkI917AiQEH5/y0Fj7BI6aNIw/bOSyf8Rtj9LGiZHAuXcBB/ZVUH6vkf0I0qT7NyXbyK592zBH95GVvyJOtsXSGU2q7fL94xsT+pe/56CleqIrFYMpiaJPiO49RxiHr19FGrIpt2TxEFF3RxUH+8Gdv8gOrztJ8i4eIMVxsI3ayRwWrgk6p/o3cH45g3+NR+iOor63oLN4JSpE0kEaHgggt/NmUf5dZIIIFFK8zg+kKlB/ihVB+rauHSJA6Ov7OpUnkRGzYIonO/Y/lqc213rE/7xEq+mEPP5l2YfyGgzdM2Toq/wC6p4iijJK65NXAYsodiSKJs+urd/v3iALzRL5l+7QeaiwBrJjdCzwvprz+hpT8bpJ/GZCP8GeH8tWr0+VRihhjF/8ACjxv5d/9OdBoHUwf6uKV/ohX+cuIP5HWabqsmRXGNT7F2dx9UjU/+rVu12M0ZJVkJPcsZGP+Zzq8LufeH9G/76DLHDLMGEkjqpFUsSpkD3+PNv8ATWWLpOVqxjNd1d3noenDsFH+HWvc7OZyC4iavTKQD81Bo/mNEeznVSsa7eO/VFIr8qo6A8RSnhpDKwoWVXwu31KGvpr1VhhWyIYJCD+6eff0La92+33Skkuj3+8T/oqgfy1YIp8sqgs9zTX+ugggahKJJZfZFCKD6dmxNfVtRYIH8WaGGMH8bsud+g+Gv0Y6qbp24YkvIGs8DJ1A+VIygj63rUsG4AAUwgDsMG4/z6DNMqTtiWlZD6CIBO37zpz/AHTqmTo0YbGLb7dKHD2Q57c0gDfnlrVuNjPJWTpx6ASAfmFlF/nqsdMnUVE8ERPcpByf1cj9QdBVJ00IKb9plY8/dTyqB8vPNQ/XSOX7LAGQvK0UUxIaLl5CGKM6h1Ym2xIPDGnbmzeulj6fOrZCZS3qWWQ/y8XEfkBq8Rbr1lh/8lv/AMugwJtUNBI91jwLM8iBR27NIG4+S6NztImKxx7hg98jx5WPb2WUV9Tq/c9MlkrxHgYjtlASB+RlrVi7OcLiJYlFfghI/T7zjQZT0coOH3EpJ/FuXQLx/Za6/XVU2wZaZ3kVb+GOXcyMflYcV9cdaIujyKwbxVLDszIzEXwaLyGvyrWz9nn9Zl/KL/ux0Cx9uKyCTqB+KbdyIv8AKRj+oGoSxxOAEmnyNWYpJpAPzBxH1bTQ7SYijOD/AOEP++otsZSpVp7BFH7tdBnh2qx7mIB3YmKS85C3Yxc0Tx+WnelOw6OI5A+Q4VlAWNVHmKkk49z5R/PTbQGjRo0Bo0aNBg3vUkiZVYMSwJ8qk0AQCSfQcjXsfVYGsCWOwLYZra8E8i+OAT+R1l6ltYJJV8UDJYpCpYCkBKZOCRwwoc/XSGDpkBzLbtRHyECstgN45YHJe5DP70VNV2AdVD1CF2wSVGaicVcE0DRNA+h4+uoR9UhONP8AG7RrweWTLIfQYnnt+o0mgG0jlEw3QPhIBjmtUw4PHqQynj3Hvq+Ha7aV1ZJj4iuzrT0QZMmKlexHB4I/DXodA5g3KOzqpsoaYexIBr9CNY4uswt6sosjJ0ZVOIYmmYAEAIxvtqjp+5RpnCs+RJJyUU/hfdNR9g1H0+XGlUvSNopdTuI0bxCxrw1YNTt5itMaD3ybr66DpV38RIUSIWNUAws2LFC/Uc/TUJOqQBcjLHjRa8h2Hc8HkDSB+lbRbjacA0WY5KKAMAaz6cxAf4vbUX6Pt0iZ/GZ7KLkgD8kSKtDk8iYcX2r0Og6X9sjuvES8sayHxDnHv8Vc131F+oRBsDIoYDkEjiyoF+xOQoet65+TpkMfgzPKyedQuShTQJcK1/Qlie4HawCK9/07aSkk7tAC1gB07zA2LBs5AtQP8wDYdTLuEX4mVa72QP8AXVb72NQGaRApFglgAQBZIJPIrm/bSeTbQbmVWScGsH8MYknw2+LnnGxidVbjb7R0UGcL4aNRLBSF8WNs64OOUSgEUCD9NA5HVILP3iiioskAEsLUAng2O1as/borUeIlt8IyFtxfHPPHPGuaPSNl8P7SPwLQdPVGUCq/EpJ/L2vU02Wy8QMNwto7SEZqeA6mq9FQooHrx786DoJ+pQIWDyxqVrIM6jG+RdnixyL1ZJvY1YK0iKzdlLAE81wCbPJA0jn6ZtsvGaehKTh5lomRSpxJHN5X9QNT6nt9uH8+48NgkZxtP+GxwemBPBbt2PtoGknVIFvKaMUATbrwCaBPPa+NQj6xtzf30fGV2wHwMyseT2BUi/lrnJenbIFq3fmKjs0ZNgR+YWOGIVO1DkH1Grm6ftWI/wB6b4iApZD5nMliip5uQj5mhoOiO+j8nmB8QWpB4I45B7cllA9yRqKdVgJoTRk2ooOvdxajv3Ycj30tm6XE+EPjElI2jPmGY/qXDg+jqQjdvxD5aw7IbJXSdJjVh1XgBA6N3sWFp7Nnjy/mHQSdUgUkNNGpUgNbqKJugbPBNHj5ahN1jbqCzTRgKSp844I7r3+L5a5zqu124mBO5a3d8lGDELjuAw5UkKMpLvsFodtaZemwxeYSTSGUvGoTFiDTseSOcQrdye1c6B2/VoBX3qG3CABgSWJAxoHvyLGpnqcPh+KJFKXWSnIXdV5b9dINl0fbSk+HuXcnFmFrZVvDYKfLYBwTng/MXrSv7NGsm3fcWTRdmKgisFANAKDiqiq9CffQM16tEfEot938Qwa/iZfKKtvMrDi+RqzZb1JQShJqrsEdwD2PPy+oI9NJk8BTKf23l3bI5R2CMjhZWyq+x9Fr3v3pJ28B8u4QrioADL8AWwT2AALMfLQAKitB0mjWDZ9ThloJIpLLkFyF12ugdQl61t17zR/FhwwJytRjQ9QWF+16Blo0tl6zt1XLxkPxUFYEnAWwAHJIHNDXo6xt6JM0YoAsC6grl2vni9Ax0awt1KMKGLUCzKCfdcsvyGLG/YahL1nbqgcypjYGQYEeYqB+XmXn5jQMdGl56tt+fvo+Mb84/ELX19RyNTTqMJJAlQkGiAw4NhaPzsgfUjQbdGlU3X9qqlzPGQFZuGBJCgkkAcnhT29tWHq8F14inkgkEUCAWo+3Csf7p9tAx0aV7zrCRyiJg1nDkAUPEYqt833HoDXc0Nattvo5ELo6sovkHjjQatGle361A7BVkXk0vI83lVuPl5h3q741PcdXgTINILXuO57XVDufkNAx0aVJ13bEX4o9O935hft6AG/ajdUdRg69Aw5bE1dN3rHL0uuL4PPB0DfRpYOrxlHdbKoB2HcnsBf4r8tGudeSdbgCOwe8AbA7muKF1dmgD2OgaaNK163ARfiDtdUbHJFVV5WCAvc1xr3+nNv/AM1e1/ljkf0Xkj04vuNAz0aWHre3uvFW7x9e917drsX2sH2OoQdehcIVb4sDVUQHKgWD82UH2yX30DbRpbuurogBIY5IXWh8VFBiLrzEutD5607TdpICY2DAGjXoaBr9CD9CNAt61DCzXLKyeQqyr+NHPIPlJ/CfhojSIbbZ5UXYRiMgNgASwkQkkAfErGscBXnvXVdQ6VHNXiAkhXUEEig4pu3y0vP2Y22IXFub7tdZNkeDx3+WgyT9P2ceCeMyMFLJjRNMqpYAQi2VCAK581Djg6QdrFIzJO/NKc6ohU8QebH4QJe5PsPStNd50WJ++QGKrQY0QhJWweDVng2DfIPGsjfZXbkBTniBVZemKrXaxwoHFaDFBNtI5PEjk8MnxCzkL95lIrsp4yJBOI48oy1fPs9rNOvnLNmxIFFT8Jo2O1x9x6qRfHGw9BjLB2aRnAPmZuTmKPpX4R2AA9NGx6FFHIZVLljXciu7V2Fn4j3J4odgAAS/0fsQATOy0g+IoSfMak5U+Y53xXDA0NMAdq0fgSbhZVV4xTFTeNYq3HmsoxJPz9tXbf7PKoFSyKRVFSBRCqgaiDbeGFQ3Y4JABOj/AGbhpFBdQhtaI48zNVkEjljyKI99Bn3h2skQiedQgLhccVAGLDHtWKo4o+vl99U7rYbIO5eaixexa8F/ERgPLfJZuCe447HWvb/ZaBAQhdQQVIUqLUgAKcVFgUKPc+pOpf7NQh1kYuzhg1nGywkzBJCgjkngUKPbtoMnThtElaWOVnfkBePMWSNhiaHdDGo5on56y7npu3WIS5u94quHh/LBvvaAbAKDZA/PTX/ZyIMHUnJTa5UQCFTH0ugUU8EdvbWqDpSCNI2JdUKlQ1cYqFA+Y4v89An2fTttOixpPLRXMISpIB5N2ps24YmyRakGiLr3Wx22bK8z4DsBXldOLPBZn854AK1djTna9HWIjwndRY8tjHjG+K9Qqr8gOKs3Kfo8TG7cMCxDBuQXPNfqR9CdBh3W22qpFE0pUKhrGvOjckGlqnwvy0Ticex1XLNtZXZhPIhLJyOBlihVxkp5oqvm4vir1v3PRYXsedQEVMVagQmWFj1rJuDwb5BoVR/stt+AcyF5Ay47qfb+wv5CvU2C5F2QHhhnCYr5vq64rRGRYmNPQ3kK76lF0/Zs6qksjFnVwBWPI8QNytH4R5hbcgE0dNk6BCGViXZlxos5PwNkv5A//wB31HZfZ6CJ1dA1rVW3soUX6ngep0GePcwDcyTM4DFRGFo/gZwzcXyzLiOxPhirrSz9h6eCbnc0gWvYVGoUUmRYWnlskZdudOx9n4yWJZ+WJ4Yr+N3W67lWdiPqLuhryb7OwMpBy5u/NdlsMib4N4L3+egVS7PaHIDcMWybK+QWk8RXfhRzi0i2PKtc/DrfuZ4HWPLdMGViyutA+dTXdSAMZFAPzXmzq2L7NwKzMmam7sOQebJF96Nm75+fAqH+y234vM12troAIAoJ5AARe1dubs2GPaTbOJwUmZVRRQIOIVsgyglb5MQdiSaC3wCdR3/T9sySzMZSEzYp5PLbOJAMhj5mz+I17ECtMd39mYJLsHmj39gw9QfRmH5+9EXx9KGLxuxYSXkOwBLMzEeovKvoo0CPpW120gppH8R84wCU4Fl8VKZIa5I5N+YG6IE990rZxvg8rAlbKgooAKv941KB+Bz+TUO+me5+z8TP4gLo/JUqR5SVK2ARx3PHY+t0Kv33R4pCS+VkAWDXwrIAfrUjfnWgybKDbxlJfFJLsaZq8zMSGsBRRyNVQo8fLWHb7fZEKV3JIK4ocloKPCdQDj8ICKQT3BPJ4013H2fjdI1Zn8jF7sWWLZFja1eXPAHt2Naz7n7MQHG8qAAqx2CqnqLHlWrBH+lAsji2alv94cAriWJSmCqqqvw3a/IA2Dl21e3SdrIREkz35gcCvqqA3xVVHQ+YPtwzHQo8s2aR35tmbk5DE9gAOD2AAHoNHTugxRSGRS5J48xB/e+Vn4j3J9B6DQK532ngxp41AMzeYKSRNmpNEVX3oIFHgrY515+x7QURu24ZaOSnzWjBrKm+IgPYBT21ui+zcYC/eSArWJUgUVCgOAQfNiig3Y47Czrw/ZTbezV5aHlNBQVrlebBIs21VRFDQL/6I2TAgbg0pUVaUKHh/u0S2YGRs8ijWjdpsVUFtxIVRSwQUfIp8TCgl1cRI/EaPJ00b7OQkBS0hUcBS/GKlSE/hGIr19ydeR/ZrbqCgDeYUSCB2EgulAF1I3Ye2gXR9O2YDRh3OQxZhXdFkocKOcWeiAbwPNjVU8W3g3PhhnRsi5k+68pZJq4sOVGcjElWAscgA6cp9no1a0Zl8xbjvkQQCPTgM/cEnLvwNad50iGXLNbzIJ59gVH8idBjMG13TsQcmqO+CCoR2IFkWCTkCO9XrN0/cbZclEzsslC2/GWCoDwoIAURqCQFNr3J0223TRG2Su5u8smJyJrk37VwBQFn5ap/oCC1NN5QoHnbkJhQPPI8imvWvmbBfMmzjkJMjBlZSwokMUClbpTeGIY0fLyTxr3PZmXLxGLZsAtNQLWrkeX4SRy1lQV7jTHc9Ehdjln5iTxIwAJBDUAeMgSDWoSdB27VaGgRxm1cMzCxdUCxP/60CmAbLylZpSVuiM7QEEtyF8oey1nvwV7CvXj2C5R5vZpSBmTa5RhRQ5bzEY9zwarTRPs5twKCsAQRQkcWKI5puaBNexN9+dTi6Bt1YOFbIEGy7GyGDZGzy1gcnQKdpNshG0McjLm3lZ1NXSurDgKFthV0CQR6aqlj6crMrSOLLFvjxJAy+ILRrHg3ZIPJOnUf2f26srBDa1VuxHAAAIJoigO/rZ9TqcnQ4CbxIPm+F2HxXfYj3Ne3pWgRTw9PY+d3ZivZlYsxZgw4K2XsqcPbElSANSli2Cx0ZXVDdAFxXDRuQAOLCtZ9KJ45OmifZvajsjA+4kcGwbysNeVr8Xf+epH7Oba7wb5fePx8XbzcXk1+96BRH+wIzFc/NnZCNVZKSBS2bZvL3s2AeK1u2XQNuQksJ4YRkNwbVfDZeavnw4+98D3JOtk3QNuwAKHgUKZh2II7H3AP5a27TbrGAi3QAABYmgAAByT8v5n10FE3TkcReISxiZWBPFso7muDz5q9wPbXux6eIuFdyoFBWNgdgK9gAK/Umyb1v0aD/9k=" width="800">
+					</section>
+
+				</section>
+
+				<section>
+					<section><h1>Ambiente volcánico</h1></section>
+
+					<section>
+						<h3>Dinámica de las erupciones</h3>
+						<img src="https://d2vlcm61l7u1fs.cloudfront.net/media%2F114%2F114d2154-3781-457d-882e-e9278bce454b%2FphpaTFUym.png" width="800">
+					</section>
+
+					<section>
+						<h3>Dinámica de las erupciones</h3>
+						<img src="https://osu.instructure.com/courses/29009/files/4988776/download?verifier=gTC5dgcDHwZgbvbSR6d2UWpi7Lp760dmdgmljIfo&wrap=1" width="800">
+					</section>
+
+					<section>
+						<h3>Composición</h3>
+						<img src="https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-81-322-1539-4_16/MediaObjects/978-81-322-1539-4_16_Fig5_HTML.gif" width="700">
+					</section>
+
+					<section>
+						<h3>Type of volcanoes</h3>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCWn00QE3wtg2yAfGL9bs2rijzncdM3iRfwtHX6A6avMoBL1AQe8vgYwZLgGkN5P-G8Uc&usqp=CAU" width="500">
+					</section>
+
+					<section>
+						<h3>Type of volcanoes</h3>
+						<img src="https://sierra.sitehost.iu.edu/papers/2014/tarnowski1.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Volcanoes & Water</h3>
+						<img src="https://publishing.cdlib.org/ucpressebooks/data/13030/51/ft6v19p151/figures/ft6v19p151_00038.gif" width="800">
+					</section>
+
+					<section>
+						<h3>Cinder cone</h3>
+						<img src="https://openpress.usask.ca/app/uploads/sites/29/2017/08/cinder_cone_Capulin.png" width="800">
+					</section>
+
+					<section>
+						<h3>Volcanic neck</h3>
+						<img src="https://media.springernature.com/lw785/springer-static/image/chp%3A10.1007%2F978-81-322-1539-4_16/MediaObjects/978-81-322-1539-4_16_Fig27_HTML.gif" width="450">
+					</section>
+
+					<section>
+						<h3>Maar</h3>
+						<img src="https://geology.com/stories/13/maar/maar.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Calderas</h3>
+						<img src="https://media.sciencephoto.com/c0/33/54/45/c0335445-800px-wm.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Calderas --> Tall (Filipinas)</h3>
+						<img src="https://i.pinimg.com/originals/6f/b1/f4/6fb1f45f2af2a6d7c59f4e5de9c5cb69.jpg" width="800">
+					</section>
+					
+					<section>
+						<h3>Calderas (New Mexico)</h3>
+						<img src="https://media.newmexicoculture.org/media_files/files/Valles-caldera-aerial.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Calderas (Nápoli)</h3>
+						<img src="https://qph.fs.quoracdn.net/main-qimg-8cb41fa5d8d68eab48804c44584be411" width="800">
+					</section>
+
+					<section>
+						<h3>Calderas (Krakatoa)</h3>
+						<img src="https://scx2.b-cdn.net/gfx/news/2018/mapsshowingt.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Calderas (Krakatoa)</h3>
+						<img src="https://i.dailymail.co.uk/1s/2018/12/23/23/7771364-0-image-a-12_1545606951256.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Materiales piroclásticos</h3>
+						<img src="http://worldlywise.pbworks.com/f/1272808249/volcanichazards.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Depósitos de origen volcánico</h3>
+						<p>Los sedimentos y depósitos de origen volcánico pueden ser divididos de
+							acuerdo a su origen en:</p>
+							<ul>
+								<li><b>Piroclásticos</b> → primarios → restringido a material generado, transportado
+									y depositado por vulcanismo explosivo subaereo (Explosivo).</li>
+								<li><b>Hyaloclásticos</b> → primarios → Fragmentos formados por el choque térmico
+									cuando la lava caliente entra en contacto con el agua fría (efusivo).</li>
+								<li><b>Autoclásticos</b> → primarios → formados por movimiento mecánico o gravitacional de flujos de lava y/o domos (efusivo).</li>
+								<li><b>Epiclásticos</b> → secundarios → fragmentos volcánicos que son producidos
+									por erosión de rocas volcánicas por viento, agua o hielo de rocas volcánicas
+									preexistentes consolidadas.</li>
+							</ul>
+					</section>
+
+					<section>
+						<h3>Depósitos de origen volcánico</h3>
+						<img src="https://slideplayer.es/slide/2902487/10/images/7/Volcan+en+erupcion%3A+columna+eruptiva%2C+pluma%2C+caida+y+depositos+de+tefra+y+balisticos.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Depósitos de origen volcánico</h3>
+						<p><b>Teffra: </b> Material expulsado, fragmentado y distribuido por el viento, no
+							compactado se denomina tefra, independientemente de la composición o del
+							tamaño de los granos. Los diferentes fragmentos, sueltos o compactados,
+							son llamados piroclástos</p>
+							<img src="https://i.pinimg.com/originals/d7/fe/a2/d7fea2454c07e930d89b6eda3802c5fe.png" width="500">
+					</section>
+
+					<section>
+						<h3>Depósitos piroclásticos</h3>
+							<img src="https://i.pinimg.com/564x/1e/66/42/1e6642bb9257b110149a62086b2dcd00.jpg" width="1000">
+					</section>
+
+					<section>
+						<h3>Caida de cenizas</h3>
+							<img src="https://volcanoes.usgs.gov/vsc/images/image_mngr/3100-3199/img3190_400w_241h.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Flujos</h3>
+							<img src="https://i.ytimg.com/vi/N4H0KrMPEyw/maxresdefault.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Nuve ardiente</h3>
+							<img src="https://lh3.googleusercontent.com/proxy/5buFINssFFBCKkwswnBbxhDDqUUUAa2mTZSpTW_UclKbBOcX0bOTt-FCQLlfPNCTPx56zeB9zi5qIf4rao69nIs3USKKiNS-_H59w6LwyuGmu6rUY4RphlYc4tEdDoMTHVQ1Bjwc9dqJYR2V9nnKB28qqkZKmofFXZBe_qEhhmfvbt1xkiNZgaTtLewNb5ssdGyz" width="800">
+					</section>
+
+					<section>
+						<h3>Modelado granítico - estructural</h3>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR69f6sxiPi2a-T-b0PUzp5reROOOsstzEXewTyhMRzgN_2kfQ0fgRBWPD5P-I_5dxmaC8&usqp=CAU" width="600">
+					</section>
+
+					<section>
+						<h3>Modelado granítico - estructural</h3>
+						<img src="https://4.bp.blogspot.com/-pp1sCnBXtfs/Wnx9-6gAxmI/AAAAAAAAJH0/ekW4l1-8-u0UYyp28Tj6bdb626Wn3TZ9wCLcBGAs/s1600/paisaje_granitico_formacion2.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Modelado granítico - estructural</h3>
+						<img src="http://www.madrimasd.org/blogs/universo/wp-content/blogs.dir/42/files/1283/relieves-graniticos.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Modelado granítico - estructural</h3>
+						<img src="https://maravillasdelatierrablog.files.wordpress.com/2016/04/relieve-granc3adtico.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Modelado granítico - estructural</h3>
+						<img src="http://3.bp.blogspot.com/_JycOb8uvqHM/SE7AzgxES4I/AAAAAAAAAAs/w0h8z0VIDtY/s320/piedras+caballeras.jpg" width="500">
+					</section>
+
+				</section>
+
+				<section>
+					<section><h1>Ambiente glacial</h1></section>
+
+					<section>
+						<h3>Alta montaña en Colombia</h3>
+						<img src="data:image/jpeg;base64,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" width="450">
+					</section>
+
+					
+					<section>
+						<h3>Definición de glaciar</h3>
+						<ul>
+							<li>Gruesa masa de hielo</li>
+							<li>Se origina en la superficie terrestre por acumulación, compactación y
+								recristalización de la nieve</li>
+							<li>Con evidencias de flujo en el pasado o en la actualidad, Su existencia es
+								posible cuando la precipitación anual de nieve supera la evaporada en verano
+								La mayoría se encuentra en zonas cercanas a los polos, aunque existen en
+								otras zonas montañosas</li>
+							<li>El proceso del crecimiento y establecimiento del glaciar se llama glaciación</li>
+						</ul>
+						<img src="https://www.elagoradiario.com/wp-content/uploads/2019/07/Glaciar-enm-islandia.jpg" width="650">
+					</section>
+
+					<section>
+						<h3>Tipos de glaciar</h3>
+						<img src="https://images.ukessays.com/180520/3/0654118.004.jpg" width="750">
+					</section>
+
+					<section>
+						<h3>Localización</h3>
+						<img src="https://i.pinimg.com/564x/63/5e/44/635e44ef618cfea45a54345c43a242c2.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Glaciar continental de casquete</h3>
+						<img src="https://lh3.googleusercontent.com/proxy/DIEbyVTqPDHh3QZhC5aqcyCmeEUPMScCvTZOIh0FB6erXhC9qUNjjtVkOihZPlq0IpZX7FomjLsxFnatiMMOf5e3o2j2k8UIfrweKecv-YCK5_VlOlqYbto8Xn40joHJQc6ktMdVXo0RO87GHEGH5Rh0tTE" width="650">
+					</section>
+
+					<section>
+						<h3>Glaciar continental de casquete</h3>
+						<img src="https://www.exploratorium.edu/sites/default/files/images/IceSheetandShelfAnatomy.gif" width="800">
+					</section>
+
+					<section>
+						<h3>Glaciar continental de casquete</h3>
+						<img src="https://news.gatech.edu/sites/default/files/uploads/mercury_images/fig-2.-grounding-line_7.jpg" width="900">
+					</section>
+
+					<section>
+						<h3>Glaciar alpino</h3>
+						<img src="https://laulima.hawaii.edu/access/content/group/dbd544e4-dcdd-4631-b8ad-3304985e1be2/book/chapter12/glacier_figure.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Glaciares extintos en Colombia</h3>
+						<img src="http://www.ideam.gov.co/documents/11769/147695/figura_glaciaresext_sincabezote/06fdff82-5259-4997-96da-77d9015b7b7f?t=1531425547731" width="600">
+					</section>
+
+					<section>
+						<h3>Glaciares actuales en Colombia</h3>
+						<img src="http://www.ideam.gov.co/documents/11769/147695/Mapa_glaciaresColombia/297936f7-5b68-4327-a30f-86625d916f91?t=1531592893109" width="400">
+					</section>
+
+					<section>
+						<h3>Evolución de los glaciares actuales en Colombia</h3>
+						<img src="http://www.ideam.gov.co/documents/11769/147695/Grafica_EvolucionAreas1960-2019/e40b4e01-6db2-46f9-89d1-9836c1704e0d?t=1576272728105" width="800">
+					</section>
+
+					<section>
+						<h3>Cambios en la temperatura</h3>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/All_palaeotemps.svg/2000px-All_palaeotemps.svg.png" width="1000">
+					</section>
+
+					<section>
+						<h3>Cambios en la temperatura</h3>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Five_Myr_Climate_Change.png?1621348038352" width="1000">
+					</section>
+
+					<section>
+						<h3>Cambios en la temperatura</h3>
+						<img src="https://www.global-climate-change.org.uk/wp-content/uploads/2019/02/Screenshot_33.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Origen de las glaciaciones</h3>
+						<img src="https://i.pinimg.com/564x/f4/07/51/f40751a016623a4c8335b35e4cc437ca.jpg" width="500">
+					</section>
+
+					<section>
+						<h3>Changes in the obliquity (tilt) of Earth's axis</h3>
+						<p><b>Oblicuidad</b>: cambios en el ángulo del eje de rotación de la tierra (+ ó – inclinación). La inclinación oscila entre 21,6º y 24.5º cada 40,000 años. Actualmente está en 23,5º. Este fenómeno es el responsable de las estaciones. Aunque no cambia la cantidad de radiación que recibe la Tierra, sí varía su distribución sobre la superficie.</p>
+						<img src="https://d32ogoqmya1dw8.cloudfront.net/images/eslabs/cryosphere/earth_obliquity.gif" width="250">
+					</section>
+
+					<section>
+						<h3>Variations in the shape of Earth's orbit (eccentricity)</h3>
+						<p><b>Excentricidad de la órbita</b>, basada en lo estirada que está de la elipse. Si la órbita de la Tierra es más elíptica la excentricidad es mayor y al contrario si es más circular. La excentricidad varía entre sus valores extremos cada 100,000 años, y esta variación puede suponer entre un 1\% y un 11\% de diferencia en la cantidad de radiación solar que recibe la Tierra entre el afelio y el perihelio. En la actualidad, entre el afelio y el perihelio la cantidad de radiación que llega a la Tierra cambia un 6%.</p>
+						<img src="https://d32ogoqmya1dw8.cloudfront.net/images/eslabs/cryosphere/earth_orbit_eccentricity.gif" width="300">
+					</section>
+
+					<section>
+						<h3>Changes in Earth's "Wobble" (Precession)</h3>
+						<p><b>Precesión</b>: giro del eje de rotación, en sentido contrario a la rotación, cada 26,000 años. Se debe al achatamiento de la esfera terrestre. Su efecto sobre el clima es consecuencia de la modificación de la posición relativa de los solsticios y los equinoccios respecto al afelio y al perihelio. En la actualidad el solsticio de verano coincide con el afelio en el hemisferio norte. Dentro de 6,000 años el afelio coincidirá con el equinoccio de primavera, y dentro de unos 12,000 años el solsticio de verano coincidirá con el perihelio</p>
+						<img src="https://d32ogoqmya1dw8.cloudfront.net/images/eslabs/cryosphere/axial_precession.gif" width="200">
+					</section>
+
+					<section>
+						<h3>Glaciaciones</h3>
+						<img src="https://services.meteored.com/img/article/los-ciclos-de-milankovitch-200201-1_1280.jpg" width="750">
+					</section>
+
+					<section>
+						<h3>Glaciaciones</h3>
+						<img src="https://www.nps.gov/glba/learn/nature/images/glacierbudget.jpg?maxwidth=1200&maxheight=1200&autorotate=false" width="750">
+					</section>
+
+					<section>
+						<h3>Glaciaciones</h3>
+						<img src="http://extremeicesurvey.org/wp-content/uploads/2012/09/Glacier-dynamics-illus_rev_.jpg" width="750">
+					</section>
+
+					<section>
+						<img src="https://opentextbc.ca/physicalgeologyearle/wp-content/uploads/sites/145/2016/03/aletsch-2.png" width="850">
+					</section>
+
+					<section>
+						<h3>Circo glacial</h3>
+						<p>Geoforma cóncava erodada como depresiones cerca al tope de las montañas
+							donde la nieve se acumula y forma la parte alta del los glaciales alpinos.
+							Corresponden a las etapas tempranas de los glaciales y son la ultima parte en
+							fundirse del glacial en su retroceso.</p>
+						<img src="https://www.researchgate.net/profile/A-Orkhonselenge/publication/325739310/figure/fig5/AS:637045013762064@1528894775954/Glacial-cirque-of-the-Mt-Asralt-Khairkhan.png" width="600">
+					</section>
+
+					<section>
+						<h3>Circo glacial</h3>
+						<img src="https://marlimillerphoto.com/images/Gl-04.jpg" width="750">
+					</section>
+
+					<section>
+						<h3>Tarn</h3>
+						<img src="https://i.pinimg.com/originals/36/a4/82/36a48272739c2372ece9a490be676c09.jpg" width="750">
+					</section>
+
+					<section>
+						<h3>Tarn</h3>
+						<img src="https://sp-images.summitpost.org/658173.jpg?auto=format&fit=max&h=800&ixlib=php-2.1.1&q=35&s=43173491cb70d3b5d6eab95287d0d811" width="750">
+					</section>
+
+					<section>
+						<h3>Paternoster</h3>
+						<p>Son una serie de lagos glaciales conectados creados por erosión diferencial o por
+							represamiento por morrenas</p>
+						<img src="https://miro.medium.com/max/7800/1*J4Vn38sar73n9naGSifCVA.jpeg" width="750">
+					</section>
+
+					<section>
+						<h3>Paternoster</h3>
+						<img src="https://blogs.agu.org/mountainbeltway/files/2012/08/paternoster.jpg" width="750">
+					</section>
+
+					<section>
+						<h3>Horn, Arete & Col</h3>
+						<img src="https://marlimillerphoto.com/images/Gl-02.jpg" width="750">
+					</section>
+
+					<section>
+						<h3>Col</h3>
+						<p>Crestas en forma de silla de montar formada por dos circos en lados opuestos que
+							erodaron el arete que los separaba.</p>
+						<img src="https://mleziva.info/unit5/U05L01/col.jpg" width="850">
+					</section>
+
+					<section>
+						<h3>Col</h3>
+						<img src="https://planetchamonix.com/wp-content/uploads/2018/04/col-du-passion-.jpg" width="850">
+					</section>
+
+					<section>
+						<h3>Arete</h3>
+						<img src="http://jupiter.plymouth.edu/~sci_ed/Turski/Courses/Earth_Science/Images/13.horn-aretes.jpg" width="850">
+					</section>
+
+					<section>
+						<h3>Arete</h3>
+						<img src="https://www.thoughtco.com/thmb/TsJKTKHdEZeN3co4AoZYAreWBlM=/500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/arete-ridge-58b5a7b25f9b5860469b257a.jpg" width="850">
+					</section>
+
+					<section>
+						<h3>Horn</h3>
+						<p>Pico piramidal formado por la conjunci´on y erosi´on de circos y valles glaciales.</p>
+						<img src="https://www.thoughtco.com/thmb/7CN_Xs5K0Qal_DE6k0btGc8Pe1Y=/500x390/filters:no_upscale():max_bytes(150000):strip_icc()/horn-58b5a8323df78cdcd88d4685.jpg" width="850">
+					</section>
+
+					<section>
+						<h3>Horn</h3>
+						<img src="https://i.pinimg.com/564x/09/27/d9/0927d9665a13a222e4c3a8bda0593287.jpg" width="850">
+					</section>
+
+					<section>
+						<img src="https://geologycafe.com/images/glacial_alpine.jpg" width="850">
+					</section>
+
+					<section>
+						<h3>Glaciar ablation</h3>
+						<img src="https://s-cool.co.uk/assets/learn_its/gcse/geography/glaciers/glacial-terminology_/g-geo-glacie-dia01.gif" width="750">
+					</section>
+
+					<section>
+						<h3>Glaciar ablation</h3>
+						<img src="https://polarpedia.eu/wp-content/uploads/2019/01/Ablation_zone_Tomasz_Wawrzyniak.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Glaciar ablation</h3>
+						<img src="https://image.slidesharecdn.com/geol370-12glacialsystems14081796ppi-140817220008-phpapp01/95/glacial-systems-9-638.jpg?cb=1408321143" width="700">
+					</section>
+
+					<section>
+						<h3>Glaciar ablation</h3>
+						<img src="https://igws.indiana.edu/images/igsmap/DI14_GlacialFeatures/GlacialConveyor__1490816660610__w1121.png" width="850">
+					</section>
+
+					<section>
+						<h3>Valle glacial</h3>
+						<img src="https://www.curriculumvisions.com/search/V/valley/mountainUshapedValleySequence.jpg" width="400">
+					</section>
+
+					<section>
+						<h3>Valle glacial</h3>
+						<img src="https://timeforgeography.co.uk/media/images/ushaped_valley.original.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Valle glacial</h3>
+						<img src="https://www.coolgeography.co.uk/A-level/AQA/Year%2012/Cold%20environs/Glacial%20Landforms/U%20shaped%20valleys.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Valle glacial</h3>
+						<img src="http://www.mistermoose.org/travel/rainforest/george/large/george-248-lg.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Valle glacial</h3>
+						<img src="https://upload.wikimedia.org/wikiversity/en/6/61/U_shaped_valley.jpg" width="400">
+					</section>
+
+					<section>
+						<h3>Valle colgado</h3>
+						<img src="https://2.bp.blogspot.com/-ylrtuRp0pJ4/VwNgzABRMxI/AAAAAAAACak/CKbZog5spvISvV6DygkspwYZkf3KE0b-A/s1600/yosemite_valley_text.jpg" width="1000">
+					</section>
+
+					<section>
+						<h3>Valle colgado</h3>
+						<img src="https://mammothmemory.net/images/user/base/Geography/Glacial%20Landscapes/hanging-valley-in-glacial-landscapes-geography-2.2.a3cf19f.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Valle colgado</h3>
+						<img src="https://o.quizlet.com/OSx5Eq16Cb0XLhlDHFwu1A_b.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Fjords</h3>
+						<p>Es un profundo, estrecho y alongado valle glacial parcialmente inundado por el
+							mar. Pueden ser el resultado de glaciaci´on activa o post glaciación, dependiendo
+							el nivel el mar.</p>
+						<img src="https://norwaytoday.info/wp-content/uploads/2016/05/naeroyfjord.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Fjords</h3>
+						<img src="https://www.backroadstouring.com/sites/default/files/styles/max_2600x2600/public/2020-10/behfgoo-1-norway-fjords-and-glaciers-gallery-geiranger-fjord-seven-sisters-waterfall.jpg" width="900">
+					</section>
+
+					<section>
+						<h3>Morrenas</h3>
+						<p>El hielo que se va desplazando formando la lengua glaciar a su paso arranca materiales de dicho terreno actuando como una lija.
+							Los <b>Tills</b> son los sedimentos arrastrados por el glaciar. Cuando se acumulan, se compactan mediante el proceso de diagénesis, y forman las <b>tillitas</b>.
+							En ocasiones el till se presenta dando formas de relieve características que se conocen con el nombre de morrena. Las <b>Morrenas</b> glaciares son la forma de depósito
+							glaciar más importante y conocida. Las Morrenas son acumulaciones de material transportado por el glaciar que aparecen en las zonas donde el hielo desaparece. Según dónde encontremos este tipo de
+							derrubios de tamaños muy diversos se habla de:</p>
+						<ul>
+							<li>morrenas terminales (en el frente del glaciar)</li>
+							<li>morrenas laterales (a los lados de la lengua de hielo)</li>
+							<li>morrena central; es la que resulta al juntarse dos morrenas laterales, y
+								forman una única</li>
+							<li>morrenas de fondo (en la base del valle glaciar).</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Morrenas</h3>
+						<img src="https://nsidc.org/sites/nsidc.org/files/images/acg_moraines_uivnotredame.jpg" width="650">
+					</section>
+
+					<section>
+						<h3>Morrenas</h3>
+						<img src="https://www.nps.gov/common/uploads/stories/images/nri/20161129/articles/F725D465-1DD8-B71B-0BE23002E768927A/F725D465-1DD8-B71B-0BE23002E768927A.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Morrenas</h3>
+						<img src="https://media.sciencephoto.com/c0/48/17/74/c0481774-400px-wm.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Morrenas</h3>
+						<img src="http://cdn.antarcticglaciers.org/wp-content/uploads/2019/08/Moraine-formation-447x1024.png" width="530">
+					</section>
+
+					<section>
+						<h3>Morrenas</h3>
+						<img src="http://cdn.antarcticglaciers.org/wp-content/uploads/2019/08/Easton-Glacier_moraine-768x493.png" width="800">
+					</section>
+
+					<section>
+						<h3>Morrenas</h3>
+						<img src="https://oeit.mit.edu/pgt/pictures/LW1D_4.5.jpg" width="780">
+					</section>
+
+					<section>
+						<h3>Retroceso glacial</h3>
+						<img src="https://www.researchgate.net/profile/Ivar-Benediktsson/publication/283739093/figure/fig21/AS:298550043922442@1448191285619/Landsystem-model-for-small-surge-type-cirque-glaciers-in-Iceland-The-distal-zone.png" width="780">
+					</section>
+
+					<section>
+						<h3>Retroceso glacial</h3>
+						<img src="https://www.researchgate.net/profile/Ivar-Benediktsson/publication/248479932/figure/fig14/AS:573579979100160@1513763531207/Model-1-Conceptual-model-illustrating-the-formation-of-a-narrow-singlecrested-moraine.png" width="780">
+					</section>
+
+					<section>
+						<h3>Retroceso glacial</h3>
+						<img src="https://media.sciencephoto.com/e2/35/03/10/e2350310-800px-wm.jpg" width="780">
+					</section>
+
+					<section>
+						<h3>Retroceso glacial</h3>
+						<img src="https://dr282zn36sxxg.cloudfront.net/datastreams/f-d%3A8f3ef36bb60a0e592fcce6229f2525b09735fa806cc9e9f6af76f7ff%2BIMAGE_THUMB_POSTCARD_TINY%2BIMAGE_THUMB_POSTCARD_TINY.1" width="780">
+					</section>
+
+					<section>
+						<h3>Kettles</h3>
+						<img src="http://allyouneedtoknowaboutglaciers.weebly.com/uploads/9/6/8/3/9683892/9578243_orig.gif" width="780">
+					</section>
+
+					<section>
+						<h3>Kettles</h3>
+						<img src="https://d32ogoqmya1dw8.cloudfront.net/images/camel/glacial_landforms.v2.gif" width="780">
+					</section>
+
+					<section>
+						<h3>Kame</h3>
+						<img src="http://gq.mines.gouv.qc.ca/documents/photos/01981/0000019208_en.jpg" width="600">
+					</section>
+
+					<section>
+						<h3>Kame</h3>
+						<img src="https://2.bp.blogspot.com/-8b504SmO490/VwNu1upcwfI/AAAAAAAACd8/tFuSifFgtCs67ybEE5rERW2-vNapU6Ivw/s1600/Picture17.png" width="600">
+					</section>
+
+					<section>
+						<h3>Kame</h3>
+						<img src="https://www.inhs.illinois.edu/files/9813/7651/6015/Kame.jpg" width="900">
+					</section>
+
+					<section>
+						<h3>Esker</h3>
+						<img src="https://www.dmr.nd.gov/ndgs/ndnotes/Eskers/images/esker%20formed%20copy.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Esker</h3>
+						<img src="https://www.geol.umd.edu/~jmerck/geol100/images/37/esker.gif" width="1000">
+					</section>
+
+					<section>
+						<h3>Esker</h3>
+						<img src="https://www.coolgeography.co.uk/A-level/AQA/Year%2012/Cold%20environs/Fluvioglacial/Group_of_eskers_Atlin_BC.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Esker</h3>
+						<img src="http://2.bp.blogspot.com/-sphDexdFTpM/UFyeTT1nP7I/AAAAAAAACCU/lw2dFwQ2T8w/s1600/23.jpg" width="850">
+					</section>
+
+					<section>
+						<h3>Drumlins</h3>
+						<img src="https://nsidc.org/sites/nsidc.org/files/images/acg_drumlin_nps.jpg" width="600">
+					</section>
+
+					<section>
+						<h3>Drumlins</h3>
+						<img src="https://northernwoodlands.org/images/articles/TOS_Drumlin_web.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Drumlins</h3>
+						<img src="https://www.friendslakeshorepreserve.com/uploads/2/6/9/3/26931781/8874124_orig.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Drumlins</h3>
+						<img src="https://live.staticflickr.com/2293/2443269337_475aca27e5_b.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Outwash</h3>
+						<img src="http://www.geo.mtu.edu/KeweenawGeoheritage/Glaciers/Outwash_files/outwashplain1.jpg" width="850">
+					</section>
+
+					<section>
+						<h3>Outwash</h3>
+						<img src="http://www.geo.mtu.edu/KeweenawGeoheritage/Glaciers/Outwash_files/PastedGraphic-1.png" width="850">
+					</section>
+
+				</section>
+
+				<section>
+					<section><h1>Ambiente Periglacial</h1></section>
+
+					<section>
+						<h3>Ambiente periglacial</h3>
+						<p>Los ambientes periglaciares se caracterizan por un predominio de los ciclos de hielo
+							y deshielo del terreno y por la existencia de un permafrost o terreno perennemente
+							helado que genera procesos tales como:</p>
+						<p><b>Gelifracción (crioclastia):</b> Meteorización física consecuencia del hielo que se forma en el interior de las grietas en las rocas, que producen aumento de volumen, desescamaci´on y posterior
+							fragmentación de la roca.</p>
+						<p><b>Solifluxión:</b> Movimientos ladera abajo del suelo en regiones fr´ıas por el ciclo de hielo - deshielo.</p>
+							<ul>
+								<li><b>Gelifluxión</b>Procesos de solifluxión desencadenados al saturarse la capa
+									superior del pergelisuelo (mollisuelo) como consecuencia del deshielo por que
+									el subsuelo o permafrost está siempre congelado y por tanto es impermeable;
+									esto impide que el hielo fundido del mollisuelo pueda infiltrarse</li>
+								<li><b>Crioturbación</b> Forma especial de solifluxión que provoca una serie de
+									movimientos verticales, laterales y de fisuración superficial que modifican la
+									consistencia del suelo y favorecen su fluidificación, rompiendo su estructura
+									y dándole un aspecto caótico.</li>
+							</ul>
+					</section>
+
+					<section>
+						<h3>Gelifraxión</h3>
+						<img src="http://1.bp.blogspot.com/-7A-Nd6SoxkQ/Ttu0X_BxNlI/AAAAAAAAACA/fcNVsV7Plgw/s1600/27.+Granito.+Gelifracci%25C3%25B3n.jpg" width="850">
+					</section>
+
+					<section>
+						<h3>Gelifraxión</h3>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT92_7kNkf-70Cw9azsvoLIg32k1xAMq6C9_NxOY8q1vg32Xd4xauHPExYtpbdcHe5lISY&usqp=CAU" width="850">
+					</section>
+
+					<section>
+						<h3>Gelifruxión</h3>
+						<img src="https://epicgeography.files.wordpress.com/2016/06/6242078669_9a640464cb_b.jpg" width="850">
+					</section>
+
+					<section>
+						<h3>Gelifruxión</h3>
+						<img src="https://media.springernature.com/original/springer-static/image/prt%3A978-1-4614-3134-3%2F19/MediaObjects/978-1-4614-3134-3_19_Part_Fig1-534_HTML.jpg" width="850">
+					</section>
+
+					<section>
+						<h3>Crioturbación</h3>
+						<img src="https://www.infoagro.com/noticias/images/29253_l_monticulos_creados_a_partir_de_ciclos_de_congelacion_y_descongelacion_.jpg" width="850">
+					</section>
+				</section>
+
+				
+				<section>
+					<section><h1>Meteorización</h1></section>
+
+					<section>
+						<h3>Meteorización</h3>
+						<p>Proceso de alteración y separación de la roca y materiales del suelo sobre y cerca
+							de la superficie terrestre por descomposición química, desintegración física y/o
+							biológica (Anon, 1995).</p>
+						<img src="https://geologycafe.com/images/weathering.jpg" width="400">
+						<p>Debido a la diferencia de energía de formación y la energía a la cual está expuesta
+							la roca...</p>
+					</section>
+
+					<section>
+						<h3>Meteorización</h3>
+						<img src="https://www.researchgate.net/profile/Ignacio-Perez-Rey/publication/335989099/figure/fig56/AS:809186195689521@1569936431857/Sketch-showing-the-development-of-boulders-as-a-consequence-of-the-two-stage-process-by.png" width="900">
+					</section>
+
+					<section>
+						<h3>Factores de meteorización</h3>
+						<img src="https://i.pinimg.com/564x/b5/1e/72/b51e7205824322a4546e03ebc15f6f2f.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Desquilibrio termodinámico</h3>
+						<img src="https://docplayer.gr/docs-images/80/81852920/images/3-0.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Desquilibrio termodinámico</h3>
+						<img src="https://jonathanlms96.files.wordpress.com/2017/03/3be82-fig_4_2_1.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Temperatura & Precipitation</h3>
+						<img src="http://static3.mbtfiles.co.uk/media/docs/newdocs/international_baccalaureate/geography/1203916/html/images/image00.png" width="700">
+					</section>
+
+					<section>
+						<h3>Temperatura & Precipitation</h3>
+						<img src="https://onlinelibrary.wiley.com/cms/asset/7a92c743-36f1-48f4-a68e-7ed7693a7e7a/anna_434_f2.gif" width="650">
+					</section>
+
+					<section>
+						<h3>Distribución de suelos</h3>
+						<img src="https://ars.els-cdn.com/content/image/1-s2.0-B9780444638656000041-f04-01-9780444638656.jpg" width="1000">
+					</section>
+
+					<section>
+						<h3>Suelos</h3>
+						<img src="https://i.pinimg.com/564x/11/af/88/11af88e5040b975fe8043d2d63f74cd3.jpg" width="1000">
+					</section>
+
+					<section>
+						<h3>Suelos</h3>
+						<p>Los suelos y las alteración de rocas pueden ser considerados dos sistemas abiertos
+							independientes. Los suelos implica actividad de plantas y animales, mientras que
+							la alteración de rocas implica interacción entre el agua y los materiales ricos en
+							silicato.</p>
+						<img src="https://sites.google.com/site/comofuncionalatierra/_/rsrc/1396276250882/home/castellano/6-el-suelo-un-producto-de-la-interaccion/formacion-del-suelo/imag2.JPG?height=371&width=400" width="450">
+					</section>
+
+					<section>
+						<p>Se entiende por perfil de un suelo a la sección vertical de un terreno, constituido
+							por una secuencia de horizontes o capas, separables por sus características
+							morfológicas, físicas, químicas y mineralógicas.</p>
+						<img src="https://digitallylearn.com/wp-content/uploads/2019/02/Soil-Profile-UPSC-Diagram-and-Layers-Geography-Optional.jpg" width="500">
+					</section>
+
+					<section>
+						<h3>Suelos</h3>
+						<img src="https://3.bp.blogspot.com/-2HrBpky8cRI/TbmLp045wyI/AAAAAAAABxI/BSZb5pYmfTo/s1600/2.jpg" width=900">
+					</section>
+
+					<section>
+						<img src="https://slideplayer.es/slide/13102347/79/images/23/Suelo+IN+SITU+Suelo+TRANSPORTADO.jpg" width="850">
+					</section>
+
+					<section>
+						<img src="https://www.diccionario.geotecnia.online/wp-content/uploads/2020/05/Alo%CC%81ctono-suelo-1024x768.jpg" width="850">
+					</section>
+
+					<section>
+						<img src="http://1.bp.blogspot.com/-xVdf4pNEkug/TaNovHlTMoI/AAAAAAAAAGk/9d43mEP8bQs/s1600/1.gif" width="1000">
+					</section>
+
+					<section>
+						<h3>Características de suelos transportados</h3>
+						<img src="https://image.cotecno.cl/2019/02/cvcv.jpg" width="900">
+					</section>
+
+					<section>
+						<h3>Catena o Toposecuencia</h3>
+						<img src="https://slideplayer.es/slide/136473/2/images/10/La+catena+representa+el+escalonamiento+regular+de+suelos+dando+una+sucesi%C3%B3n+cuyo+grado+de.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Catena o Toposecuencia</h3>
+						<img src="https://www.researchgate.net/profile/Massimo-Conforti/publication/279654001/figure/fig1/AS:671534637150222@1537117742707/Location-of-study-area-and-soil-profiles-along-the-toposequence.jpg" width="800">
+					</section>
+
+					<section>
+						<img src="https://image.slidesharecdn.com/mecanicadesuelos-100604220516-phpapp02/95/mecanica-de-suelos-22-728.jpg?cb=1275689271" width="800">
+					</section>
+
+					<section>
+						<h3>Suelos <i>insitu</i></sub>
+						<img src="https://i.pinimg.com/564x/b4/a3/80/b4a380be1a3e5807c75b2d890c8874e5.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Perfil de meteorizacion</h3>
+						<img src="https://docplayer.es/docs-images/52/30229336/images/83-0.png" width="800">
+					</section>
+
+					<section>
+						<h3>Perfil Deer & Patton (1971)</h3>
+						<img src="https://revistas.uis.edu.co/index.php/revistaboletindegeologia/article/download/4531/5255/23578" width="900">
+					</section>
+
+					<section>
+						<h3>Tipos de meteorización</h3>
+						<img src="https://historiaybiografias.com/archivos_varios4/meteorizacion3.jpg" width="900">
+					</section>
+
+					<section>
+						<h3>Tipos de meteorización</h3>
+						<img src="https://clarkscience8.weebly.com/uploads/2/6/3/7/2637711/picture2.jpg?583" width="800">
+					</section>
+
+					<section>
+						<h3>Meteorización biológica</h3>
+						<img src="https://www.researchgate.net/profile/Lukasz-Pawlik/publication/303822665/figure/fig11/AS:645102640828416@1530815863205/Conceptual-model-of-biological-weathering-caused-by-tree-roots-and-its-direct-and.png" width="600">
+					</section>
+
+					<section>
+						<h3>Meteorización biológica</h3>
+						<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0012825216301143-gr7.jpg" width="600">
+					</section>
+
+					<section>
+						<h3>Meteorización biológica</h3>
+						<img src="https://o.quizlet.com/veyNtPmXFNQ5RIkGEoenXw.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Meteorización biológica</h3>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH7RBI6uR8nfs2_4CnIi1mjyAgaL2Ce8-RzQ&usqp=CAU" width="800">
+					</section>
+
+					<section>
+						<h3>Meteorización biológica</h3>
+						<img src="https://i.pinimg.com/736x/c3/3a/5d/c33a5ddade4357f00d8746bffc467c39.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Meteorización física</h3>
+						<img src="http://mrtremblaycambridge.weebly.com/uploads/9/7/8/8/9788395/6974280_orig.jpg" width="900">
+					</section>
+
+					<section>
+						<h3>Frost wedging</h3>
+						<img src="https://eschooltoday.com/learn/wp-content/uploads/2020/11/physical-weathering.jpg" width="900">
+					</section>
+
+					<section>
+						<h3>Frost wedging</h3>
+						<img src="https://i.pinimg.com/600x315/6e/da/af/6edaafae774acee14488e371424fe1f8.jpg" width="900">
+					</section>
+
+					<section>
+						<h3>Frost wedging</h3>
+						<img src="http://courses.missouristate.edu/emantei/creative/WeathStrem/frstact.jpg" width="600">
+					</section>
+
+					<section>
+						<h3>Gelifraction (Cryoclastie)</h3>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Gelifraction_basalte_islande.JPG" width="700">
+					</section>
+
+					<section>
+						<h3>Exfoliation (Onion skin)</h3>
+						<img src="https://slidetodoc.com/presentation_image_h/ce56bbdefe7e51ee5c67ad9c2af2c058/image-16.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Exfoliation (Onion skin)</h3>
+						<img src="https://pbs.twimg.com/media/Ch2sCZKWUAAUx1U.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Exfoliation</h3>
+						<img src="https://i.ytimg.com/vi/rT-iPv9Q1fI/maxresdefault.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Exfoliation</h3>
+						<img src="http://s3.thingpic.com/images/Dh/tPbVwj6mfaDwZA1r6RCzuz2h.jpeg" width="700">
+					</section>
+
+					<section>
+						<img src="https://www.thoughtco.com/thmb/zs5E2NGubXmpxRej5jwnMwcOs2s=/1333x1000/smart/filters:no_upscale()/examples-of-chemical-weathering-607608_FINAL-54f8c4d63ed94e0eab454dc5e96cabff.png" width="700">
+					</section>
+
+					<section>
+						<h3>Chemical weathering</h3>
+						<img src="https://image.slidesharecdn.com/economicgeology-supergeneoredeposits-170110131419/95/economic-geology-supergene-ore-deposits-5-638.jpg?cb=1484054323" width="700">
+					</section>
+
+					<section>
+						<h3>Relative mobility of cations</h3>
+						<p>Ca<sup>2+</sup> --> Mg<sup>+</sup> --> Na<sup>+</sup> --> K<sup>+</sup>--> Si<sup>4+</sup> --> Fe<sup>3+</sup> --> Al<sup>3+</sup></p>
+						<img src="https://i.pinimg.com/564x/8d/61/ec/8d61ec7dff9d6368b880d9ebb1945d7a.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Diagrama de óxidos</h3>
+						<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0013795205001845-gr2.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>A-CN-K ternary diagram</h3>
+						<img src="https://www.researchgate.net/profile/Rezhin-Mustafa/publication/339016830/figure/fig4/AS:854737113071621@1580796616873/A-CN-K-ternary-diagram-in-molecular-proportions-for-the-Chia-Gara-shales-after-Nesbitt.png" width="700">
+					</section>
+
+					<section>
+						<h3>A-CNK-FM ternary diagram</h3>
+						<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0013795205001845-gr7.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Dissolution</h3>
+						<img src="https://i.pinimg.com/originals/61/2d/f5/612df565b911f64423decfc2c57e2446.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Dissolution</h3>
+						<img src="https://openpress.usask.ca/app/uploads/sites/29/2018/07/Dissolution_rxn_2018.png" width="700">
+					</section>
+
+					<section>
+						<h3>Dissolution</h3>
+						<img src="https://i.pinimg.com/564x/63/34/e1/6334e13348291757ffe9ecbb2018e112.jpg" width="450">
+						<img src="https://i.pinimg.com/236x/44/25/2f/44252f40286cd3372c96014209e9b66c.jpg" width="450">
+					</section>
+
+					<section>
+						<h3>Dissolution</h3>
+						<img src="https://i.pinimg.com/originals/e3/a9/8f/e3a98f1716925d8ea43de661d4f4fcc6.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Pseudocarst</h3>
+						<img src="https://www.researchgate.net/profile/Fernando-Gazquez/publication/308648694/figure/fig3/AS:667698052755462@1536203029754/Tubos-y-cavidades-en-rocas-volcanicas-de-la-isla-de-El-Hierro-pseudokarst_Q640.jpg" width="600">
+					</section>
+
+					<section>
+						<h3>Dissolution</h3>
+						<img src="https://www.researchgate.net/publication/265168388/figure/fig1/AS:295992961323012@1447581629734/Hydrological-terms-and-flow-directions-in-a-typical-karst-aquifer.png" width="1000">
+					</section>
+
+					<section>
+						<h3>Dissolution</h3>
+						<img src="http://4.bp.blogspot.com/-MWoBHaGpNIw/UL4UYGQOXBI/AAAAAAAAZlw/LDv4XXOUOuk/s1600/South-China-Karst-Heritage-Site.jpg" width="400">
+						<img src="https://intotheoutdoors.org/wp-content/uploads/2016/10/karst-cave-640x380.jpeg" width="490">
+					</section>
+
+					<section>
+						<h3>Dissolution</h3>
+						<img src="https://qph.fs.quoracdn.net/main-qimg-997e9f4794a9a5991d2494b8ca252ac8.webp" width="1000">
+					</section>
+
+					<section>
+						<h3>Dissolution</h3>
+						<img src="https://qjegh.lyellcollection.org/content/qjegh/36/2/101/F5.large.jpg" width="1000">
+					</section>
+
+					<section>
+						<h3>Pavement</h3>
+						<img src="https://dpdgay9x1sxad.cloudfront.net/wp-content/uploads/sites/6/2020/04/Limestone-Pavement.jpg" width="1000">
+					</section>
+
+					<section>
+						<h3>Pavement & Karren</h3>
+						<img src="https://cdn.britannica.com/47/123247-004-8513E7AE/Lapies-Malham-Cove-North-Yorkshire-Eng.jpg" width="750">
+					</section>
+
+					<section>
+						<h3>Karren (Lapies)</h3>
+						<img src="https://live.staticflickr.com/6092/6994973899_51a0e579b5_b.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Karren (Lapies)</h3>
+						<img src="http://www.hoehlenag.de/upload/hoehlenkunde/exokarstformen/rillenkarren.jpg" width="470">
+					</section>
+
+					<section>
+						<h3>Karren (Lapies)</h3>
+						<img src="http://www.hoehlenag.de/upload/hoehlenkunde/exokarstformen/rinnenkarren.jpg" width="450">
+					</section>
+
+					<section>
+						<h3>Karren (Lapies)</h3>
+						<img src="http://www.hoehlenag.de/upload/hoehlenkunde/exokarstformen/firstkarren.JPG" width="700">
+					</section>
+
+					<section>
+						<h3>Karren (Lapies)</h3>
+						<img src="http://www.hoehlenag.de/upload/hoehlenkunde/exokarstformen/maeanderkarren.JPG" width="700">
+					</section>
+
+					<section>
+						<h3>Karren (Lapies)</h3>
+						<img src="http://www.hoehlenag.de/upload/hoehlenkunde/exokarstformen/trittkarren.JPG" width="700">
+					</section>
+
+					<section>
+						<h3>Karren (Lapies)</h3>
+						<img src="http://www.hoehlenag.de/upload/hoehlenkunde/exokarstformen/rundkarren.JPG" width="400">
+					</section>
+
+					<section>
+						<h3>Doline</h3>
+						<img src="https://www.gsi.ie/images/images/sinkholes%20or%20dolines%20and%20subsidence.jpg" width="1000">
+					</section>
+
+					<section>
+						<h3>Doline</h3>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Shake_Holes%2C_Dolines_or_Sinkholes%2C_Bronkham_Hill_-_geograph.org.uk_-_1022673.jpg" width="900">
+					</section>
+
+					<section>
+						<h3>Doline</h3>
+						<img src="https://i.pinimg.com/originals/3f/97/2c/3f972ca59a3ff6ec1b531550183ac562.jpg" width="950">
+					</section>
+
+					<section>
+						<h3>Dolina vs Uvala</h3>
+						<img src="https://o.quizlet.com/ihobFkMuYn07p8i6UMlAkg.png" width="1000">
+					</section>
+
+					<section>
+						<h3>Uvala</h3>
+						<img src="http://kentuckykarst-vs-chinakarst.weebly.com/uploads/1/1/9/8/11987045/155983.jpg?392" width="700">
+					</section>
+
+					<section>
+						<h3>Uvala</h3>
+						<img src="https://i0.wp.com/geologyconcepts.com/wp-content/uploads/2019/02/190_Uvalas-Karst-Topography.png?fit=636%2C288&ssl=1" width="1000">
+					</section>
+
+					<section>
+						<h3>Polje</h3>
+						<img src="https://i1.wp.com/geologyconcepts.com/wp-content/uploads/2019/02/191_Polje-Karst-Topography-e1549276088674.png?fit=706%2C288&ssl=1" width="1000">
+					</section>
+
+					<section>
+						<h3>Polje</h3>
+						<img src="https://www.showcaves.com/images/Big/D139-092.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Polje</h3>
+						<img src="https://www.researchgate.net/profile/Ugo-Sauro/publication/279426479/figure/fig8/AS:668234349031430@1536330892479/A-typical-karst-polje-in-the-dinaric-range-the-Dabarsko-Polje-Bosnia-Herzegovina.ppm" width="800">
+					</section>
+
+					<section>
+						<h3>Conos (Kegelcarst - Turmkarst - Mogotes - Cockpit)</h3>
+						<img src="https://d3i71xaburhd42.cloudfront.net/79b4c744ab47e05b9f20b9709e76178147b65470/22-Figure2-1.png" width="700">
+					</section>
+
+					<section>
+						<h3>Conos (Kegelcarst - Turmkarst - Mogotes - Cockpit)</h3>
+						<img src="https://live.staticflickr.com/4396/36973882290_1524c93a2d_b.jpg" width="1000">
+					</section>
+
+					<section>
+						<h3>Conos (Kegelcarst - Turmkarst - Mogotes - Cockpit)</h3>
+						<img src="http://images6.fanpop.com/image/photos/41900000/Guilin-China-asia-41909661-1200-801.jpg" width="850">
+					</section>
+
+					<section>
+						<h3>Endocarst (Espeleotemas)</h3>
+						<img src="https://userscontent2.emaze.com/images/01522cc5-c89e-4c67-9dcf-ef611358c780/383974d06ed08af795d5bf64c1099e5b.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Stalactite & Stalagmite</h3>
+						<img src="https://qsstudy.com/wp-content/uploads/2017/11/Stalactites-and-Stalagmites-1.jpg" width="900">
+					</section>
+
+					<section>
+						<h3>Columna</h3>
+						<img src="https://thestorytellers.com/wp-content/uploads/2014/06/Cavern_full_of_stalactites_and_stalagmites_in_Metro_Cave_Te_Ananui_Cave-2.jpg" width="850">
+					</section>
+
+					<section>
+						<h3>Gour</h3>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Domica_Cave_22.jpg" width="850">
+					</section>
+
+					<section>
+						<h3>Bandera</h3>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Stalactite_in_Grotte_de_Soreq%2C_israel4.JPG" width="700">
+					</section>
+
+					<section>
+						<h3>Helictitas</h3>
+						<img src="https://caves.org/virtual/virtcave/helictit/chasm4.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Moonmilk</h3>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Bergmilchkammer_04.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Frostwork</h3>
+						<img src="https://www.nps.gov/wica/learn/nature/images/Frostwork-35.jpg?maxwidth=650&autorotate=false" width="700">
+					</section>
+
+					<section>
+						<h3>Carst hipogénico</h3>
+						<img src="http://www.hypogenic-caves.com/IMAGES%20SELECC/FEBRERO/soplao-1-trbj-22.jpg" width="1000">
+					</section>
+
+					<section>
+						<h3>Carst hipogénico</h3>
+						<img src="http://www.hypogenic-caves.com/IMAGES%20SELECC/FEBRERO/image3-SELECC-DTLL-PBL.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Hydration</h3>
+						<img src="https://slideplayer.com/slide/9343762/28/images/6/%28addition+of+water+%E2%80%93+H2O+-+into+the+crystal+structure+of+minerals%29.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Hydration</h3>
+						<img src="https://i.ytimg.com/vi/pC5-EMmj6YA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD-dtt9JPotkiOrwg4EZAiOcm69hQ" width="900">
+					</section>
+
+					<section>
+						<h3>Hydrolisis</h3>
+						<img src="http://docplayer.net/docs-images/58/42433752/images/11-0.png" width="700">
+					</section>
+
+					<section>
+						<h3>Hydrolisis</h3>
+						<img src="https://slideplayer.com/slide/6384902/22/images/11/Hydrolysis+Carbonic+acid.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Hydrolisis</h3>
+						<img src="https://i.pinimg.com/originals/e1/f2/90/e1f290df9267b1cd69ac0a2334a09461.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Oxidation- Reduction (Redox)</h3>
+						<img src="https://lh3.googleusercontent.com/proxy/Vdem1KhqnK9LCO-1nAnPyGXtPb61UpH3jcpXtfi9agti_h9gypWtiUBxoksK0Kghy1KSFuZ95hFbAGYwBuZSKLGJXcs4kf2xFvvX" width="700">
+					</section>
+
+					<section>
+						<h3>Oxidation- Reduction (Redox)</h3>
+						<img src="https://slideplayer.com/slide/9343762/28/images/5/Chemical+Weathering+Oxidation+2FeS+O2+%2B+5H2O+%EF%83%A0+2FeO%28OH%29+%2B+4H2SO4.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Oxidation- Reduction (Redox)</h3>
+						<img src="https://www.geol.umd.edu/~jmerck/geol342/images/02hematite.jpg" width="450">
+					</section>
+
+					<section>
+						<h3>Oxidation- Reduction (Redox)</h3>
+						<img src="https://userscontent2.emaze.com/images/e6f1ad6b-5887-4310-9dbe-0b599c89b816/a286908b6438f71b4f093e0b740172e5.jpg" width="750">
+					</section>
+
+					<section>
+						<h3>Oxidation- Reduction (Redox)</h3>
+						<img src="https://image.slidesharecdn.com/tiposdesuelos-paisajismo-150429134019-conversion-gate02/95/tipos-de-suelos-paisajismo-11-638.jpg?cb=1430324623" width="700">
+					</section>
+
+					<section>
+						<h3>Laterite profile</h3>
+						<img src="https://www.researchgate.net/profile/Stephen-Peters-5/publication/274253641/figure/fig5/AS:668367270735876@1536362583378/Schematic-laterite-profile-showing-the-effect-of-deep-weathering-in-the-tropical.png" width="300">
+					</section>
+
+					<section>
+						<h3>Duricrust</h3>
+						<p>Capas duras formadas por la concentración de componentes específicos durante la meteorización</p>
+						<ul>
+						<b>Lixiviación:</b>
+							<li>Ferricrete (Fe)</li>
+							<li>Alcrete (Al)</li>
+						<b>Acumulación:</b>
+							<li>Silicrete (Si)</li>
+							<li>Calcrete (Ca)</li>
+						</ul>
+						<img src="https://static.cambridge.org/binary/version/id/urn:cambridge.org:id:binary-alt:20180929095627-97618-mediumThumb-05579fig15_4a.jpg?pub-status=live" width="680">
+					</section>
+
+					<section>
+						<h3>Relieve inverso</h3>
+						<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0169555X12005442-fx1.jpg" width="900">
+					</section>
+
+				</section>
+
+				<section>
+					<section><h1>Movimientos en masa</h1></section>
+
+					<section>
+						<h3>Slope processes</h3>
+						<img src="https://g105lab.sitehost.iu.edu/images/gaia_chapter_12/slope_talus.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Slope processes</h3>
+						<img src="https://earthsurface.readthedocs.io/en/latest/_images/hill1.png" width="800">
+					</section>
+
+					<section>
+						<h3>Slope processes</h3>
+						<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0169555X09000646-gr1.jpg" width="600">
+					</section>
+
+					<section>
+						<h3>Hillslope </h3>
+						<p>Unidad de geoforma inclinada con un ángulo de pendiente mayor que
+							un umbral mínimo que lo delimita de llanuras y menor a un umbral máximo que
+							lo delimita de superficies verticales, y que es limitado por una unidad de geoforma
+							en la parte superior e inferior (Denh et al., 2001).</p>
+						<img src="https://d3i71xaburhd42.cloudfront.net/2d3cd27b91ebb9f753e2acb84c8580579a659944/3-Figure2-1.png" width="600">
+					</section>
+
+					<section>
+						<h3>Movimientos en masa</h3>
+						<p>El movimiento hacia afuera y abajo de una masa de suelo, roca o detritos (Varnes, 1978)</p>
+						<p>Modificaciones del terreno dentro del ciclo geomorfológico continuo, y que corresponden a la respuesta normal del sistema debido a complejos parámetros exogénicos (meteóricos) y endogénicos (tectónicos) (Sheidegger, 1998)</p>
+						<p>Los procesos de movimiento en masa son el resultado de las condiciones
+							naturales del terreno, tales como geomorfología, hidrología y geología, y las
+							modificaciones de estas condiciones por procesos geodinámicos, vegetación,
+							usos del suelo y actividades humanas. Dichas modificaciones activan movimientos
+							lentos, generalmente imperceptibles debido a que las propiedades mecánicas
+							del material o condiciones de equilibrio decrecen gradualmente, y posteriormente, factores como precipitación, sismicidad o cortes de origen antrópico
+							detonan dichos movimientos lentos en rápidos movimientos en masa (Soeters
+							& van Westen, 1996).</p>
+					</section>
+										
+					<section>
+						<h3>Evolución de la estabilidad</h3>
+						<img src="https://www.researchgate.net/profile/Thorsten-Hoeser/publication/327939547/figure/fig1/AS:675827549208578@1538141252865/Conceptual-states-of-stability-of-a-landslide-differentiated-into-three-major-states-and.png" width="800">
+					</section>
+					
+					<section>
+						<h3>Evolución de la estabilidad</h3>
+						<img src="http://environment.uwe.ac.uk/geocal/SLOPES/GIFS/CAUSESFA.GIF" width="800">
+					</section>
+
+					<section>
+						<h3>Factores condicionantes & detonantes</h3>
+						<img src="https://www.researchgate.net/profile/Enrique-Castellanos/publication/209803330/figure/fig3/AS:365037131714563@1464043042913/Causative-factors-for-landslides-occurrence-in-the-study-area.png" width="800">
+					</section>
+
+					<section>
+						<h3>Resistencia al cortante</h3>
+						<img src="https://osu.instructure.com/courses/29009/files/5421882/download?verifier=FC42bAVvOFJRRxJOWQrlGvQVdwUWYlPtHDK5D6y4&wrap=1" width="800">
+					</section>
+
+					<section>
+						<h3>Resistencia al cortante</h3>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5hap3wznqlSWsjmGIk-7ReiqpoHrHgiy-le28zI4JvC7D9jPBAn4g3w-TwsRiMjKzQTg&usqp=CAU" width="500">
+					</section>
+
+					<section>
+						<h3>Envolvente de falla</h3>
+						<img src="https://1.bp.blogspot.com/-zWGHptrkcpI/W_gvES4ukaI/AAAAAAABVWM/NaYJrrEOdrsPem1d36qC76U70P_dPlZFACLcBGAs/s1600/ddd.JPG" width="800">
+					</section>
+
+					<section>
+						<h3>Presión de poros</h3>
+						<img src="https://2.bp.blogspot.com/-Y_XGfxrKF64/W_gq6-oXkmI/AAAAAAABVV0/1YppvfbUr0oKHgurNJHqSRtW6x1ORtdEQCLcBGAs/w1200-h630-p-k-no-nu/ddd.JPG" width="800">
+					</section>
+
+					<section>
+						<h3>Saturación</h3>
+						<img src="https://media.springernature.com/original/springer-static/image/prt%3A978-3-319-73568-9%2F7/MediaObjects/978-3-319-73568-9_7_Part_Fig1-150_HTML.png" width="800">
+					</section>
+
+					<section>
+						<h3>Succión</h3>
+						<img src="https://www.researchgate.net/profile/Rukshan-Azoor/publication/334659960/figure/fig5/AS:793496080379906@1566195616832/Schematic-of-the-soil-water-retention-curve-SWRC-illustrating-the.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>El agua en el suelo</h3>
+						<img src="https://www.geographyandyou.com/wp-content/uploads/2017/06/diagram-1.jpg" width="800">
+					</section>
+
+
+					<section>
+						<h3>Clasificación de movimientos en masa</h3>
+						<img src="https://o.quizlet.com/9glQXTOZLQmaADYpP.TteA.png" width="800">
+					</section>
+
+					<section>
+						<h3>Clasificación de movimientos en masa</h3>
+						<img src="https://earthsurface.readthedocs.io/en/latest/_images/summerfield.png" width="700">
+					</section>
+
+					<section>
+						<h3>Clasificación de movimientos en masa</h3>
+						<img src="https://slideplayer.com/slide/15136001/91/images/2/Types+of+mass-movements.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Clasificación de movimientos en masa</h3>
+						<img src="https://d3i71xaburhd42.cloudfront.net/bcff377879ee48bb5e437908307bc9620f98b9e0/2-Figure1-1.png" width="800">
+					</section>
+
+					<section>
+						<h3>Cruden & Varnes (1996)</h3>
+						<img src="https://www.researchgate.net/profile/Maria-Brunetti/publication/272149103/figure/fig1/AS:613879247818754@1523371626083/Landslide-classification-by-Varnes-1978-and-Cruden-and-Varnes-1996-based-on-the-type.png" width="500">
+					</section>
+
+					<section>
+						<h3>Deslizamientos</h3>
+						<img src="https://sites.google.com/site/southaustraliaandlandslides/_/rsrc/1468736087418/types-of-landslide/Screen%20Shot%202013-06-01%20at%207.01.47%20PM.png" width="800">
+					</section>
+
+					<section>
+						<h3>Deslizamientos planares</h3>
+						<img src="https://i.pinimg.com/736x/6b/5c/aa/6b5caad5d41f64cd550d746064346c98.jpg" width="600">
+					</section>
+
+					<section>
+						<h3>Partes de un deslizamiento</h3>
+						<img src="https://i0.wp.com/imgcdn.geocaching.com/cache/844dc666-86e3-4b8a-a69a-743e9c616ed6.png" width="800">
+					</section>
+
+					<section>
+						<h3>Partes de un flujo</h3>
+						<img src="https://www.wsgs.wyo.gov/images/hazards/debris-flow.png" width="600">
+					</section>
+
+					<section>
+						<h3>Toppling</h3>
+						<img src="https://images.slideplayer.com/25/7795914/slides/slide_9.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Toppling</h3>
+						<img src="https://www.researchgate.net/profile/Leandro-Alejano/publication/248508667/figure/fig2/AS:855333882843136@1580938897681/Common-toppling-failures-as-described-by-Willie-and-Mah-2004-a-Block-toppling-of.png" width="800">
+					</section>
+
+					<section>
+						<h3>Fall</h3>
+						<img src="https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-3-319-55342-9_15/MediaObjects/432715_1_En_15_Fig2_HTML.gif" width="600">
+					</section>
+
+					<section>
+						<h3>Fall</h3>
+						<img src="https://www.tulane.edu/~sanelson/images/rockfall.gif" width="500">
+					</section>
+
+					<section>
+						<h3>Creeping</h3>
+						<img src="https://www.researchgate.net/profile/Lukasz-Pawlik/publication/322317097/figure/fig2/AS:594685731024898@1518795535485/A-division-of-creep-processes-Compilation-based-on-different-authors-Hutchinson-1968.png" width="800">
+					</section>
+
+					<section>
+						<h3>Creeping</h3>
+						<img src="https://earthsurface.readthedocs.io/en/latest/_images/creep.png" width="800">
+					</section>
+
+					<section>
+						<h3>Creeping</h3>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSScEQ-V28XtbdlAoFYvDHUc8z0dKK2BSWM3A&usqp=CAU" width="800">
+					</section>
+
+					<section>
+						<h3>Creeping</h3>
+						<img src="https://www.researchgate.net/profile/Lukasz-Pawlik/publication/322317097/figure/fig22/AS:631618003796099@1527600875912/figure-fig22_W640.jpg" width="600">
+					</section>
+
+					<section>
+						<h3>Depósitos</h3>
+						<img src="https://geolodiaavila.files.wordpress.com/2019/04/figura-3.jpg" width="800">
+					</section>
+				</section>
+
+				<section>
+					<section><h1>Erosión</h1></section>
+
+					<section>
+						<img src="https://external-preview.redd.it/UePFKkdxv8ne5YqRCMBOhgTAHl1LqYKbSPQeK3xEf6A.jpg?auto=webp&s=7032b6ed70cfab42d0d264e9ab3fbc36629ab3fc" width="1000">
+					</section>
+
+					<section>
+						<h3>Erosión</h3>
+						<p><b>Erosión: </b>proviene del Latin erodere, que significa <i>to gnaw</i>. Es un proceso natural
+							que reduce todas las montañas (denudación), pero al mismo tiempo enriquece en
+							nutrientes los suelos de los valles</p>
+						<p><b>Erosión: </b>Proceso natural de arranque y movimiento de las partículas del suelo por medio
+							de la acción de un agente erosivo (agua, viento, etc).. . . .. y asociado a la erosión,
+							se produce transporte y depositación de los materiales.</p>
+					</section>
+
+					<section>
+						<img src="https://paleolimbot.github.io/physical-geology/figures/14-streams-and-floods/figure-14-18.png" width="800">
+					</section>
+
+					<section>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTruH_2B3KBb1CqGlTpUAXwbuhEN3Jl5KNCyA&usqp=CAU" width="500">
+					</section>
+
+					<section>
+						<img src="https://slideplayer.es/slide/3275180/11/images/79/EROSI%C3%93N+%3D+f+%28EROSIVIDAD%3B+ERODIBILIDAD%29.jpg" width="800">
+					</section>
+
+					<section>
+						<img src="https://slideplayer.es/slide/3275180/11/images/80/A+R+K+x+%3D+EROSI%C3%93N+%3D+f+%28EROSIVIDAD%3B+ERODIBILIDAD%29.jpg" width="800">
+					</section>
+
+					<section>
+						<img src="https://slideplayer.es/slide/3275180/11/images/82/A+R+K+L+S+C+P+%3D+x+x+x+x+x+EROSI%C3%93N+%3D+f+%28EROSIVIDAD%3B+ERODIBILIDAD%29.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Types of Erosion</h3>
+						<img src="https://marvel-b1-cdn.bc0a.com/f00000000164722/www.udel.edu/content/dam/udelImages/canr/factsheets/preventing-erosion-1.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Types of Erosion</h3>
+						<img src="https://geography.as.uky.edu/sites/default/files/blogs_images/Slide1.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Driving vs Resisting force</h3>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLaeYyui7Hd3dQBVCWZe1WFXLqhj5o2cGMoeRiocGjgHr4BesSdiioQ_XGucIkgSDwOrc&usqp=CAU" width="600">
+					</section>
+
+					<section>
+						<img src="https://image.slidesharecdn.com/erosion-120301214651-phpapp01/95/soil-erosion-4-728.jpg?cb=1330639093" width="800">
+					</section>
+
+					<section>
+						<h3>Types of Erosion</h3>
+						<img src="https://marvel-b1-cdn.bc0a.com/f00000000067123/www.estormwater.com/sites/sws/files/inline-images/reducing%20erosion_0.png" width="800">
+					</section>
+
+					<section>
+						<h3>Types of Erosion</h3>
+						<img src="https://edusaint.com/wp-content/uploads/2018/12/types-of-origin.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Types of Erosion</h3>
+						<img src="https://2.bp.blogspot.com/-Ltz6W_VeQvE/V1Fl3k_C_rI/AAAAAAAAA7Q/mOb7jjo8Qnch4z9ab0S0xQwqf8Vp5bduwCLcB/w1200-h630-p-k-no-nu/dowmlaod.JPG" width="800">
+					</section>
+
+					<section>
+						<h3>Splash Erosion</h3>
+						<img src="https://agbmps.osu.edu/sites/bmp/files/imce/P32LG.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Splash Erosion</h3>
+						<img src="https://www.researchgate.net/profile/Safdar-Bashir/publication/320729156/figure/fig1/AS:555440052371456@1509438636005/a-Raindrop-falling-on-the-surface-b-Splash-impact-of-raindrop-c-Process-of-water.png" width="800">
+					</section>
+
+					<section>
+						<h3>Splash Erosion</h3>
+						<img src="https://www.researchgate.net/profile/Niki-Evelpidou/publication/339289610/figure/fig5/AS:858839213670402@1581774633369/Splash-erosion-the-impact-of-the-raindrops-Photo-by-Centeri_Q320.jpg" width="550">
+					</section>
+
+					<section>
+						<h3>Splash Erosion</h3>
+						<img src="https://lh3.googleusercontent.com/proxy/ZTGyn0adIsZSt30Bwgs6lCK95Wcwb05r8jlBmn4XHxxC3uLm2_ydY6N6Y_3p5795DgXmc_wWt_4QCnbrKlPqod5jBDw8bS_nchBpQ-tLzMTyrodcOv_fEbJ7Yg" width="800">
+					</section>
+
+					<section>
+						<h3>Splash Erosion</h3>
+						<img src="http://ecoursesonline.iasri.res.in/pluginfile.php/2443/mod_page/content/1/fig%201.2.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Raindrop size</h3>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Raindrops_sizes.svg" width="500">
+					</section>
+
+					<section>
+						<h3>Splash Erosion</h3>
+						<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0012825217301150-fx1.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Granulometría del suelo</h3>
+						<img src="http://community.dur.ac.uk/draem/wp-content/uploads/2012/12/splash_impact.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Terminal velocity</h3>
+						<img src="https://i.ytimg.com/vi/3p8xfnH6j20/maxresdefault.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Distance Downslope</h3>
+						<img src="https://ijci.avestia.com/2019/002_files/figure3.PNG" width="800">
+					</section>
+
+					<section>
+						<h3>Estoraques</h3>
+						<img src="https://cdn.colombia.com/sdi/2014/03/13/parque-nacional-natural-los-estoraques-853967.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Sheet erosion</h3>
+						<img src="https://www.qld.gov.au/__data/assets/image/0027/65790/sheet-rill-erosion.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Rill erosion</h3>
+						<img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs11368-020-02665-5/MediaObjects/11368_2020_2665_Fig2_HTML.png" width="800">
+					</section>
+
+					<section>
+						<h3>Rill erosion</h3>
+						<img src="https://passel-old.unl.edu/Image/siteImages/Rillerosion-LGjpg.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Gully erosion</h3>
+						<img src="https://slideplayer.com/slide/13040938/79/images/2/Soil+Erosion+Sheet+Erosion+Rill+Erosion+Gully+Erosion.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Gully erosion</h3>
+						<img src="https://www.researchgate.net/profile/Rafiq-Islam/publication/346934306/figure/fig4/AS:967413755559937@1607660821761/Water-erosion-types-a-sheet-erosion-b-rill-erosion-and-c-gully-erosion-Adapted.png" width="600">
+					</section>
+
+					<section>
+						<h3>Gully erosion</h3>
+						<img src="https://image.slidesharecdn.com/watererosion-140228072553-phpapp01/95/water-erosion-13-638.jpg?cb=1393572403" width="800">
+					</section>
+
+					<section>
+						<h3>Gully erosion</h3>
+						<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0341816218301899-gr1.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Gully erosion</h3>
+						<img src="https://onlinelibrary.wiley.com/cms/asset/2fbdf650-0b68-43ce-85a0-e1337b2f0e7f/esp4268-toc-0001-m.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Gully erosion</h3>
+						<img src="https://onlinelibrary.wiley.com/cms/asset/259f2db2-71e1-44d3-8885-f4e1352f6106/esp4233-fig-0004-m.jpg" width="500">
+					</section>
+
+					<section>
+						<h3>Gully erosion</h3>
+						<img src="https://onlinelibrary.wiley.com/cms/asset/1b0c60e9-c184-496d-ae22-65107d57d96f/ldr1094-fig-0001-m.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Gully erosion</h3>
+						<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0341816299000922-gr3.gif" width="600">
+					</section>
+
+					<section>
+						<h3>Gully erosion</h3>
+						<img src="https://www.elquindiano.com/upload/article/b201810151024204.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Gully erosion</h3>
+						<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0341816219300608-gr1.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Gully erosion</h3>
+						<img src="https://www.senderismoguadalajara.es/wp-content/uploads/2016/07/guada_a_vista_de_drone_002.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Gully erosion</h3>
+						<img src="http://www.senderismoguadalajara.es/wp-content/uploads/2016/07/guada_a_vista_de_drone_003.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Gully erosion</h3>
+						<img src="https://i.ytimg.com/vi/rFZOG43oYgM/maxresdefault.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Erosion control</h3>
+						<img src="https://lh3.googleusercontent.com/proxy/cT8zp4rx0vE2ZEU2zZLs3vIP7nEDx5tSFmWAwbHSJUbfYK1uljEsj29WKzl_xeATgaKCEjFDvtbXw9tLNrp2SmGH6OeFkKcGxgNsNj8HGXfBWfE3s09dJICEpbv2xA" width="800">
+					</section>
+
+					<section>
+						<h3>Trinchos</h3>
+						<img src="https://docplayer.es/docs-images/78/77400398/images/71-0.jpg" width="600">
+					</section>
+
+					<section>
+						<h3>Conducción de agua</h3>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKhOlX474St8_QQ5CzI2oc6E52Ciz2j6vSxRfNRKjHLIUmV2lkEQbx2ZCCFV5AWw2UtKM&usqp=CAU" width="300">
+					</section>
+
+					<section>
+						<h3>Conducción de agua</h3>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA30bYdGHoWp_cFpE2LB7aAcqj0VbkvcUeq5AtZlb1QW459r0UmBJbIOTxuY1Nb9EXI0g&usqp=CAU" width="800">
+					</section>
+
+					<section>
+						<h3>Wind Erosion</h3>
+						<img src="https://www.researchgate.net/profile/Juan-Palma-2/publication/237513153/figure/fig3/AS:507320338784256@1497966002100/Figura-6-secuencia-de-erosion-eolica-Fuente-Jaramillo-I-Miranda-A-2003.png" width="800">
+					</section>
+
+					<section>
+						<h3>Wind Erosion</h3>
+						<img src="https://sites.google.com/site/sjcalasanzciencias2/_/rsrc/1472867088978/la-dinamica-externa-del-planeta/los-agentes-geologicos/el-viento/duna.jpg?height=187&width=400" width="800">
+					</section>
+
+					<section>
+						<h3>Wind Erosion</h3>
+						<img src="https://www.geo.fu-berlin.de/en/v/geolearning/mountain_building/weathering/media/vetifactos.jpg?width=250" width="400">
+					</section>
+					
+					<section>
+						<h3>Wind Erosion</h3>
+						<img src="https://1.bp.blogspot.com/-XClveqUe_SE/VwdE0KxL5qI/AAAAAAAAChc/Th59ck_IkPgLO5ywlgdDJvSIknjUgPhVw/s1600/slide_7.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Wind Erosion</h3>
+						<img src="https://i.pinimg.com/originals/03/20/27/0320272df87ebcfc8b99a750787e6149.jpg" width="600">
+					</section>
+
+					<section>
+						<h3>Wind Erosion</h3>
+						<img src="https://i.pinimg.com/originals/d1/b1/33/d1b133abfd7412a31c686fba98daff49.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Wind Erosion</h3>
+						<img src="https://www.researchgate.net/profile/Michael-Brookfield-2/publication/259678005/figure/fig11/AS:297186572161052@1447866208551/Dune-types-courtesy-Ahmed-Hemden.png" width="600">
+					</section>
+
+					<section>
+						<h3>Evolución</h3>
+						<img src="https://cdn.iopscience.com/images/1367-2630/11/2/023014/Full/nj293911fig4.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Wind Erosion</h3>
+						<img src="https://slideplayer.com/slide/13042195/79/images/11/Relationship%3A+Dune+type+vs.+sand+supply+and+wind+variability.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Wind Erosion</h3>
+						<img src="https://i2.wp.com/www.newsbugz.com/wp-content/uploads/2017/04/duneforms1323295793234.jpg?resize=648%2C485&ssl=1" width="800">
+					</section>
+
+					<section>
+						<h3>Longitudinal dunes</h3>
+						<img src="https://www.handsontheland.org/grsa/resources/images/lgformat/longitudinal.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Longitudinal dunes</h3>
+						<img src="https://i.pinimg.com/originals/58/39/0e/58390e33b250bd7707ada9e90902ffc8.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Dunas transversales</h3>
+						<img src="https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/Transverse_dunes_jdjkmb.jpg" width="450">
+					</section>
+
+					<section>
+						<h3>Dunas transversales</h3>
+						<img src="https://lh3.googleusercontent.com/proxy/YK-DimoedXEYWL-7PDEhETPry2XyOKuJjlx_Ynv3RrbIjBg8cZVq2rNn4d6e_wnSHTGOTIxRvbq_yLkRGWVavKVAhmfQzA0NArA7BS6ufam2HDGZg08" width="450">
+					</section>
+
+					<section>
+						<h3>Barchans</h3>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT00Yvm7zIzDxHduRo4yef_l6GiEzkSea51UA&usqp=CAU" width="800">
+					</section>
+					
+					<section>
+						<h3>Star dune</h3>
+						<img src="https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/Star_dunes_obinlc.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Star dune</h3>
+						<img src="https://lh3.googleusercontent.com/proxy/9ZvsGxKAJKjYY92ibBWRXZQOGz9j1aZ4p7G9O7fUmlEj81qj1sId2CP9ut1A4uU7Si6Tt-HbIf1SaMH9sylbj0wQ60jka7MJ_4aB" width="800">
+					</section>
+				</section>
+
+				<section>
+					<section><h1>Geomorfología de cuencas (Ambiente torrencial y aluvial</h1></section>
+
+					<section>
+						<h3>Cuenca</h3>
+						<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0169136816304796-gr1.jpg" width="600">
+					</section>
+
+					<section>
+						<h3>Cuenca</h3>
+						<img src="https://o.quizlet.com/N53lgF7lwbsNQemVtGt3pg.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Cuenca</h3>
+						<img src="https://esurf.copernicus.org/articles/8/245/2020/esurf-8-245-2020-avatar-web.png" width="800">
+					</section>
+
+					<section>
+						<h3>Stream order</h3>
+						<img src="https://grass.osgeo.org/grass78/manuals/addons/orders.png" width="800">
+					</section>
+
+					<section>
+						<h3>Drainage density</h3>
+						<img src="https://geographicworld.weebly.com/uploads/3/2/5/1/3251698/9368402_orig.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Erosión - Depositación</h3>
+						<img src="https://www.nps.gov/subjects/geology/images/3Zones_Fluvial_1204-2018_tte-01.jpg" width="800">
+					</section>
+
+					
+					<section>
+						<h3>hillslope and drainage area</h3>
+						<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0341816218300365-gr10.jpg" width="500">
+					</section>
+
+					<section>
+						<h3>River slope and drainage area and plot of $k_{sn}$</h3>
+						<img src="https://earthsurface.readthedocs.io/en/latest/_images/ksn.png" width="700">
+					</section>
+
+					<section>
+						<h3>Respuesta de la cuenca</h3>
+						<img src="https://echo2.epfl.ch/VICAIRE/mod_1a/chapt_8/pictures/Figure81.gif" width="700">
+					</section>
+
+					<section>
+						<h3>Respuesta de la cuenca</h3>
+						<img src="http://echo2.epfl.ch/VICAIRE/mod_1a/chapt_8/pictures/Figure87.gif" width="700">
+					</section>
+
+					<section>
+						<h3>Respuesta de la cuenca</h3>
+						<img src="http://stream1.cmatc.cn/pub/comet/HydrologyFlooding/hydrograph/comet/hydro/basic/UnitHydrograph/media/graphics/sfcflow.gif" width="700">
+					</section>
+
+					<section>
+						<h3>Respuesta de la cuenca</h3>
+						<img src="https://slideplayer.com/2514629/9/images/slide_1.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Respuesta de la cuenca</h3>
+						<img src="https://www.researchgate.net/profile/Edier-Aristizabal/publication/275723803/figure/fig2/AS:614061867802642@1523415166398/Water-content-into-the-soil-and-water-available-Root-depth-Z-r-soil-thickness-Z-s_W640.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Impermeabilización de la cuenca</h3>
+						<img src="https://www.cmap.illinois.gov/documents/10180/61810/stormwater_runoff.jpg/7d86abd4-2e37-419c-90f9-de2c0d15175b?t=1379516743211" width="550">
+					</section>
+
+					<section>
+						<h3>Permeabilidad secundaria</h3>
+						<img src="https://cms-static.wehaacdn.com/jofnm-com/images/20-Q2-6-macropores.104.jpg" width="400">
+					</section>
+
+					<section>
+						<h3>Permeabilidad secundaria</h3>
+						<img src="https://images.slideplayer.com/16/5014546/slides/slide_24.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Basin shape</h3>
+						<img src="http://877792843598943391.weebly.com/uploads/3/7/2/2/37225869/6466752.jpg?304" width="700">
+					</section>
+
+					<section>
+						<h3>Basin response</h3>
+						<img src="https://i.pinimg.com/564x/03/16/69/0316691372d0f5fa9387c4683ea57ec7.jpg" width="700">
+					</section>
+					
+					<section>
+						<h3>Basin response</h3>
+						<img src="https://i.pinimg.com/originals/4c/23/0e/4c230efe4b29d4e533c3f6b8a56763dd.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Regulación de la cuenca</h3>
+						<img src="https://i.pinimg.com/564x/9a/4c/94/9a4c941cd4994a1e0e7f1fe69240ae2e.jpg" width="700">
+					</section>
+
+					<section id="salgar" class="level2">
+						<img src="https://i.pinimg.com/564x/ff/ba/df/ffbadf9de3d59940f87b1eba1a532f91.jpg" alt="Salgar" width="900"/>
+							<figcaption><small>Fuente: El Tiempo</small></figcaption>
+					  </section>
+			
+					  <section id="mocoa" class="level2">
+						<img src="https://i.pinimg.com/564x/1a/cb/d4/1acbd4c99eb19253ed2ef2c35a07c6db.jpg" alt="Mocoa" width="900"/>
+							<figcaption><small>Fuente: García-Delgado et al., 2019</small></figcaption>
+					  </section>
+			
+					  <section id="sancarlos" class="level2">
+						<h3>San Carlos (1990)</h3>
+						<img src="https://i.pinimg.com/564x/3a/69/4a/3a694aec93cb6ba23b058ea1bb383171.jpg" alt="San Carlos" width="800"/>
+							<figcaption><small>Foto: Velasquez & Mejía</small></figcaption>
+					  </section>
+			
+					  <section id="sancarlos" class="level2">
+						<h3>San Carlos (1990)</h3>
+						<img src="https://i.pinimg.com/564x/22/a6/ed/22a6ed4bda37e691f14b5e92fb6f86dd.jpg" alt="San Carlos1" width="800"/>
+							<figcaption><small>Foto: Velasquez & Mejía</small></figcaption>
+					  </section>
+			
+					  <section id="taraza" class="level2">
+						<h3>Tarazá (2007)</h3>
+						<img src="https://i.pinimg.com/564x/ee/a2/82/eea2826fade6618d051e9eff50415f2c.jpg" alt="Taraza" width="430"/>
+							<figcaption><small>Foto: Marco Gamboa</small></figcaption>
+					  </section>
+			
+					  <section id="yali" class="level2">
+						<h3>Yalí (2020)</h3>
+						<img src="https://i.pinimg.com/564x/38/e5/b0/38e5b0a0c19d81be1326f5472776b6ae.jpg" alt="Yali" width="1000"/>
+							<figcaption><small>Foto: DAPARD</small></figcaption>
+					  </section>
+			
+					  <section id="anori" class="level2">
+						<h3>Anorí (2020)</h3>
+						<img src="https://i.pinimg.com/564x/48/de/d2/48ded2fe0653bafd495c80c1071a12c0.jpg" alt="Anori" width="750"/>
+							<figcaption><small>Foto: DAPARD</small></figcaption>
+					  </section>
+			
+					  <section class="level2">
+						<h3>Dabeiba (2020)</h3>
+						<img src="https://i.pinimg.com/564x/c9/bb/79/c9bb796371139d0badf2fe08077ba2ce.jpg" alt="dabeiba" width="940"/>
+							<figcaption><small>Foto: DAPARD</small></figcaption>
+					  </section>
+
+					  <section class="level2">
+						<img src="https://i.pinimg.com/564x/c9/68/d3/c968d3de8d952df10f4392701f1077c6.jpg" width="1100"/>
+					  </section>
+			  
+					  <section class="level2">
+						<img src="images/flows2.png" width="750"/>
+						<figcaption><small>Modificado de Phillips & Davis (1991)</small></figcaption>
+					  </section>
+			  
+					  <section class="level2">
+						<img src="https://oxfordre.com/naturalhazardscience/doc/10.1093/acrefore/9780199389407.001.0001/acrefore-9780199389407-e-37-graphic-003-full.jpg" width="950"/>
+						<figcaption><small>Fuente: Jakob et al (2015)</small></figcaption>
+					  </section>
+			  
+					  <section class="level2">
+						<img src="blob:https://co.pinterest.com/ebe6545d-7478-4162-b331-4716e2680ef9" width="900"/>
+					  </section>
+			  
+					  <section class="level2">
+					  <h3>Lluvia + Sedimentos $\rightarrow$ Avenida torrencial</h3>
+						<img src="https://i.pinimg.com/564x/9d/6c/6c/9d6c6c3410d2ca137dd6d426dcbba77b.jpg" width="950"/>
+					  </section>
+			  
+					  <section class="level2">
+						<h3>Lluvia + Enjambre MenM $\rightarrow$ Avenida torrencial</h3>
+						<img src="https://i.pinimg.com/564x/44/ad/03/44ad039f504c5ef0b7cfec2207ae8a10.jpg" width="950"/>
+					  </section>
+			  
+					  <section class="level2">
+						<h3>Lluvia + Sismo $\rightarrow$ Avenida torrencial</h3>
+						<img src="https://i.pinimg.com/564x/aa/06/79/aa0679ccd84ea2a3b334f56ed6896b23.jpg" width="950"/>
+					  </section>
+			  
+					  <section class="level2">
+						<h3>Glaciar + Piroclastos $\rightarrow$ Avenida torrencial</h3>
+						<img src="https://i.pinimg.com/564x/39/86/aa/3986aa03dd606e7b2d42a76b6aedcf15.jpg" width="950"/>
+					  </section>
+			  
+					  <section class="level2">
+						<h3>Embalse + Rotura presa $\rightarrow$ Avenida torrencial</h3>
+						<img src="https://i.pinimg.com/564x/9b/1b/7b/9b1b7babca706e458836400373c6c1ff.jpg" width="950"/>
+					  </section>
+			  
+					  <section class="level2">
+						<h3>Sismo + GLOF's $\rightarrow$ Avenida torrencial</h3>
+						<img src="https://i.pinimg.com/564x/2f/14/ec/2f14ec7e6d4aa59f4ad0a6b8c63878a7.jpg" width="850"/>
+					  </section>
+			  
+					  <section class="level2">
+						<img src="https://i.pinimg.com/564x/f5/81/65/f5816500f5377f132a05852eb6aa541c.jpg" width="800"/>
+					  </section>
+			  
+					  <section class="level2">
+						<img src="https://i.pinimg.com/564x/3f/64/e3/3f64e396d67beb1bed7fc6b2467e6ce8.jpg" width="1000"/>
+					  </section>      
+
+					<section>
+						<h3>Debris flow</h3>
+						<img src="https://i.ytimg.com/vi/0ENe7wDKP6I/maxresdefault.jpg" width="800">
+					</section>
+					
+					<section>
+						<h3>Debris flow</h3>
+						<img src="https://blogs.agu.org/landslideblog/files/2016/07/16_07-Illgraben-1-e1469687554237.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Debris flow</h3>
+						<img src="https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-3-319-35074-5_3/MediaObjects/395291_1_En_3_Fig1_HTML.gif" width="900">
+					</section>
+
+					<section>
+						<h3>Avenidas torrenciales</h3>
+						<img src="https://revistas.unal.edu.co/index.php/rcg/article/download/72612/html/464599" width="900">
+					</section>
+
+					<section>
+						<h3>Inundaciones lentas</h3>
+						<img src="https://www.islamic-relief.org/wp-content/uploads/2018/05/Beledweyne_Floods-1-lpr-605x340.jpg" width="900">
+					</section>
+
+					<section>
+						<h3>Stream classification</h3>
+						<img src="https://slideplayer.com/slide/4735177/15/images/70/Discuss+SPI+and+transition+from+bedrock+to+alluvial+reaches+%5Binsert+figure%5D.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Channel</h3>
+						<img src="https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-3-319-73250-3_3/MediaObjects/369911_1_En_3_Fig1_HTML.gif" width="600">
+					</section>
+
+					<section>
+						<h3>Channel</h3>
+						<img src="https://www.researchgate.net/profile/Ken-Fritz/publication/312577782/figure/fig21/AS:614150560575497@1523436312443/Illustration-of-relationships-among-straight-meandering-and-braided-channels-in-terms.png" width="800">
+					</section>
+
+					<section>
+						<h3>Channel</h3>
+						<img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780124165588000020-f02-03-9780124165588.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Lane´s balance</h3>
+						<img src="https://www.researchgate.net/profile/Zan-Rubin-2/publication/265025433/figure/fig7/AS:614268999331848@1523464550324/6-Lanes-Balance-showing-the-interrelationship-between-sediment-discharge-Q-s.png" width="700">
+					</section>
+
+					<section>
+						<h3>Knickpoints</h3>
+						<img src="https://earthsurface.readthedocs.io/en/latest/_images/graded.png" width="900">
+					</section>
+
+					<section>
+						<h3>Knickpoints</h3>
+						<img src="https://earthsurface.readthedocs.io/en/latest/_images/knickpoint.png" width="800">
+					</section>
+
+					<section>
+						<h3>χ-plot as a measure of equilibrium</h3>
+						<img src="https://earthsurface.readthedocs.io/en/latest/_images/chi1.jpg" width="700">
+					</section>
+
+					<section>
+						<h3>Floodplains</h3>
+						<img src="https://earthsurface.readthedocs.io/en/latest/_images/GeomorphicChacoCanyon.jpg" width="530">
+					</section>
+
+					<section>
+						<h3>Floodplains</h3>
+						<img src="https://c8.alamy.com/comp/RG5FKA/assessing-the-natural-range-of-variability-in-minimally-disturbed-wetlands-across-the-rocky-mountains-the-rocky-mountain-remap-project-wetlands-wet-meadow-ecology-shrubland-ecology-flowers-topographic-floodplain-bankfull-elevation-bankfull-depth-figure-5-graphical-illustration-of-bankfull-width-and-the-topographic-floodplain-56-vegetation-zones-within-the-assessment-area-identify-and-describe-the-major-vegetation-zones-within-the-aa-vegetation-zones-often-consist-of-more-than-one-plant-species-but-some-zones-can-be-mono-specific-a-vegetation-zone-should-be-described-if-it-me-RG5FKA.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Terrace</h3>
+						<img src="https://i.pinimg.com/originals/ce/a7/c5/cea7c56b98003a54205820b8b1874bc2.jpg" width="600">
+					</section>
+
+					<section>
+						<h3>Terrace</h3>
+						<img src="https://ars.els-cdn.com/content/image/3-s2.0-B978012374739600097X-f0500097-18-9780123747396.jpg" width="620">
+					</section>
+
+					<section>
+						<h3>Terrace</h3>
+						<img src="http://www.qsstudy.com/wp-content/uploads/2017/11/River-Terraces-1.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Terrace</h3>
+						<img src="http://www.chartiersgreenway.net/art/hydrology/floodplainterraces.gif" width="800">
+					</section>
+
+					<section>
+						<h3>Terrace</h3>
+						<img src="http://2.bp.blogspot.com/-CxdoDaG0bn8/UYk-8IkYmLI/AAAAAAAAABI/HLdoBe0RFII/w1200-h630-p-k-no-nu/river_terrace.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Terrace</h3>
+						<img src="https://lh3.googleusercontent.com/proxy/JDl-qiN9VuG93ZcqVz_dUy8UK78UTaP3EUbnSfHPt98JIMeDUQEJUVR_4zm-dW2kW6Hs8bZZ0uK353qVdDQmCIZnBDSSxFoq3spodBwzXvJBfvaGMf01VXOPruihzqwV" width="800">
+					</section>
+
+					<section>
+						<h3>Terrace</h3>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCsNJGafoGyEHIZfwofMsaOLZO5OYGQ-Q6sQ&usqp=CAU" width="800">
+					</section>
+
+					<section>
+						<h3>Alluvial deposits</h3>
+						<img src="https://research.engineering.ucdavis.edu/gpa/wp-content/uploads/sites/43/2015/02/Alluvial-2-P1-Labeled.jpg" width="400">
+					</section>
+
+					<section>
+						<h3>Alluvial deposits</h3>
+						<img src="https://image.shutterstock.com/image-photo/alluvial-deposite-tumacacori-az-260nw-1007253439.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Alluvial deposits</h3>
+						<img src="https://www.nps.gov/parkhistory/online_books/geology/publications/state/wa/1980-72/images/photo50.jpg" width="600">
+					</section>
+
+					<section>
+						<h3>Alluvial deposits</h3>
+						<img src="https://epod.usra.edu/.a/6a0105371bb32c970b01b8d1acb61e970c-pi" width="500">
+					</section>
+
+					<section>
+						<h3>Alluvial deposits</h3>
+						<img src="https://1.bp.blogspot.com/-IoyIhWGTI6Q/TtYTLckv-RI/AAAAAAAAAoo/ROkLprxFQ7E/s1600/Clastos+imbricados+Macastre+2.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>Torrential sediments</h3>
+						<img src="https://d3i71xaburhd42.cloudfront.net/554594a31e5769a6e2b84ea4d07b84848edff42e/8-Figure5-1.png" width="700">
+					</section>
+
+					<section>
+						<h3>Torrential sediments</h3>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Inverse_grading.gif" width="800">
+					</section>
+
+					<section>
+						<h3>Torrential sediments</h3>
+						<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0037073899000998-gr3.gif" width="800">
+					</section>
+
+					<section>
+						<h3>Aluvial fan</h3>
+						<img src="https://sp.lyellcollection.org/content/specpubgsl/440/1/23/F2.large.jpg" width="600">
+					</section>
+
+					<section>
+						<h3>Aluvial fan</h3>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Alluvial_fan_01.JPG" width="800">
+					</section>
+
+					<section>
+						<h3>Aluvial fan</h3>
+						<img src="https://onlinelibrary.wiley.com/cms/asset/f3a2e80e-7e71-4ad9-969f-feb22f780928/sed12275-fig-0004-m.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>River Delta</h3>
+						<img src="https://elizabethbusey.com/site/wp-content/uploads/2018/04/%C2%A9Elizabeth_Busey_Flowing_Freely_Goose_River.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>River Delta</h3>
+						<img src="https://i.pinimg.com/originals/ac/a0/9b/aca09bcf7920be58b655278f903fbae3.gif" width="600">
+					</section>
+
+					<section>
+						<h3>River Delta</h3>
+						<img src="https://www.pnas.org/content/104/43/16804/F1.large.jpg" width="600">
+					</section>
+
+					<section>
+						<h3>River Delta</h3>
+						<img src="https://www.drishtiias.com/images/uploads/1591012378_image3.png" width="800">
+					</section>
+
+					<section>
+						<h3>River Delta</h3>
+						<img src="http://www.coastalwiki.org/w/images/2/26/3.R_WorldDeltas_logaxis2-01.png" width="800">
+					</section>
+
+					<section>
+						<h3>River Delta</h3>
+						<img src="https://www.eopugetsound.org/sites/default/files/topical_article/images/landforms_deltariver.jpg" width="800">
+					</section>
+
+					<section>
+						<h3>River Delta</h3>
+						<img src="http://www.coastalwiki.org/w/images/thumb/4/44/NienhuisFig2.jpg/400px-NienhuisFig2.jpg" width="800">
+					</section>
+				</section>
+						
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/menu/menu.js"></script>
+		<script src="plugin/math/math.js"></script>
+
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				slideNumber: 'c/t',
+				hash: true,
+				math: {
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+				menu: {
+					side: 'left', // 'left' or 'right'.
+					width: 'normal', // 'normal', 'wide', 'third', 'half', 'full', or
+					numbers: false,
+					titleSelector: 'h1, h2, h3',
+					useTextContentForMissingTitles: false,
+					hideMissingTitles: false,
+					markers: true,
+					custom: false,
+					themes: true,
+					themesPath: 'dist/theme/',			
+					transitions: false,  // ['None', 'Fade', 'Slide']
+					openButton: true,
+					openSlideNumber: true,
+					keyboard: true,
+					sticky: false,
+					autoOpen: true,
+					delayInit: false,
+					openOnInit: false,
+					loadIcons: true
+						},
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, RevealMath ],
+				dependencies: [
+				
+								]
+			});
+		</script>
+	</body>
+</html>
