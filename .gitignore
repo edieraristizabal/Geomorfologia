@@ -4,6 +4,7 @@
 *.nav
 *.out
 *.zip
-
+*.pptx
+*.ppt
 .git
 
