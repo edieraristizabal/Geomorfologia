@@ -1,4 +1,4 @@
-# Geomorfologia
+# Geomorfología
  
 <div class=text-justify>
 El curso de Geomorfología está orientado para estudiantes de semestres intermedios de Ingeniería Geológica e Ingeniería Ambiental que deseen adquirir conocimientos sobre los procesos endógenos y exógenos que modelan las geoformas de la superficie terrestre. 
