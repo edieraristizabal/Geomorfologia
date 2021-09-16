@@ -18,7 +18,6 @@ De esta forma se pretende que el estudiante conozca en detalle los procesos de f
 [Ir a presentación...](/html/CartoGeomorfologia.html)
 
 ## Guía trabajo final
-
 * [Presentación](/trabajoGrupo/Guia_Presentacion.pdf) 
 * [Taller 2](/trabajoGrupo/Guia_TrabajoEscrito.pdf)
 
