@@ -1,0 +1,12 @@
+*.log
+*.aux
+*.gz
+*.nav
+*.out
+*.zip
+*.pptx
+*.ppt
+.git
+/trabajoGrupo/Taller_morfometria
+/trabajoGrupo/Mapas_Geomorfologia.pptx
+
