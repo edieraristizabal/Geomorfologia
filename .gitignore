@@ -6,7 +6,10 @@
 *.zip
 *.pptx
 *.ppt
+*.tex
 .git
 /trabajoGrupo/Taller_morfometria
 /trabajoGrupo/Mapas_Geomorfologia.pptx
+
+.gitignore
 
