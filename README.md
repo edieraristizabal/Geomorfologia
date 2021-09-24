@@ -1,4 +1,8 @@
 # Geomorfología
+
+*Curso del programa de Ingeniería Geológica del Departamento de Geociencias y Medio Ambiente de la Facultad de Minas - Universidad Nacional de Colombia, sede Medellín*
+
+<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Logotipo_de_la_Universidad_Nacional_de_Colombia.svg/1024px-Logotipo_de_la_Universidad_Nacional_de_Colombia.svg.png" width="200"/></p>
  
 <div class=text-justify>
 El curso de Geomorfología está orientado para estudiantes de semestres intermedios de Ingeniería Geológica e Ingeniería Ambiental que deseen adquirir conocimientos sobre los procesos endógenos y exógenos que modelan las geoformas de la superficie terrestre. 
