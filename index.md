@@ -15,7 +15,7 @@ De esta forma se pretende que el estudiante conozca en detalle los procesos de f
 Miercoles & Viernes 8:00 - 10:00 a.m.
 
 ## Link para clases virtuales
-[https://meet.google.com/lookup/hcqoytoswb](hhttps://meet.google.com/lookup/hcqoytoswb)
+[https://meet.google.com/lookup/hcqoytoswb](https://meet.google.com/lookup/hcqoytoswb)
 
 ## Geomorfología de procesos endógenos & exógenos
 [Ir a presentación...](/html/Geomorfologia.html)
