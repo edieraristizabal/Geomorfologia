@@ -11,6 +11,12 @@ De esta forma se pretende que el estudiante conozca en detalle los procesos de f
 ## Programa del curso
 [Ir al programa...](/Programa_GEOMORFOLOGIA.pdf)
 
+## Horario del curso
+Miercoles & Viernes 8:00 - 10:00 a.m.
+
+## Link para clases virtuales
+[https://meet.google.com/lookup/hcqoytoswb](hhttps://meet.google.com/lookup/hcqoytoswb)
+
 ## Geomorfología de procesos endógenos & exógenos
 [Ir a presentación...](/html/Geomorfologia.html)
 
