@@ -74,7 +74,7 @@ Lecturas recomendadas: [El sistema ITC para levantamientos geomorfológicos](htt
 Lecturas recomendadas: [Chapter 1: Digital terrain analysis](https://johnwilson.usc.edu/wp-content/uploads/2016/05/2000-Wilson-Gallant-Terrain-Anaylsis-Chapter-1.pdf)
 
 #### Morfocronología 
-Lecturas recomendadas: [Dating methods in teh landscape](http://geosci.uchicago.edu/~kite/doc/Anderson_and_Anderson_ch_6.pdf)
+Lecturas recomendadas: [Dating methods and establishing methods timing in the landscape](http://geosci.uchicago.edu/~kite/doc/Anderson_and_Anderson_ch_6.pdf)
 
 ## Evaluación del curso
 El componente teórico del curso se evaluará con 10 exámenes cortos asociados a las lecturas recomendadas de la Evolución del paisaje, Procesos endògenos y Procesos exógenos; con un valor del 5\% cada uno. El restante 50\% se evaluará como componente práctico del curso con un trabajo en
