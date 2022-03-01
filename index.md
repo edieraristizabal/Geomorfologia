@@ -14,9 +14,6 @@ De esta forma se pretende que el estudiante conozca en detalle los procesos de f
 ### Horario del curso
 Miercoles & Viernes 8:00 - 10:00 a.m.
 
-## Cartografía geomorfológica aplicada
-[Ir a presentación...](/html/CartoGeomorfologia.html)
-
 ## Programa del curso
 
 ### Introducción al curso
@@ -63,6 +60,7 @@ Lecturas recomendadas: [Definición y clasificación de las avenidas torrenciale
 Lecturas recomendadas:[Processes and forms of alluvial fans](http://web.gps.caltech.edu/~mpl/Ge126_Reading_List/Ch14.pdf)
 
 ### Cartografía geomorfológica aplicada
+[Ir a presentación...](/html/CartoGeomorfologia.html)
 
 #### Introducción a la cartografía temática
 Lecturas recomendadas: [Cartography: design, symbolization and visualization of geomorphological maps](https://www.researchgate.net/publication/229058600_Cartography_design_symbolisation_and_visualisation_of_geomorphological_maps)
