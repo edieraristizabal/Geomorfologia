@@ -73,9 +73,15 @@ Lecturas recomendadas: [Chapter 1: Digital terrain analysis](https://johnwilson.
 Lecturas recomendadas: [Dating methods and establishing methods timing in the landscape](http://geosci.uchicago.edu/~kite/doc/Anderson_and_Anderson_ch_6.pdf)
 
 ## Evaluación del curso
-El componente teórico del curso se evaluará con 10 exámenes cortos asociados a las lecturas recomendadas de la Evolución del paisaje, Procesos endògenos y Procesos exógenos; con un valor del 5\% cada uno. El restante 50\% se evaluará como componente práctico del curso con un trabajo en
+El componente teórico del curso se evaluará con 5 exámenes cortos asociados a las lecturas recomendadas de la 
+Evolución del paisaje, Procesos endógenos y Procesos exógenos; con un valor del
+5% cada uno; y un parcial teòrico del 25% que se realziarà al terminar esta primera parte y antes de iniciar 
+la segunda parte del curos Cartografía geomorfológica aplicada.
+
+El restante 50% se evaluará como componente práctico del curso con un trabajo en
 grupos de tres (3) personas de cartografía geomorfológica de una cuenca seleccionada; el 20\% de este
-componente práctico corresponde a la presentación del trabajo y el 30\% al informe escrito.
+componente práctico corresponde a la presentación del trabajo y el 30% al informe escrito. En el
+Google Classroom se encuentra el taller del trabajo en grupo donde se especifican los alcances.
 
 ## Guía trabajo final
 * [Guía para la presentación](/trabajoGrupo/Guia_Presentacion.pdf) 
