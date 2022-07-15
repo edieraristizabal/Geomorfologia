@@ -11,7 +11,8 @@ De esta forma se pretende que el estudiante conozca en detalle los procesos de f
 ### Horario del curso
 Miercoles & Viernes 8:00 - 10:00 a.m.
 
-### Aula: 
+### Aula:
+M3-223
 
 ## Programa del curso
 [Ir al programa...](/Programa_GEOMORFOLOGIA.pdf)
@@ -75,10 +76,10 @@ Lecturas recomendadas: [Chapter 1: Digital terrain analysis](https://johnwilson.
 Lecturas recomendadas: [Dating methods and establishing methods timing in the landscape](http://geosci.uchicago.edu/~kite/doc/Anderson_and_Anderson_ch_6.pdf)
 
 ## Evaluación del curso
-El componente teórico del curso se evaluará con 5 exámenes cortos asociados a las lecturas recomendadas de la 
+El componente teórico del curso se evaluará con 5 exámenes cortos asociados a las clases y lecturas recomendadas de la 
 Evolución del paisaje, Procesos endógenos y Procesos exógenos; con un valor del
-5% cada uno; y un parcial teòrico del 25% que se realziarà al terminar esta primera parte y antes de iniciar 
-la segunda parte del curos Cartografía geomorfológica aplicada.
+5% cada uno; y un parcial teórico del 25% que se realizarà al terminar esta primera parte y antes de iniciar 
+la segunda parte del curso Cartografía geomorfológica aplicada.
 
 El restante 50% se evaluará como componente práctico del curso con un trabajo en
 grupos de tres (3) personas de cartografía geomorfológica de una cuenca seleccionada; el 20\% de este
@@ -86,8 +87,8 @@ componente práctico corresponde a la presentación del trabajo y el 30% al info
 Google Classroom se encuentra el taller del trabajo en grupo donde se especifican los alcances.
 
 ## Guía trabajo final
-* [Guía para la presentación](/trabajoGrupo/Guia_Presentacion.pdf) 
-* [Guía para el trabajo escrito](/trabajoGrupo/Guia_TrabajoEscrito.pdf)
+En el siguiente documento se describe a detalle los alcances y actividades del trabajo en grupo:
+* [Guía para el trabajo](/trabajoGrupo/Guia_Trabajo.pdf)
 
 
 
