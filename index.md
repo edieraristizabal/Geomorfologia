@@ -49,11 +49,13 @@ Lecturas recomendadas: [Cap 1 y 2 de Glaciares de Colombia mías que montañas c
 #### Ambiente denudacional: Meteorización
 Lecturas recomendadas: [Tropical chemical weathering](https://www.researchgate.net/publication/222693356_Tropical_chemical_weathering_of_hillslope_deposits_and_bedrock_source_in_the_Aburra_Valley_northern_Colombian_Andes)
 
-#### Ambiente denudacional: Erosión
-Lecturas recomendadas: [El impacto de la deforestación](https://raccefyn.co/index.php/raccefyn/article/view/141/123)
-
 #### Ambiente denudacional: Movimientos en masa
-[Lecturas recomendadas: Landslide types and processes](https://onlinepubs.trb.org/Onlinepubs/sr/sr247/sr247-003.pdf)
+Lecturas recomendadas: [Landslide types and processes](https://onlinepubs.trb.org/Onlinepubs/sr/sr247/sr247-003.pdf)
+
+#### Ambiente denudacional: Erosión
+Lecturas recomendadas: [El impacto de la deforestación](https://raccefyn.co/index.php/raccefyn/article/view/141/123)/
+Lecturas recomendadas: [Soil erodibility and processes of water erosion on hillslope](https://www.sciencedirect.com/science/article/pii/S0169555X99001051)
+
 
 #### Ambiente fluvial: Torrencial
 Lecturas recomendadas: [Definición y clasificación de las avenidas torrenciales](https://revistas.unal.edu.co/index.php/rcg/article/view/72612)  
