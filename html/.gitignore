@@ -9,9 +9,5 @@ log/*.log
 tmp/**
 node_modules/
 .sass-cache
-<<<<<<< HEAD
 dist/*.map
 
-=======
-dist/*.map
->>>>>>> a40397f3df56fabe16ec4918f1df5d7bfb267ce0
