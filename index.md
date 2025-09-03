@@ -70,17 +70,12 @@ Lecturas recomendadas: [Definición y clasificación de las avenidas torrenciale
 #### Ambiente fluvial: Aluvial 
 Lecturas recomendadas:[Processes and forms of alluvial fans](http://web.gps.caltech.edu/~mpl/Ge126_Reading_List/Ch14.pdf)
 
-#### Práctica 5: Análisis geoespacial de cuencas
-
 ### Cartografía geomorfológica
 
-#### Introducción a la cartografía temática
+#### Práctica 5: Cartografía geomorfológica
 Lecturas recomendadas: [Cartography: design, symbolization and visualization of geomorphological maps](https://www.researchgate.net/publication/229058600_Cartography_design_symbolisation_and_visualisation_of_geomorphological_maps)
 
-#### Sistemas de clasificación
 Lecturas recomendadas: [El sistema ITC para levantamientos geomorfológicos](https://libros.sgc.gov.co/index.php/editorial/catalog/view/52/44/438-1) 
-
-#### Práctica 6: Análisis geoespacial avanzado
 
 #### Morfocronología 
 Lecturas recomendadas: [Dating methods and establishing methods timing in the landscape](http://geosci.uchicago.edu/~kite/doc/Anderson_and_Anderson_ch_6.pdf)
