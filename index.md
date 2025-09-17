@@ -23,19 +23,22 @@ M3-115
 ### Introducción al curso
 
 #### Evolución del paisaje
-Geomorfología sistémica: Conceptos claves
+[Documento](Documentos/conceptos.pdf)
 
 #### Modelos de evolución  
+[Documento](Documentos/evolucion.pdf)
+
 Lecturas recomendadas: [Landscape evolution models](https://www.sciencedirect.com/science/article/pii/S1571086603010121)
-
-### Procesos endógenos
-
-#### Morfotectónica
-Lecturas recomendadas: [Chapter 2. Plate tectonics: a unifying](http://usuarios.geofisica.unam.mx/cecilia/cursos/PTeCh02_Wicander-PhysG.pdf)
 
 #### Práctica 1: Intro a herramientas de análisis geoespacial
 
-#### Ambiente estructural
+### Procesos endógenos
+
+#### Morfotectónica y ambiente estructural
+[Documento](Documentos/morfotectonica.pdf)
+
+Lecturas recomendadas: [Chapter 2. Plate tectonics: a unifying](http://usuarios.geofisica.unam.mx/cecilia/cursos/PTeCh02_Wicander-PhysG.pdf)
+
 Lecturas recomendadas: [Chap 1. Tectonic geomorphology](https://www.irsm.cas.cz/ext/ethiopia/materials/papers/tectonic_geomorphology/Tectonic_Geomorphology_Burbank.pdf)
 
 #### Ambiente volcánico
