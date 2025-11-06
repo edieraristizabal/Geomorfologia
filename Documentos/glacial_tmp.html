@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>glacial.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="geomorfolog%C3%ADa-glacial-y-periglacial">Geomorfología Glacial y Periglacial</h1>
+<p>Este documento explora la geomorfología de los ambientes dominados por el hielo, tanto en el presente como en el pasado geológico, con un enfoque en los procesos que esculpen el paisaje y las geoformas resultantes.</p>
+<hr>
+<h2 id="1-definici%C3%B3n-de-un-glaciar">1. Definición de un Glaciar</h2>
+<p>Un <strong>glaciar</strong> es una gran masa de hielo perenne, formada por la compactación y recristalización de la nieve, que se acumula sobre la superficie terrestre y muestra evidencia de movimiento (flujo) pendiente abajo debido a la gravedad.</p>
+<image src="https://i.pinimg.com/1200x/2e/1b/3b/2e1b3bb1393839c764821b210b583d75.jpg" width="400">
+</image><hr>
+<h2 id="2-diferencia-glaciar-vs-glacial">2. Diferencia: Glaciar vs. Glacial</h2>
+<ul>
+<li><strong>Glaciar (Sustantivo):</strong> Es la masa de hielo en sí misma. <em>Ejemplo: &quot;El glaciar está retrocediendo.&quot;</em></li>
+<li><strong>Glacial (Adjetivo):</strong> Es la palabra que describe cualquier proceso o geoforma relacionado con, o causado por, la acción de los glaciares. <em>Ejemplo: &quot;Ese valle en U es una geoforma glacial.&quot;</em></li>
+</ul>
+<image src="https://i.pinimg.com/1200x/a0/c3/49/a0c34931decde58b6cf2633577e8da09.jpg" width="200">
+</image><hr>
+<h2 id="3-alta-monta%C3%B1a-tropical-y-ambientes-periglaciales">3. Alta Montaña Tropical y Ambientes (Peri)Glaciales</h2>
+<p>Los trópicos de alta montaña (como los Andes) son laboratorios únicos. A pesar de su baja latitud, la altitud extrema permite la existencia de ambientes glaciales y periglaciales.</p>
+<ul>
+<li><strong>Ambientes Actuales:</strong> Pequeños glaciares (casquetes) y zonas periglaciales activas (con ciclos de hielo-deshielo diarios) se encuentran por encima del límite de bosque, en los páramos y superpáramos.</li>
+<li><strong>Ambientes Heredados (Legacy):</strong> Durante las glaciaciones del Cuaternario, la Línea de Equilibrio (EQL) descendió significativamente. Esto significa que vastas áreas que hoy son páramos estuvieron cubiertas por hielo. Las morrenas, valles en U y lagos que vemos en los parques nacionales (ej. El Cocuy, Los Nevados) son geoformas heredadas de esa actividad glacial pasada.</li>
+</ul>
+<image src="https://i.pinimg.com/1200x/f4/e8/c2/f4e8c2b577d4f550a42268f69b58cf7d.jpg" width="400">
+</image><hr>
+<h2 id="4-el-origen-de-las-glaciaciones">4. El Origen de las Glaciaciones</h2>
+<p>Las glaciaciones son periodos en los que los casquetes de hielo continentales se expanden significativamente. Su origen es una interacción compleja de factores externos e internos.</p>
+<h3 id="41-causas-externas-forzamiento-astron%C3%B3mico">4.1. Causas Externas (Forzamiento Astronómico)</h3>
+<h4 id="teor%C3%ADa-de-milankovitch">Teoría de Milankovitch</h4>
+<p>Esta teoría postula que las variaciones cíclicas en la órbita de la Tierra alteran la cantidad y distribución de la insolación (energía solar) que recibe el planeta, controlando el inicio y fin de los periodos glaciales. Se compone de tres ciclos:</p>
+<ol>
+<li><strong>Excentricidad (Ciclo de ~100.000 y 413.000 años):</strong> Es el cambio en la forma de la órbita terrestre, de ser casi circular a ser más elíptica. Una mayor excentricidad provoca veranos más fríos e inviernos más cálidos (o viceversa), afectando la acumulación de nieve.</li>
+<li><strong>Oblicuidad (Ciclo de ~41.000 años):</strong> Es el cambio en la inclinación del eje de la Tierra (entre 22.1° y 24.5°). Una mayor inclinación provoca estaciones más extremas (veranos más cálidos, inviernos más fríos). Una menor inclinación favorece la acumulación de hielo, al tener veranos más frescos que no derriten la nieve del invierno anterior.</li>
+<li><strong>Precesión (Ciclo de ~23.000 años):</strong> Es el &quot;bamboleo&quot; del eje de la Tierra. Determina en qué punto de la órbita ocurren las estaciones. Afecta si el verano del hemisferio norte ocurre cuando la Tierra está más cerca (perihelio) o más lejos (afelio) del sol.</li>
+</ol>
+<image src="https://i.pinimg.com/1200x/71/da/45/71da45766012e446e45487745c28127b.jpg" width="400">
+</image><image src="https://i.pinimg.com/736x/f6/c9/e0/f6c9e094470bd19cd934be8646e98a6c.jpg" width="400">
+</image><h4 id="otros-factores-externos">Otros Factores Externos</h4>
+<ul>
+<li><strong>Tormentas Solares (Actividad Solar):</strong> Variaciones en la irradiancia solar total (ej. Mínimo de Maunder) pueden causar fluctuaciones climáticas a corto plazo (como la Pequeña Edad de Hielo), pero no se consideran el motor principal de las grandes glaciaciones.</li>
+</ul>
+<h3 id="42-causas-internas-din%C3%A1mica-planetaria">4.2. Causas Internas (Dinámica Planetaria)</h3>
+<ul>
+<li><strong>Tectónica de Placas:</strong> La configuración continental es clave. La apertura o cierre de pasos oceánicos (ej. Paso de Drake, Istmo de Panamá) altera la circulación oceánica global. El levantamiento de mesetas (ej. Tíbet, Altiplano) cambia los patrones de circulación atmosférica e incrementa el albedo.</li>
+<li><strong>Gases de Efecto Invernadero (CO₂):</strong> A escalas geológicas, el CO₂ es controlado por el vulcanismo (fuente) y el metamorfismo/meteorización de silicatos (sumidero). Periodos de bajo CO₂ (como el Cenozoico tardío) permiten el enfriamiento global.</li>
+<li><strong>Actividad Humana:</strong> En la escala actual, las emisiones antropogénicas de CO₂ y metano son el forzamiento climático dominante, causando un calentamiento rápido que revierte la tendencia de enfriamiento de los últimos milenios.</li>
+</ul>
+<h3 id="43-proxies-paleoclim%C3%A1ticos-y-temperatura-pasada">4.3. Proxies Paleoclimáticos y Temperatura Pasada</h3>
+<p>Para estimar la temperatura pasada se usan &quot;proxies&quot; (indicadores indirectos):</p>
+<ul>
+<li><strong>Testigos de Hielo:</strong> Las burbujas de aire atrapadas en el hielo de Groenlandia y la Antártida dan una muestra directa de la composición atmosférica (CO₂).</li>
+<li><strong>Isótopos de Oxígeno ($\delta^{18}$O):</strong>
+<ul>
+<li><em>En hielo:</em> La relación $\delta^{18}$O$\delta^{16}$O en el hielo indica la temperatura local de la atmósfera en el momento de la nevada.</li>
+<li><em>En foraminíferos (sedimentos marinos):</em> La relación $\delta^{18}$O en sus conchas de carbonato refleja la temperatura del agua del océano y, crucialmente, el volumen global de hielo (el $\delta^{16}$O queda &quot;atrapado&quot; en los glaciares).</li>
+</ul>
+</li>
+</ul>
+<p>Estos proxies muestran que la Tierra ha oscilado entre estados &quot;Invernadero&quot; (Hothouse) y &quot;Nevera&quot; (Icehouse). Actualmente estamos en un estado de &quot;Nevera&quot; (con hielo en los polos) que comenzó en el Cenozoico.</p>
+<hr>
+<h2 id="5-glaciaciones-y-el-per%C3%ADodo-cuaternario">5. Glaciaciones y el Período Cuaternario</h2>
+<p>El <strong>Cuaternario</strong> (últimos 2.58 millones de años) es el periodo geológico que habitamos, caracterizado por ciclos glaciales-interglaciales recurrentes, impulsados por los ciclos de Milankovitch. Se divide en:</p>
+<ul>
+<li><strong>Pleistoceno:</strong> La &quot;Edad de Hielo&quot;. Comprende la mayoría del Cuaternario, con múltiples expansiones (glaciales) y contracciones (interglaciales) de los hielos.</li>
+<li><strong>Holoceno:</strong> Los últimos ~11.700 años. Es el periodo interglacial cálido actual.</li>
+</ul>
+<image src="https://i.pinimg.com/1200x/1f/5c/d5/1f5cd5d601886dc66b421567c7dad042.jpg" width="400">
+</image><hr>
+<h2 id="6-tipos-de-glaciares">6. Tipos de Glaciares</h2>
+<h3 id="61-glaciares-de-monta%C3%B1a-altitudinales">6.1. Glaciares de Montaña (Altitudinales)</h3>
+<p>Están confinados por la topografía.</p>
+<ul>
+<li><strong>Glaciar de Circo:</strong> Ocupa una depresión en forma de cuenco en la ladera de una montaña.</li>
+<li><strong>Glaciar de Valle:</strong> Un glaciar de circo que crece y fluye valle abajo, confinado por las laderas del valle.</li>
+<li><strong>Casquete de Hielo (<em>Ice Cap</em>):</strong> Cubre una zona de tierras altas (ej. un volcán), fluyendo radialmente desde un domo central. (Este es el tipo predominante en Colombia).</li>
+</ul>
+<h3 id="62-glaciares-continentales-latitudinales">6.2. Glaciares Continentales (Latitudinales)</h3>
+<p>No están confinados por la topografía; la cubren por completo.</p>
+<ul>
+<li><strong>Mantos de Hielo (<em>Ice Sheets</em>):</strong> Masas de hielo a escala continental (ej. Antártida, Groenlandia). Fluyen radialmente desde un centro de acumulación.</li>
+</ul>
+<image src="https://i.pinimg.com/1200x/0e/7e/34/0e7e34380a8a22d49fff88fe57841a31.jpg" width="400">
+</image><hr>
+<h2 id="7-anatom%C3%ADa-de-un-glaciar">7. Anatomía de un Glaciar</h2>
+<p>Un glaciar es un sistema de balance de masa:</p>
+<ul>
+<li><strong>Zona de Acumulación:</strong> La parte superior del glaciar donde la ganancia de nieve invernal supera la pérdida de hielo en verano. Aquí el hielo fluye hacia abajo.</li>
+<li><strong>Zona de Ablación:</strong> La parte inferior donde la pérdida de hielo (por derretimiento, sublimación, desprendimiento) supera la ganancia de nieve.</li>
+<li><strong>Línea de Equilibrio (EQL):</strong> La línea imaginaria que separa ambas zonas. Si la EQL sube, el glaciar retrocede; si baja, avanza.</li>
+</ul>
+<image src="https://i.pinimg.com/1200x/73/b4/65/73b4656a8901ad5a92dc3e5649d43e3b.jpg" width="400">
+</image><hr>
+<h2 id="8-procesos-de-erosi%C3%B3n-y-transporte-glacial">8. Procesos de Erosión y Transporte Glacial</h2>
+<h3 id="procesos-de-erosi%C3%B3n">Procesos de Erosión</h3>
+<ol>
+<li><strong>Abrasión:</strong> El &quot;lijado&quot; del lecho rocoso. Los sedimentos (arena, rocas) incrustados en la base del glaciar actúan como papel de lija, puliendo y creando <strong>estrías glaciales</strong> en la roca.</li>
+<li><strong>Arranque (<em>Plucking</em> o <em>Quarrying</em>):</strong> El &quot;arranque&quot; de bloques de roca. El agua de deshielo subglacial se infiltra en las fracturas de la roca, se congela (regelación), y al avanzar el glaciar, &quot;arranca&quot; estos bloques y los incorpora a su base.</li>
+</ol>
+<image src="https://i.pinimg.com/1200x/af/3a/97/af3a978fa76f0b5439269194f41989b8.jpg" width="400">
+</image><h3 id="proceso-de-transporte">Proceso de Transporte</h3>
+<p>El sedimento transportado por un glaciar se llama <strong>Till</strong> (o derrubio glacial) y se caracteriza por ser <strong>muy mal seleccionado</strong> (mezcla caótica de arcilla, arena y grandes bloques).</p>
+<ul>
+<li><strong>Transporte Supraglacial:</strong> Sobre la superficie.</li>
+<li><strong>Transporte Englacial:</strong> Dentro del hielo.</li>
+<li><strong>Transporte Subglacial:</strong> En la base del hielo.</li>
+</ul>
+<hr>
+<h2 id="9-geoformas-de-erosi%C3%B3n-glacial-t%C3%ADpicamente-en-la-zona-de-acumulaci%C3%B3n">9. Geoformas de Erosión Glacial (Típicamente en la Zona de Acumulación)</h2>
+<p>Estas geoformas son esculpidas por el hielo sobre la roca madre.</p>
+<ul>
+<li><strong>Circo Glacial:</strong> Anfiteatro o cuenco en forma de silla de brazos, excavado en la cabecera de un valle.</li>
+</ul>
+<image src="https://i.pinimg.com/736x/76/9a/db/769adbc64ad7ea271d2d945bb041e4d2.jpg" width="400">
+</image><ul>
+<li><strong>Tarn (o Ibón):</strong> Lago que ocupa la depresión de un circo glacial después de que el hielo se retira.</li>
+</ul>
+<image src="https://i.pinimg.com/736x/01/f0/ef/01f0ef51ff39b47298a864c20cc419a4.jpg" width="400">
+</image><ul>
+<li><strong>Arête (Arista):</strong> Cresta afilada y dentada que separa dos circos o valles glaciales adyacentes.</li>
+<li><strong>Col (Collado):</strong> Un paso bajo o &quot;silla de montar&quot; en una arista, formado por la erosión regresiva de dos circos opuestos.</li>
+<li><strong>Horn (Pico Piramidal):</strong> Pico agudo y piramidal formado por la intersección de tres o más circos (ej. El Cervino).</li>
+</ul>
+<image src="https://i.pinimg.com/736x/b1/08/31/b1083147bd9c0d2543017d008571b3a1.jpg" width="400">
+</image><ul>
+<li><strong>Valle en U:</strong> Perfil transversal característico de un valle que ha sido ensanchado y profundizado por un glaciar de valle.</li>
+</ul>
+<image src="https://i.pinimg.com/736x/20/b8/5f/20b85ff56e1d64dc822eae7d706cd611.jpg" width="400">
+</image><ul>
+<li><strong>Lagos Paternoster:</strong> Una cadena de lagos escalonados en un valle glaciar, ocupando depresiones excavadas por el glaciar.</li>
+</ul>
+<image src="https://i.pinimg.com/1200x/c8/87/33/c887339357e6462520f05f4cfa8aeddb.jpg" width="400">
+</image><hr>
+<h2 id="10-geoformas-de-acumulaci%C3%B3n-glacial-morrenas">10. Geoformas de Acumulación Glacial (Morrenas)</h2>
+<p>Formadas por el depósito directo de <em>till</em> no estratificado por el hielo.</p>
+<ul>
+<li><strong>Morrena Terminal (o Frontal):</strong> Una cresta de <em>till</em> depositada en el hocico (frente) del glaciar, marcando su máxima extensión.</li>
+<li><strong>Morrena Lateral:</strong> Crestas de <em>till</em> acumuladas a los lados del glaciar.</li>
+<li><strong>Morrena Central (o Medial):</strong> Una cresta de <em>till</em> en el centro de un glaciar, formada por la unión de las morrenas laterales de dos glaciares de valle tributarios.</li>
+<li><strong>Morrena de Fondo (<em>Ground Moraine</em>):</strong> Una capa de <em>till</em> depositada bajo el glaciar, formando una llanura ondulada.</li>
+<li><strong>Morrenas de Recesión:</strong> Crestas transversales más pequeñas que marcan pausas temporales en el retroceso del glaciar.</li>
+</ul>
+<h2 id="image-srchttpsipinimgcom736xa46c9aa46c9aeaeef61965da16f452ab67cf6fjpg-width%22400%22"><image src=https://i.pinimg.com/736x/a4/6c/9a/a46c9aeaeef61965da16f452ab67cf6f.jpg width="400"></h2>
+<h2 id="11-geoformas-de-deglaciaci%C3%B3n-retroceso-glacial">11. Geoformas de Deglaciación (Retroceso Glacial)</h2>
+<p>Estas formas se asocian con el hielo en retroceso y la acción del agua de deshielo (depósitos fluvioglaciales, que sí están estratificados).</p>
+<ul>
+<li><strong>Kettle (o Lago de Kettle):</strong> Depresión formada por el derretimiento de un bloque de hielo estancado que fue enterrado por sedimentos fluvioglaciales.</li>
+</ul>
+<image src="https://i.pinimg.com/736x/86/25/e6/8625e62bdd6c581c2dd18853167921a3.jpg" width="400">
+</image><ul>
+<li><strong>Kame:</strong> Colina o montículo de arena y grava estratificada, depositada en una cavidad sobre o dentro del hielo estancado.</li>
+</ul>
+<image src="https://i.pinimg.com/1200x/21/9c/12/219c12977408ea5c3ec82437ea0a6d67.jpg" width="400">
+</image><ul>
+<li><strong>Drumlin:</strong> Colina alargada y aerodinámica (forma de media cuchara invertida) compuesta de <em>till</em>. Formada <em>debajo</em> del hielo en movimiento.</li>
+</ul>
+<image src="https://i.pinimg.com/736x/99/9d/e2/999de2c5e58c806e7e5b6c64201eda5d.jpg" width="400">
+</image><ul>
+<li><strong>Esker:</strong> Cresta larga y sinuosa de arena y grava estratificada. Son los depósitos de un río subglacial que fluía en un túnel de hielo.</li>
+</ul>
+<image src="https://i.pinimg.com/1200x/70/1d/6c/701d6c44689370edefcb13a19377bc8b.jpg" width="400">
+</image><ul>
+<li><strong>Outwash Plain (Llanura Fluvioglacial):</strong> Extensa planicie de sedimentos (arenas, gravas) depositados por ríos trenzados de agua de deshielo frente al glaciar.</li>
+</ul>
+<image src="https://i.pinimg.com/736x/4e/f2/ed/4ef2edbb71aa14d2bb53ec5f9969fb4b.jpg" width="400">
+</image><hr>
+<h2 id="12-el-ambiente-periglacial">12. El Ambiente Periglacial</h2>
+<p>El término &quot;periglacial&quot; se refiere a los ambientes fríos no glaciados, dominados por intensos ciclos de hielo-deshielo en el suelo. A menudo se asocian con el <strong>permafrost</strong> (suelo permanentemente congelado), aunque en los trópicos de alta montaña (como el páramo), el régimen es de hielo-deshielo diario sin permafrost.</p>
+<hr>
+<h2 id="13-procesos-periglaciales">13. Procesos Periglaciales</h2>
+<ul>
+<li><strong>Gelifracción (o Crioclastia / <em>Frost Shattering</em>):</strong> El proceso más importante. El agua se filtra en las fracturas de las rocas, se congela, se expande (~9%) y actúa como una cuña, rompiendo la roca en fragmentos angulosos (gelifractos).</li>
+</ul>
+<image src="https://i.pinimg.com/1200x/a9/03/32/a90332378c147a93a48648f801f2482b.jpg" width="400">
+</image><ul>
+<li><strong>Solifluxión:</strong> El flujo lento pendiente abajo del suelo saturado de agua sobre una capa congelada (permafrost) o impermeable. En los páramos, este proceso es clave en la formación de laderas suaves.</li>
+</ul>
+<image src="https://i.pinimg.com/736x/24/cd/e3/24cde3f2c6aa8ae985f2ffdf532f5a9b.jpg" width="400">
+</image><ul>
+<li><strong>Bioturbación:</strong> Aunque los procesos de hielo-deshielo dominan, la acción de organismos (como el crecimiento de frailejones o la actividad de madrigueras) también puede contribuir a la mezcla y movimiento lento del suelo.</li>
+</ul>
+<image src="https://i.pinimg.com/1200x/b2/e5/47/b2e54734f430d9e37abfa155496ded0b.jpg" width="400">
+</image><hr>
+<h2 id="14-glaciares-actuales-en-colombia">14. Glaciares Actuales en Colombia</h2>
+<ul>
+<li><strong>Origen y Tipos:</strong> Son glaciares tropicales de montaña, clasificados como pequeños casquetes de hielo (<em>ice caps</em>) que cubren las cimas volcánicas y cumbres de la Sierra Nevada de El Cocuy.</li>
+<li><strong>Estado Actual:</strong> Quedan <strong>6</strong> pequeñas masas glaciares en Colombia:
+<ol>
+<li>Sierra Nevada de Santa Marta (SNSM)</li>
+<li>Sierra Nevada de El Cocuy</li>
+<li>Volcán Nevado del Ruiz</li>
+<li>Volcán Nevado de Santa Isabel (el más crítico, podría desaparecer en esta década)</li>
+<li>Volcán Nevado del Tolima</li>
+<li>Volcán Nevado del Huila</li>
+</ol>
+</li>
+<li><strong>Tasas de Retroceso:</strong> Las tasas de retroceso son de las más altas del mundo. Colombia ha perdido más del 90% de su área glaciar desde mediados del siglo XIX. El área total restante es de aproximadamente 30 km² (datos varían ligeramente año a año).</li>
+</ul>
+<image src="https://i.pinimg.com/736x/e4/86/65/e48665930ed15bc72c83a870fa8237ba.jpg" width="400">
+</image><hr>
+<h2 id="15-evidencias-glaciales-pasadas-en-colombia">15. Evidencias Glaciales Pasadas en Colombia</h2>
+<ul>
+<li><strong>Última Glaciación (LGM):</strong> Durante el Último Máximo Glacial (~21.000 años), la EQL en los Andes colombianos descendió hasta los ~3.000-3.500 msnm. Los glaciares cubrieron vastas áreas que hoy son páramos.</li>
+<li><strong>Evidencias:</strong> Las morrenas terminales y laterales, los valles en U, los circos y los numerosos lagos (tarns) en parques como Los Nevados, El Cocuy o el Parque Nacional Natural Chingaza son la evidencia geomorfológica inequívoca de esta extensa glaciación pasada.</li>
+</ul>
+
+</body>
+</html>

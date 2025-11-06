@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>meteorizacion.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="meteorizaci%C3%B3n-procesos-perfiles-y-geoformas">Meteorización: procesos, perfiles y geoformas</h1>
+<p>Este documento presenta los conceptos fundamentales de la meteorización abarcando desde los procesos físico-químicos hasta la clasificación de perfiles para ingeniería.</p>
+<hr>
+<p>La meteorización es la alteración <em>in situ</em> de las rocas y minerales en la superficie de la Tierra (o cerca de ella) en respuesta a las condiciones físicas, químicas y biológicas. De acuerdo con Anon es la desintegración (física) y descomposición (química) de la roca en su lugar de origen, sin un transporte significativo del material resultante.</p>
+<p>La causa fundamental es el desequilibrio termodinámico. Las rocas, especialmente las ígneas y metamórficas, se forman a altas temperaturas y presiones en el interior de la Tierra, donde son estables. Cuando el levantamiento tectónico y la erosión las exponen en la superficie, se encuentran en un ambiente radicalmente diferente (baja T°, baja P°, alta O₂, alta H₂O). En estas nuevas condiciones, sus minerales constituyentes son inestables y reaccionan químicamente para alcanzar un nuevo estado de equilibrio, transformándose en minerales más estables en la superficie (como las arcillas).</p>
+<image src="https://i.pinimg.com/736x/8c/de/08/8cde087a06b6c96ca3b058c842f5881d.jpg" width="600">
+</image><p>El clima es el motor de la meteorización.</p>
+<ul>
+<li><strong>Temperatura:</strong> Controla la tasa de las reacciones químicas (la regla de van't Hoff sugiere que la tasa se duplica por cada 10°C de aumento). También habilita procesos físicos como la gelifracción.</li>
+<li><strong>Precipitación (Agua):</strong> Es el <strong>agente</strong> principal. Actúa como el solvente universal, transporta reactivos (CO₂ disuelto, O₂) y elimina los productos de la reacción (lixiviación).</li>
+<li></li>
+</ul>
+<image src="https://i.pinimg.com/1200x/2a/fd/3a/2afd3a6c9d3bb949b703c65ef9ae6b94.jpg" width="600">
+</image><p>Un clima cálido y húmedo (tropical) maximiza la meteorización química, mientras que un clima frío y moderadamente húmedo (periglacial) maximiza la meteorización física.</p>
+<image src="https://i.pinimg.com/736x/8b/12/c6/8b12c67fd2788ffd1f617994d9ff9d80.jpg" width="400">
+</image><hr>
+<h2 id="1-perfil-de-meteorizaci%C3%B3n">1. Perfil de meteorización</h2>
+<ul>
+<li><strong>Perfil de Meteorización:</strong> Es la secuencia vertical completa de material alterado, desde la roca fresca (R) en la base hasta el material más alterado en la superficie. Puede tener decenas de metros de espesor.</li>
+<li><strong>Suelo:</strong> Es la parte superior, biológicamente activa, del perfil de meteorización. Incluye los horizontes O, A y B, donde la materia orgánica se acumula y la estructura original de la roca ha sido destruida y reorganizada por procesos pedogenéticos.</li>
+</ul>
+<p>La <strong>meteorización</strong> es el proceso destructivo de alteración de la roca madre. Es el primer paso y el <em>insumo</em> para la formación del suelo. La <strong>formación de suelos (pedogénesis)</strong> es un proceso constructivo y organizativo. Implica la meteorización, pero añade cuatro factores más (Clima, Organismos, Relieve, Tiempo) que actúan sobre el material parental (el producto de la meteorización) para crear horizontes estructurados y biológicamente activos.</p>
+<image src="https://i.pinimg.com/1200x/76/f5/9d/76f59dc66aadcfa69e106443821fb2a0.jpg" width="400">
+</image><p>En resumen: todo suelo es parte de un perfil de meteorización, pero no todo perfil de meteorización (especialmente las partes profundas como el saprolito) se considera &quot;suelo&quot; en el sentido pedológico.</p>
+<hr>
+<h2 id="2-suelos-in-situ-y-suelos-transportados">2. Suelos In Situ y Suelos Transportados</h2>
+<ul>
+<li><strong>Suelos In Situ (Residuales):</strong> Son aquellos que se forman directamente sobre su roca madre. El perfil es coherente, pasando gradualmente de suelo a roca alterada y a roca fresca.</li>
+<li><strong>Suelos Transportados:</strong> Son aquellos formados sobre un material parental que fue transportado y depositado por un agente geológico (agua, viento, hielo, gravedad). Ejemplos: suelos aluviales (ríos), coluviales (gravedad), eólicos (loess).
+<image src=https://i.pinimg.com/736x/6a/6f/cb/6a6fcb517a72d0e66567285909b20414.jpg width="600"></li>
+</ul>
+<p>Una <strong>catena</strong> (o toposecuencia) es una secuencia de tipos de suelo o perfiles de meteorización que cambian sistemáticamente a lo largo de una ladera. Refleja la influencia del relieve en la meteorización.</p>
+<ul>
+<li><strong>Cima:</strong> Suelos delgados, lixiviados (zona de pérdida neta).</li>
+<li><strong>Media Ladera:</strong> Perfiles más desarrollados, con posible transporte (coluvión).</li>
+<li><strong>Base de la Ladera:</strong> Suelos gruesos, de acumulación (zona de ganancia neta de agua y sedimentos), a menudo hidromórficos (saturados).</li>
+<li></li>
+</ul>
+<image src="https://i.pinimg.com/1200x/5d/9e/05/5d9e05b6185ac7ff8b02ecebfe8a40cd.jpg" width="600">
+</image><hr>
+<h2 id="3-m%C3%A9todos-de-descripci%C3%B3n-de-perfiles-de-meteorizaci%C3%B3n-ingenieril">3. Métodos de descripción de perfiles de meteorización (Ingenieril)</h2>
+<p>Para fines de ingeniería geotécnica, es crucial clasificar el <em>grado</em> de meteorización, ya que controla las propiedades mecánicas de la masa rocosa. La clasificación más utilizada (basada en Little, 1969) divide el perfil en seis grados:</p>
+<ul>
+<li><strong>Grado VI (Suelo Residual):</strong> La fábrica de la roca ha sido completamente destruida y reemplazada por una estructura de suelo.</li>
+<li><strong>Grado V (Roca Completamente Meteorizada - Saprolito):</strong> Toda la roca está convertida en suelo, pero la <strong>fábrica original (textura y estructura) de la roca se conserva</strong>.</li>
+<li><strong>Grado IV (Roca Altamente Meteorizada):</strong> La mayor parte de la roca está alterada; la fábrica original se preserva, pero el material se puede deshacer a mano.</li>
+<li><strong>Grado III (Roca Moderadamente Meteorizada):</strong> Decoloración penetra la matriz; la roca intacta se debilita.</li>
+<li><strong>Grado II (Roca Ligeramente Meteorizada):</strong> Decoloración en discontinuidades; roca intacta aún fuerte.</li>
+<li><strong>Grado I (Roca Fresca - R):</strong> Sin signos visibles de meteorización.</li>
+<li></li>
+</ul>
+<image src="https://i.pinimg.com/1200x/2b/16/76/2b1676aa27e72eadfb0e70a6fad07a73.jpg" width="600">
+</image><p>El suelo residual corresponde al horizonte VI donde se ha perdido la estructura y textura de la roca parental. Mientras el suelo saprolítico corresponde al horizonte V, donde el material ya es un suelo geotécnicamente (se comporta como un suelo), pero visualmente aún retiene las estructuras de la roca original (vetas, foliación, etc.) y textura.</p>
+<image src="https://i.pinimg.com/1200x/5c/10/52/5c1052d7309e50d8a9cfb98d8ef5791b.jpg" width="400">
+</image><hr>
+<h2 id="4-tipos-de-meteorizaci%C3%B3n">4. Tipos de Meteorización</h2>
+<p>La meteorización se divide en tres tipos principales que actúan en conjunto:</p>
+<ol>
+<li><strong>Física (Mecánica):</strong> Desintegración sin cambio químico.</li>
+<li><strong>Química:</strong> Descomposición con cambio químico.</li>
+<li><strong>Biológica:</strong> Procesos físicos o químicos mediados por organismos (ej. raíces, ácidos orgánicos).</li>
+</ol>
+<image src="https://i.pinimg.com/1200x/ac/82/41/ac8241ff52cc291e8dbdb22cdd48580a.jpg" width="500">
+</image><hr>
+<h2 id="5-meteorizaci%C3%B3n-f%C3%ADsica">5. Meteorización Física</h2>
+<p>Aumenta el área superficial, facilitando la meteorización química.</p>
+<ul>
+<li><strong>Gelifracción (<em>Frost Wedging</em>):</strong> El proceso más efectivo. El agua en las fisuras se congela, se expande (~9%) y actúa como una cuña, rompiendo la roca. Produce depósitos angulosos llamados <strong>gelifractos</strong> o <strong>derrubios de talud</strong>.</li>
+</ul>
+<image src="https://i.pinimg.com/736x/d3/21/4f/d3214ffd6f623c76709ee84a0dfc720b.jpg" width="500">
+</image><ul>
+<li><strong>Exfoliación (Descompresión):</strong> Ocurre en rocas masivas (ej. granitos) que se formaron a gran profundidad. Al ser exhumadas por la erosión, se expanden y se fracturan en grandes lajas (<em>sheeting</em>) paralelas a la superficie, formando <strong>domos de exfoliación</strong>.</li>
+</ul>
+<image src="https://i.pinimg.com/736x/56/fe/e6/56fee66b61169f86975659043dd3d2b5.jpg" width="500">
+</image><ul>
+<li><strong>Haloclastia (Crecimiento de Sales):</strong> El crecimiento de cristales de sal (ej. halita, yeso) en los poros de la roca ejerce presión y la desintegra. Común en climas áridos y costeros.</li>
+</ul>
+<image src="https://i.pinimg.com/1200x/51/30/d5/5130d56e0be7bb19a904afef98b4e4f5.jpg" width="500">
+</image><ul>
+<li><strong>Termoclastia:</strong> La expansión y contracción diferencial de los minerales en la roca debido a cambios bruscos de temperatura (ej. desiertos, incendios).</li>
+</ul>
+<image src="https://i.pinimg.com/736x/6a/19/ce/6a19ce5207319e92b245bf771a988fb2.jpg" width="200">
+</image><hr>
+<h2 id="6-meteorizaci%C3%B3n-qu%C3%ADmica">6. Meteorización Química</h2>
+<p>Es la descomposición de los minerales. El <strong>agua</strong> es el agente esencial: (i) Es el <strong>solvente</strong> (para disolución). (ii) Es el <strong>medio de transporte</strong> (trae ácidos, O₂; retira productos). (iii) Es un <strong>reactivo</strong> directo (en la hidrólisis y la hidratación).</p>
+<image src="https://i.pinimg.com/736x/4a/37/19/4a371984815b1016211f8e2ea0da14eb.jpg" width="500">
+</image><p>Durante la meteorización química, los iones se liberan de la red cristalina. Su movilidad (facilidad para ser lixiviados por el agua) varía
+desde <strong>Muy Móviles:</strong> Na⁺, K⁺, Mg²⁺, Ca²⁺ (se lavan fácilmente), <strong>Poco Móviles:</strong> Si⁴⁺ (relativamente inmóvil, aunque puede disolverse como H₄SiO₄), hasta <strong>Inmóviles (Residuales):</strong> Al³⁺, Fe³⁺, Ti⁴⁺. Esta movilidad diferencial es la razón por la cual los suelos tropicales muy meteorizados (Oxisoles) son esencialmente concentraciones de óxidos de Hierro y Aluminio (laterita, bauxita).</p>
+<p>Los <strong>Índices de Meteorización Química</strong> cuantifican el grado de lixiviación de cationes móviles.</p>
+<ul>
+<li><strong>CIA (Chemical Index of Alteration):</strong> Mide la conversión de feldespatos a arcillas de aluminio.
+<ul>
+<li><code>CIA = [Al₂O₃ / (Al₂O₃ + CaO* + Na₂O + K₂O)] * 100</code> (en moles; CaO* es solo el de los silicatos).</li>
+<li><em>Roca Fresca (Granito) ≈ 50-55</em></li>
+<li><em>Suelo muy meteorizado (Kaolinita pura) ≈ 100</em></li>
+</ul>
+</li>
+<li><strong>Diagrama A-CN-K:</strong> Un diagrama ternario (A = Al₂O₃; CN = CaO*+Na₂O; K = K₂O) que muestra la <strong>trayectoria de meteorización</strong> de una roca a medida que pierde cationes.</li>
+<li></li>
+</ul>
+<image src="https://i.pinimg.com/1200x/3f/7d/e4/3f7de40f6576d30ff3dc314c936ef536.jpg" width="500">
+</image><hr>
+<h2 id="7-disoluci%C3%B3n-y-ambiente-k%C3%A1rstico">7. Disolución y Ambiente Kárstico</h2>
+<p>La disolución es la disociación de minerales en sus iones en un solvente (agua). Es el proceso dominante en rocas solubles (carbonatos, evaporitas).</p>
+  <image src="https://i.pinimg.com/1200x/b9/df/8a/b9df8ae71416cab596189d06e3a70a82.jpg" width="300">
+</image><ul>
+<li><strong>Karst:</strong> Es un tipo de paisaje formado por la disolución de la roca subyacente.</li>
+<li><strong>Pseudokarst:</strong> Geoformas similares al karst, pero formadas por procesos no disolutivos (ej. tubos de lava, cuevas en hielo).</li>
+</ul>
+<image src="https://i.pinimg.com/736x/3c/82/99/3c8299a68bde784fb3753d5d76d33001.jpg" width="400">
+</image><p><strong>Exokarst (Formas Superficiales)</strong></p>
+<ul>
+<li><strong>Epikarst:</strong> La zona superficial de la roca carbonatada (los primeros metros), intensamente disuelta y muy porosa.</li>
+</ul>
+<image src="https://i.pinimg.com/1200x/32/84/80/328480c0ce5d2c2d73fb6246bdb2c04f.jpg" width="400">
+</image><ul>
+<li><strong>Pavimento (Limestone Pavement):</strong> Superficies planas de roca desnuda disectadas por fracturas disueltas.</li>
+</ul>
+<image src="https://i.pinimg.com/736x/54/f6/37/54f637f7090a89df959f2c99ed770c99.jpg" width="400">
+</image><ul>
+<li><strong>Karren (Lapiaces):</strong> Microformas de disolución sobre la roca desnuda (surcos, acanaladuras, pináculos).</li>
+</ul>
+<image src="https://i.pinimg.com/1200x/3f/aa/e5/3faae5d3833338411516d2ced5483719.jpg" width="400">
+</image><image src="https://i.pinimg.com/1200x/5b/fc/04/5bfc04b54a768fdb0da2a4af0043bcb7.jpg" width="600">
+</image><ul>
+<li><strong>Dolina:</strong> Depresión cerrada circular. Puede ser de disolución (hundimiento lento) o de colapso (caída del techo de una cueva).</li>
+<li><strong>Uvala:</strong> Una depresión compuesta, grande e irregular, formada por la coalescencia (unión) de varias dolinas.</li>
+<li><strong>Poljé:</strong> Una depresión kárstica muy grande, de fondo plano (relleno de sedimentos) y bordes escarpados, a menudo controlada por la tectónica.</li>
+</ul>
+<image src="https://i.pinimg.com/1200x/33/b8/09/33b8092539b10b97043143cd12b551bd.jpg" width="500">
+</image><ul>
+<li>
+<p><strong>Karst Tropical (Cónico y de Torres):</strong></p>
+<ul>
+<li><strong>Kegelkarst (Karst Cónico):</strong> Paisaje de colinas cónicas regulares (Alemania).</li>
+<li><strong>Cockpits:</strong> Las depresiones en forma de estrella entre las colinas del Kegelkarst (Jamaica).</li>
+<li><strong>Turmkarst (Karst de Torres):</strong> Torres de caliza muy empinadas y aisladas (Mogotes), que se elevan desde una llanura aluvial (China, Cuba).</li>
+</ul>
+<image src="https://i.pinimg.com/736x/9d/c5/36/9dc5362f76f5197c849ffc75010ed167.jpg" width="500">
+</image></li>
+</ul>
+<p><strong>Endokarst (Formas Subterráneas)</strong></p>
+<p>Se refiere a las cuevas y sus depósitos (espeleotemas), formados por la precipitación de carbonato de calcio (calcita, aragonito) a partir del agua que gotea.</p>
+   <image src="https://i.pinimg.com/736x/85/9c/9d/859c9dea174198a2b1d91cee8868fedc.jpg" width="400">
+</image><ul>
+<li>
+<p><strong>Estalactitas:</strong> Crecen desde el techo (hacia abajo).</p>
+</li>
+<li>
+<p><strong>Estalagmitas:</strong> Crecen desde el suelo (hacia arriba).</p>
+</li>
+<li>
+<p><strong>Columnas:</strong> Unión de una estalactita y una estalagmita.</p>
+<image src="https://i.pinimg.com/1200x/4c/96/a0/4c96a09b769380d3e782f125069b66d7.jpg" width="400">
+</image></li>
+<li>
+<p><strong>Gour (Represas):</strong> Pequeñas represas de calcita que escalonan el suelo de una cueva.</p>
+<image src="https://i.pinimg.com/1200x/a2/82/c2/a282c22439c24e8c2270648fed7a2d27.jpg" width="300">
+</image></li>
+<li>
+<p><strong>Banderas (Draperies):</strong> Depósitos en forma de cortina formados por goteo lateral en una pared inclinada.</p>
+<image src="https://i.pinimg.com/736x/65/89/52/65895282258c75c7b0329511aad66f4f.jpg" width="300">
+</image></li>
+<li>
+<p><strong>Helictitas:</strong> Formas excéntricas que crecen en cualquier dirección, desafiando la gravedad (controladas por capilaridad).</p>
+<image src="https://i.pinimg.com/1200x/1b/93/61/1b9361b3c5333a0358a8d799ec3ae7ef.jpg" width="300">
+</image></li>
+<li>
+<p><strong>Moonmilk:</strong> Precipitados blandos, blancos y pastosos, a menudo mediados por bacterias.</p>
+<image src="https://i.pinimg.com/1200x/c8/f6/50/c8f650747852b6b0a618d955f3f846db.jpg" width="300">
+</image></li>
+<li>
+<p><strong>Frostwork:</strong> Agregados delicados de cristales de aragonito en forma de aguja.</p>
+<image src="https://i.pinimg.com/736x/bb/73/0d/bb730d7b776f0bbef0f7c1f7022bc391.jpg" width="300">
+</image></li>
+<li>
+<p>Karst Hipogénico
+Un tipo especial de karst donde las cuevas son disueltas por fluidos profundos, calientes y a menudo ácidos (ej. H₂S derivado de hidrocarburos) que ascienden desde abajo, en lugar de ser formadas por agua meteórica (lluvia) que desciende desde la superficie.</p>
+<image src="https://i.pinimg.com/736x/d1/43/0f/d1430fa7e8dfa21d74f7f2fbeae2ae45.jpg" width="300">
+</image></li>
+</ul>
+<hr>
+<h2 id="8-hidrataci%C3%B3n">8. Hidratación</h2>
+<p>La absorción de moléculas de agua en la estructura cristalina de un mineral, sin que haya una reacción química mayor. El principal efecto es un aumento de volumen, que genera estrés físico.</p>
+<ul>
+<li>
+<p><em>Ejemplo: Anhidrita (CaSO₄) + Agua → Yeso (CaSO₄·2H₂O)</em></p>
+<image src="https://i.pinimg.com/1200x/a9/9a/80/a99a80f168e8b85b5c137b4650dae88a.jpg" width="300">
+</image></li>
+</ul>
+<hr>
+<h2 id="9-hidr%C3%B3lisis">9. Hidrólisis</h2>
+<p>Es la reacción de meteorización más importante para los silicatos (el 90% de la corteza). Es una reacción química compleja donde un mineral reacciona con el agua, usualmente acidificada por el CO₂ atmosférico (ácido carbónico, H₂CO₃).</p>
+<p>El agua rompe los enlaces del mineral, liberando cationes y sílice, y formando minerales de arcilla como producto residual.</p>
+<ul>
+<li><em>Reacción Clave (Simplificada):</em>
+Feldespato + Ácido Carbónico + Agua → <strong>Caolinita (Arcilla)</strong> + Cationes disueltos (K⁺, Na⁺) + Sílice disuelta</li>
+</ul>
+<image src="https://i.pinimg.com/736x/45/d3/26/45d3268454248161d0054c34ae3fbaea.jpg" width="500">
+</image><hr>
+<h2 id="10-oxidaci%C3%B3n-reducci%C3%B3n-redox">10. Oxidación-Reducción (Redox)</h2>
+<p>La pérdida (oxidación) o ganancia (reducción) de electrones. Es crucial para elementos con múltiples estados de valencia, especialmente el Hierro (Fe).</p>
+<image src="https://i.pinimg.com/736x/3f/3d/50/3f3d50b02d65570358b5e7f9c3d25955.jpg" width="500">
+</image><ul>
+<li>
+<p><strong>Reducción (Ambientes anóxicos, saturados):</strong> El Hierro está como <strong>Fe²⁺ (Ferroso)</strong>. Es <strong>soluble</strong> y móvil en el agua. Produce colores grises o verdosos en el suelo.</p>
+</li>
+<li>
+<p><strong>Oxidación (Ambientes aireados):</strong> El Hierro está como <strong>Fe³⁺ (Férrico)</strong>. Es <strong>insoluble</strong> y precipita como óxidos e hidróxidos (Hematita, Goethita). Produce los característicos colores rojos, ocres y amarillos.</p>
+</li>
+<li>
+<p><strong>Oxisoles (Suelos Lateríticos):</strong> Suelos tropicales profundos, intensamente meteorizados, lixiviados de cationes y sílice, y enriquecidos en óxidos de Fe y Al (residuales).</p>
+</li>
+<li>
+<p><strong>Ferricretes:</strong> Un tipo de <em>duricrust</em> formado por la cementación masiva de sedimentos por óxidos de hierro.</p>
+</li>
+<li>
+<p><strong>Duricrust</strong> (Costras): Horizontes superficiales o subsuperficiales endurecidos y cementados. Se forman por dos vías principales:</p>
+</li>
+</ul>
+<image src="https://i.pinimg.com/736x/0a/4e/f5/0a4ef53f75e8a439c770e5ba32857dfe.jpg" width="500">
+</image><image src="https://i.pinimg.com/736x/cd/6f/68/cd6f686d9ba810384f171d3e38bf5f79.jpg" width="500">
+</image><ol>
+<li><strong>Por Acumulación Relativa (Lixiviación):</strong> Típico de climas húmedos. Se lava todo el material soluble (sílice, cationes), dejando una concentración residual de los óxidos más insolubles.
+<ul>
+<li><strong>Ferricrete</strong> (rica en Fe)</li>
+<li><strong>Alcrete</strong> (rica en Al, Bauxita)</li>
+</ul>
+</li>
+<li><strong>Por Acumulación Absoluta (Precipitación):</strong> Típico de climas áridos/semiáridos. El agua subterránea asciende por capilaridad, se evapora y precipita los minerales que lleva disueltos, cementando el suelo.
+<ul>
+<li><strong>Calcrete</strong> (Carbonato de calcio)</li>
+<li><strong>Silcrete</strong> (Sílice)</li>
+</ul>
+</li>
+</ol>
+<image src="https://i.pinimg.com/1200x/45/9c/e0/459ce0f738823e5894035a0ee3c14139.jpg" width="700"></image>
+</body>
+</html>
