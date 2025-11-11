@@ -64,10 +64,13 @@ Lecturas recomendadas: [Chapter 1: Digital terrain analysis](https://johnwilson.
 Lecturas recomendadas: [Landslide types and processes](https://onlinepubs.trb.org/Onlinepubs/sr/sr247/sr247-003.pdf)
 [Documento](Documentos/MenM.pdf)
 
-#### Ambiente denudacional: Erosión
-Lecturas recomendadas: [El impacto de la deforestación](https://raccefyn.co/index.php/raccefyn/article/view/141/123)
+#### Ambiente denudacional: Erosión pluvial
+Lecturas recomendadas: [El impacto de la deforestación](https://raccefyn.co/index.php/raccefyn/article/view/141/123)  
+Lecturas recomendadas: [Soil erodibility and processes of water erosion on hillslope](https://www.sciencedirect.com/science/article/pii/S0169555X99001051)  
+[Documento](Documentos/pluvial.pdf)  
 
-Lecturas recomendadas: [Soil erodibility and processes of water erosion on hillslope](https://www.sciencedirect.com/science/article/pii/S0169555X99001051)
+#### Ambiente denudacional: Erosión eólica
+[Documento](Documentos/eolica.pdf)
 
 #### Práctica 4: Análisis geoespacial intermedio
 
