@@ -34,7 +34,7 @@ Lecturas recomendadas: [Landscape evolution models](https://www.sciencedirect.co
 
 ### Procesos endógenos
 
-#### Morfotectónica y ambiente estructural
+#### Morfotectónica y ambiente estructural  
 [Documento](Documentos/morfotectonica.pdf)
 
 Lecturas recomendadas: [Chapter 2. Plate tectonics: a unifying](http://usuarios.geofisica.unam.mx/cecilia/cursos/PTeCh02_Wicander-PhysG.pdf)
@@ -42,7 +42,7 @@ Lecturas recomendadas: [Chapter 2. Plate tectonics: a unifying](http://usuarios.
 Lecturas recomendadas: [Chap 1. Tectonic geomorphology](https://www.irsm.cas.cz/ext/ethiopia/materials/papers/tectonic_geomorphology/Tectonic_Geomorphology_Burbank.pdf)
 
 #### Ambiente volcánico
-Lecturas recomendadas: [Source to sink](https://www.sciencedirect.com/science/article/pii/S0037073809000980)
+Lecturas recomendadas: [Source to sink](https://www.sciencedirect.com/science/article/pii/S0037073809000980)  
 [Documento](Documentos/volcanico.pdf)
 
 #### Práctica 2: Descarga de información geoespacial
@@ -50,18 +50,18 @@ Lecturas recomendadas: [Source to sink](https://www.sciencedirect.com/science/ar
 ### Procesos exógenos
 
 #### Ambiente glacial y periglacial
-Lecturas recomendadas: [Cap 1 y 2 de Glaciares de Colombia mías que montañas con hielo](https://rds.org.co/documentos/glaciares_de_colombia)
+Lecturas recomendadas: [Cap 1 y 2 de Glaciares de Colombia mías que montañas con hielo](https://rds.org.co/documentos/glaciares_de_colombia)  
 [Documento](Documentos/glacial.pdf)
 
 #### Ambiente denudacional: Meteorización
-Lecturas recomendadas: [Tropical chemical weathering](https://www.researchgate.net/publication/222693356_Tropical_chemical_weathering_of_hillslope_deposits_and_bedrock_source_in_the_Aburra_Valley_northern_Colombian_Andes)
+Lecturas recomendadas: [Tropical chemical weathering](https://www.researchgate.net/publication/222693356_Tropical_chemical_weathering_of_hillslope_deposits_and_bedrock_source_in_the_Aburra_Valley_northern_Colombian_Andes)  
 [Documento](Documentos/meteorizacion.pdf)
 
 #### Práctica 3: Análisis geoespacial básico
 Lecturas recomendadas: [Chapter 1: Digital terrain analysis](https://johnwilson.usc.edu/wp-content/uploads/2016/05/2000-Wilson-Gallant-Terrain-Anaylsis-Chapter-1.pdf)
 
 #### Ambiente denudacional: Movimientos en masa
-Lecturas recomendadas: [Landslide types and processes](https://onlinepubs.trb.org/Onlinepubs/sr/sr247/sr247-003.pdf)
+Lecturas recomendadas: [Landslide types and processes](https://onlinepubs.trb.org/Onlinepubs/sr/sr247/sr247-003.pdf)  
 [Documento](Documentos/MenM.pdf)
 
 #### Ambiente denudacional: Erosión pluvial
