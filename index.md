@@ -74,6 +74,9 @@ Lecturas recomendadas: [Soil erodibility and processes of water erosion on hills
 
 #### Práctica 4: Análisis geoespacial intermedio
 
+#### Geomorfología de cuencas
+[Documento](Documentos/cuencas.pdf)
+
 #### Ambiente fluvial: Torrencial
 Lecturas recomendadas: [Definición y clasificación de las avenidas torrenciales](https://revistas.unal.edu.co/index.php/rcg/article/view/72612)  
 
