@@ -79,9 +79,14 @@ Lecturas recomendadas: [Soil erodibility and processes of water erosion on hills
 
 #### Ambiente fluvial: Torrencial
 Lecturas recomendadas: [Definición y clasificación de las avenidas torrenciales](https://revistas.unal.edu.co/index.php/rcg/article/view/72612)  
+[Documento](Documentos/torrencial.pdf)
 
 #### Ambiente fluvial: Aluvial 
-Lecturas recomendadas:[Processes and forms of alluvial fans](http://web.gps.caltech.edu/~mpl/Ge126_Reading_List/Ch14.pdf)
+Lecturas recomendadas:[Processes and forms of alluvial fans](http://web.gps.caltech.edu/~mpl/Ge126_Reading_List/Ch14.pdf)    
+[Documento](Documentos/aluvial.pdf)
+
+#### Ambiente fluvial: Deltáico 
+[Documento](Documentos/delta.pdf)
 
 ### Cartografía geomorfológica
 

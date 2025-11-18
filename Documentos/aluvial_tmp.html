@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>aluvial.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="geomorfolog%C3%ADa-de-ambientes-fluviales">Geomorfología de Ambientes Fluviales</h1>
+<p>Este documento aborda los conceptos y procesos fundamentales que rigen la dinámica de los ríos, su clasificación morfológica y las geoformas resultantes, esenciales para la interpretación del paisaje.</p>
+<hr>
+<h2 id="1-la-balanza-de-lane">1. La Balanza de Lane</h2>
+<p>La <strong>Balanza de Lane</strong> (o Ley de Lane) es un principio fundamental que describe el estado de <strong>equilibrio dinámico</strong> de un sistema fluvial. Postula que un río buscará mantener un equilibrio entre el <strong>transporte de sedimentos</strong> y el <strong>poder de transporte</strong> del flujo.</p>
+<p>La relación se expresa conceptualmente como:</p>
+<p>$$Q_s \cdot D \propto Q \cdot S$$</p>
+<p>Donde:</p>
+<ul>
+<li>$Q_s$ (<strong>Caudal Sólido</strong> o Carga de Sedimentos): El volumen o masa de sedimento que el río debe transportar.</li>
+<li>$D$ (<strong>Tamaño de Partícula</strong>): El diámetro promedio del sedimento.</li>
+<li>$Q$ (<strong>Caudal Líquido</strong>): El volumen de agua del flujo. Representa el poder de transporte.</li>
+<li>$S$ (<strong>Pendiente del Canal</strong>): La energía potencial disponible para el flujo.</li>
+</ul>
+<p>Si el equilibrio se rompe (ej. si la carga de sedimento, $Q_s$, aumenta o la pendiente, $S$, disminuye), el río buscará restablecer el equilibrio ajustando sus variables (pendientes, patrón de canal o profundidad).</p>
+<image src="https://i.pinimg.com/736x/c4/74/2e/c4742e421874f6f3d2ecd59ae07d71b6.jpg" width="700">
+</image><hr>
+<h2 id="2-tipos-de-canales-fluviales">2. Tipos de Canales Fluviales</h2>
+<p>La morfología del canal es una respuesta al caudal, la carga de sedimentos y la estabilidad de las márgenes.</p>
+<h3 id="canal-me%C3%A1ndrico">Canal Meándrico</h3>
+<ul>
+<li><strong>Características:</strong> Presentan una sinuosidad alta (curvas pronunciadas). El canal se desplaza lateralmente a lo largo del tiempo.</li>
+<li><strong>Condiciones:</strong> Típicamente se encuentran en ríos que transportan una <strong>carga de fondo moderada a baja</strong>, pero tienen una alta <strong>carga de suspensión</strong>. Sus márgenes son estables y cohesivas (materiales finos como arcillas y limos).</li>
+<li><strong>Proceso Clave:</strong> Erosión en la margen exterior (corte) y deposición en la margen interior (barra de meandro).</li>
+</ul>
+<h3 id="canal-recto">Canal Recto</h3>
+<ul>
+<li><strong>Características:</strong> Son extremadamente raros en la naturaleza, ya que cualquier irregularidad genera meandros.</li>
+<li><strong>Condiciones:</strong> Se encuentran en canales de drenaje cortos, pendientes muy altas, o bajo control estructural (fallas, diaclasas). Incluso los canales que parecen rectos a escala de mapa suelen tener sinuosidad a escala de detalle.</li>
+</ul>
+<h3 id="canal-trenzado-braided">Canal Trenzado (<em>Braided</em>)</h3>
+<ul>
+<li><strong>Características:</strong> El canal se divide y se reúne constantemente alrededor de numerosas islas y barras inestables. Es ancho y somero.</li>
+<li><strong>Condiciones:</strong> Se encuentran en ríos que transportan una <strong>carga de fondo muy alta</strong> (principalmente gravas y arenas gruesas) y tienen un caudal <strong>muy variable</strong>. Sus márgenes son inestables (materiales no cohesivos).</li>
+</ul>
+<image src="https://i.pinimg.com/1200x/a4/e7/fd/a4e7fd07924f8d63cba03e7537063054.jpg" width="700">
+</image><hr>
+<h2 id="3-caracter%C3%ADsticas-de-los-dep%C3%B3sitos-aluviales">3. Características de los Depósitos Aluviales</h2>
+<p>Los depósitos aluviales son aquellos sedimentos transportados y depositados por el agua de un río.</p>
+<image src="https://i.pinimg.com/1200x/53/44/53/534453e6dcf5a20ade53d4b36e609d0a.jpg" width="700">
+</image><ul>
+<li><strong>Estructuras de Sedimentación:</strong>
+<ul>
+<li><strong>Estratificación Cruzada:</strong> Común en las barras de meandro y abanicos aluviales, indica la migración de dunas o ripples por el fondo del canal.</li>
+<li><strong>Estratificación Plano-Paralela:</strong> Típica de depósitos de inundación en las cubetas (<em>backswamps</em>).</li>
+<li><strong>Secuencias de <em>Fining Upward</em> (Granoclasificación Inversa):</strong> La regla común en depósitos aluviales. El tamaño de grano disminuye gradualmente hacia arriba, reflejando la pérdida de energía del flujo con el tiempo (ej. arena gruesa en el canal a limos en la llanura de inundación).</li>
+</ul>
+</li>
+<li><strong>Características de los Sedimentos:</strong>
+<ul>
+<li><strong>Selección:</strong> La selección es generalmente de moderada a buena, mejor que en los depósitos gravitacionales, ya que el agua tiene una capacidad de transporte más selectiva.</li>
+<li><strong>Redondez:</strong> Los clastos son más <strong>redondeados</strong> que los depósitos coluviales o glaciales debido a la abrasión durante el transporte.</li>
+</ul>
+</li>
+<li><strong>Geoformas y Depósitos:</strong>
+<ul>
+<li><strong>Depósitos de <em>Channel Lag</em>:</strong> Material grueso (bloques, cantos) que queda en la base del canal.</li>
+<li><strong>Lodos de Cubeta de Inundación (<em>Flood Basin Fines</em>):</strong> Sedimentos muy finos (limos y arcillas) depositados por suspensión en las áreas más alejadas del canal durante las crecidas.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="4-geoformas-de-la-llanura-de-inundaci%C3%B3n">4. Geoformas de la Llanura de Inundación</h2>
+<p>La <strong>llanura de inundación</strong> es la superficie de bajo relieve adyacente al canal, construida por la deposición de sedimentos durante las crecidas.</p>
+<ul>
+<li><strong>Dique Natural (<em>Levee</em>):</strong> Crestas topográficas ligeramente elevadas que se forman inmediatamente adyacentes al canal. Se construyen por la deposición de sedimentos más gruesos y pesados que caen rápidamente cuando el río se desborda y pierde velocidad.</li>
+<li><strong>Meandro Abandonado (<em>Oxbow Lake</em>):</strong> Lagos en forma de media luna. Se forman cuando un meandro se vuelve tan sinuoso que el río erosiona a través del cuello (el punto más estrecho) del meandro, creando un nuevo curso más directo y aislando la curva anterior.</li>
+<li><strong>Tributario Yazoo (<em>Yazoo Tributary</em>):</strong> Un afluente que corre paralelo al río principal antes de unirse. Es incapaz de unirse al río principal inmediatamente porque la cresta del dique natural es demasiado alta, por lo que fluye por la depresión del <em>backswamp</em> (cubeta de inundación) hasta encontrar un punto bajo para confluir.</li>
+<li><strong>Barra de Meandro (<em>Point Bar</em>):</strong> Acumulación de arena y grava depositada en la margen interna de un meandro (el lado de menor velocidad). Es una geoforma agradacional en constante crecimiento lateral.</li>
+<li><strong>Nivel de Banco Lleno (<em>Bankfull</em>):</strong> Es el nivel de caudal en el que el agua justo antes de desbordarse e inundar la llanura. Es el caudal que se considera &quot;de diseño&quot; para el canal y es el que realiza la mayor parte del trabajo de modelado del canal.</li>
+</ul>
+<image src="https://i.pinimg.com/1200x/2a/21/73/2a21736658bb6b4698f7b53294b376a4.jpg" width="700">
+</image><hr>
+<h2 id="5-geoformas-tipo-terrazas-fluviales">5. Geoformas Tipo Terrazas Fluviales</h2>
+<p>Las <strong>terrazas fluviales</strong> son antiguos niveles de llanura de inundación que han sido abandonados por el río y se encuentran elevados sobre el nivel actual del canal. Indican cambios en el régimen del río (agradación o degradación) o cambios en el nivel de base.</p>
+<ul>
+<li><strong>Terrazas Degradacionales (Erosivas):</strong> Se forman cuando el río <strong>incide</strong> (corta hacia abajo) en un depósito aluvial preexistente. La terraza está formada por roca madre o aluvión antiguo. Indican un predominio de la erosión vertical.</li>
+<li><strong>Terrazas Agradacionales (Deposicionales):</strong> Se forman cuando el río primero <strong>deposita</strong> un gran volumen de sedimento (agradación) y luego <strong>incide</strong> en ese depósito. La terraza está completamente formada por el material aluvial depositado. Indican un predominio de la acumulación de sedimentos.</li>
+<li><strong>Terrazas Apareadas (<em>Paired</em>):</strong> Las terrazas se encuentran a la misma elevación en ambos lados del valle. Generalmente indican un cambio rápido y vertical en el nivel de base (ej. levantamiento tectónico, descenso del nivel del mar).</li>
+<li><strong>Terrazas No Apareadas (<em>Unpaired</em>):</strong> Las terrazas no se encuentran a la misma elevación en los lados opuestos. Generalmente indican una incisión lenta combinada con una migración lateral constante del río.</li>
+</ul>
+<image src="https://i.pinimg.com/1200x/fc/b6/34/fcb634072f1cf232c27220bb0db3b58f.jpg" width="700">
+</image><hr>
+<h2 id="6-abanicos-aluviales">6. Abanicos Aluviales</h2>
+<p>Un <strong>abanico aluvial</strong> es una geoforma de deposición de bajo gradiente, con forma de cono que irradia desde un punto de salida confinado (usualmente la boca de un valle de montaña) hacia una llanura adyacente.</p>
+<ul>
+<li><strong>Proceso:</strong> Se forman donde un río experimenta una <strong>disminución súbita y drástica de la pendiente y la confinación lateral</strong>. Al salir del valle estrecho, la energía del flujo se dispersa rápidamente, obligando al río a depositar su carga de sedimento, especialmente en el <strong>ápice</strong> (la parte más cercana a la montaña).</li>
+<li><strong>Morfología:</strong> El canal es generalmente <strong>trenzado</strong> (<em>braided</em>) e inestable en el abanico.</li>
+<li><strong>Depósitos:</strong> Son extremadamente <strong>gruesos y mal seleccionados</strong> (debido a la mezcla de flujos de agua y flujos de detritos), lo que los convierte en zonas de alto riesgo geomorfológico.</li>
+</ul>
+<image src="https://i.pinimg.com/736x/8a/05/d7/8a05d7927144aa8b16bf7e96bb2e3e3f.jpg" width="700"></image>
+</body>
+</html>
