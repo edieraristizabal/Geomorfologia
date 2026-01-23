@@ -12,21 +12,24 @@ De esta forma se pretende que el estudiante conozca en detalle los procesos de f
 Martes & Jueves 8:00 - 10:00 a.m.
 
 ### Aula:
-M3-115
+
 
 ## Programa del curso
 [Ir al programa...](/Programa_GEOMORFOLOGIA.pdf)
 
-## Presentación
-[Ir a presentación...](/html/Geomorfologia.html)
+## Diapositivas del curso
+[Ir a diapositivas...](/html/Geomorfologia.html)
 
-### Introducción al curso
+## Libro del curso
+[Libro guía](https://edieraristizabal.github.io/Libro_Geomorfologia/intro.html)
 
-#### Evolución del paisaje
-[Documento](Documentos/conceptos.pdf)
+## Contenido del curso
+
+#### Presentación del curso
+
+#### Conceptos claves
 
 #### Modelos de evolución  
-[Documento](Documentos/evolucion.pdf)
 
 Lecturas recomendadas: [Landscape evolution models](https://www.sciencedirect.com/science/article/pii/S1571086603010121)
 
@@ -35,47 +38,36 @@ Lecturas recomendadas: [Landscape evolution models](https://www.sciencedirect.co
 ### Procesos endógenos
 
 #### Morfotectónica y ambiente estructural  
-[Documento](Documentos/morfotectonica.pdf)
-
 Lecturas recomendadas: [Chapter 2. Plate tectonics: a unifying](http://usuarios.geofisica.unam.mx/cecilia/cursos/PTeCh02_Wicander-PhysG.pdf)
 
 Lecturas recomendadas: [Chap 1. Tectonic geomorphology](https://www.irsm.cas.cz/ext/ethiopia/materials/papers/tectonic_geomorphology/Tectonic_Geomorphology_Burbank.pdf)
 
 #### Ambiente volcánico
 Lecturas recomendadas: [Source to sink](https://www.sciencedirect.com/science/article/pii/S0037073809000980)  
-[Documento](Documentos/volcanico.pdf)
 
-#### Práctica 2: Descarga de información geoespacial
+#### Práctica 2: Cartografía temática
+Lecturas recomendadas: [El sistema ITC para levantamientos geomorfológicos](https://libros.sgc.gov.co/index.php/editorial/catalog/view/52/44/438-1) 
 
 ### Procesos exógenos
 
 #### Ambiente glacial y periglacial
 Lecturas recomendadas: [Cap 1 y 2 de Glaciares de Colombia mías que montañas con hielo](https://rds.org.co/documentos/glaciares_de_colombia)  
-[Documento](Documentos/glacial.pdf)
 
 #### Ambiente denudacional: Meteorización
 Lecturas recomendadas: [Tropical chemical weathering](https://www.researchgate.net/publication/222693356_Tropical_chemical_weathering_of_hillslope_deposits_and_bedrock_source_in_the_Aburra_Valley_northern_Colombian_Andes)  
-[Documento](Documentos/meteorizacion.pdf)
 
-#### Práctica 3: Análisis geoespacial básico
-Lecturas recomendadas: [Chapter 1: Digital terrain analysis](https://johnwilson.usc.edu/wp-content/uploads/2016/05/2000-Wilson-Gallant-Terrain-Anaylsis-Chapter-1.pdf)
+#### Ambiente denudacional: Erosión pluvial
+Lecturas recomendadas: [El impacto de la deforestación](https://raccefyn.co/index.php/raccefyn/article/view/141/123)  
+Lecturas recomendadas: [Soil erodibility and processes of water erosion on hillslope](https://www.sciencedirect.com/science/article/pii/S0169555X99001051)  
+
+#### Ambiente denudacional: Erosión eólica
 
 #### Ambiente denudacional: Movimientos en masa
 Lecturas recomendadas: [Landslide types and processes](https://onlinepubs.trb.org/Onlinepubs/sr/sr247/sr247-003.pdf)  
 [Documento](Documentos/MenM.pdf)
 
-#### Ambiente denudacional: Erosión pluvial
-Lecturas recomendadas: [El impacto de la deforestación](https://raccefyn.co/index.php/raccefyn/article/view/141/123)  
-Lecturas recomendadas: [Soil erodibility and processes of water erosion on hillslope](https://www.sciencedirect.com/science/article/pii/S0169555X99001051)  
-[Documento](Documentos/pluvial.pdf)  
-
-#### Ambiente denudacional: Erosión eólica
-[Documento](Documentos/eolica.pdf)
-
-#### Práctica 4: Análisis geoespacial intermedio
-
-#### Geomorfología de cuencas
-[Documento](Documentos/cuencas.pdf)
+#### Práctica 3: Geomorfometría
+Lecturas recomendadas: [Cartography: design, symbolization and visualization of geomorphological maps](https://www.researchgate.net/publication/229058600_Cartography_design_symbolisation_and_visualisation_of_geomorphological_maps)
 
 #### Ambiente fluvial: Torrencial
 Lecturas recomendadas: [Definición y clasificación de las avenidas torrenciales](https://revistas.unal.edu.co/index.php/rcg/article/view/72612)  
@@ -88,18 +80,11 @@ Lecturas recomendadas:[Processes and forms of alluvial fans](http://web.gps.calt
 #### Ambiente fluvial: Deltáico 
 [Documento](Documentos/delta.pdf)
 
-### Cartografía geomorfológica
-
-#### Práctica 5: Cartografía geomorfológica
-Lecturas recomendadas: [Cartography: design, symbolization and visualization of geomorphological maps](https://www.researchgate.net/publication/229058600_Cartography_design_symbolisation_and_visualisation_of_geomorphological_maps)
-
-Lecturas recomendadas: [El sistema ITC para levantamientos geomorfológicos](https://libros.sgc.gov.co/index.php/editorial/catalog/view/52/44/438-1) 
-
 #### Morfocronología 
 Lecturas recomendadas: [Dating methods and establishing methods timing in the landscape](http://geosci.uchicago.edu/~kite/doc/Anderson_and_Anderson_ch_6.pdf)
 
 ## Evaluación del curso
-El componente teórico del curso se evaluará con exámenes cortos asociados a las clases y lecturas recomendadas. Todas estos examenes y evaluaciones cortas tienen un valor en total del 25% del curso. otro 25% se evalúa con un parcial teórico del 25% que se realizarà al terminar el Ambiente fluvial.
+El componente teórico del curso se evaluará con exámenes cortos asociados a las clases y lecturas recomendadas. Todos estos trabajos y evaluaciones cortas tienen un valor en total del 25% del curso. El otro 25% se evalúa con un parcial teórico del 25% que se realizarà al terminar el Ambiente fluvial.
 
 El restante 50% se evaluará como componente práctico del curso con un trabajo en
 grupos de tres (3) personas de cartografía geomorfológica de una cuenca seleccionada; el 25\% de este
