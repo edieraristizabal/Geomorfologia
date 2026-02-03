@@ -11,8 +11,8 @@ De esta forma se pretende que el estudiante conozca en detalle los procesos de f
 ### Horario del curso
 Martes & Jueves 8:00 - 10:00 a.m.
 
-### Aula:
-
+### Aula:  
+M3-115
 
 ## Programa del curso
 [Ir al programa...](/Programa_GEOMORFOLOGIA.pdf)
