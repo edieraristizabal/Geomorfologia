@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" font-family="Georgia, serif" font-size="18">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f5f99"/>
+    </marker>
+  </defs>
+  <rect width="900" height="470" fill="#fff"/>
+
+  <!-- Curvatura de perfil -->
+  <text x="225" y="30" text-anchor="middle" font-size="22" font-weight="bold">Curvatura de perfil</text>
+  <text x="225" y="52" text-anchor="middle" font-size="15" fill="#555">(en la dirección de la pendiente)</text>
+
+  <g transform="translate(20,70)">
+    <path d="M10,20 Q70,20 130,110" fill="none" stroke="#7a4a1e" stroke-width="4"/>
+    <path d="M10,20 Q70,20 130,110 L130,125 L10,125 Z" fill="#e8d9c0" opacity="0.6"/>
+    <path d="M40,32 L110,90" stroke="#1f5f99" stroke-width="2" marker-end="url(#ar)"/>
+    <text x="70" y="150" text-anchor="middle">Convexa</text>
+    <text x="70" y="172" text-anchor="middle" font-size="14" fill="#555">flujo se acelera</text>
+    <text x="70" y="190" text-anchor="middle" font-size="14" fill="#555">→ erosión</text>
+  </g>
+  <g transform="translate(160,70)">
+    <path d="M10,20 L130,110 L130,125 L10,125 Z" fill="#e8d9c0" opacity="0.6"/>
+    <path d="M10,20 L130,110" fill="none" stroke="#7a4a1e" stroke-width="4"/>
+    <path d="M35,30 L105,82" stroke="#1f5f99" stroke-width="2" marker-end="url(#ar)"/>
+    <text x="70" y="150" text-anchor="middle">Rectilínea</text>
+    <text x="70" y="172" text-anchor="middle" font-size="14" fill="#555">flujo uniforme</text>
+    <text x="70" y="190" text-anchor="middle" font-size="14" fill="#555">→ transporte</text>
+  </g>
+  <g transform="translate(300,70)">
+    <path d="M10,20 Q40,110 130,110 L130,125 L10,125 Z" fill="#e8d9c0" opacity="0.6"/>
+    <path d="M10,20 Q40,110 130,110" fill="none" stroke="#7a4a1e" stroke-width="4"/>
+    <path d="M30,55 L95,100" stroke="#1f5f99" stroke-width="2" marker-end="url(#ar)"/>
+    <text x="70" y="150" text-anchor="middle">Cóncava</text>
+    <text x="70" y="172" text-anchor="middle" font-size="14" fill="#555">flujo se desacelera</text>
+    <text x="70" y="190" text-anchor="middle" font-size="14" fill="#555">→ depositación</text>
+  </g>
+
+  <line x1="450" y1="20" x2="450" y2="450" stroke="#bbb" stroke-dasharray="6,6"/>
+
+  <!-- Curvatura plana -->
+  <text x="675" y="30" text-anchor="middle" font-size="22" font-weight="bold">Curvatura plana</text>
+  <text x="675" y="52" text-anchor="middle" font-size="15" fill="#555">(perpendicular a la pendiente, curvas de nivel)</text>
+
+  <g transform="translate(480,70)">
+    <g fill="none" stroke="#7a4a1e" stroke-width="2">
+      <path d="M10,30 Q90,95 170,30"/>
+      <path d="M10,70 Q90,135 170,70"/>
+      <path d="M10,110 Q90,175 170,110"/>
+    </g>
+    <path d="M30,20 L80,120" stroke="#1f5f99" stroke-width="2" marker-end="url(#ar)"/>
+    <path d="M150,20 L100,120" stroke="#1f5f99" stroke-width="2" marker-end="url(#ar)"/>
+    <path d="M90,20 L90,125" stroke="#1f5f99" stroke-width="2" marker-end="url(#ar)"/>
+    <text x="90" y="200" text-anchor="middle">Convergente (cóncava)</text>
+    <text x="90" y="222" text-anchor="middle" font-size="14" fill="#555">concentra el flujo: hondonadas, cauces</text>
+  </g>
+  <g transform="translate(690,70)">
+    <g fill="none" stroke="#7a4a1e" stroke-width="2">
+      <path d="M10,90 Q90,25 170,90"/>
+      <path d="M10,130 Q90,65 170,130"/>
+      <path d="M10,170 Q90,105 170,170"/>
+    </g>
+    <path d="M80,35 L30,140" stroke="#1f5f99" stroke-width="2" marker-end="url(#ar)"/>
+    <path d="M100,35 L150,140" stroke="#1f5f99" stroke-width="2" marker-end="url(#ar)"/>
+    <path d="M90,35 L90,145" stroke="#1f5f99" stroke-width="2" marker-end="url(#ar)"/>
+    <text x="90" y="200" text-anchor="middle">Divergente (convexa)</text>
+    <text x="90" y="222" text-anchor="middle" font-size="14" fill="#555">dispersa el flujo: filos, narices</text>
+  </g>
+
+  <text x="450" y="330" text-anchor="middle" font-size="16" fill="#333">La combinación de ambas define 9 formas elementales de ladera</text>
+  <text x="450" y="352" text-anchor="middle" font-size="16" fill="#333">(p. ej. cóncava-convergente = máxima acumulación de agua y sedimento).</text>
+  <text x="450" y="390" text-anchor="middle" font-size="14" fill="#777">El signo (+/−) de cada curvatura depende del software: revise la convención antes de interpretar el ráster.</text>
+</svg>
