@@ -130,6 +130,7 @@ Material fuente que **no** se sube (libros guía, presentaciones originales, doc
 
 Cada cambio al repositorio se anota aquí, el más reciente primero, con el formato `- **AAAA-MM-DD**: qué se cambió y por qué (archivos principales).` Esta sección es la memoria del curso entre sesiones: leerla antes de empezar a trabajar.
 
+- **2026-10-24**: Revisión de idioma: se tradujeron al español 7 bloques en inglés de `html/Geomorfologia.html` (penillanura y pediplanicie, georreferenciación, meseta, ciclos de Milankovitch, coluvión). Se mantienen en inglés los títulos de lecturas, los enlaces externos y los tweets incrustados (los reemplaza la publicación original al cargar).
 - **2026-10-24**: CLAUDE.md ampliado con resumen del contenido, pendientes y este registro de cambios.
 - **2026-10-24**: Unificación en un solo repositorio: el libro (antes repositorio `Libro_Geomorfologia`) se copió a `libro/` con `execute_notebooks: off`, `baseurl` y enlaces al repositorio nuevo; se agregó `.github/workflows/deploy.yml` (Jekyll + Jupyter Book → `gh-pages`); `_config.yml` con `url`/`baseurl: /Geomorfologia` y exclusiones; en `index.md` los enlaces absolutos (`/...`) pasaron a relativos y el enlace al libro apunta a `/Geomorfologia/libro/`.
 - **2026-10-24**: Commit de respaldo de los cambios locales pendientes antes de unificar (38 archivos modificados) y limpieza de archivos `desktop.ini` dentro de `.git/` que impedían el mantenimiento de git.
