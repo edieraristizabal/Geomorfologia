@@ -23,6 +23,7 @@ bibtex_bibfiles:
 
 sphinx:
   config:
+    language: es
     bibtex_reference_style: author_year
 
 # Information about where the book exists on the web

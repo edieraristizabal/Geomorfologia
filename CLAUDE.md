@@ -87,6 +87,8 @@ Programa_GEOMORFOLOGIA.tex
 README.md
 TrabajosIndividuales/
 _config.yml
+_layouts/
+    default.html
 html/
     .github/
     Geomorfologia.backup-2026-10-05.html
@@ -110,6 +112,7 @@ Material fuente que **no** se sube (libros guía, presentaciones originales, doc
 
 - **El Action no ejecuta los notebooks** (`execute_notebooks: "off"`): publica las salidas guardadas en cada `.ipynb`. Si se cambia código, ejecutar el notebook localmente y guardarlo con sus salidas antes del commit.
 - `libro/requirements.txt` contiene solo lo necesario para construir el libro; `libro/requirements-notebooks.txt` (si existe) lista las librerías para ejecutar los notebooks.
+- Si git falla con `bad object refs/desktop.ini` o `failed to perform geometric repack`, es porque Windows/Google Drive creó archivos `desktop.ini` dentro de `.git/`: borrarlos con `find .git -name desktop.ini -delete` y repetir el comando.
 - Compilar localmente: `C:\Users\edier\.jbenv\Scripts\jupyter-book.exe build libro` y abrir `libro/_build/html/index.html`.
 
 
@@ -130,6 +133,7 @@ Material fuente que **no** se sube (libros guía, presentaciones originales, doc
 
 Cada cambio al repositorio se anota aquí, el más reciente primero, con el formato `- **AAAA-MM-DD**: qué se cambió y por qué (archivos principales).` Esta sección es la memoria del curso entre sesiones: leerla antes de empezar a trabajar.
 
+- **2026-10-24**: Interfaz en español: `_layouts/default.html` traducido ("Ver el proyecto en GitHub", "Este proyecto es mantenido por", `lang` = es), reemplaza el texto en inglés del tema minimal de Jekyll; `language: es` en `libro/_config.yml` para que la interfaz del libro (búsqueda, navegación) quede en español.
 - **2026-10-24**: Revisión de idioma: se tradujeron al español 7 bloques en inglés de `html/Geomorfologia.html` (penillanura y pediplanicie, georreferenciación, meseta, ciclos de Milankovitch, coluvión). Se mantienen en inglés los títulos de lecturas, los enlaces externos y los tweets incrustados (los reemplaza la publicación original al cargar).
 - **2026-10-24**: CLAUDE.md ampliado con resumen del contenido, pendientes y este registro de cambios.
 - **2026-10-24**: Unificación en un solo repositorio: el libro (antes repositorio `Libro_Geomorfologia`) se copió a `libro/` con `execute_notebooks: off`, `baseurl` y enlaces al repositorio nuevo; se agregó `.github/workflows/deploy.yml` (Jekyll + Jupyter Book → `gh-pages`); `_config.yml` con `url`/`baseurl: /Geomorfologia` y exclusiones; en `index.md` los enlaces absolutos (`/...`) pasaron a relativos y el enlace al libro apunta a `/Geomorfologia/libro/`.
