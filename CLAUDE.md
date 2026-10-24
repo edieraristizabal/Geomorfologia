@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Guía para Claude Code (y para cualquier persona) que actualice este repositorio.
+Guía para Claude Code (y para cualquier persona) que actualice este repositorio. **Cada cambio que se haga en el repositorio debe registrarse al final, en "Registro de cambios".**
 
 ## Qué es
 
@@ -13,6 +13,42 @@ Curso **Geomorfología** (Universidad Nacional de Colombia, sede Medellín, Prof
 | Libro (Jupyter Book 1.x) | `libro/` | https://edieraristizabal.github.io/Geomorfologia/libro/ |
 
 Remoto: https://github.com/edieraristizabal/Geomorfologia
+
+## Resumen del contenido
+
+El curso de **Geomorfología** está orientado para estudiantes de semestres intermedios de Ingeniería Geológica e Ingeniería Ambiental que deseen adquirir conocimientos sobre los procesos endógenos y exógenos que modelan las geoformas de la superficie terrestre. Luego de una introducción a la geomorfología donde se estudia la historia, los modelos de evolución y las técnicas que existen dentro de la geomorfología, el curso se estructura en tres grandes bloques:
+
+El libro (Geomorfología Aplicada) está escrito en MyST Markdown, sin código ejecutable; las figuras están en `libro/images/` y las referencias en `libro/references.bib`.
+
+Contenido del libro (orden de `libro/_toc.yml`; el título es el primer encabezado de cada archivo):
+
+- `intro`: GEOMORFOLOGÍA EN AMBIENTES TROPICALES
+
+**Parte I: Fundamentos de Geomorfología**
+
+- `conceptos`: Conceptos fundamentales en Geomorfología
+- `evolucion`: Teorías Clásicas de la Evolución de Laderas
+
+**Parte II: Procesos Endógenos**
+
+- `morfotectonica`: Morfotectónica y geomorfología estructural
+- `volcanico`: Geomorfología de Ambientes Volcánicos
+
+**Parte III: Procesos Exógenos**
+
+- `glacial`: Geomorfología Glacial y Periglacial
+- `meteorizacion`: Meteorización: procesos, perfiles y geoformas
+- `MenM`: Geomorfología de Movimientos en Masa
+- `pluvial`: Erosión Pluvial
+- `eolica`: Erosión Eólica
+- `cuencas`: Geomorfología de Cuencas Hidrográficas
+- `torrencial`: Ambientes Torrenciales
+- `aluvial`: Geomorfología de Ambientes Fluviales
+- `delta`: Geomorfología de Ambientes Deltaicos
+
+**Referencias**
+
+- `referencias`: Referencias
 
 ## Ramas: dónde hacer pull y push
 
@@ -27,6 +63,7 @@ Flujo normal:
 ```bash
 git pull origin master
 # ... editar ...
+# ... agregar una línea al Registro de cambios de este archivo ...
 git add -A
 git commit -m "Descripción del cambio"
 git push origin master      # el Action publica en 2 a 5 minutos (pestaña Actions)
@@ -38,36 +75,34 @@ git push origin master      # el Action publica en 2 a 5 minutos (pestaña Actio
 .github/
     workflows/
 .gitignore
+CLAUDE.md
 Documentos/
-Programa_GEOMORFOLOGIA.aux
-Programa_GEOMORFOLOGIA.log
+    aluvial_tmp.html
+    glacial_tmp.html
+    meteorizacion_tmp.html
+    morfotectonica_tmp.html
+    pluvial_tmp.html
 Programa_GEOMORFOLOGIA.pdf
-Programa_GEOMORFOLOGIA.synctex.gz.properties
 Programa_GEOMORFOLOGIA.tex
 README.md
 TrabajosIndividuales/
 _config.yml
 html/
     .github/
-    css/
-    examples/
-    js/
-    test/
+    Geomorfologia.backup-2026-10-05.html
+    Geomorfologia.backup-2026-10-05b.html
+    Geomorfologia.html
 index.md
 libro/
 trabajoGrupo/
     Taller_morfometria/
 ```
 
-Capítulos del libro (`libro/`, orden en `libro/_toc.yml`): MenM.md, aluvial.md, conceptos.md, cuencas.md, delta.md, eolica.md, evolucion.md, glacial.md, intro.md, meteorizacion.md, morfotectonica.md, pluvial.md, referencias.md, torrencial.md, volcanico.md.
-
-El libro proviene del antiguo repositorio Libro_Geomorfologia (unificado aquí en octubre de 2026); sus capítulos son MyST Markdown sin código ejecutable.
-
 Material fuente que **no** se sube (libros guía, presentaciones originales, documentos con derechos): está en `C:\Users\edier\Documents\CATEDRA\GEOMORFOLOGIA`, fuera de este repositorio.
 
 ## Cómo actualizar
 
-**Página del curso.** Editar `index.md`. Los enlaces internos deben ser relativos (`Programa.pdf`, `html/...`), nunca empezar por `/`, porque el sitio vive en `/Geomorfologia/`. El libro se enlaza como `https://edieraristizabal.github.io/Geomorfologia/libro/<capítulo>.html`.
+**Página del curso.** Editar `index.md`. Los enlaces internos deben ser relativos (`Programa.pdf`, `html/...`), nunca empezar por `/`, porque el sitio vive en `/Geomorfologia/`. El libro se enlaza como `https://edieraristizabal.github.io/Geomorfologia/libro/<capítulo>.html`. Si cambia la evaluación, actualizarla también en el programa (`.tex` + PDF) y en las diapositivas.
 
 **Diapositivas.** Editar `html/Geomorfologia.html` directamente (Reveal.js; ecuaciones con MathJax). Previsualizar con `python -m http.server` desde la raíz y abrir `http://localhost:8000/html/Geomorfologia.html`.
 
@@ -84,3 +119,17 @@ Material fuente que **no** se sube (libros guía, presentaciones originales, doc
 - Proponer los cambios de contenido del curso y esperar aprobación antes de editarlos.
 - Prosa en párrafos, español, sin rayas (em dash): usar comas o paréntesis.
 - Las figuras nuevas se buscan primero en los tableros de Pinterest del autor.
+
+## Pendientes conocidos
+
+- Cambiar en Settings → Pages la fuente a la rama `gh-pages` (hasta entonces sigue publicando la rama `master` sin el libro nuevo).
+- Borrar el repositorio viejo `Libro_Geomorfologia` en GitHub una vez verificado que https://edieraristizabal.github.io/Geomorfologia/libro/ funciona.
+- `html/` contiene dos respaldos de la presentación (`Geomorfologia.backup-2026-10-05*.html`) que podrían eliminarse.
+
+## Registro de cambios
+
+Cada cambio al repositorio se anota aquí, el más reciente primero, con el formato `- **AAAA-MM-DD**: qué se cambió y por qué (archivos principales).` Esta sección es la memoria del curso entre sesiones: leerla antes de empezar a trabajar.
+
+- **2026-10-24**: CLAUDE.md ampliado con resumen del contenido, pendientes y este registro de cambios.
+- **2026-10-24**: Unificación en un solo repositorio: el libro (antes repositorio `Libro_Geomorfologia`) se copió a `libro/` con `execute_notebooks: off`, `baseurl` y enlaces al repositorio nuevo; se agregó `.github/workflows/deploy.yml` (Jekyll + Jupyter Book → `gh-pages`); `_config.yml` con `url`/`baseurl: /Geomorfologia` y exclusiones; en `index.md` los enlaces absolutos (`/...`) pasaron a relativos y el enlace al libro apunta a `/Geomorfologia/libro/`.
+- **2026-10-24**: Commit de respaldo de los cambios locales pendientes antes de unificar (38 archivos modificados) y limpieza de archivos `desktop.ini` dentro de `.git/` que impedían el mantenimiento de git.
