@@ -15,13 +15,13 @@ Martes & Jueves 8:00 - 10:00 a.m.
 M3-115
 
 ## Programa del curso
-[Ir al programa...](/Programa_GEOMORFOLOGIA.pdf)
+[Ir al programa...](Programa_GEOMORFOLOGIA.pdf)
 
 ## Diapositivas del curso
-[Ir a diapositivas...](/html/Geomorfologia.html)
+[Ir a diapositivas...](html/Geomorfologia.html)
 
 ## Libro del curso
-[Libro guía](https://edieraristizabal.github.io/Libro_Geomorfologia/intro.html)
+[Libro guía](https://edieraristizabal.github.io/Geomorfologia/libro/intro.html)
 
 ## Contenido del curso
 
@@ -89,7 +89,7 @@ El componente teórico del curso se evaluará con exámenes cortos asociados a l
 El restante 50% se evaluará como componente práctico del curso con un trabajo en
 grupos de tres (3) personas de cartografía geomorfológica de una cuenca seleccionada; el 25\% de este
 componente práctico corresponde a la presentación del trabajo y el 25% restante al informe escrito. En el siguiente documento se describe a detalle los alcances y actividades del trabajo en grupo:
-* [Guía para el trabajo](/trabajoGrupo/Guia_Trabajo.pdf)
+* [Guía para el trabajo](trabajoGrupo/Guia_Trabajo.pdf)
 
 
 

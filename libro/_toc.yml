@@ -1,0 +1,28 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+- caption: "Parte I: Fundamentos de Geomorfología"
+  chapters:
+    - file: conceptos
+    - file: evolucion
+- caption: "Parte II: Procesos Endógenos"
+  chapters:
+    - file: morfotectonica
+    - file: volcanico
+- caption: "Parte III: Procesos Exógenos"
+  chapters:
+    - file: glacial
+    - file: meteorizacion
+    - file: MenM
+    - file: pluvial
+    - file: eolica
+    - file: cuencas
+    - file: torrencial
+    - file: aluvial
+    - file: delta
+- caption: "Referencias"
+  chapters:
+    - file: referencias

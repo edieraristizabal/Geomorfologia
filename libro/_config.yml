@@ -1,0 +1,60 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: Geomorfología Aplicada
+author: Edier V. Aristizábal G.
+email: edieraristizabal@gmail.com
+copyright: "2026"
+logo: logo.png
+
+# Force re-execution of notebooks on each build.
+execute:
+  execute_notebooks: "off"
+  allow_errors: false
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: Geomorfologia_book.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+sphinx:
+  config:
+    bibtex_reference_style: author_year
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/edieraristizabal/Geomorfologia
+  path_to_book:  libro  
+  branch: master  
+
+# Add GitHub buttons to your book
+html:
+  use_issues_button: true
+  use_repository_button: true
+  use_edit_page_button: true
+  home_page_in_navbar: true
+  baseurl: https://edieraristizabal.github.io/Geomorfologia/libro/
+  navbar_title: "Geomorfología" 
+  extra_navbar: |
+    <p>Desarrollado por <a href="https://github.com/edieraristizabal">Edier Aristizábal</a></p>
+    <p>Facultad de Minas - Universidad Nacional</p>
+  comments:
+    hypothesis: true
+
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_admonition
+    - html_image
+    - linkify
+    - replacements
+    - smartquotes
+    - substitution
+    - tasklist

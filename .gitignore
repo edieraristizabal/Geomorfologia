@@ -16,3 +16,6 @@
 desktop.ini
 .ipynb_checkpoints/
 .claude/settings.local.json
+libro/_build/
+_site/
+.jekyll-cache/
