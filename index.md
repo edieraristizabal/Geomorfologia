@@ -84,7 +84,7 @@ Lecturas recomendadas:[Processes and forms of alluvial fans](http://web.gps.calt
 Lecturas recomendadas: [Dating methods and establishing methods timing in the landscape](http://geosci.uchicago.edu/~kite/doc/Anderson_and_Anderson_ch_6.pdf)
 
 ## Evaluación del curso
-El componente teórico del curso se evaluará con exámenes cortos asociados a las clases y lecturas recomendadas. Todos estos trabajos y evaluaciones cortas tienen un valor en total del 25% del curso. El otro 25% se evalúa con un parcial teórico del 25% que se realizarà al terminar el Ambiente fluvial.
+El componente teórico del curso se evaluará con exámenes cortos asociados a las clases y lecturas recomendadas y con un parcial. Todos estos trabajos y evaluaciones cortas tienen un valor en total del 25% del curso. El otro 25% se evalúa con un parcial teórico del 25% que se realizarà al terminar el Ambiente costero.
 
 El restante 50% se evaluará como componente práctico del curso con un trabajo en
 grupos de tres (3) personas de cartografía geomorfológica de una cuenca seleccionada; el 25\% de este
