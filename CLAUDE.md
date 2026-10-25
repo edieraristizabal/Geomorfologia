@@ -133,6 +133,7 @@ Material fuente que **no** se sube (libros guía, presentaciones originales, doc
 
 Cada cambio al repositorio se anota aquí, el más reciente primero, con el formato `- **AAAA-MM-DD**: qué se cambió y por qué (archivos principales).` Esta sección es la memoria del curso entre sesiones: leerla antes de empezar a trabajar.
 
+- **2026-10-25**: `README.md` con la sección "Enlaces del curso" (página, presentación y libro publicados) y el enlace a la página personal https://edieraristizabal.github.io/.
 - **2026-10-24**: Interfaz en español: `_layouts/default.html` traducido ("Ver el proyecto en GitHub", "Este proyecto es mantenido por", `lang` = es), reemplaza el texto en inglés del tema minimal de Jekyll; `language: es` en `libro/_config.yml` para que la interfaz del libro (búsqueda, navegación) quede en español.
 - **2026-10-24**: Revisión de idioma: se tradujeron al español 7 bloques en inglés de `html/Geomorfologia.html` (penillanura y pediplanicie, georreferenciación, meseta, ciclos de Milankovitch, coluvión). Se mantienen en inglés los títulos de lecturas, los enlaces externos y los tweets incrustados (los reemplaza la publicación original al cargar).
 - **2026-10-24**: CLAUDE.md ampliado con resumen del contenido, pendientes y este registro de cambios.
