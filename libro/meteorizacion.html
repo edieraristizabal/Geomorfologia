@@ -1,0 +1,1103 @@
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Meteorización: procesos, perfiles y geoformas &#8212; Geomorfología Aplicada</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="_static/documentation_options.js?v=78d55cf8"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Haz clic para mostrar';</script>
+    <script>let toggleHintHide = 'Haz clic para ocultar';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="_static/translations.js?v=d190bf04"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'meteorizacion';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="canonical" href="https://edieraristizabal.github.io/Geomorfologia/libro/meteorizacion.html" />
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Geomorfología de Movimientos en Masa" href="MenM.html" />
+    <link rel="prev" title="Geomorfología Glacial y Periglacial" href="glacial.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Navegación del sitio">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="En esta página">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Geomorfología Aplicada - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="Geomorfología Aplicada - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    GEOMORFOLOGÍA EN AMBIENTES TROPICALES
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte I: Fundamentos de Geomorfología</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="conceptos.html">Conceptos fundamentales en Geomorfología</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evolucion.html">Teorías Clásicas de la Evolución de Laderas</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte II: Procesos Endógenos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="morfotectonica.html">Morfotectónica y geomorfología estructural</a></li>
+<li class="toctree-l1"><a class="reference internal" href="volcanico.html">Geomorfología de Ambientes Volcánicos</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte III: Procesos Exógenos</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="glacial.html">Geomorfología Glacial y Periglacial</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Meteorización: procesos, perfiles y geoformas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MenM.html">Geomorfología de Movimientos en Masa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pluvial.html">Erosión Pluvial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eolica.html">Erosión Eólica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cuencas.html">Geomorfología de Cuencas Hidrográficas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="torrencial.html">Ambientes Torrenciales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aluvial.html">Geomorfología de Ambientes Fluviales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="delta.html">Geomorfología de Ambientes Deltaicos</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Referencias</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="referencias.html">Referencias</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/edieraristizabal/Geomorfologia" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/edieraristizabal/Geomorfologia/edit/master/libro/meteorizacion.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/edieraristizabal/Geomorfologia/issues/new?title=Issue%20on%20page%20%2Fmeteorizacion.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Abrir un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/meteorizacion.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Tema" data-bs-title="Tema"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Claro"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Oscuro"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Sistema"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Meteorización: procesos, perfiles y geoformas</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-ciclo-del-carbono-y-la-meteorizacion-de-silicatos">El Ciclo del Carbono y la Meteorización de Silicatos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#retroalimentacion-entre-cambio-climatico-y-meteorizacion">Retroalimentación entre Cambio Climático y Meteorización</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#factores">Factores</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perfil-de-meteorizacion">Perfil de meteorización</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cuantificacion-de-la-meteorizacion-indices-geoquimicos">Cuantificación de la Meteorización: Índices Geoquímicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suelos-in-situ-y-suelos-transportados">Suelos In Situ y Suelos Transportados</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodos-de-descripcion-de-perfiles-de-meteorizacion-ingenieril">Métodos de descripción de perfiles de meteorización (Ingenieril)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-meteorizacion">Tipos de Meteorización</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#meteorizacion-fisica">Meteorización Física</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#meteorizacion-quimica">Meteorización Química</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disolucion-y-ambiente-karstico">Disolución y Ambiente Kárstico</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hidratacion">Hidratación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hidrolisis">Hidrólisis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oxidacion-reduccion-redox">Oxidación-Reducción (Redox)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#minerales-de-arcilla">Minerales de arcilla</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taller-de-autoevaluacion">Taller de Autoevaluación</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="meteorizacion-procesos-perfiles-y-geoformas">
+<span id="sec-meteorizacion"></span><h1>Meteorización: procesos, perfiles y geoformas<a class="headerlink" href="#meteorizacion-procesos-perfiles-y-geoformas" title="Link to this heading">#</a></h1>
+<p>Este documento presenta los conceptos fundamentales de la meteorización abarcando desde los procesos físico-químicos hasta la clasificación de perfiles para ingeniería.</p>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<p><strong>Objetivos de aprendizaje:</strong></p>
+<ul class="simple">
+<li><p>Comprender la meteorización como un proceso de desequilibrio termodinámico entre las rocas y la superficie.</p></li>
+<li><p>Identificar los procesos físicos, químicos y biológicos que transforman el macizo rocoso.</p></li>
+<li><p>Analizar la formación de perfiles de meteorización en ambientes tropicales y su importancia en ingeniería (saprolito, laterita).</p></li>
+<li><p>Relacionar la meteorización de silicatos con el ciclo global del carbono y la regulación del clima.</p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<p>La meteorización es la alteración <em>in situ</em> de las rocas y minerales en la superficie de la Tierra (o cerca de ella) en respuesta a las condiciones físicas, químicas y biológicas. De acuerdo con <span class="bibtex-citation" id="id1">Anon [<a class="reference internal" href="referencias.html#id3" title="Anon. The description and classification of weathered rocks for engineering purposes. Geological Society Working Party Report. Quarterly Journal of Engineering Geology, 28:207–242, 1995.">1995</a>]</span>, es la desintegración (física) y descomposición (química) de la roca en su lugar de origen, sin un transporte significativo del material resultante. La susceptibilidad de la roca a procesos de meteorización química es función de la mineralogía, textura y presencia de fracturas, aumentando con el tamaño del grano, el incremento de la porosidad y la permeabilidad; sin embargo, el control dominante en el modo de meteorización es la lluvia y la temperatura, al igual que el rápido cambio de dichas variables durante el día <span class="bibtex-citation" id="id2">[<a class="reference internal" href="referencias.html#id13" title="C.D. Ollier. Weathering. Longman, London, 2nd edition, 1984.">Ollier, 1984</a>]</span>. Es por esto que masas rocosas en ambientes tropicales húmedos se caracterizan por la generación de profundos perfiles de meteorización.</p>
+<p>La causa fundamental es el desequilibrio termodinámico. Las rocas, especialmente las ígneas y metamórficas, se forman a altas temperaturas y presiones en el interior de la Tierra, donde son estables. Cuando el levantamiento tectónico y la erosión las exponen en la superficie, se encuentran en un ambiente radicalmente diferente (baja T°, baja P°, alta O₂, alta H₂O). En estas nuevas condiciones, sus minerales constituyentes son inestables y reaccionan químicamente para alcanzar un nuevo estado de equilibrio, transformándose en minerales más estables en la superficie (como las arcillas).</p>
+<figure class="align-default" id="fig-1015">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/8c/de/08/8cde087a06b6c96ca3b058c842f5881d.jpg"><img alt="https://i.pinimg.com/736x/8c/de/08/8cde087a06b6c96ca3b058c842f5881d.jpg" src="https://i.pinimg.com/736x/8c/de/08/8cde087a06b6c96ca3b058c842f5881d.jpg" style="width: 600px;" />
+</a>
+</figure>
+<section id="el-ciclo-del-carbono-y-la-meteorizacion-de-silicatos">
+<h2>El Ciclo del Carbono y la Meteorización de Silicatos<a class="headerlink" href="#el-ciclo-del-carbono-y-la-meteorizacion-de-silicatos" title="Link to this heading">#</a></h2>
+<p>La relación entre el CO₂, la meteorización y el cambio climático es un sistema de retroalimentación geológica a largo plazo, fundamental para la regulación del clima de la Tierra a lo largo de millones de años. Se centra en el ciclo del carbono, donde la meteorización de silicatos actúa como un sumidero de CO₂ atmosférico.</p>
+<p>El ciclo geológico del carbono opera en escalas de tiempo de cientos de miles a millones de años y es el principal mecanismo de control del CO₂ atmosférico y, por lo tanto, de la temperatura global en estas escalas. La meteorización de rocas de silicato es el componente clave que extrae CO₂ de la atmósfera.</p>
+<ul>
+<li><p><strong>Captura de CO₂</strong>: El dióxido de carbono (CO₂) de la atmósfera se disuelve en el agua de lluvia para formar ácido carbónico (H₂CO₃), una reacción que se puede simplificar como:</p>
+<p><span class="math notranslate nohighlight">\(CO₂ + H₂O \leftrightarrow H₂CO₃\)</span>.</p>
+</li>
+<li><p><strong>Meteorización Química</strong>: Este ácido carbónico ataca y disuelve los minerales de silicato, un proceso conocido como hidrólisis. Un ejemplo clásico es la meteorización del feldespato potásico (silicato):</p>
+<p><span class="math notranslate nohighlight">\(2KAlSi₃O₈ + 2H₂CO₃ + 9H₂O \rightarrow Al₂Si₂O₅(OH)₄ + 2K⁺ + 2HCO₃⁻ + 4H₄SiO₄\)</span>(Feldespato + Ácido carbónico + Agua <span class="math notranslate nohighlight">\(\rightarrow\)</span> Arcilla + Iones de potasio + Bicarbonato + Ácido silícico)</p>
+<p>Durante esta reacción, dos moléculas de ácido carbónico (y por lo tanto, dos moléculas de CO₂) se consumen por cada molécula de feldespato que se altera. Los iones resultantes, como el bicarbonato (<span class="math notranslate nohighlight">\(HCO₃⁻\)</span>) y los cationes (<span class="math notranslate nohighlight">\(K⁺, Ca²⁺, Mg²⁺\)</span>), son transportados por los ríos al océano.</p>
+</li>
+<li><p><strong>Formación de Carbonatos</strong>: En el océano, los organismos marinos utilizan los iones de calcio (<span class="math notranslate nohighlight">\(Ca²⁺\)</span>) y bicarbonato (<span class="math notranslate nohighlight">\(HCO₃⁻\)</span>) para construir sus esqueletos y conchas de carbonato de calcio (<span class="math notranslate nohighlight">\(CaCO₃\)</span>), por ejemplo:</p>
+<p><span class="math notranslate nohighlight">\(Ca²⁺ + 2HCO₃⁻ \rightarrow CaCO₃ + CO₂ + H₂O\)</span>(Iones de calcio + Bicarbonato <span class="math notranslate nohighlight">\(\rightarrow\)</span> Carbonato de calcio + Dióxido de carbono + Agua)</p>
+<p>Aunque esta reacción libera CO₂ nuevamente, la cantidad neta de CO₂ que se fija en los sedimentos de carbonato en el fondo oceánico es significativa y equilibra el CO₂ atmosférico. Con el tiempo, estos sedimentos se litifican para formar rocas calizas, un almacén a largo plazo para el carbono.</p>
+</li>
+</ul>
+<p>Esta serie de reacciones constituye la “bomba de calor” geológica, ya que regula la temperatura del planeta: si las temperaturas globales aumentan, se acelera la meteorización, extrayendo más CO₂ de la atmósfera, lo que a su vez causa un enfriamiento y estabiliza el clima. A la inversa, si el clima se enfría, la tasa de meteorización disminuye, permitiendo que el CO₂ de las fuentes volcánicas se acumule y cause un calentamiento.</p>
+<section id="retroalimentacion-entre-cambio-climatico-y-meteorizacion">
+<h3>Retroalimentación entre Cambio Climático y Meteorización<a class="headerlink" href="#retroalimentacion-entre-cambio-climatico-y-meteorizacion" title="Link to this heading">#</a></h3>
+<p>El cambio climático causado por las emisiones antropogénicas de CO₂ altera este delicado equilibrio.</p>
+<ul class="simple">
+<li><p><strong>Retroalimentación Negativa (Estabilizadora)</strong>: Un aumento en la temperatura global y la precipitación (dos efectos del cambio climático) acelera la meteorización química. Una atmósfera más caliente y húmeda incrementa la tasa de hidrólisis y la disolución de minerales, lo que conduce a una mayor absorción de CO₂. Teóricamente, esto podría actuar como un “freno” al calentamiento. Sin embargo, este proceso es extremadamente lento, operando en escalas de tiempo de decenas de miles a cientos de miles de años, por lo que no puede contrarrestar el rápido aumento de CO₂ causado por las actividades humanas.</p></li>
+<li><p><strong>Retroalimentación Positiva (Desestabilizadora)</strong>: Por otro lado, la liberación de carbono de reservorios geológicos, como el deshielo del permafrost, crea una retroalimentación positiva. El aumento de las temperaturas derrite el permafrost, liberando grandes cantidades de materia orgánica que al descomponerse generan CO₂ y metano (<span class="math notranslate nohighlight">\(CH₄\)</span>). Este gas adicional contribuye al calentamiento, lo que a su vez acelera aún más el deshielo y la liberación de gases de efecto invernadero.</p></li>
+</ul>
+<p>En resumen, la meteorización de silicatos es un regulador fundamental del clima, pero su lentitud hace que sea ineficaz para mitigar el rápido cambio climático actual. Comprender la velocidad y los umbrales de este proceso es crucial para modelar las consecuencias a largo plazo del calentamiento global.</p>
+</section>
+</section>
+<section id="factores">
+<h2>Factores<a class="headerlink" href="#factores" title="Link to this heading">#</a></h2>
+<p>El clima es el motor de la meteorización.</p>
+<ul class="simple">
+<li><p><strong>Temperatura:</strong> Controla la tasa de las reacciones químicas (la regla de van’t Hoff sugiere que la tasa se duplica por cada 10°C de aumento). También habilita procesos físicos como la gelifracción.</p></li>
+<li><p><strong>Precipitación (Agua):</strong> Es el <strong>agente</strong> principal. Actúa como el solvente universal, transporta reactivos (CO₂ disuelto, O₂) y elimina los productos de la reacción (lixiviación).</p></li>
+</ul>
+<figure class="align-default" id="fig-2755">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/2a/fd/3a/2afd3a6c9d3bb949b703c65ef9ae6b94.jpg"><img alt="https://i.pinimg.com/1200x/2a/fd/3a/2afd3a6c9d3bb949b703c65ef9ae6b94.jpg" src="https://i.pinimg.com/1200x/2a/fd/3a/2afd3a6c9d3bb949b703c65ef9ae6b94.jpg" style="width: 600px;" />
+</a>
+</figure>
+<p>Un clima cálido y húmedo (tropical) maximiza la meteorización química, mientras que un clima frío y moderadamente húmedo (periglacial) maximiza la meteorización física <span class="bibtex-citation" id="id3">[<a class="reference internal" href="referencias.html#id13" title="C.D. Ollier. Weathering. Longman, London, 2nd edition, 1984.">Ollier, 1984</a>]</span>.</p>
+<figure class="align-default" id="fig-9610">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/8b/12/c6/8b12c67fd2788ffd1f617994d9ff9d80.jpg"><img alt="https://i.pinimg.com/736x/8b/12/c6/8b12c67fd2788ffd1f617994d9ff9d80.jpg" src="https://i.pinimg.com/736x/8b/12/c6/8b12c67fd2788ffd1f617994d9ff9d80.jpg" style="width: 400px;" />
+</a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="perfil-de-meteorizacion">
+<h2>Perfil de meteorización<a class="headerlink" href="#perfil-de-meteorizacion" title="Link to this heading">#</a></h2>
+<ul>
+<li><p><strong>Perfil de Meteorización:</strong> Es la secuencia vertical completa de material alterado, desde la roca fresca ® en la base hasta el material más alterado en la superficie. Puede tener decenas de metros de espesor. En término general, y común al gran número de clasificaciones que existen, el perfil básico de meteorización lo conforman:</p>
+<p>A- Horizontes móviles<br />
+B- La roca meteorizada totalmente<br />
+C- La roca meteorizada parcialmente<br />
+D- La roca fresca</p>
+</li>
+</ul>
+<p>En su conjunto los horizontes A, B y C conforman el denominado regolito, donde el horizonte A se caracteriza por su color oscuro, debido a la presencia de abundante materia orgánica, y es el más intensamente afectado por los procesos de disolución, que arrastran sus iones hacia horizontes más profundos, por lo que se le conoce también como horizonte de lixiviación o de lavado <span class="bibtex-citation" id="id4">[<a class="reference internal" href="referencias.html#id20" title="H. Caballero. Notas de clase. curso geomorfología. Universidad Nacional de Colombia. Medellín, 1998.">Caballero, 1998</a>]</span>. Entre los horizontes B y C existe una importante zona de transición en términos de comportamiento geotécnico. En los horizontes B predomina el suelo entendido como la roca totalmente meteorizada, donde el comportamiento está controlado por deformaciones de la masa de suelo, en tanto que en los horizontes C predomina el material rocoso, en el que el comportamiento está controlado por el movimiento a lo largo de las discontinuidades del macizo rocoso.</p>
+<p>La parte superior del horizonte B se caracteriza por la extinción total de la fábrica y estructura de la roca parental, donde todo el material se ha convertido a suelo. Para las clasificaciones de la BS 5930 <span class="bibtex-citation" id="id5">[<a class="reference internal" href="referencias.html#id21" title="BSI. Bs 5930:1981 code of practice for site investigations. Technical Report, British Standards Institution, London, 1981.">BSI, 1981</a>]</span> y la GCO <span class="bibtex-citation" id="id6">[<a class="reference internal" href="referencias.html#id22" title="GCO. Guide to rock and soil descriptions (geoguide 3). Technical Report, Geotechnical Control Office, Hong Kong, 1988.">GCO, 1988</a>]</span>, este nivel corresponde exclusivamente al horizonte VI, denominado suelo residual, en el cual la roca está completamente meteorizada con un porcentaje menor al 30 % de roca. <span class="bibtex-citation" id="id7">Voicu and Bardoux [<a class="reference internal" href="referencias.html#id9" title="G. Voicu and M. Bardoux. Geochemical behavior under tropical weathering of the Barama–Mazaruni greenstone belt at Omai gold mine, Guiana Shield. Applied Geochemistry, 17:321–336, 2002. doi:10.1016/S0883-2927(01)00088-0.">2002</a>]</span> denominan este nivel, caracterizado por la presencia de zonas moteadas, ferricretes o latosol, como pedolito. <span class="bibtex-citation" id="id8">Deere and Patton [<a class="reference internal" href="referencias.html#id5" title="D.U. Deere and F.D. Patton. Slope stability in residual soils. In Proceedings of the Fourth Pan American Conference on Soil Mechanics and Foundation Engineering, volume 1, 87–170. Puerto Rico, 1971.">1971</a>]</span>, siguiendo la convención utilizada en la pedogénesis, definen este nivel como suelo residual clasificado horizonte IA, rico en materia orgánica y lixiviación, y horizonte IB, el cual está característicamente enriquecido en arcillas y acumulaciones de hierro, aluminio y sílice.</p>
+<p>La parte inferior del horizonte B la conforma el denominado saprolito, definido como un material blando producto de la meteorización química de las rocas, y caracterizado por la formación de minerales secundarios, en el que la estructura y fábrica originales están preservadas debido al emplazamiento seudomórfico de los minerales originales sin alteración y transporte subsecuentes. La formación del saprolito es un proceso isovolumétrico, pero la mitad de la masa de la roca se pierde por lixiviación de sílice, hierro y bases <span class="bibtex-citation" id="id9">[<a class="reference internal" href="referencias.html#id9" title="G. Voicu and M. Bardoux. Geochemical behavior under tropical weathering of the Barama–Mazaruni greenstone belt at Omai gold mine, Guiana Shield. Applied Geochemistry, 17:321–336, 2002. doi:10.1016/S0883-2927(01)00088-0.">Voicu and Bardoux, 2002</a>, <a class="reference internal" href="referencias.html#id14" title="P.G. Fookes. Tropical Residual Soils. Engineering Group Special Publication No. 11. Geological Society of London, London, 1997.">Fookes, 1997</a>]</span>. <span class="bibtex-citation" id="id10">Voicu and Bardoux [<a class="reference internal" href="referencias.html#id9" title="G. Voicu and M. Bardoux. Geochemical behavior under tropical weathering of the Barama–Mazaruni greenstone belt at Omai gold mine, Guiana Shield. Applied Geochemistry, 17:321–336, 2002. doi:10.1016/S0883-2927(01)00088-0.">2002</a>]</span> dividen el saprolito en grueso (<em>saprorock</em>), como la zona de transición entre la roca y el saprolito caracterizado por la preservación de la fábrica de la roca y con un contenido menor al 20 % de productos de la alteración de minerales meteorizados, y saprolito fino (<em>litomage</em>), donde no hay minerales primarios pero se conserva la fábrica. Para la clasificación de <span class="bibtex-citation" id="id11">Deere and Patton [<a class="reference internal" href="referencias.html#id5" title="D.U. Deere and F.D. Patton. Slope stability in residual soils. In Proceedings of the Fourth Pan American Conference on Soil Mechanics and Foundation Engineering, volume 1, 87–170. Puerto Rico, 1971.">1971</a>]</span>, el saprolito corresponde al horizonte IC, con menos del 10 % de bloques de roca. Para <span class="bibtex-citation" id="id12">Anon [<a class="reference internal" href="referencias.html#id2" title="Anon. Tropical residual soils. Geological Society Working Party Report. Quarterly Journal of Engineering Geology, 23:1–102, 1990.">1990</a>]</span>, el saprolito se define como el manto meteorizado que se comporta en general como un suelo en términos geotécnicos y que presenta rasgos texturales y estructurales de la roca madre, y el cual, sumado con el horizonte VI, conforma el suelo residual tropical, donde las propiedades de la masa y del material son todavía las de un suelo; por debajo de este límite las características de la roca comienzan a dominar en la masa y el material. Para este autor, definir el suelo residual tropical como el grado VI exclusivamente es muy restrictivo para efectos geotécnicos, ya que gran parte del material descrito normalmente como suelo se encuentra por debajo de este grado en el perfil de meteorización típico.</p>
+<p>En ambientes tropicales húmedos, por encima de los horizontes B se presentan suelos residuales alterados y altamente meteorizados, bajos en sílice, con una concentración suficiente de sesquióxidos de hierro y aluminio que ha sido cementada en algún grado, denominados lateritas <span class="bibtex-citation" id="id13">[<a class="reference internal" href="referencias.html#id25" title="G.E. Blight. Mechanics of residual soils. A.A. Balkema, Rotterdam, 1997.">Blight, 1997</a>]</span>. La lateritización representa la etapa final del proceso de meteorización con la formación de sesquióxidos, los cuales corresponden a óxidos, oxidróxidos e hidróxidos (referidos colectivamente como óxidos) de hierro, aluminio y manganeso, que afectan fuertemente las propiedades físicas y químicas del suelo, la morfología y su clasificación <span class="bibtex-citation" id="id14">[<a class="reference internal" href="referencias.html#id26" title="R. Shaw and G. West. The description and classification of weathered rocks for engineering purposes. In P.G. Fookes, M. Sweeney, and J.S. Hope, editors, Tropical Residual Soils Engineering, pages 1–102. CRC Press, 2006.">Shaw and West, 2006</a>]</span>. <span class="bibtex-citation" id="id15">Shellmann [<a class="reference internal" href="referencias.html#id7" title="W. Shellmann. Consideration on the definition and classification of laterites. In Proceedings on the International Seminar on Lateritisation Processes, Trivandrum, India, 1–10. Rotterdam, 1981. A.A. Balkema.">1981</a>]</span> define el término laterita como el producto de intensa meteorización subaérea, donde el contenido de Fe y Al es mayor y el contenido de sílice es más bajo comparado con la roca parental kaolinizada exclusivamente, y consiste predominantemente de minerales de goetita, hematita, hidróxidos de aluminio, minerales de kaolinita y cuarzo.</p>
+<ul class="simple">
+<li><p><strong>Suelo:</strong> Es la parte superior, biológicamente activa, del perfil de meteorización. Incluye los horizontes O, A y B, donde la materia orgánica se acumula y la estructura original de la roca ha sido destruida y reorganizada por procesos pedogenéticos.</p></li>
+</ul>
+<p>La <strong>meteorización</strong> es el proceso destructivo de alteración de la roca madre. Es el primer paso y el <em>insumo</em> para la formación del suelo. La <strong>formación de suelos (pedogénesis)</strong> es un proceso constructivo y organizativo. Implica la meteorización, pero añade cuatro factores más (Clima, Organismos, Relieve, Tiempo) que actúan sobre el material parental (el producto de la meteorización) para crear horizontes estructurados y biológicamente activos.</p>
+<figure class="align-default" id="fig-6783">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/76/f5/9d/76f59dc66aadcfa69e106443821fb2a0.jpg"><img alt="https://i.pinimg.com/1200x/76/f5/9d/76f59dc66aadcfa69e106443821fb2a0.jpg" src="https://i.pinimg.com/1200x/76/f5/9d/76f59dc66aadcfa69e106443821fb2a0.jpg" style="width: 400px;" />
+</a>
+</figure>
+<p>En resumen: todo suelo es parte de un perfil de meteorización, pero no todo perfil de meteorización (especialmente las partes profundas como el saprolito) se considera “suelo” en el sentido pedológico.</p>
+</section>
+<hr class="docutils" />
+<section id="cuantificacion-de-la-meteorizacion-indices-geoquimicos">
+<h2>Cuantificación de la Meteorización: Índices Geoquímicos<a class="headerlink" href="#cuantificacion-de-la-meteorizacion-indices-geoquimicos" title="Link to this heading">#</a></h2>
+<p>En ingeniería y geología, no basta con describir el perfil; a menudo necesitamos cuantificar qué tan alterada está una roca mediante análisis químicos. El índice más utilizado es el <strong>Índice Químico de Alteración (CIA - Chemical Index of Alteration)</strong>, propuesto por <span class="bibtex-citation" id="id16">Nesbitt and Young [<a class="reference internal" href="referencias.html#id43" title="H.W. Nesbitt and G.M. Young. Early Proterozoic climates and plate motions inferred from major element chemistry of lutites. Nature, 299:715–717, 1982. doi:10.1038/299715a0.">1982</a>]</span>.</p>
+<div class="math notranslate nohighlight">
+\[CIA = \left[ \frac{Al_2O_3}{Al_2O_3 + CaO^* + Na_2O + K_2O} \right] \times 100\]</div>
+<p>Donde los elementos se expresan en proporciones molares y <span class="math notranslate nohighlight">\(CaO^*\)</span> representa el calcio en la fracción de silicatos.</p>
+<p>A continuación, puede utilizar esta celda para calcular el CIA de una muestra y determinar su grado de meteorización:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">calcular_cia</span><span class="p">(</span><span class="n">al2o3</span><span class="p">,</span> <span class="n">cao</span><span class="p">,</span> <span class="n">na2o</span><span class="p">,</span> <span class="n">k2o</span><span class="p">):</span>
+    <span class="c1"># Cálculo del CIA</span>
+    <span class="n">denominador</span> <span class="o">=</span> <span class="n">al2o3</span> <span class="o">+</span> <span class="n">cao</span> <span class="o">+</span> <span class="n">na2o</span> <span class="o">+</span> <span class="n">k2o</span>
+    <span class="n">cia</span> <span class="o">=</span> <span class="p">(</span><span class="n">al2o3</span> <span class="o">/</span> <span class="n">denominador</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+    <span class="k">return</span> <span class="n">cia</span>
+
+<span class="c1"># Valores de ejemplo (proporciones molares)</span>
+<span class="n">al</span> <span class="o">=</span> <span class="mf">15.2</span>
+<span class="n">ca</span> <span class="o">=</span> <span class="mf">1.2</span>
+<span class="n">na</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mf">0.8</span>
+
+<span class="n">resultado_cia</span> <span class="o">=</span> <span class="n">calcular_cia</span><span class="p">(</span><span class="n">al</span><span class="p">,</span> <span class="n">ca</span><span class="p">,</span> <span class="n">na</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"El Índice Químico de Alteración (CIA) es: </span><span class="si">{</span><span class="n">resultado_cia</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">resultado_cia</span> <span class="o">&lt;</span> <span class="mi">50</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Grado: Roca Fresca"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="mi">50</span> <span class="o">&lt;=</span> <span class="n">resultado_cia</span> <span class="o">&lt;</span> <span class="mi">60</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Grado: Meteorización Débil"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="mi">60</span> <span class="o">&lt;=</span> <span class="n">resultado_cia</span> <span class="o">&lt;</span> <span class="mi">80</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Grado: Meteorización Moderada"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Grado: Meteorización Intensa (Laterización/Suelos Residuales)"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Truco</p>
+<p>Un CIA alto indica que los cationes móviles (<span class="math notranslate nohighlight">\(Ca, Na, K\)</span>) han sido lixiviados, dejando un residuo enriquecido en Alúmina (arcillas). Como veremos en <a class="reference internal" href="MenM.html#sec-menm"><span class="std std-ref">Geomorfología de Movimientos en Masa</span></a>, esta transformación química reduce drásticamente las propiedades geomecánicas de la ladera.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="suelos-in-situ-y-suelos-transportados">
+<h2>Suelos In Situ y Suelos Transportados<a class="headerlink" href="#suelos-in-situ-y-suelos-transportados" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Suelos In Situ (Residuales):</strong> Son aquellos que se forman directamente sobre su roca madre. El perfil es coherente, pasando gradualmente de suelo a roca alterada y a roca fresca.</p></li>
+<li><p><strong>Suelos Transportados:</strong> Son aquellos formados sobre un material parental que fue transportado y depositado por un agente geológico (agua, viento, hielo, gravedad). Ejemplos: suelos aluviales (ríos), coluviales (gravedad), eólicos (loess).</p></li>
+</ul>
+<figure class="align-default" id="fig-5074">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/6a/6f/cb/6a6fcb517a72d0e66567285909b20414.jpg"><img alt="https://i.pinimg.com/736x/6a/6f/cb/6a6fcb517a72d0e66567285909b20414.jpg" src="https://i.pinimg.com/736x/6a/6f/cb/6a6fcb517a72d0e66567285909b20414.jpg" style="width: 600px;" />
+</a>
+</figure>
+<p>Una <strong>catena</strong> (o toposecuencia) es una secuencia de tipos de suelo o perfiles de meteorización que cambian sistemáticamente a lo largo de una ladera. Refleja la influencia del relieve en la meteorización.</p>
+<ul class="simple">
+<li><p><strong>Cima:</strong> Suelos delgados, lixiviados (zona de pérdida neta).</p></li>
+<li><p><strong>Media Ladera:</strong> Perfiles más desarrollados, con posible transporte (coluvión).</p></li>
+<li><p><strong>Base de la Ladera:</strong> Suelos gruesos, de acumulación (zona de ganancia neta de agua y sedimentos), a menudo hidromórficos (saturados).</p></li>
+</ul>
+<figure class="align-default" id="fig-1727">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/5d/9e/05/5d9e05b6185ac7ff8b02ecebfe8a40cd.jpg"><img alt="https://i.pinimg.com/1200x/5d/9e/05/5d9e05b6185ac7ff8b02ecebfe8a40cd.jpg" src="https://i.pinimg.com/1200x/5d/9e/05/5d9e05b6185ac7ff8b02ecebfe8a40cd.jpg" style="width: 600px;" />
+</a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="metodos-de-descripcion-de-perfiles-de-meteorizacion-ingenieril">
+<h2>Métodos de descripción de perfiles de meteorización (Ingenieril)<a class="headerlink" href="#metodos-de-descripcion-de-perfiles-de-meteorizacion-ingenieril" title="Link to this heading">#</a></h2>
+<p>Para fines de ingeniería geotécnica, es crucial clasificar el <em>grado</em> de meteorización, ya que controla las propiedades mecánicas de la masa rocosa. La clasificación más utilizada <span class="bibtex-citation" id="id17">[<a class="reference internal" href="referencias.html#id24" title="A.L. Little. The classification of weathered rocks in engineering. Quarterly Journal of Engineering Geology and Hydrogeology, 2(1):17–29, 1969. doi:10.1144/GSL.QJEG.1969.002.01.02.">Little, 1969</a>]</span> divide el perfil en seis grados:</p>
+<ul class="simple">
+<li><p><strong>Grado VI (Suelo Residual):</strong> La fábrica de la roca ha sido completamente destruida y reemplazada por una estructura de suelo.</p></li>
+<li><p><strong>Grado V (Roca Completamente Meteorizada - Saprolito):</strong> Toda la roca está convertida en suelo, pero la <strong>fábrica original (textura y estructura) de la roca se conserva</strong>.</p></li>
+<li><p><strong>Grado IV (Roca Altamente Meteorizada):</strong> La mayor parte de la roca está alterada; la fábrica original se preserva, pero el material se puede deshacer a mano.</p></li>
+<li><p><strong>Grado III (Roca Moderadamente Meteorizada):</strong> Decoloración penetra la matriz; la roca intacta se debilita.</p></li>
+<li><p><strong>Grado II (Roca Ligeramente Meteorizada):</strong> Decoloración en discontinuidades; roca intacta aún fuerte.</p></li>
+<li><p><strong>Grado I (Roca Fresca - R):</strong> Sin signos visibles de meteorización.</p></li>
+</ul>
+<figure class="align-default" id="fig-345">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/2b/16/76/2b1676aa27e72eadfb0e70a6fad07a73.jpg"><img alt="https://i.pinimg.com/1200x/2b/16/76/2b1676aa27e72eadfb0e70a6fad07a73.jpg" src="https://i.pinimg.com/1200x/2b/16/76/2b1676aa27e72eadfb0e70a6fad07a73.jpg" style="width: 600px;" />
+</a>
+</figure>
+<p>El suelo residual corresponde al horizonte VI donde se ha perdido la estructura y textura de la roca parental. Mientras el suelo saprolítico corresponde al horizonte V, donde el material ya es un suelo geotécnicamente (se comporta como un suelo), pero visualmente aún retiene las estructuras de la roca original (vetas, foliación, etc.) y textura.</p>
+<figure class="align-default" id="fig-5336">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/5c/10/52/5c1052d7309e50d8a9cfb98d8ef5791b.jpg"><img alt="https://i.pinimg.com/1200x/5c/10/52/5c1052d7309e50d8a9cfb98d8ef5791b.jpg" src="https://i.pinimg.com/1200x/5c/10/52/5c1052d7309e50d8a9cfb98d8ef5791b.jpg" style="width: 400px;" />
+</a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="tipos-de-meteorizacion">
+<h2>Tipos de Meteorización<a class="headerlink" href="#tipos-de-meteorizacion" title="Link to this heading">#</a></h2>
+<p>La meteorización se divide en tres tipos principales que actúan en conjunto:</p>
+<ol class="arabic simple">
+<li><p><strong>Física (Mecánica):</strong> Desintegración sin cambio químico.</p></li>
+<li><p><strong>Química:</strong> Descomposición con cambio químico.</p></li>
+<li><p><strong>Biológica:</strong> Procesos físicos o químicos mediados por organismos (ej. raíces, ácidos orgánicos).</p></li>
+</ol>
+<figure class="align-default" id="fig-9861">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/ac/82/41/ac8241ff52cc291e8dbdb22cdd48580a.jpg"><img alt="https://i.pinimg.com/1200x/ac/82/41/ac8241ff52cc291e8dbdb22cdd48580a.jpg" src="https://i.pinimg.com/1200x/ac/82/41/ac8241ff52cc291e8dbdb22cdd48580a.jpg" style="width: 500px;" />
+</a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="meteorizacion-fisica">
+<h2>Meteorización Física<a class="headerlink" href="#meteorizacion-fisica" title="Link to this heading">#</a></h2>
+<p>Aumenta el área superficial, facilitando la meteorización química.</p>
+<ul class="simple">
+<li><p><strong>Gelifracción (<em>Frost Wedging</em>):</strong> El proceso más efectivo. El agua en las fisuras se congela, se expande (~9%) y actúa como una cuña, rompiendo la roca. Produce depósitos angulosos llamados <strong>gelifractos</strong> o <strong>derrubios de talud</strong>.</p></li>
+</ul>
+<figure class="align-default" id="fig-9182">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/d3/21/4f/d3214ffd6f623c76709ee84a0dfc720b.jpg"><img alt="https://i.pinimg.com/736x/d3/21/4f/d3214ffd6f623c76709ee84a0dfc720b.jpg" src="https://i.pinimg.com/736x/d3/21/4f/d3214ffd6f623c76709ee84a0dfc720b.jpg" style="width: 500px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>Exfoliación (Descompresión):</strong> Ocurre en rocas masivas (ej. granitos) que se formaron a gran profundidad. Al ser exhumadas por la erosión, se expanden y se fracturan en grandes lajas (<em>sheeting</em>) paralelas a la superficie, formando <strong>domos de exfoliación</strong>.</p></li>
+</ul>
+<figure class="align-default" id="fig-8997">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/56/fe/e6/56fee66b61169f86975659043dd3d2b5.jpg"><img alt="https://i.pinimg.com/736x/56/fe/e6/56fee66b61169f86975659043dd3d2b5.jpg" src="https://i.pinimg.com/736x/56/fe/e6/56fee66b61169f86975659043dd3d2b5.jpg" style="width: 500px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>Haloclastia (Crecimiento de Sales):</strong> El crecimiento de cristales de sal (ej. halita, yeso) en los poros de la roca ejerce presión y la desintegra. Común en climas áridos y costeros.</p></li>
+</ul>
+<figure class="align-default" id="fig-8549">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/51/30/d5/5130d56e0be7bb19a904afef98b4e4f5.jpg"><img alt="https://i.pinimg.com/1200x/51/30/d5/5130d56e0be7bb19a904afef98b4e4f5.jpg" src="https://i.pinimg.com/1200x/51/30/d5/5130d56e0be7bb19a904afef98b4e4f5.jpg" style="width: 500px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>Termoclastia:</strong> La expansión y contracción diferencial de los minerales en la roca debido a cambios bruscos de temperatura (ej. desiertos, incendios).</p></li>
+</ul>
+<figure class="align-default" id="fig-1559">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/6a/19/ce/6a19ce5207319e92b245bf771a988fb2.jpg"><img alt="https://i.pinimg.com/736x/6a/19/ce/6a19ce5207319e92b245bf771a988fb2.jpg" src="https://i.pinimg.com/736x/6a/19/ce/6a19ce5207319e92b245bf771a988fb2.jpg" style="width: 200px;" />
+</a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="meteorizacion-quimica">
+<h2>Meteorización Química<a class="headerlink" href="#meteorizacion-quimica" title="Link to this heading">#</a></h2>
+<p>Es la descomposición de los minerales. El <strong>agua</strong> es el agente esencial: (i) Es el <strong>solvente</strong> (para disolución). (ii) Es el <strong>medio de transporte</strong> (trae ácidos, O₂; retira productos). (iii) Es un <strong>reactivo</strong> directo (en la hidrólisis y la hidratación).</p>
+<figure class="align-default" id="fig-4819">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/4a/37/19/4a371984815b1016211f8e2ea0da14eb.jpg"><img alt="https://i.pinimg.com/736x/4a/37/19/4a371984815b1016211f8e2ea0da14eb.jpg" src="https://i.pinimg.com/736x/4a/37/19/4a371984815b1016211f8e2ea0da14eb.jpg" style="width: 500px;" />
+</a>
+</figure>
+<p>Durante la meteorización química, los iones se liberan de la red cristalina. Su movilidad (facilidad para ser lixiviados por el agua) varía
+desde <strong>Muy Móviles:</strong> Na⁺, K⁺, Mg²⁺, Ca²⁺ (se lavan fácilmente), <strong>Poco Móviles:</strong> Si⁴⁺ (relativamente inmóvil, aunque puede disolverse como H₄SiO₄), hasta <strong>Inmóviles (Residuales):</strong> Al³⁺, Fe³⁺, Ti⁴⁺. Esta movilidad diferencial es la razón por la cual los suelos tropicales muy meteorizados (Oxisoles) son esencialmente concentraciones de óxidos de Hierro y Aluminio (laterita, bauxita).</p>
+<p>Los <strong>Índices de Meteorización Química</strong> cuantifican el grado de lixiviación de cationes móviles.</p>
+<ul class="simple">
+<li><p><strong>CIA (Chemical Index of Alteration):</strong> Mide la conversión de feldespatos a arcillas de aluminio <span class="bibtex-citation" id="id18">[<a class="reference internal" href="referencias.html#id43" title="H.W. Nesbitt and G.M. Young. Early Proterozoic climates and plate motions inferred from major element chemistry of lutites. Nature, 299:715–717, 1982. doi:10.1038/299715a0.">Nesbitt and Young, 1982</a>]</span>.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">CIA</span> <span class="pre">=</span> <span class="pre">[Al₂O₃</span> <span class="pre">/</span> <span class="pre">(Al₂O₃</span> <span class="pre">+</span> <span class="pre">CaO*</span> <span class="pre">+</span> <span class="pre">Na₂O</span> <span class="pre">+</span> <span class="pre">K₂O)]</span> <span class="pre">*</span> <span class="pre">100</span></code> (en moles; CaO* es solo el de los silicatos).</p></li>
+<li><p><em>Roca Fresca (Granito) ≈ 50-55</em></p></li>
+<li><p><em>Suelo muy meteorizado (Kaolinita pura) ≈ 100</em></p></li>
+</ul>
+</li>
+<li><p><strong>Diagrama A-CN-K:</strong> Un diagrama ternario (A = Al₂O₃; CN = CaO*+Na₂O; K = K₂O) que muestra la <strong>trayectoria de meteorización</strong> de una roca a medida que pierde cationes.</p></li>
+</ul>
+<figure class="align-default" id="fig-8988">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/3f/7d/e4/3f7de40f6576d30ff3dc314c936ef536.jpg"><img alt="https://i.pinimg.com/1200x/3f/7d/e4/3f7de40f6576d30ff3dc314c936ef536.jpg" src="https://i.pinimg.com/1200x/3f/7d/e4/3f7de40f6576d30ff3dc314c936ef536.jpg" style="width: 500px;" />
+</a>
+</figure>
+<hr class="docutils" />
+<section id="disolucion-y-ambiente-karstico">
+<h3>Disolución y Ambiente Kárstico<a class="headerlink" href="#disolucion-y-ambiente-karstico" title="Link to this heading">#</a></h3>
+<p>La disolución es la disociación de minerales en sus iones en un solvente (agua). Es el proceso dominante en rocas solubles (carbonatos, evaporitas).</p>
+<figure class="align-default" id="fig-8095">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/b9/df/8a/b9df8ae71416cab596189d06e3a70a82.jpg"><img alt="https://i.pinimg.com/1200x/b9/df/8a/b9df8ae71416cab596189d06e3a70a82.jpg" src="https://i.pinimg.com/1200x/b9/df/8a/b9df8ae71416cab596189d06e3a70a82.jpg" style="width: 300px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>Karst:</strong> Es un tipo de paisaje formado por la disolución de la roca subyacente.</p></li>
+<li><p><strong>Pseudokarst:</strong> Geoformas similares al karst, pero formadas por procesos no disolutivos (ej. tubos de lava, cuevas en hielo).</p></li>
+</ul>
+<figure class="align-default" id="fig-4788">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/3c/82/99/3c8299a68bde784fb3753d5d76d33001.jpg"><img alt="https://i.pinimg.com/736x/3c/82/99/3c8299a68bde784fb3753d5d76d33001.jpg" src="https://i.pinimg.com/736x/3c/82/99/3c8299a68bde784fb3753d5d76d33001.jpg" style="width: 400px;" />
+</a>
+</figure>
+<p><strong>Exokarst (Formas Superficiales)</strong></p>
+<ul class="simple">
+<li><p><strong>Epikarst:</strong> La zona superficial de la roca carbonatada (los primeros metros), intensamente disuelta y muy porosa.</p></li>
+</ul>
+<figure class="align-default" id="fig-2924">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/32/84/80/328480c0ce5d2c2d73fb6246bdb2c04f.jpg"><img alt="https://i.pinimg.com/1200x/32/84/80/328480c0ce5d2c2d73fb6246bdb2c04f.jpg" src="https://i.pinimg.com/1200x/32/84/80/328480c0ce5d2c2d73fb6246bdb2c04f.jpg" style="width: 400px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>Pavimento (Limestone Pavement):</strong> Superficies planas de roca desnuda disectadas por fracturas disueltas.</p></li>
+</ul>
+<figure class="align-default" id="fig-6048">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/54/f6/37/54f637f7090a89df959f2c99ed770c99.jpg"><img alt="https://i.pinimg.com/736x/54/f6/37/54f637f7090a89df959f2c99ed770c99.jpg" src="https://i.pinimg.com/736x/54/f6/37/54f637f7090a89df959f2c99ed770c99.jpg" style="width: 400px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>Karren (Lapiaces):</strong> Microformas de disolución sobre la roca desnuda (surcos, acanaladuras, pináculos).</p></li>
+</ul>
+<figure class="align-default" id="fig-4543">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/3f/aa/e5/3faae5d3833338411516d2ced5483719.jpg"><img alt="https://i.pinimg.com/1200x/3f/aa/e5/3faae5d3833338411516d2ced5483719.jpg" src="https://i.pinimg.com/1200x/3f/aa/e5/3faae5d3833338411516d2ced5483719.jpg" style="width: 400px;" />
+</a>
+</figure>
+<figure class="align-default" id="fig-7563">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/5b/fc/04/5bfc04b54a768fdb0da2a4af0043bcb7.jpg"><img alt="https://i.pinimg.com/1200x/5b/fc/04/5bfc04b54a768fdb0da2a4af0043bcb7.jpg" src="https://i.pinimg.com/1200x/5b/fc/04/5bfc04b54a768fdb0da2a4af0043bcb7.jpg" style="width: 600px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>Dolina:</strong> Depresión cerrada circular. Puede ser de disolución (hundimiento lento) o de colapso (caída del techo de una cueva).</p></li>
+<li><p><strong>Uvala:</strong> Una depresión compuesta, grande e irregular, formada por la coalescencia (unión) de varias dolinas.</p></li>
+<li><p><strong>Poljé:</strong> Una depresión kárstica muy grande, de fondo plano (relleno de sedimentos) y bordes escarpados, a menudo controlada por la tectónica.</p></li>
+</ul>
+<figure class="align-default" id="fig-370">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/33/b8/09/33b8092539b10b97043143cd12b551bd.jpg"><img alt="https://i.pinimg.com/1200x/33/b8/09/33b8092539b10b97043143cd12b551bd.jpg" src="https://i.pinimg.com/1200x/33/b8/09/33b8092539b10b97043143cd12b551bd.jpg" style="width: 500px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>Karst Tropical (Cónico y de Torres):</strong></p>
+<ul>
+<li><p><strong>Kegelkarst (Karst Cónico):</strong> Paisaje de colinas cónicas regulares (Alemania).</p></li>
+<li><p><strong>Cockpits:</strong> Las depresiones en forma de estrella entre las colinas del Kegelkarst (Jamaica).</p></li>
+<li><p><strong>Turmkarst (Karst de Torres):</strong> Torres de caliza muy empinadas y aisladas (Mogotes), que se elevan desde una llanura aluvial (China, Cuba).</p></li>
+</ul>
+</li>
+</ul>
+<figure class="align-default" id="fig-4509">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/9d/c5/36/9dc5362f76f5197c849ffc75010ed167.jpg"><img alt="https://i.pinimg.com/736x/9d/c5/36/9dc5362f76f5197c849ffc75010ed167.jpg" src="https://i.pinimg.com/736x/9d/c5/36/9dc5362f76f5197c849ffc75010ed167.jpg" style="width: 500px;" />
+</a>
+</figure>
+<p><strong>Endokarst (Formas Subterráneas)</strong></p>
+<p>Se refiere a las cuevas y sus depósitos (espeleotemas), formados por la precipitación de carbonato de calcio (calcita, aragonito) a partir del agua que gotea.</p>
+<figure class="align-default" id="fig-5972">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/85/9c/9d/859c9dea174198a2b1d91cee8868fedc.jpg"><img alt="https://i.pinimg.com/736x/85/9c/9d/859c9dea174198a2b1d91cee8868fedc.jpg" src="https://i.pinimg.com/736x/85/9c/9d/859c9dea174198a2b1d91cee8868fedc.jpg" style="width: 400px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>Estalactitas:</strong> Crecen desde el techo (hacia abajo).</p></li>
+<li><p><strong>Estalagmitas:</strong> Crecen desde el suelo (hacia arriba).</p></li>
+<li><p><strong>Columnas:</strong> Unión de una estalactita y una estalagmita.</p></li>
+</ul>
+<figure class="align-default" id="fig-4702">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/4c/96/a0/4c96a09b769380d3e782f125069b66d7.jpg"><img alt="https://i.pinimg.com/1200x/4c/96/a0/4c96a09b769380d3e782f125069b66d7.jpg" src="https://i.pinimg.com/1200x/4c/96/a0/4c96a09b769380d3e782f125069b66d7.jpg" style="width: 400px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>Gour (Represas):</strong> Pequeñas represas de calcita que escalonan el suelo de una cueva.</p></li>
+</ul>
+<figure class="align-default" id="fig-3185">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/a2/82/c2/a282c22439c24e8c2270648fed7a2d27.jpg"><img alt="https://i.pinimg.com/1200x/a2/82/c2/a282c22439c24e8c2270648fed7a2d27.jpg" src="https://i.pinimg.com/1200x/a2/82/c2/a282c22439c24e8c2270648fed7a2d27.jpg" style="width: 300px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>Banderas (Draperies):</strong> Depósitos en forma de cortina formados por goteo lateral en una pared inclinada.</p></li>
+</ul>
+<figure class="align-default" id="fig-3338">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/65/89/52/65895282258c75c7b0329511aad66f4f.jpg"><img alt="https://i.pinimg.com/736x/65/89/52/65895282258c75c7b0329511aad66f4f.jpg" src="https://i.pinimg.com/736x/65/89/52/65895282258c75c7b0329511aad66f4f.jpg" style="width: 300px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>Helictitas:</strong> Formas excéntricas que crecen en cualquier dirección, desafiando la gravedad (controladas por capilaridad).</p></li>
+</ul>
+<figure class="align-default" id="fig-3423">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/1b/93/61/1b9361b3c5333a0358a8d799ec3ae7ef.jpg"><img alt="https://i.pinimg.com/1200x/1b/93/61/1b9361b3c5333a0358a8d799ec3ae7ef.jpg" src="https://i.pinimg.com/1200x/1b/93/61/1b9361b3c5333a0358a8d799ec3ae7ef.jpg" style="width: 300px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>Moonmilk:</strong> Precipitados blandos, blancos y pastosos, a menudo mediados por bacterias.</p></li>
+</ul>
+<figure class="align-default" id="fig-8952">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/c8/f6/50/c8f650747852b6b0a618d955f3f846db.jpg"><img alt="https://i.pinimg.com/1200x/c8/f6/50/c8f650747852b6b0a618d955f3f846db.jpg" src="https://i.pinimg.com/1200x/c8/f6/50/c8f650747852b6b0a618d955f3f846db.jpg" style="width: 300px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>Frostwork:</strong> Agregados delicados de cristales de aragonito en forma de aguja.</p></li>
+</ul>
+<figure class="align-default" id="fig-9645">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/bb/73/0d/bb730d7b776f0bbef0f7c1f7022bc391.jpg"><img alt="https://i.pinimg.com/736x/bb/73/0d/bb730d7b776f0bbef0f7c1f7022bc391.jpg" src="https://i.pinimg.com/736x/bb/73/0d/bb730d7b776f0bbef0f7c1f7022bc391.jpg" style="width: 300px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p>Karst Hipogénico
+Un tipo especial de karst donde las cuevas son disueltas por fluidos profundos, calientes y a menudo ácidos (ej. H₂S derivado de hidrocarburos) que ascienden desde abajo, en lugar de ser formadas por agua meteórica (lluvia) que desciende desde la superficie.</p></li>
+</ul>
+<figure class="align-default" id="fig-6525">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/d1/43/0f/d1430fa7e8dfa21d74f7f2fbeae2ae45.jpg"><img alt="https://i.pinimg.com/736x/d1/43/0f/d1430fa7e8dfa21d74f7f2fbeae2ae45.jpg" src="https://i.pinimg.com/736x/d1/43/0f/d1430fa7e8dfa21d74f7f2fbeae2ae45.jpg" style="width: 300px;" />
+</a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="hidratacion">
+<h3>Hidratación<a class="headerlink" href="#hidratacion" title="Link to this heading">#</a></h3>
+<p>La absorción de moléculas de agua en la estructura cristalina de un mineral, sin que haya una reacción química mayor. El principal efecto es un aumento de volumen, que genera estrés físico. No hay una participación química activa de H⁺ ni de OH⁻ como reactivos que rompen enlaces. El agua se incorpora en la estructura del mineral como moléculas de agua completas (H₂O). Simplemente se acomoda entre los espacios de la estructura cristalina o se adhiere a las superficies.</p>
+<ul class="simple">
+<li><p><em>Ejemplo: Anhidrita (CaSO₄) + Agua → Yeso (CaSO₄·2H₂O)</em></p></li>
+</ul>
+<figure class="align-default" id="fig-5500">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/a9/9a/80/a99a80f168e8b85b5c137b4650dae88a.jpg"><img alt="https://i.pinimg.com/1200x/a9/9a/80/a99a80f168e8b85b5c137b4650dae88a.jpg" src="https://i.pinimg.com/1200x/a9/9a/80/a99a80f168e8b85b5c137b4650dae88a.jpg" style="width: 300px;" />
+</a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="hidrolisis">
+<h3>Hidrólisis<a class="headerlink" href="#hidrolisis" title="Link to this heading">#</a></h3>
+<p>Es la reacción de meteorización más importante para los silicatos (el 90% de la corteza). Es una reacción química compleja donde un mineral reacciona con el agua, usualmente acidificada por el CO₂ atmosférico (ácido carbónico, H₂CO₃). El agua rompe los enlaces del mineral, liberando cationes y sílice, y formando minerales de arcilla como producto residual. H⁺ rompe enlaces cation-metal-oxígeno (por ejemplo, rompe enlaces Si–O o Al–O). OH⁻ ataca enlaces metálicos, formando hidróxidos o liberando cationes.</p>
+<ul class="simple">
+<li><p><em>Reacción Clave (Simplificada):</em>
+Feldespato + Ácido Carbónico + Agua → <strong>Caolinita (Arcilla)</strong> + Cationes disueltos (K⁺, Na⁺) + Sílice disuelta</p></li>
+</ul>
+<figure class="align-default" id="fig-7402">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/45/d3/26/45d3268454248161d0054c34ae3fbaea.jpg"><img alt="https://i.pinimg.com/736x/45/d3/26/45d3268454248161d0054c34ae3fbaea.jpg" src="https://i.pinimg.com/736x/45/d3/26/45d3268454248161d0054c34ae3fbaea.jpg" style="width: 500px;" />
+</a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="oxidacion-reduccion-redox">
+<h3>Oxidación-Reducción (Redox)<a class="headerlink" href="#oxidacion-reduccion-redox" title="Link to this heading">#</a></h3>
+<p>La pérdida (oxidación) o ganancia (reducción) de electrones. Es crucial para elementos con múltiples estados de valencia, especialmente el Hierro (Fe).</p>
+<figure class="align-default" id="fig-4924">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/3f/3d/50/3f3d50b02d65570358b5e7f9c3d25955.jpg"><img alt="https://i.pinimg.com/736x/3f/3d/50/3f3d50b02d65570358b5e7f9c3d25955.jpg" src="https://i.pinimg.com/736x/3f/3d/50/3f3d50b02d65570358b5e7f9c3d25955.jpg" style="width: 500px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>Reducción (Ambientes anóxicos, saturados):</strong> El Hierro está como <strong>Fe²⁺ (Ferroso)</strong>. Es <strong>soluble</strong> y móvil en el agua. Produce colores grises o verdosos en el suelo.</p></li>
+<li><p><strong>Oxidación (Ambientes aireados):</strong> El Hierro está como <strong>Fe³⁺ (Férrico)</strong>. Es <strong>insoluble</strong> y precipita como óxidos e hidróxidos (Hematita, Goethita). Produce los característicos colores rojos, ocres y amarillos.</p></li>
+<li><p><strong>Oxisoles (Suelos Lateríticos):</strong> Suelos tropicales profundos, intensamente meteorizados, lixiviados de cationes y sílice, y enriquecidos en óxidos de Fe y Al (residuales).</p></li>
+<li><p><strong>Ferricretes:</strong> Un tipo de <em>duricrust</em> formado por la cementación masiva de sedimentos por óxidos de hierro.</p></li>
+<li><p><strong>Duricrust</strong> (Costras): Horizontes superficiales o subsuperficiales endurecidos y cementados. Se forman por dos vías principales:</p></li>
+</ul>
+<figure class="align-default" id="fig-4483">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/0a/4e/f5/0a4ef53f75e8a439c770e5ba32857dfe.jpg"><img alt="https://i.pinimg.com/736x/0a/4e/f5/0a4ef53f75e8a439c770e5ba32857dfe.jpg" src="https://i.pinimg.com/736x/0a/4e/f5/0a4ef53f75e8a439c770e5ba32857dfe.jpg" style="width: 500px;" />
+</a>
+</figure>
+<figure class="align-default" id="fig-5930">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/cd/6f/68/cd6f686d9ba810384f171d3e38bf5f79.jpg"><img alt="https://i.pinimg.com/736x/cd/6f/68/cd6f686d9ba810384f171d3e38bf5f79.jpg" src="https://i.pinimg.com/736x/cd/6f/68/cd6f686d9ba810384f171d3e38bf5f79.jpg" style="width: 500px;" />
+</a>
+</figure>
+<p>La formación del horizonte laterítico no es solo química; requiere de una dinámica física de fluctuación del nivel freático:</p>
+<ul class="simple">
+<li><p><strong>Fluctuación del Agua Subterránea</strong>: Durante la época de lluvias, el hierro se reduce y se vuelve móvil. En la época seca, al descender el nivel freático, el hierro se oxida y precipita en los poros del suelo.</p></li>
+<li><p><strong>Cementación</strong>: Con el tiempo, este ciclo de oxidación-precipitación rellena los espacios vacíos del suelo con óxidos de hierro, “soldando” los granos de suelo.</p></li>
+<li><p><strong>Induración (Plintita a Duricostra)</strong>: El material comienza como plintita (una arcilla rica en hierro que se puede cortar con pala). Si este horizonte se expone a la superficie (por erosión del solum superior) y se deseca irreversiblemente, se convierte en una duricostra o coraza laterítica (ferricreta), que es tan dura como una roca.</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p><strong>Por Acumulación Relativa (Lixiviación):</strong> Típico de climas húmedos. Se lava todo el material soluble (sílice, cationes), dejando una concentración residual de los óxidos más insolubles.</p>
+<ul class="simple">
+<li><p><strong>Ferricrete</strong> (rica en Fe)</p></li>
+<li><p><strong>Alcrete</strong> (rica en Al, Bauxita)</p></li>
+</ul>
+</li>
+<li><p><strong>Por Acumulación Absoluta (Precipitación):</strong> Típico de climas áridos/semiáridos. El agua subterránea asciende por capilaridad, se evapora y precipita los minerales que lleva disueltos, cementando el suelo.</p>
+<ul class="simple">
+<li><p><strong>Calcrete</strong> (Carbonato de calcio)</p></li>
+<li><p><strong>Silcrete</strong> (Sílice)</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-default" id="fig-5167">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/45/9c/e0/459ce0f738823e5894035a0ee3c14139.jpg"><img alt="https://i.pinimg.com/1200x/45/9c/e0/459ce0f738823e5894035a0ee3c14139.jpg" src="https://i.pinimg.com/1200x/45/9c/e0/459ce0f738823e5894035a0ee3c14139.jpg" style="width: 700px;" />
+</a>
+</figure>
+</section>
+<section id="minerales-de-arcilla">
+<h3>Minerales de arcilla<a class="headerlink" href="#minerales-de-arcilla" title="Link to this heading">#</a></h3>
+<p>Los minerales primarios (como los feldespatos) se transforman en minerales secundarios (arcillas) durante la meteorización. Los minerales de arcilla (filosilicatos) están conformados por láminas tetraédricas. La unidad básica, el tetraedro (<span class="math notranslate nohighlight">\(SiO_4^{4-}\)</span>), donde un ion de silicio (<span class="math notranslate nohighlight">\(Si^{4+}\)</span>) está rodeado por cuatro iones de oxígeno (<span class="math notranslate nohighlight">\(O^{2-}\)</span>). Sin embargo, el silicio puede ser reemplazado por aluminio (<span class="math notranslate nohighlight">\(Al^{3+}\)</span>) para formar tetraedros de <span class="math notranslate nohighlight">\(AlO_4^{5-}\)</span>. Los tetraedros se unen entre sí compartiendo tres de sus cuatro vértices, es decir, tres de los cuatro oxígenos de su base. El cuarto oxígeno, llamado oxígeno apical, apunta en una dirección específica, lo que le da a la lámina una polaridad.</p>
+<p>Las láminas tetraédricas y octaédricas se combinan para formar las capas de los minerales de arcilla, que son las unidades fundamentales de su estructura cristalina.</p>
+<ul class="simple">
+<li><p><strong>Capas 1:1</strong>: En estas arcillas, la capa de hidroxilo (<span class="math notranslate nohighlight">\(OH⁻\)</span>) de la lámina octaédrica se une directamente a la capa de oxígeno de la lámina tetraédrica de la capa superior a través de fuertes enlaces de hidrógeno… La lámina octaédrica está compuesta por cationes (principalmente aluminio o magnesio) rodeados por seis aniones (oxígeno o hidroxilo) en una configuración octaédrica. Los minerales de arcilla con este tipo de estructura, como la caolinita, se denominan filosilicatos 1:1. Esta unión es tan fuerte que no permite que las moléculas de agua entren entre las capas. Por lo tanto, las arcillas 1:1 como la caolinita son no expansivas y no se hinchan.</p></li>
+<li><p><strong>Capas 2:1</strong>: En este caso, una lámina octaédrica está “sándwich” entre dos láminas tetraédricas. Estos minerales, como la pirofilita o el talco, se conocen como filosilicatos 2:1. En estas arcillas, como la esmectita, las láminas tetraédricas de la parte superior e inferior están unidas por enlaces débiles (fuerzas de Van der Waals). Esto permite que el agua, con su naturaleza polar, se infiltre entre las capas. El agua hidrata los cationes que equilibran la carga, como el sodio (<span class="math notranslate nohighlight">\(Na^{+}\)</span>) y el calcio (<span class="math notranslate nohighlight">\(Ca^{2+}\)</span>), lo que fuerza la separación de las capas y provoca un hinchamiento masivo. A medida que el suelo se seca, el agua se elimina y las capas se contraen. Este comportamiento de “hinchamiento-contracción” causa grandes problemas en la ingeniería geotécnica.</p></li>
+</ul>
+<figure class="align-default" id="fig-1191">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/e0/e1/f2/e0e1f225148628d1ac297c61c5d35d46.jpg"><img alt="https://i.pinimg.com/1200x/e0/e1/f2/e0e1f225148628d1ac297c61c5d35d46.jpg" src="https://i.pinimg.com/1200x/e0/e1/f2/e0e1f225148628d1ac297c61c5d35d46.jpg" style="width: 600px;" />
+</a>
+</figure>
+</section>
+</section>
+<hr class="docutils" />
+<section id="taller-de-autoevaluacion">
+<h2>Taller de Autoevaluación<a class="headerlink" href="#taller-de-autoevaluacion" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Física vs. Química:</strong> ¿Bajo qué condiciones climáticas (P, T) predomina la meteorización física por gelifracción y bajo cuáles la meteorización química por hidrólisis?</p></li>
+<li><p><strong>Ciclo del Carbono:</strong> Explique cómo la meteorización de silicatos actúa como un termostato natural del planeta a escalas de tiempo geológicas.</p></li>
+<li><p><strong>Perfil de Meteorización:</strong> Defina operacionalmente qué es un <strong>saprolito</strong>. ¿En qué se diferencia visualmente de la roca fresca y del suelo residual (VI)?</p></li>
+<li><p><strong>Ingeniería Geotécnica:</strong> ¿Por qué las arcillas con estructura 2:1 (como la montmorillonita) son más problemáticas para la construcción de obras civiles que las arcillas 1:1 (como la caolinita)?</p></li>
+<li><p><strong>Movilidad de Iones:</strong> En un perfil de meteorización desarrollado en un ambiente tropical húmedo (ej. Chocó, Colombia), ¿qué elementos químicos esperaría encontrar concentrados en la superficie y cuáles habrán sido lixiviados?</p></li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="glacial.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Geomorfología Glacial y Periglacial</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="MenM.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Geomorfología de Movimientos en Masa</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-ciclo-del-carbono-y-la-meteorizacion-de-silicatos">El Ciclo del Carbono y la Meteorización de Silicatos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#retroalimentacion-entre-cambio-climatico-y-meteorizacion">Retroalimentación entre Cambio Climático y Meteorización</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#factores">Factores</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perfil-de-meteorizacion">Perfil de meteorización</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cuantificacion-de-la-meteorizacion-indices-geoquimicos">Cuantificación de la Meteorización: Índices Geoquímicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suelos-in-situ-y-suelos-transportados">Suelos In Situ y Suelos Transportados</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodos-de-descripcion-de-perfiles-de-meteorizacion-ingenieril">Métodos de descripción de perfiles de meteorización (Ingenieril)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-meteorizacion">Tipos de Meteorización</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#meteorizacion-fisica">Meteorización Física</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#meteorizacion-quimica">Meteorización Química</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disolucion-y-ambiente-karstico">Disolución y Ambiente Kárstico</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hidratacion">Hidratación</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hidrolisis">Hidrólisis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oxidacion-reduccion-redox">Oxidación-Reducción (Redox)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#minerales-de-arcilla">Minerales de arcilla</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taller-de-autoevaluacion">Taller de Autoevaluación</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por Edier V. Aristizábal G.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,1040 @@
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Morfotectónica y geomorfología estructural &#8212; Geomorfología Aplicada</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="_static/documentation_options.js?v=78d55cf8"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Haz clic para mostrar';</script>
+    <script>let toggleHintHide = 'Haz clic para ocultar';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="_static/translations.js?v=d190bf04"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'morfotectonica';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="canonical" href="https://edieraristizabal.github.io/Geomorfologia/libro/morfotectonica.html" />
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Geomorfología de Ambientes Volcánicos" href="volcanico.html" />
+    <link rel="prev" title="Teorías Clásicas de la Evolución de Laderas" href="evolucion.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Navegación del sitio">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="En esta página">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Geomorfología Aplicada - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="Geomorfología Aplicada - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    GEOMORFOLOGÍA EN AMBIENTES TROPICALES
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte I: Fundamentos de Geomorfología</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="conceptos.html">Conceptos fundamentales en Geomorfología</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evolucion.html">Teorías Clásicas de la Evolución de Laderas</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte II: Procesos Endógenos</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Morfotectónica y geomorfología estructural</a></li>
+<li class="toctree-l1"><a class="reference internal" href="volcanico.html">Geomorfología de Ambientes Volcánicos</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte III: Procesos Exógenos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="glacial.html">Geomorfología Glacial y Periglacial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="meteorizacion.html">Meteorización: procesos, perfiles y geoformas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MenM.html">Geomorfología de Movimientos en Masa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pluvial.html">Erosión Pluvial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eolica.html">Erosión Eólica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cuencas.html">Geomorfología de Cuencas Hidrográficas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="torrencial.html">Ambientes Torrenciales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aluvial.html">Geomorfología de Ambientes Fluviales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="delta.html">Geomorfología de Ambientes Deltaicos</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Referencias</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="referencias.html">Referencias</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/edieraristizabal/Geomorfologia" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/edieraristizabal/Geomorfologia/edit/master/libro/morfotectonica.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/edieraristizabal/Geomorfologia/issues/new?title=Issue%20on%20page%20%2Fmorfotectonica.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Abrir un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/morfotectonica.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Tema" data-bs-title="Tema"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Claro"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Oscuro"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Sistema"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Morfotectónica y geomorfología estructural</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#paisajes-tectonicos-al-interior-continental">Paisajes Tectónicos al Interior Continental</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estratos-horizontales">Estratos Horizontales</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#paisajes-en-margenes-continentales">2. Paisajes en Márgenes Continentales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#margenes-pasivas">Márgenes Pasivas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#margenes-activas">Márgenes Activas:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geoformas-con-estratos-buzantes">Geoformas con estratos buzantes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#laderas-estructurales">Laderas Estructurales</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-drenaje-controlados-por-la-estructura">Tipos de Drenaje Controlados por la Estructura</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-bordes-activos">Tipos de bordes activos</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-bordes-divergentes-rifting">A. Bordes Divergentes (Rifting)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b-bordes-convergentes-subduccion-y-colision">B. Bordes Convergentes (Subducción y Colisión)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#c-bordes-de-rumbo-o-transformantes">C. Bordes de Rumbo o Transformantes</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paisajes-plegados">Paisajes plegados</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#el-paisaje-jurasico-relieve-conforme">El Paisaje Jurásico (Relieve Conforme)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#el-paisaje-apalachense-relieve-invertido">El Paisaje Apalachense (Relieve Invertido)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#isostacia">Isostacia</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#morfotectonica-en-colombia-un-laboratorio-vivo">Morfotectónica en Colombia: Un Laboratorio Vivo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marcadores-geomorficos-y-geocronologia-cuantificando-la-actividad-tectonica">Marcadores Geomórficos y Geocronología: Cuantificando la Actividad Tectónica</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodos-complementarios-de-geocronologia-del-cuaternario">Métodos Complementarios de Geocronología del Cuaternario</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taller-de-autoevaluacion">Taller de Autoevaluación</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="morfotectonica-y-geomorfologia-estructural">
+<span id="sec-morfotectonica"></span><h1>Morfotectónica y geomorfología estructural<a class="headerlink" href="#morfotectonica-y-geomorfologia-estructural" title="Link to this heading">#</a></h1>
+<p>La morfotectónica (o tectónica geomorfológica) se enfoca en cómo los procesos tectónicos activos y a gran escala (levantamiento, subsidencia, deformación) construyen la topografía y cómo podemos usar las formas del paisaje para entender y cuantificar esos procesos <span class="bibtex-citation" id="id1">[<a class="reference internal" href="referencias.html#id34" title="D.W. Burbank and R.S. Anderson. Tectonic Geomorphology. Wiley-Blackwell, Chichester, 2 edition, 2011.">Burbank and Anderson, 2011</a>]</span>.</p>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<p><strong>Objetivos de aprendizaje:</strong></p>
+<ul class="simple">
+<li><p>Diferenciar entre el control estructural pasivo y la morfotectónica activa en la formación del relieve.</p></li>
+<li><p>Identificar las geoformas características de diferentes ambientes tectónicos (divergentes, convergentes y transformantes).</p></li>
+<li><p>Comprender la relación entre el esfuerzo tectónico, la deformación de las rocas y el patrón de drenaje resultante.</p></li>
+<li><p>Analizar ejemplos reales de morfotectónica en el territorio colombiano (ej. Fallas de Romeral e Ibagué).</p></li>
+</ul>
+</div>
+<p>Por otro lado, la geomorfología estructural se enfoca en cómo la estructura geológica preexistente y pasiva (el tipo de roca (litología), su disposición (pliegues) y sus fracturas (fallas, diaclasas)) controla la forma del paisaje a través de la erosión diferencial.</p>
+<p>Aunque están íntimamente relacionados y a menudo se superponen, la geomorfología estructural y la morfotectónica se diferencian principalmente en su enfoque y escala de análisis. La geomorfología estructural describe cómo la anatomía geológica pasiva controla la forma del relieve, mientras que la morfotectónica estudia cómo los procesos tectónicos activos construyen ese relieve a gran escala.</p>
+<hr class="docutils" />
+<section id="paisajes-tectonicos-al-interior-continental">
+<h2>Paisajes Tectónicos al Interior Continental<a class="headerlink" href="#paisajes-tectonicos-al-interior-continental" title="Link to this heading">#</a></h2>
+<p>En las regiones estables del interior de los continentes, lejos de los bordes de placa activos, el relieve está fuertemente controlado por la estructura de la roca y la erosión diferencial. Un cratón es la porción más antigua, estable y rígida de la litosfera continental. Son los núcleos ancestrales de los continentes, formados y estabilizados durante el Precámbrico (hace más de 540 millones de años), y no han sido afectados significativamente por la actividad tectónica desde entonces. Un escudo es la región de un cratón donde las rocas del basamento cristalino (rocas ígneas y metamórficas del Precámbrico) están expuestas directamente en la superficie.</p>
+<p>Debido a miles de millones de años de erosión, los <strong>escudos</strong> son típicamente áreas de bajo relieve, como extensas llanuras suavemente onduladas o peneplanicies. Son el “esqueleto” del continente a la vista. Como ejemplos clásicos están el Escudo Canadiense, el Escudo Báltico en Escandinavia, y aquí en Sudamérica, el Escudo Guayanés y el Escudo Brasileño, que juntos forman el Cratón Amazónico.</p>
+<p>Una <strong>plataforma</strong> es la región de un cratón donde el basamento cristalino antiguo está cubierto por una capa relativamente delgada de rocas sedimentarias más jóvenes, depositadas de forma horizontal o con un buzamiento muy suave. Estas rocas sedimentarias se depositaron en mares interiores poco profundos que inundaron el cratón en diferentes momentos del Fanerozoico. La topografía de las plataformas es la que da lugar a los paisajes de mesas, buttes y cuestas que discutimos a continuación.</p>
+<figure class="align-default" id="fig-1740">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/12/c3/1e/12c31e4607133bd053867e87f9045726.jpg"><img alt="https://i.pinimg.com/736x/12/c3/1e/12c31e4607133bd053867e87f9045726.jpg" src="https://i.pinimg.com/736x/12/c3/1e/12c31e4607133bd053867e87f9045726.jpg" style="width: 400px;" />
+</a>
+</figure>
+<section id="estratos-horizontales">
+<h3>Estratos Horizontales<a class="headerlink" href="#estratos-horizontales" title="Link to this heading">#</a></h3>
+<p>Cuando las capas de roca sedimentaria son horizontales, la erosión diferencial (el desgaste más rápido de las rocas blandas en comparación con las duras) esculpe un conjunto característico de geoformas. El proceso clave es el retroceso de escarpes.</p>
+<ul class="simple">
+<li><p><strong>Plateau (Altiplanos):</strong> Una vasta área elevada y relativamente plana, coronada por una capa de roca resistente (ej. arenisca, basalto).</p></li>
+<li><p><strong>Mesa:</strong> Un remanente de una meseta, aislado por la erosión. Es una colina de cima plana, más ancha que alta.</p></li>
+<li><p><strong>Butte:</strong> Una etapa más avanzada de la erosión de una mesa. Es una colina de cima plana y laderas empinadas, más alta que ancha.</p></li>
+<li><p><strong>Pináculo o Aguja (<em>Pinnacle/Spire</em>):</strong> La etapa final, donde solo queda una delgada aguja de roca resistente.</p></li>
+<li></li>
+</ul>
+<figure class="align-default" id="fig-9975">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/51/6c/75/516c75f756ed09b3d1ccb592a559a704.jpg"><img alt="https://i.pinimg.com/1200x/51/6c/75/516c75f756ed09b3d1ccb592a559a704.jpg" src="https://i.pinimg.com/1200x/51/6c/75/516c75f756ed09b3d1ccb592a559a704.jpg" style="width: 600px;" />
+</a>
+</figure>
+</section>
+</section>
+<hr class="docutils" />
+<section id="paisajes-en-margenes-continentales">
+<h2>2. Paisajes en Márgenes Continentales<a class="headerlink" href="#paisajes-en-margenes-continentales" title="Link to this heading">#</a></h2>
+<p>Los bordes de los continentes se dividen en dos grandes tipos: pasivos y activos.</p>
+<figure class="align-default" id="fig-2134">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/97/fe/b0/97feb017b2139a8715ddf5496d802788.jpg"><img alt="https://i.pinimg.com/1200x/97/fe/b0/97feb017b2139a8715ddf5496d802788.jpg" src="https://i.pinimg.com/1200x/97/fe/b0/97feb017b2139a8715ddf5496d802788.jpg" style="width: 600px;" />
+</a>
+</figure>
+<section id="margenes-pasivas">
+<h3>Márgenes Pasivas<a class="headerlink" href="#margenes-pasivas" title="Link to this heading">#</a></h3>
+<p>Estos no son bordes de placa. Son el resultado de la ruptura de un continente en el pasado. Los procesos dominantes son de largo plazo y baja intensidad.</p>
+<ul class="simple">
+<li><p><strong>Llanura Costera:</strong> Una extensa área de bajo relieve formada por la acumulación de sedimentos.</p></li>
+<li><p><strong>Gran Escarpe:</strong> Un escarpe masivo que a menudo marca el límite entre el interior continental elevado y la llanura costera baja (ej. el Gran Escarpe de Brasil o Sudáfrica).</p></li>
+</ul>
+<figure class="align-default" id="fig-4532">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/bd/40/43/bd40434bd25cd58d47eb2aa70a981be4.jpg"><img alt="https://i.pinimg.com/736x/bd/40/43/bd40434bd25cd58d47eb2aa70a981be4.jpg" src="https://i.pinimg.com/736x/bd/40/43/bd40434bd25cd58d47eb2aa70a981be4.jpg" style="width: 600px;" />
+</a>
+</figure>
+</section>
+<section id="margenes-activas">
+<h3>Márgenes Activas:<a class="headerlink" href="#margenes-activas" title="Link to this heading">#</a></h3>
+<p>Estos son bordes de placa, donde la interacción directa entre placas genera esfuerzos y crea paisajes muy dinámicos y relieve.</p>
+<p>El esfuerzo (σ) es la fuerza aplicada por unidad de área sobre un material. En geología, la fuente de esta fuerza son los movimientos de las placas tectónicas. Existen tres tipos principales de esfuerzo que deforman las rocas:</p>
+<ul class="simple">
+<li><p><strong>Esfuerzo Compresivo</strong>: Ocurre cuando las fuerzas convergen sobre un cuerpo rocoso, acortándolo en la dirección del esfuerzo. Dominan fallas inversas.</p></li>
+<li><p><strong>Esfuerzo Tensional (o Extensional)</strong>: Ocurre cuando las fuerzas divergen de un cuerpo rocoso, alargándolo. Dominan fallas normales.</p></li>
+<li><p><strong>Esfuerzo de Cizalla (o Cortante)</strong>: Ocurre cuando las fuerzas actúan en direcciones paralelas pero opuestas, deslizando un bloque con respecto al otro. Dominan fallas de rumbo <span class="bibtex-citation" id="id2">[<a class="reference internal" href="referencias.html#id34" title="D.W. Burbank and R.S. Anderson. Tectonic Geomorphology. Wiley-Blackwell, Chichester, 2 edition, 2011.">Burbank and Anderson, 2011</a>]</span>.</p></li>
+</ul>
+<figure class="align-default" id="fig-3499">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/22/a8/21/22a821c27c9b7533a3b5ef94118daa4f.jpg"><img alt="https://i.pinimg.com/1200x/22/a8/21/22a821c27c9b7533a3b5ef94118daa4f.jpg" src="https://i.pinimg.com/1200x/22/a8/21/22a821c27c9b7533a3b5ef94118daa4f.jpg" style="width: 600px;" />
+</a>
+</figure>
+<p>La deformación (<em>strain</em>) es el cambio en la forma, tamaño o volumen de una roca en respuesta al esfuerzo. Las rocas pueden responder de manera frágil (rompiéndose) en condiciones de baja presión y temperatura, cerca de la superficie; o de forma dúctil (deformandose), dependiendo de la presión y la temperatura.</p>
+<p>Las estructuras de caracter frágil que se forman son:</p>
+<ul class="simple">
+<li><p><strong>Diaclasas (Joints)</strong>: Son fracturas en las rocas a través de las cuales no ha habido un desplazamiento medible. Son la respuesta más común a la liberación de esfuerzo y suelen aparecer en conjuntos paralelos.</p></li>
+<li><p><strong>Fallas (Faults)</strong>: Son fracturas donde los bloques a cada lado sí se han desplazado uno con respecto al otro. El tipo de falla es un indicador directo del tipo de esfuerzo que la originó:</p></li>
+<li><p><strong>Falla Normal</strong>: Causada por esfuerzo tensional. El bloque de techo (el que está por encima del plano de falla) se mueve hacia abajo con respecto al bloque de piso. Producen extensión y adelgazamiento de la corteza.</p></li>
+<li><p><strong>Falla Inversa</strong>: Causada por esfuerzo compresivo. El bloque de techo se mueve hacia arriba con respecto al bloque de piso. Producen acortamiento y engrosamiento de la corteza. Un tipo especial con un ángulo bajo se llama cabalgamiento (thrust fault).</p></li>
+<li><p><strong>Falla de Rumbo</strong> (<em>Strike-Slip</em>): Causada por esfuerzo de cizalla. El movimiento de los bloques es horizontal, paralelo al rumbo de la falla.</p></li>
+</ul>
+<p>El lenguaje para describir la orientación en el espacio 3D de cualquier estructura planar (un estrato, una falla, una diaclasa) es mediante el rumbo y el buzamiento.</p>
+<p><strong>Rumbo (Strike)</strong>: Es la dirección de la línea horizontal contenida en el plano inclinado. Se mide como un ángulo con respecto al Norte (ej., N45°E o S20°W). Imagina una capa de roca inclinada que se intersecta con la superficie de un lago en calma; la línea de la orilla que se forma es el rumbo.</p>
+<p><strong>Buzamiento (Dip)</strong>: Es el ángulo de máxima inclinación del plano, medido hacia abajo desde la horizontal. Siempre es perpendicular al rumbo. El buzamiento se compone de dos partes: El ángulo de inclinación (de 0° a 90°) y la dirección hacia la que el plano se inclina (ej., SE, NW).</p>
+<figure class="align-default" id="fig-2189">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/8c/ac/2f/8cac2fb850feb101bab1a6be94083a69.jpg"><img alt="https://i.pinimg.com/736x/8c/ac/2f/8cac2fb850feb101bab1a6be94083a69.jpg" src="https://i.pinimg.com/736x/8c/ac/2f/8cac2fb850feb101bab1a6be94083a69.jpg" style="width: 300px;" />
+</a>
+</figure>
+</section>
+<section id="geoformas-con-estratos-buzantes">
+<h3>Geoformas con estratos buzantes<a class="headerlink" href="#geoformas-con-estratos-buzantes" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Cuesta:</strong> Se forma sobre estratos con un <strong>buzamiento suave</strong> (&lt;15-20°). Presenta una ladera frontal empinada (escarpe) y una ladera de reverso larga y suave que sigue la inclinación de la capa resistente.</p></li>
+<li><p><strong>Hogback:</strong> Se forma sobre estratos con un <strong>buzamiento fuerte</strong> (típicamente &gt;30-40°). Las dos laderas de la cresta son empinadas y tienen una pendiente similar, creando un perfil más simétrico.</p></li>
+<li><p><strong>Razorback:</strong> Un término más informal para un hogback extremadamente agudo y estrecho, formado en estratos casi verticales.</p></li>
+</ul>
+<figure class="align-default" id="fig-8256">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/bf/9b/50/bf9b5013dbdb9b61d919476d2168c749.jpg"><img alt="https://i.pinimg.com/736x/bf/9b/50/bf9b5013dbdb9b61d919476d2168c749.jpg" src="https://i.pinimg.com/736x/bf/9b/50/bf9b5013dbdb9b61d919476d2168c749.jpg" style="width: 500px;" />
+</a>
+</figure>
+<section id="laderas-estructurales">
+<h4>Laderas Estructurales<a class="headerlink" href="#laderas-estructurales" title="Link to this heading">#</a></h4>
+<p>La forma de una ladera (su pendiente y aspecto) en relieves de rocas estratificadas está íntimamente ligada a la orientación (rumbo y buzamiento) de esas capas.</p>
+<ul class="simple">
+<li><p><strong>Ladera Cataclinal</strong> (<em>Dip Slope</em>): La superficie de la ladera buza en la misma dirección que los estratos rocosos. La pendiente de la ladera suele ser muy similar o ligeramente inferior al ángulo de buzamiento de las rocas. Estas laderas son el “reverso” de una cuesta y pueden ser susceptibles a grandes deslizamientos traslacionales si existe una capa débil paralela a la superficie.</p></li>
+<li><p><strong>Ladera Anaclinal</strong> (<em>Scarp Slope</em>): La superficie de la ladera buza en la dirección opuesta al buzamiento de los estratos. Estas laderas cortan a través de las capas de roca, por lo que suelen ser más empinadas y abruptas. Su perfil está controlado por la erosión diferencial de las distintas capas. Corresponden al “frente” o escarpe de una cuesta.</p></li>
+<li><p><strong>Ladera Ortoclinal</strong> (<em>Strike Slope</em>): La superficie de la ladera es paralela al rumbo de los estratos (y por lo tanto, perpendicular a la dirección del buzamiento). Estas laderas suelen formar las paredes de los valles que han sido excavados a lo largo del rumbo de una capa de roca blanda.</p></li>
+</ul>
+<figure class="align-default" id="fig-7945">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/e4/99/4c/e4994cebb30ec14e0d60cf46e864bee7.jpg"><img alt="https://i.pinimg.com/736x/e4/99/4c/e4994cebb30ec14e0d60cf46e864bee7.jpg" src="https://i.pinimg.com/736x/e4/99/4c/e4994cebb30ec14e0d60cf46e864bee7.jpg" style="width: 400px;" />
+</a>
+</figure>
+</section>
+</section>
+<section id="tipos-de-drenaje-controlados-por-la-estructura">
+<h3>Tipos de Drenaje Controlados por la Estructura<a class="headerlink" href="#tipos-de-drenaje-controlados-por-la-estructura" title="Link to this heading">#</a></h3>
+<p>La red de ríos de una región (su patrón de drenaje) a menudo se adapta a la estructura geológica, revelando la disposición de pliegues, fallas y tipos de roca.</p>
+<ul class="simple">
+<li><p><strong>Drenajes Genéticos</strong> (Ajustados a la Estructura)
+Estos describen cómo se origina una red fluvial en respuesta a la geología.</p></li>
+<li><p><strong>Drenaje Consecuente</strong>: Son los primeros ríos que se forman, fluyendo en la dirección de la pendiente regional original.</p></li>
+<li><p><strong>Drenaje Subsecuente</strong>: Se desarrollan a lo largo de zonas de debilidad, como las capas de roca blanda o fallas. Típicamente, fluyen paralelos al rumbo de los estratos, excavando valles entre las crestas de roca dura (hogbacks o cuestas). Son los ríos principales en un patrón de drenaje enrejado (trellis).</p></li>
+<li><p><strong>Drenaje Obsecuente y Resecuente</strong>: Son afluentes de los ríos subsecuentes. Los obsecuentes fluyen en dirección opuesta al drenaje consecuente (bajando por la ladera anaclinal o escarpe). Los resecuentes fluyen en la misma dirección que el consecuente, pero se desarrollan después y a un nivel topográfico inferior (bajando por la ladera cataclinal).</p></li>
+</ul>
+<p>Los drenajes “Anómalos” (que Desafían la estructura)
+indican una historia de evolución del paisaje compleja.</p>
+<ul class="simple">
+<li><p><strong>Drenaje Sobreimpuesto</strong>: Ocurre cuando un río establece su curso sobre una cubierta de rocas horizontales, pero con el tiempo, erosiona y se “encaja” en las rocas plegadas o falladas que había debajo. El río mantiene su patrón original, aunque este no guarde relación con la nueva estructura que está cortando.</p></li>
+<li><p><strong>Drenaje Antecedente</strong> (<em>Antecedent</em>): Se refiere a un río que es más antiguo que una estructura tectónica que se está levantando (como un anticlinal en crecimiento). Si el río tiene suficiente poder erosivo, puede mantener su curso cortando la estructura a medida que esta se eleva, formando un profundo cañón o cluse. El río “antecede” al levantamiento.</p></li>
+</ul>
+<figure class="align-default" id="fig-8">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/65/b8/09/65b80917cb437798d07e9ebd1c9b5786.jpg"><img alt="https://i.pinimg.com/1200x/65/b8/09/65b80917cb437798d07e9ebd1c9b5786.jpg" src="https://i.pinimg.com/1200x/65/b8/09/65b80917cb437798d07e9ebd1c9b5786.jpg" style="width: 400px;" />
+</a>
+</figure>
+</section>
+<section id="tipos-de-bordes-activos">
+<h3>Tipos de bordes activos<a class="headerlink" href="#tipos-de-bordes-activos" title="Link to this heading">#</a></h3>
+<figure class="align-default" id="fig-2023">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/26/88/38/268838c3878c9d24b68e6aaa61aa3eea.jpg"><img alt="https://i.pinimg.com/1200x/26/88/38/268838c3878c9d24b68e6aaa61aa3eea.jpg" src="https://i.pinimg.com/1200x/26/88/38/268838c3878c9d24b68e6aaa61aa3eea.jpg" style="width: 800px;" />
+</a>
+</figure>
+<figure class="align-default" id="fig-4401">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/c0/81/73/c0817380925ad82bb5694feec8029991.jpg"><img alt="https://i.pinimg.com/1200x/c0/81/73/c0817380925ad82bb5694feec8029991.jpg" src="https://i.pinimg.com/1200x/c0/81/73/c0817380925ad82bb5694feec8029991.jpg" style="width: 600px;" />
+</a>
+</figure>
+<section id="a-bordes-divergentes-rifting">
+<h4>A. Bordes Divergentes (Rifting)<a class="headerlink" href="#a-bordes-divergentes-rifting" title="Link to this heading">#</a></h4>
+<p>Donde las placas se separan, la corteza es estirada y adelgazada.</p>
+<ul class="simple">
+<li><p><strong>Valle del Rift:</strong> Una gran depresión alargada limitada por fallas normales.</p></li>
+</ul>
+<figure class="align-default" id="fig-4221">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/12/ff/da/12ffda830f6a9568045b71bc0dcad8df.jpg"><img alt="https://i.pinimg.com/736x/12/ff/da/12ffda830f6a9568045b71bc0dcad8df.jpg" src="https://i.pinimg.com/736x/12/ff/da/12ffda830f6a9568045b71bc0dcad8df.jpg" style="width: 400px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>Horsts y Grabens:</strong> Bloques elevados (horst) y hundidos (graben) que forman la topografía característica del rift.</p></li>
+</ul>
+<figure class="align-default" id="fig-8343">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/fd/84/2d/fd842d864c81d511b328e5aa23323fc4.jpg"><img alt="https://i.pinimg.com/736x/fd/84/2d/fd842d864c81d511b328e5aa23323fc4.jpg" src="https://i.pinimg.com/736x/fd/84/2d/fd842d864c81d511b328e5aa23323fc4.jpg" style="width: 400px;" />
+</a>
+</figure>
+</section>
+<section id="b-bordes-convergentes-subduccion-y-colision">
+<h4>B. Bordes Convergentes (Subducción y Colisión)<a class="headerlink" href="#b-bordes-convergentes-subduccion-y-colision" title="Link to this heading">#</a></h4>
+<p>Donde las placas chocan. El paisaje depende del tipo de corteza que colisiona. Un orógeno, o cinturón orogénico, es una franja de la corteza continental que ha sido intensamente deformada, plegada y fallada por la colisión de placas tectónicas, dando como resultado una cadena montañosa.</p>
+<ul class="simple">
+<li><p><strong>Convergencia Oceánica-Oceánica:</strong>. Subducción de una placa oceánica bajo otra, fusión parcial, volcanismo. Como geoformas se observan las Fosa Oceánica profunda, Arco de Islas Volcánicas (ej. Japón, Aleutianas), y una Cuenca de Retroarco.</p></li>
+<li><p><strong>Convergencia Oceánica-Continental:</strong>. Subducción de la placa oceánica (más densa) bajo la continental, magmatismo, y acortamiento cortical (plegamiento y fallamiento inverso). Como geoformas se encuentran Prisma de Acreción (sedimentos raspados de la placa que subduce), Arco Volcánico Continental (una cordillera de volcanes, como los Andes), y una Cuenca de Antearco (<em>forearc basin</em>).</p></li>
+<li><p><strong>Convergencia Continental-Continental:</strong>. Como ninguna placa puede subducir fácilmente, se produce una colisión con intenso acortamiento, engrosamiento cortical y fallamiento inverso (cabalgamientos). No hay volcanismo significativo. Las geoformas son Cadenas montañosas no volcánicas de gran altitud (ej. Himalayas), extensas mesetas o plateaux detrás de la cordillera principal (ej. Meseta del Tíbet), y zonas de sutura (la “cicatriz” donde los continentes se unieron) <span class="bibtex-citation" id="id3">[<a class="reference internal" href="referencias.html#id34" title="D.W. Burbank and R.S. Anderson. Tectonic Geomorphology. Wiley-Blackwell, Chichester, 2 edition, 2011.">Burbank and Anderson, 2011</a>]</span>.</p></li>
+</ul>
+<figure class="align-default" id="fig-6007">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/03/26/dc/0326dc875b7e1d2c2f948ec32159d9dc.jpg"><img alt="https://i.pinimg.com/1200x/03/26/dc/0326dc875b7e1d2c2f948ec32159d9dc.jpg" src="https://i.pinimg.com/1200x/03/26/dc/0326dc875b7e1d2c2f948ec32159d9dc.jpg" style="width: 600px;" />
+</a>
+</figure>
+</section>
+<section id="c-bordes-de-rumbo-o-transformantes">
+<h4>C. Bordes de Rumbo o Transformantes<a class="headerlink" href="#c-bordes-de-rumbo-o-transformantes" title="Link to this heading">#</a></h4>
+<p>Donde las placas se deslizan lateralmente una junto a la otra con fallamiento de rumbo (horizontal). Las geoformas típicas son:</p>
+<ul class="simple">
+<li><p><strong>Valles Lineales:</strong> La falla crea una zona de debilidad que es erosionada fácilmente.</p></li>
+<li><p><strong>Drenajes Desplazados (<em>Offset Streams</em>):</strong> Ríos y valles que son cortados y desplazados por el movimiento de la falla.</p></li>
+<li><p><strong>Lomos de Obturación (<em>Shutter Ridges</em>):</strong> Una cresta que se mueve a lo largo de la falla hasta bloquear la salida de un valle.</p></li>
+<li><p><strong>Hondonadas de Hundimiento (<em>Sag Ponds</em>):</strong> Pequeñas depresiones y lagunas formadas donde la falla crea zonas de extensión local.</p></li>
+<li><p><strong>Lomo de Presión</strong> (<em>Pressure Ridge</em>). es una colina o cordillera alargada que se forma directamente sobre la zona de compresión. El material apilado y levantado crea una cresta topográfica que a menudo está orientada de forma oblicua con respecto al trazo principal de la falla.</p></li>
+<li><p><strong>Boquerón (Fault Saddle)</strong>. Un sillín es una geoforma sutil. Se refiere a una depresión o punto bajo a lo largo de una cresta que está siendo cortada por la falla. La falla tritura y debilita la roca a su paso. La erosión (fluvial o de laderas) actúa de forma mucho más eficiente sobre esta roca debilitada, excavando una muesca, collado o “sillín” en la cresta. Es una geoforma erosional guiada por la estructura.</p></li>
+</ul>
+<figure class="align-default" id="fig-6897">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/c6/b8/ed/c6b8ed810d03e78b44f7a74574253370.jpg"><img alt="https://i.pinimg.com/1200x/c6/b8/ed/c6b8ed810d03e78b44f7a74574253370.jpg" src="https://i.pinimg.com/1200x/c6/b8/ed/c6b8ed810d03e78b44f7a74574253370.jpg" style="width: 600px;" />
+</a>
+</figure>
+</section>
+</section>
+<section id="paisajes-plegados">
+<h3>Paisajes plegados<a class="headerlink" href="#paisajes-plegados" title="Link to this heading">#</a></h3>
+<p>El paisaje plegado es el resultado de la erosión diferencial actuando sobre una serie de rocas sedimentarias que han sido comprimidas y deformadas en pliegues (anticlinales y sinclinales) por esfuerzos tectónicos. La topografía resultante no es el pliegue en sí, sino lo que la erosión ha esculpido a partir de él.</p>
+<figure class="align-default" id="fig-5590">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/09/45/e2/0945e2a00395e4053ce41fe9d7c05ae4.jpg"><img alt="https://i.pinimg.com/736x/09/45/e2/0945e2a00395e4053ce41fe9d7c05ae4.jpg" src="https://i.pinimg.com/736x/09/45/e2/0945e2a00395e4053ce41fe9d7c05ae4.jpg" style="width: 600px;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>Monte Anticlinal</strong>: El anticlinal (pliegue en forma de A ∩) forma una montaña o una cresta elevada, ya que su capa superior resistente aún no ha sido significativamente erosionada.</p></li>
+<li><p><strong>Valle Sinclinal</strong>: El sinclinal (pliegue en forma de U ∪) forma un valle, siguiendo la concavidad de la estructura.</p></li>
+</ul>
+<p>Dos principales tipos de paisaje plegado existen: Jurásico y Apalachense. La principal diferencia es el grado de erosión: el paisaje jurásico muestra una correspondencia directa entre estructura y relieve, mientras que el apalachense muestra una inversión del relieve debido a una erosión prolongada y profunda <span class="bibtex-citation" id="id4">[<a class="reference internal" href="referencias.html#id35" title="W.M. Davis. The rivers and valleys of pennsylvania. National Geographic Magazine, 1:183–253, 1889.">Davis, 1889</a>]</span>.</p>
+<section id="el-paisaje-jurasico-relieve-conforme">
+<h4>El Paisaje Jurásico (Relieve Conforme)<a class="headerlink" href="#el-paisaje-jurasico-relieve-conforme" title="Link to this heading">#</a></h4>
+<p>Este estilo, nombrado por las Montañas del Jura en Europa, representa una etapa joven de la erosión de un relieve plegado. Aquí, la topografía es un reflejo directo de la estructura geológica subyacente. La erosión comienza a actuar sobre la estructura recién plegada. Las capas superiores y más resistentes definen el relieve.</p>
+<ul class="simple">
+<li><p><strong>Combe</strong>: Un valle longitudinal que se excava a lo largo del eje de un monte anticlinal. Se forma cuando la erosión rompe la capa dura superior (la “bisagra” del pliegue, debilitada por la tensión) y comienza a vaciar las capas blandas del interior.</p></li>
+<li><p><strong>Cluse</strong>: Un valle transversal estrecho y profundo (una garganta) que corta perpendicularmente un monte anticlinal. A menudo son el resultado de un río antecedente o sobreimpuesto.</p></li>
+<li><p><strong>Ruz</strong>: Una pequeña cresta secundaria, aguda y rectilínea, formada en el flanco de un monte anticlinal, donde una capa dura intermedia es expuesta por la erosión.</p></li>
+<li><p><strong>Crêt</strong>: se refiere a la cresta alargada y asimétrica formada por una capa de roca dura y resistente que ha sido inclinada por el plegamiento y expuesta por la erosión. Esencialmente, un crêt es la geoforma que da lugar a una cuesta (si el buzamiento es suave) o a un hogback (si el buzamiento es fuerte). Su perfil es característico: una ladera muy empinada (anaclinal o “frente”) donde la erosión ha cortado a través de los estratos, y una ladera más suave (cataclinal o “reverso”) que sigue la superficie de la capa resistente inclinada.</p></li>
+<li><p><strong>Mont</strong>: se traduce como “monte derivado”. Se refiere a una cresta o montaña que no es el resultado directo de la estructura primaria del plegamiento (como el mont anticlinal original), sino que es una forma “derivada” de la erosión diferencial. En muchos casos el mont dérivé y el crêt son prácticamente la misma geoforma. El término mont dérivé enfatiza que esta montaña existe únicamente porque la erosión ha eliminado las rocas blandas que la rodeaban, “derivando” su forma de la estructura resistente que ha quedado expuesta.</p></li>
+</ul>
+<figure class="align-default" id="fig-4381">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/66/63/ac/6663acfcb9d6f4c7c4b967972cfd3643.jpg"><img alt="https://i.pinimg.com/1200x/66/63/ac/6663acfcb9d6f4c7c4b967972cfd3643.jpg" src="https://i.pinimg.com/1200x/66/63/ac/6663acfcb9d6f4c7c4b967972cfd3643.jpg" style="width: 600px;" />
+</a>
+</figure>
+</section>
+<section id="el-paisaje-apalachense-relieve-invertido">
+<h4>El Paisaje Apalachense (Relieve Invertido)<a class="headerlink" href="#el-paisaje-apalachense-relieve-invertido" title="Link to this heading">#</a></h4>
+<p>Este estilo, nombrado por los Montes Apalaches en Norteamérica, representa una etapa madura o evolucionada de la erosión, donde la relación inicial entre estructura y topografía se ha invertido <span class="bibtex-citation" id="id5">[<a class="reference internal" href="referencias.html#id35" title="W.M. Davis. The rivers and valleys of pennsylvania. National Geographic Magazine, 1:183–253, 1889.">Davis, 1889</a>]</span>.</p>
+<p>La erosión ha actuado durante un largo periodo. La parte superior de los anticlinales, debilitada por la tensión durante el plegamiento, ha sido completamente erosionada (formando valles anticlinales anchos). Los sinclinales, que estaban en un estado de compresión y por lo tanto eran más resistentes, perduran en el paisaje.</p>
+<ul class="simple">
+<li><p><strong>Valle Anticlinal</strong>: Lo que una vez fue un monte anticlinal ahora es un valle, ya que la erosión ha eliminado por completo su núcleo.</p></li>
+<li><p><strong>Cresta Sinclinal</strong> (o Sinclinal Colgado): Lo que era un valle sinclinal se ha convertido en una cresta o montaña. Esto ocurre porque las capas resistentes del sinclinal, al estar en una posición estructuralmente baja y comprimida, han resistido mejor la erosión generalizada que afectó a los anticlinales circundantes.</p></li>
+</ul>
+<figure class="align-default" id="fig-1479">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/fa/ed/61/faed6136aab7451db607756da0717027.jpg"><img alt="https://i.pinimg.com/1200x/fa/ed/61/faed6136aab7451db607756da0717027.jpg" src="https://i.pinimg.com/1200x/fa/ed/61/faed6136aab7451db607756da0717027.jpg" style="width: 600px;" />
+</a>
+</figure>
+</section>
+</section>
+<section id="isostacia">
+<h3>Isostacia<a class="headerlink" href="#isostacia" title="Link to this heading">#</a></h3>
+<p>La isostasia es el principio de flotación aplicado a la corteza terrestre. Sostiene que la corteza “flota” sobre el manto, que se comporta como un fluido muy denso y viscoso a lo largo del tiempo geológico. La composición química de cada corteza determina su densidad y, por lo tanto, su flotabilidad inherente <span class="bibtex-citation" id="id6">[<a class="reference internal" href="referencias.html#id36" title="G.B. Airy. On the computation of the effect of the attraction of mountain-masses, as disturbing the apparent astronomical latitude of stations in geodetic surveys. Philosophical Transactions of the Royal Society of London, 145:101–104, 1855.">Airy, 1855</a>]</span>.</p>
+<p>Corteza Continental (un promedio de 35-40 km): Está compuesta principalmente por rocas graníticas. Es menos densa (aproximadamente 2.7 g/cm³). Piensa en ella como un bloque de madera.</p>
+<p>Corteza Oceánica (un promedio de 7-10 km): Está compuesta por basalto. Es más densa (aproximadamente 3.0 g/cm³). Piensa en ella como un bloque de un plástico pesado.</p>
+<figure class="align-default" id="fig-4102">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/6a/9d/2f/6a9d2f76427ba1fe4650880540aed4d4.jpg"><img alt="https://i.pinimg.com/1200x/6a/9d/2f/6a9d2f76427ba1fe4650880540aed4d4.jpg" src="https://i.pinimg.com/1200x/6a/9d/2f/6a9d2f76427ba1fe4650880540aed4d4.jpg" style="width: 300px;" />
+</a>
+</figure>
+<p>El principio de Arquímedes, que es la base de la isostasia, nos dice que un objeto flotante desplaza un volumen de fluido equivalente a su peso. Para que un bloque grueso y ligero (continente) esté en equilibrio, necesita hundirse profundamente en el manto para desplazar suficiente material (creando una “raíz”), pero por su gran grosor total, una porción significativa también queda expuesta por encima: la elevación continental.</p>
+<p>Por el contrario, un bloque delgado y denso (corteza oceánica) no necesita hundirse tanto para alcanzar el equilibrio, y al ser tan delgado, su superficie queda a una elevación mucho menor.</p>
+<p>El ajuste isostático es el proceso mediante el cual la litosfera se hunde o se eleva para recuperar el equilibrio isostático después de que se ha añadido o eliminado una carga (masa) en la superficie. Es la respuesta dinámica del planeta para volver a su estado de flotación preferido.</p>
+<p>Un ejemplo clásico de ajuste isostático es el rebote postglacial. Durante las edades de hielo, se acumularon capas de hielo de 2 a 3 kilómetros de espesor sobre los continentes. Este peso inmenso provocó que la corteza debajo se hundiera y se “sumergiera” más en el manto. Al final de la última edad de hielo, hace unos 10 000 años, estos glaciares se fundieron, eliminando la carga. Entonces la corteza comenzó a elevarse lentamente para recuperar su nivel de flotación original. Este proceso, conocido como rebote isostático, todavía está ocurriendo hoy en muchas zonas con valores alrededor de hasta 1 cm por año.</p>
+<p>Otro ejemplo es la erosión de cadenas montañosas. Este proceso ocurre en escalas de tiempo mucho más largas. Cuando se forma una cordillera, la corteza se engrosa y, para soportar la enorme masa de las montañas, desarrolla una “raíz” profunda que se hunde en el manto. Durante millones de años, los ríos, glaciares y deslizamientos erosionan las cimas de las montañas, transportando y eliminando miles de millones de toneladas de roca. A medida que se elimina masa de la superficie, la cordillera se vuelve más “ligera”. Para mantener el equilibrio, toda la placa litosférica se eleva isostáticamente. Este proceso es fundamental porque explica cómo rocas que se formaron a grandes profundidades (como los granitos y las rocas metamórficas) pueden llegar a estar expuestas en la cima de las montañas.</p>
+<figure class="align-default" id="fig-3439">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/97/8e/be/978ebe7d7b7674e02f408304636ddd1c.jpg"><img alt="https://i.pinimg.com/736x/97/8e/be/978ebe7d7b7674e02f408304636ddd1c.jpg" src="https://i.pinimg.com/736x/97/8e/be/978ebe7d7b7674e02f408304636ddd1c.jpg" style="width: 500px;" />
+</a>
+</figure>
+</section>
+</section>
+<hr class="docutils" />
+<section id="morfotectonica-en-colombia-un-laboratorio-vivo">
+<h2>Morfotectónica en Colombia: Un Laboratorio Vivo<a class="headerlink" href="#morfotectonica-en-colombia-un-laboratorio-vivo" title="Link to this heading">#</a></h2>
+<p>Colombia es un escenario privilegiado para el estudio de la morfotectónica debido a la interacción de las placas de Nazca, Suramérica y el Caribe.</p>
+<ul class="simple">
+<li><p><strong>Cratón y Escudo:</strong> El <strong>Escudo Guayanés</strong> en el oriente (Amazonía y Orinoquía) es el núcleo estable con paisajes de bajo relieve y tepuyes (mesas estructurales).</p></li>
+<li><p><strong>Márgenes Activas:</strong> Los Andes colombianos representan un <strong>Arco Volcánico Continental</strong> (Cordillera Central) y zonas de <strong>acrecionamiento</strong> (Cordillera Occidental y Serranía del Baudó).</p></li>
+<li><p><strong>Fallas de Rumbo:</strong> El <strong>Sistema de Fallas de Romeral</strong> y la <strong>Falla de Ibagué</strong> presentan geoformas clásicas como drenajes desplazados, lomos de presión y valles lineales.</p></li>
+<li><p><strong>Relieve Invertido:</strong> En el <strong>Valle Superior del Magdalena</strong>, es posible observar estructuras plegadas donde la erosión ha generado relieves conforme e invertidos sobre rocas sedimentarias.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="marcadores-geomorficos-y-geocronologia-cuantificando-la-actividad-tectonica">
+<h2>Marcadores Geomórficos y Geocronología: Cuantificando la Actividad Tectónica<a class="headerlink" href="#marcadores-geomorficos-y-geocronologia-cuantificando-la-actividad-tectonica" title="Link to this heading">#</a></h2>
+<p>Identificar geoformas tectónicas es solo el primer paso; el objetivo de la morfotectónica cuantitativa es medir <strong>tasas</strong> de deformación (levantamiento, acortamiento, desplazamiento de fallas) <span class="bibtex-citation" id="id7">[<a class="reference internal" href="referencias.html#id52" title="Paul R. Bierman and David R. Montgomery. Key Concepts in Geomorphology. W. H. Freeman, New York, 2013.">Bierman and Montgomery, 2013</a>, <a class="reference internal" href="referencias.html#id34" title="D.W. Burbank and R.S. Anderson. Tectonic Geomorphology. Wiley-Blackwell, Chichester, 2 edition, 2011.">Burbank and Anderson, 2011</a>]</span>. Para ello se utilizan <strong>marcadores geomórficos</strong>: superficies o líneas de referencia de edad conocida (o datable) que originalmente eran horizontales, planas o rectas, y cuya deformación actual permite calcular una tasa cuando se divide el desplazamiento por el tiempo transcurrido:</p>
+<div class="math notranslate nohighlight">
+\[\text{Tasa de deformación} = \frac{\text{Desplazamiento del marcador}}{\text{Edad del marcador}}\]</div>
+<p>Los marcadores geomórficos más utilizados incluyen terrazas fluviales y marinas escalonadas (ver <a class="reference internal" href="aluvial.html#sec-aluvial"><span class="std std-ref">Geomorfología de Ambientes Fluviales</span></a>), abanicos aluviales, morrenas glaciares (ver <a class="reference internal" href="glacial.html#sec-glacial"><span class="std std-ref">Geomorfología Glacial y Periglacial</span></a>), superficies de erosión regionales, y cauces o crestas desplazados por fallas de rumbo (ver la sección de bordes transformantes, arriba). Determinar la tasa de deformación exige, por lo tanto, poder <strong>datar</strong> el marcador con precisión. La siguiente tabla resume los métodos de geocronología más empleados en morfotectónica y su rango de aplicación temporal <span class="bibtex-citation" id="id8">[<a class="reference internal" href="referencias.html#id52" title="Paul R. Bierman and David R. Montgomery. Key Concepts in Geomorphology. W. H. Freeman, New York, 2013.">Bierman and Montgomery, 2013</a>]</span>:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Método de Datación</p></th>
+<th class="head text-left"><p>Material Datado</p></th>
+<th class="head text-left"><p>Rango de Edades Típico</p></th>
+<th class="head text-left"><p>Principio Físico</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Radiocarbono (<span class="math notranslate nohighlight">\(^{14}\)</span>C)</p></td>
+<td class="text-left"><p>Materia orgánica (madera, carbón, conchas)</p></td>
+<td class="text-left"><p>0 – ~50 000 años</p></td>
+<td class="text-left"><p>Decaimiento radiactivo del isótopo cosmogénico <span class="math notranslate nohighlight">\(^{14}\)</span>C tras la muerte del organismo.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Nucleidos Cosmogénicos (<span class="math notranslate nohighlight">\(^{10}\)</span>Be, <span class="math notranslate nohighlight">\(^{26}\)</span>Al, <span class="math notranslate nohighlight">\(^{36}\)</span>Cl)</p></td>
+<td class="text-left"><p>Superficies rocosas expuestas (cantos de morrena, superficies de falla, terrazas)</p></td>
+<td class="text-left"><p>~10² – 10⁶ años</p></td>
+<td class="text-left"><p>Acumulación de isótopos producidos por rayos cósmicos al exponerse la roca a la superficie.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Luminiscencia Ópticamente Estimulada (OSL)</p></td>
+<td class="text-left"><p>Sedimentos (arenas, limos) enterrados</p></td>
+<td class="text-left"><p>10² – 10⁵ años</p></td>
+<td class="text-left"><p>Tiempo transcurrido desde que los granos de cuarzo/feldespato fueron expuestos por última vez a la luz solar.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Series de Uranio (U/Th)</p></td>
+<td class="text-left"><p>Carbonatos (espeleotemas, corales, terrazas marinas)</p></td>
+<td class="text-left"><p>10² – ~600 000 años</p></td>
+<td class="text-left"><p>Decaimiento radiactivo de la serie del uranio hacia el torio.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Trazas de Fisión y (U-Th)/He</p></td>
+<td class="text-left"><p>Minerales accesorios (apatito, circón)</p></td>
+<td class="text-left"><p>10⁵ – 10⁸ años</p></td>
+<td class="text-left"><p>Acumulación de daño cristalino o de helio radiogénico conforme la roca se enfría al ser exhumada.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Paleomagnetismo</p></td>
+<td class="text-left"><p>Secuencias sedimentarias o volcánicas</p></td>
+<td class="text-left"><p>10⁴ – 10⁷ años (correlación con escala de polaridad)</p></td>
+<td class="text-left"><p>Registro de inversiones del campo magnético terrestre preservado en minerales magnéticos.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Un aporte particularmente influyente de la geocronología con nucleidos cosmogénicos ha sido permitir el cálculo de <strong>tasas de denudación integradas a escala de cuenca</strong>, a partir de la concentración de <span class="math notranslate nohighlight">\(^{10}\)</span>Be en los sedimentos del cauce: cuanto más lentamente se erosiona una cuenca, más tiempo permanece cada grano de cuarzo cerca de la superficie acumulando el isótopo, y por lo tanto mayor es su concentración. Esto ha permitido comparar, por primera vez de forma sistemática, las tasas de denudación de largo plazo (10³–10⁵ años) de cordilleras activas como los Andes con las tasas de levantamiento tectónico medidas por geodesia (GPS), evaluando si un orógeno se encuentra en estado estacionario (levantamiento = denudación) o en desequilibrio <span class="bibtex-citation" id="id9">[<a class="reference internal" href="referencias.html#id52" title="Paul R. Bierman and David R. Montgomery. Key Concepts in Geomorphology. W. H. Freeman, New York, 2013.">Bierman and Montgomery, 2013</a>]</span>.</p>
+<section id="metodos-complementarios-de-geocronologia-del-cuaternario">
+<h3>Métodos Complementarios de Geocronología del Cuaternario<a class="headerlink" href="#metodos-complementarios-de-geocronologia-del-cuaternario" title="Link to this heading">#</a></h3>
+<p>La tabla anterior resume los métodos más usados en morfotectónica, pero la caja de herramientas de la <strong>geocronología cuaternaria</strong> es considerablemente más amplia, y la elección del método correcto depende del material disponible en campo y de la ventana temporal de interés <span class="bibtex-citation" id="id10">[<a class="reference internal" href="referencias.html#id55" title="Jay Stratton Noller, Janet M. Sowers, and William R. (eds.) Lettis. Quaternary Geochronology: Methods and Applications. Volume 4 of AGU Reference Shelf. American Geophysical Union, Washington, D.C., 2000.">Noller <em>et al.</em>, 2000</a>, <a class="reference internal" href="referencias.html#id56" title="Mike Walker. Quaternary Dating Methods. John Wiley &amp; Sons, Chichester, 2005.">Walker, 2005</a>]</span>:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Método Adicional</p></th>
+<th class="head text-left"><p>Material Datado</p></th>
+<th class="head text-left"><p>Rango de Edades Típico</p></th>
+<th class="head text-left"><p>Principio Físico</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Dendrocronología</p></td>
+<td class="text-left"><p>Anillos de crecimiento de árboles</p></td>
+<td class="text-left"><p>10⁰ – 10³ años</p></td>
+<td class="text-left"><p>Conteo y correlación de patrones anuales de crecimiento</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Datación de Varvas</p></td>
+<td class="text-left"><p>Sedimentos lacustres laminados</p></td>
+<td class="text-left"><p>10¹ – 10⁴ años</p></td>
+<td class="text-left"><p>Conteo de capas sedimentarias anuales (varvas)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Liquenometría</p></td>
+<td class="text-left"><p>Líquenes sobre superficies rocosas expuestas</p></td>
+<td class="text-left"><p>10¹ – 10³ años</p></td>
+<td class="text-left"><p>Tasa de crecimiento radial conocida de una especie de liquen</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Resonancia de Espín Electrónico (ESR)</p></td>
+<td class="text-left"><p>Minerales en fallas, dientes, conchas</p></td>
+<td class="text-left"><p>10³ – 10⁶ años</p></td>
+<td class="text-left"><p>Acumulación de defectos paramagnéticos inducidos por radiación</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Tefrocronología</p></td>
+<td class="text-left"><p>Capas de ceniza volcánica (tefra) intercaladas en el registro sedimentario</p></td>
+<td class="text-left"><p>Variable (edad de la erupción fuente)</p></td>
+<td class="text-left"><p>Correlación química/mineralógica de una capa de tefra con una erupción de edad conocida</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Barniz de Rocas (<em>Rock Varnish</em>)</p></td>
+<td class="text-left"><p>Recubrimientos de óxidos de Mn-Fe sobre superficies rocosas expuestas</p></td>
+<td class="text-left"><p>10² – 10⁵ años</p></td>
+<td class="text-left"><p>Acumulación gradual de la pátina y su composición isotópica/química</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Racemización de Aminoácidos</p></td>
+<td class="text-left"><p>Conchas, huesos, foraminíferos</p></td>
+<td class="text-left"><p>10³ – 10⁶ años</p></td>
+<td class="text-left"><p>Conversión gradual de aminoácidos de la forma L a la forma D tras la muerte del organismo</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>Compilado a partir de <span class="bibtex-citation" id="id11">Noller <em>et al.</em> [<a class="reference internal" href="referencias.html#id55" title="Jay Stratton Noller, Janet M. Sowers, and William R. (eds.) Lettis. Quaternary Geochronology: Methods and Applications. Volume 4 of AGU Reference Shelf. American Geophysical Union, Washington, D.C., 2000.">2000</a>], Walker [<a class="reference internal" href="referencias.html#id56" title="Mike Walker. Quaternary Dating Methods. John Wiley &amp; Sons, Chichester, 2005.">2005</a>]</span>.</em></p>
+<p>La <strong>tefrocronología</strong> es particularmente valiosa en los Andes colombianos: dado el intenso vulcanismo explosivo de la Cordillera Central (ver <a class="reference internal" href="volcanico.html#sec-volcanico"><span class="std std-ref">Geomorfología de Ambientes Volcánicos</span></a>), las capas de ceniza volcánica intercaladas en perfiles de suelo, morrenas y depósitos aluviales ofrecen horizontes de correlación cronoestratigráfica de gran precisión, permitiendo fechar indirectamente geoformas y depósitos que de otro modo carecerían de material datable directamente <span class="bibtex-citation" id="id12">[<a class="reference internal" href="referencias.html#id55" title="Jay Stratton Noller, Janet M. Sowers, and William R. (eds.) Lettis. Quaternary Geochronology: Methods and Applications. Volume 4 of AGU Reference Shelf. American Geophysical Union, Washington, D.C., 2000.">Noller <em>et al.</em>, 2000</a>]</span>.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="taller-de-autoevaluacion">
+<h2>Taller de Autoevaluación<a class="headerlink" href="#taller-de-autoevaluacion" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Control Estructural:</strong> ¿Cuál es la diferencia fundamental entre una ladera cataclinal y una anaclinal? ¿Cuál de ellas representa un mayor riesgo geológico por deslizamientos en una zona de alta pluviosidad?</p></li>
+<li><p><strong>Patrones de Drenaje:</strong> Si observa un patrón de drenaje sobreimpuesto que atraviesa una cordillera plegada sin desviarse, ¿qué nos dice esto sobre la cronología relativa entre el río y el levantamiento de la cordillera?</p></li>
+<li><p><strong>Ambientes Tectónicos:</strong> Compare las geoformas resultantes de un borde divergente (rift) con las de un borde de rumbo (transformante). ¿Qué importancia tienen los “shutter ridges” para identificar fallas activas?</p></li>
+<li><p><strong>Isostasia:</strong> Explique por qué el rebote isostático tras el derretimiento de un gran glaciar puede causar que áreas costeras experimenten un descenso aparente del nivel del mar.</p></li>
+<li><p><strong>Análisis de Campo:</strong> Utilizando el concepto de buzamiento y rumbo, describa cómo identificaría en el campo una estructura de <em>hogback</em> frente a una <em>cuesta</em>.</p></li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="evolucion.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Teorías Clásicas de la Evolución de Laderas</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="volcanico.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Geomorfología de Ambientes Volcánicos</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#paisajes-tectonicos-al-interior-continental">Paisajes Tectónicos al Interior Continental</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estratos-horizontales">Estratos Horizontales</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#paisajes-en-margenes-continentales">2. Paisajes en Márgenes Continentales</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#margenes-pasivas">Márgenes Pasivas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#margenes-activas">Márgenes Activas:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#geoformas-con-estratos-buzantes">Geoformas con estratos buzantes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#laderas-estructurales">Laderas Estructurales</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-drenaje-controlados-por-la-estructura">Tipos de Drenaje Controlados por la Estructura</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-bordes-activos">Tipos de bordes activos</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-bordes-divergentes-rifting">A. Bordes Divergentes (Rifting)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b-bordes-convergentes-subduccion-y-colision">B. Bordes Convergentes (Subducción y Colisión)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#c-bordes-de-rumbo-o-transformantes">C. Bordes de Rumbo o Transformantes</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paisajes-plegados">Paisajes plegados</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#el-paisaje-jurasico-relieve-conforme">El Paisaje Jurásico (Relieve Conforme)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#el-paisaje-apalachense-relieve-invertido">El Paisaje Apalachense (Relieve Invertido)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#isostacia">Isostacia</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#morfotectonica-en-colombia-un-laboratorio-vivo">Morfotectónica en Colombia: Un Laboratorio Vivo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marcadores-geomorficos-y-geocronologia-cuantificando-la-actividad-tectonica">Marcadores Geomórficos y Geocronología: Cuantificando la Actividad Tectónica</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodos-complementarios-de-geocronologia-del-cuaternario">Métodos Complementarios de Geocronología del Cuaternario</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taller-de-autoevaluacion">Taller de Autoevaluación</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por Edier V. Aristizábal G.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

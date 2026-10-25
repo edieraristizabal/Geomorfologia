@@ -1,0 +1,934 @@
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Geomorfología de Cuencas Hidrográficas &#8212; Geomorfología Aplicada</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="_static/documentation_options.js?v=78d55cf8"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Haz clic para mostrar';</script>
+    <script>let toggleHintHide = 'Haz clic para ocultar';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="_static/translations.js?v=d190bf04"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'cuencas';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="canonical" href="https://edieraristizabal.github.io/Geomorfologia/libro/cuencas.html" />
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Ambientes Torrenciales" href="torrencial.html" />
+    <link rel="prev" title="Erosión Eólica" href="eolica.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Navegación del sitio">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="En esta página">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Geomorfología Aplicada - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="Geomorfología Aplicada - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    GEOMORFOLOGÍA EN AMBIENTES TROPICALES
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte I: Fundamentos de Geomorfología</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="conceptos.html">Conceptos fundamentales en Geomorfología</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evolucion.html">Teorías Clásicas de la Evolución de Laderas</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte II: Procesos Endógenos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="morfotectonica.html">Morfotectónica y geomorfología estructural</a></li>
+<li class="toctree-l1"><a class="reference internal" href="volcanico.html">Geomorfología de Ambientes Volcánicos</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte III: Procesos Exógenos</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="glacial.html">Geomorfología Glacial y Periglacial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="meteorizacion.html">Meteorización: procesos, perfiles y geoformas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MenM.html">Geomorfología de Movimientos en Masa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pluvial.html">Erosión Pluvial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eolica.html">Erosión Eólica</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Geomorfología de Cuencas Hidrográficas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="torrencial.html">Ambientes Torrenciales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aluvial.html">Geomorfología de Ambientes Fluviales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="delta.html">Geomorfología de Ambientes Deltaicos</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Referencias</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="referencias.html">Referencias</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/edieraristizabal/Geomorfologia" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/edieraristizabal/Geomorfologia/edit/master/libro/cuencas.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/edieraristizabal/Geomorfologia/issues/new?title=Issue%20on%20page%20%2Fcuencas.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Abrir un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/cuencas.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Tema" data-bs-title="Tema"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Claro"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Oscuro"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Sistema"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Geomorfología de Cuencas Hidrográficas</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-una-cuenca-hidrografica">1. ¿Qué es una Cuenca Hidrográfica?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#partes-de-una-cuenca">2. Partes de una Cuenca</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ordenes-de-drenaje-strahler">3. Órdenes de Drenaje (Strahler)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cambios-del-canal-nacimiento-a-desembocadura">4. Cambios del Canal (Nacimiento a Desembocadura)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#respuesta-de-la-cuenca-y-medicion-de-caudal">5. Respuesta de la Cuenca y Medición de Caudal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#caudal-solido-y-liquido">Caudal Sólido y Líquido</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medicion-de-caudal-aforo">Medición de Caudal (Aforo)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#significado-de-la-respuesta-de-la-cuenca">6. Significado de la Respuesta de la Cuenca</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#respuesta-lenta-vs-respuesta-rapida">7. Respuesta Lenta vs. Respuesta Rápida</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-que-afectan-la-respuesta-de-la-cuenca">8. Variables que Afectan la Respuesta de la Cuenca</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agua-en-el-suelo-y-permeabilidad-secundaria">9. Agua en el Suelo y Permeabilidad Secundaria</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forma-de-la-cuenca-y-su-respuesta">10. Forma de la Cuenca y su Respuesta</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#efecto-de-la-urbanizacion-en-la-respuesta">11. Efecto de la Urbanización en la Respuesta</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cuencas-hidrograficas-en-colombia">Cuencas Hidrográficas en Colombia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#morfometria-de-cuencas-mas-alla-del-orden-de-strahler">12. Morfometría de Cuencas: Más Allá del Orden de Strahler</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#leyes-de-horton">Leyes de Horton</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-ley-de-hack-longitud-del-cauce-principal-vs-area-de-la-cuenca">La Ley de Hack: Longitud del Cauce Principal vs. Área de la Cuenca</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taller-de-autoevaluacion">Taller de Autoevaluación</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="geomorfologia-de-cuencas-hidrograficas">
+<span id="sec-cuencas"></span><h1>Geomorfología de Cuencas Hidrográficas<a class="headerlink" href="#geomorfologia-de-cuencas-hidrograficas" title="Link to this heading">#</a></h1>
+<p>Este documento explora la cuenca hidrográfica como la unidad fundamental del paisaje, analizando su estructura, los procesos hidrológicos que la gobiernan y cómo su morfología controla la respuesta en caudales.</p>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<p><strong>Objetivos de aprendizaje:</strong></p>
+<ul class="simple">
+<li><p>Definir la cuenca hidrográfica y sus divisorias de aguas como la unidad de gestión del territorio.</p></li>
+<li><p>Jerarquizar la red de drenaje mediante el método de Strahler.</p></li>
+<li><p>Diferenciar los procesos de erosión, transporte y deposición en las diferentes partes de la cuenca.</p></li>
+<li><p>Analizar el impacto de la urbanización en la respuesta hidrológica (hidrogramas) y el riesgo de inundación.</p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<section id="que-es-una-cuenca-hidrografica">
+<h2>1. ¿Qué es una Cuenca Hidrográfica?<a class="headerlink" href="#que-es-una-cuenca-hidrografica" title="Link to this heading">#</a></h2>
+<p>Una <strong>cuenca hidrográfica</strong> es la unidad geomorfológica fundamental. Se define como la superficie total de terreno que drena el agua de la precipitación hacia un punto común de salida (llamado <em>outlet</em>), que puede ser un río, un lago o el mar.</p>
+<figure class="align-default" id="fig-2982">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/48/a7/4b/48a74b7df6e5629486c66003d392e9b8.jpg"><img alt="https://i.pinimg.com/736x/48/a7/4b/48a74b7df6e5629486c66003d392e9b8.jpg" src="https://i.pinimg.com/736x/48/a7/4b/48a74b7df6e5629486c66003d392e9b8.jpg" style="width: 200px;" />
+</a>
+</figure>
+<p>El límite de la cuenca está definido por la <strong>divisoria de aguas</strong> (o <em>watershed divide</em>), una línea imaginaria que sigue las cimas y crestas topográficas y separa los flujos de agua que van en direcciones opuestas.</p>
+<figure class="align-default" id="fig-341">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/e1/5d/da/e15dda02972d286bebc4ad290c87cb61.jpg"><img alt="https://i.pinimg.com/736x/e1/5d/da/e15dda02972d286bebc4ad290c87cb61.jpg" src="https://i.pinimg.com/736x/e1/5d/da/e15dda02972d286bebc4ad290c87cb61.jpg" style="width: 400px;" />
+</a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="partes-de-una-cuenca">
+<h2>2. Partes de una Cuenca<a class="headerlink" href="#partes-de-una-cuenca" title="Link to this heading">#</a></h2>
+<p>Una cuenca se zonifica longitudinalmente en tres partes, cada una dominada por diferentes procesos:</p>
+<ul class="simple">
+<li><p><strong>Cuenca Alta (Recepción):</strong> Es la cabecera.</p>
+<ul>
+<li><p><strong>Características:</strong> Pendientes fuertes, valles en “V” estrechos.</p></li>
+<li><p><strong>Procesos:</strong> Alta energía. Domina la <strong>erosión</strong> y los movimientos en masa. Producción de sedimentos.</p></li>
+</ul>
+</li>
+<li><p><strong>Cuenca Media (Transferencia):</strong></p>
+<ul>
+<li><p><strong>Características:</strong> Pendientes moderadas, el valle se ensancha.</p></li>
+<li><p><strong>Procesos:</strong> Equilibrio entre erosión y deposición. Domina el <strong>transporte</strong> de sedimentos. Aparecen las primeras llanuras de inundación.</p></li>
+</ul>
+</li>
+<li><p><strong>Cuenca Baja (Deposición):</strong></p>
+<ul>
+<li><p><strong>Características:</strong> Pendientes muy bajas, valles amplios, ríos meándricos, llanuras de inundación extensas.</p></li>
+<li><p><strong>Procesos:</strong> Baja energía. Domina la <strong>deposición</strong> de sedimentos. Formación de deltas en la desembocadura.</p></li>
+</ul>
+</li>
+</ul>
+<figure class="align-default" id="fig-1370">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/09/2d/76/092d76f16db55d44623e185d459c9396.jpg"><img alt="https://i.pinimg.com/1200x/09/2d/76/092d76f16db55d44623e185d459c9396.jpg" src="https://i.pinimg.com/1200x/09/2d/76/092d76f16db55d44623e185d459c9396.jpg" style="width: 600px;" />
+</a>
+</figure>
+<figure class="align-default" id="fig-786">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/8a/dd/67/8add6778eb2beae51c8ad0e88a1c10ae.jpg"><img alt="https://i.pinimg.com/736x/8a/dd/67/8add6778eb2beae51c8ad0e88a1c10ae.jpg" src="https://i.pinimg.com/736x/8a/dd/67/8add6778eb2beae51c8ad0e88a1c10ae.jpg" style="width: 600px;" />
+</a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="ordenes-de-drenaje-strahler">
+<h2>3. Órdenes de Drenaje (Strahler)<a class="headerlink" href="#ordenes-de-drenaje-strahler" title="Link to this heading">#</a></h2>
+<p>Es un método para clasificar la jerarquía de la red de drenaje, lo cual es un indicador de la complejidad y el tamaño de la cuenca. El método más común es el de <span class="bibtex-citation" id="id1">Strahler [<a class="reference internal" href="referencias.html#id47" title="A.N. Strahler. Quantitative analysis of watershed geomorphology. Eos, Transactions American Geophysical Union, 38(6):913–920, 1957. doi:10.1029/TR038i006p00913.">1957</a>]</span>:</p>
+<ul class="simple">
+<li><p><strong>Orden 1:</strong> Canales de cabecera que no tienen ningún tributario.</p></li>
+<li><p><strong>Orden 2:</strong> Se forman por la confluencia de dos canales de Orden 1.</p></li>
+<li><p><strong>Orden 3:</strong> Se forman por la confluencia de dos canales de Orden 2.</p></li>
+<li><p><strong>Nota:</strong> Si un canal de orden menor (ej. Orden 1) se une a uno de orden mayor (ej. Orden 2), el canal resultante mantiene el orden mayor (Orden 2).</p></li>
+</ul>
+<p>El orden de la cuenca se define por el orden del río en su desembocadura.</p>
+<figure class="align-default" id="fig-4519">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/f0/cc/09/f0cc09fb205fdb24a71aa2772af339b1.jpg"><img alt="https://i.pinimg.com/736x/f0/cc/09/f0cc09fb205fdb24a71aa2772af339b1.jpg" src="https://i.pinimg.com/736x/f0/cc/09/f0cc09fb205fdb24a71aa2772af339b1.jpg" style="width: 400px;" />
+</a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="cambios-del-canal-nacimiento-a-desembocadura">
+<h2>4. Cambios del Canal (Nacimiento a Desembocadura)<a class="headerlink" href="#cambios-del-canal-nacimiento-a-desembocadura" title="Link to this heading">#</a></h2>
+<p>A medida que el río avanza por las partes de la cuenca, sus características cambian de forma predecible, formando el <strong>perfil longitudinal</strong> (un perfil cóncavo de equilibrio):</p>
+<ul class="simple">
+<li><p><strong>Nacimiento (Orden 1):</strong> Pendiente muy alta, descarga (caudal) baja, sustrato grueso (bloques, cantos), canal estrecho.</p></li>
+<li><p><strong>Curso Medio:</strong> Pendiente moderada, descarga creciente (por unión de tributarios), sustrato de gravas y arenas.</p></li>
+<li><p><strong>Desembocadura (Orden alto):</strong> Pendiente casi nula, descarga máxima, sustrato fino (limos, arcillas), canal ancho y profundo.</p></li>
+</ul>
+<figure class="align-default" id="fig-5466">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/0f/2c/7e/0f2c7e75a1d34441f4e567b40d81582c.jpg"><img alt="https://i.pinimg.com/736x/0f/2c/7e/0f2c7e75a1d34441f4e567b40d81582c.jpg" src="https://i.pinimg.com/736x/0f/2c/7e/0f2c7e75a1d34441f4e567b40d81582c.jpg" style="width: 400px;" />
+</a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="respuesta-de-la-cuenca-y-medicion-de-caudal">
+<h2>5. Respuesta de la Cuenca y Medición de Caudal<a class="headerlink" href="#respuesta-de-la-cuenca-y-medicion-de-caudal" title="Link to this heading">#</a></h2>
+<section id="caudal-solido-y-liquido">
+<h3>Caudal Sólido y Líquido<a class="headerlink" href="#caudal-solido-y-liquido" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Caudal Líquido (<span class="math notranslate nohighlight">\(Q\)</span>):</strong> Es el volumen de agua que pasa por una sección transversal del río por unidad de tiempo. Se mide en <span class="math notranslate nohighlight">\(m^3/s\)</span>.</p></li>
+<li><p><strong>Caudal Sólido (<span class="math notranslate nohighlight">\(Q_s\)</span>):</strong> Es la cantidad (masa o volumen) de sedimento que transporta el río por unidad de tiempo.</p></li>
+</ul>
+</section>
+<section id="medicion-de-caudal-aforo">
+<h3>Medición de Caudal (Aforo)<a class="headerlink" href="#medicion-de-caudal-aforo" title="Link to this heading">#</a></h3>
+<p>El <strong>aforo</strong> es la medición del caudal. Se realiza en una <strong>sección</strong> del canal. La fórmula básica es:</p>
+<div class="math notranslate nohighlight">
+\[Q = A \times V\]</div>
+<p>Donde:</p>
+<ul class="simple">
+<li><p><strong><span class="math notranslate nohighlight">\(Q\)</span>:</strong> Caudal (<span class="math notranslate nohighlight">\(m^3/s\)</span>)</p></li>
+<li><p><strong><span class="math notranslate nohighlight">\(A\)</span>:</strong> Área de la sección transversal (<span class="math notranslate nohighlight">\(m^2\)</span>). Se calcula midiendo la profundidad en varios puntos a lo ancho del canal.</p></li>
+<li><p><strong><span class="math notranslate nohighlight">\(V\)</span>:</strong> Velocidad promedio del flujo (<span class="math notranslate nohighlight">\(m/s\)</span>). Se mide con instrumentos como un correntómetro o molinete.</p></li>
+</ul>
+<figure class="align-default" id="fig-8332">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/31/6a/93/316a93232c0b102947cdf0bb5c99f630.jpg"><img alt="https://i.pinimg.com/1200x/31/6a/93/316a93232c0b102947cdf0bb5c99f630.jpg" src="https://i.pinimg.com/1200x/31/6a/93/316a93232c0b102947cdf0bb5c99f630.jpg" style="width: 300px;" />
+</a>
+</figure>
+</section>
+</section>
+<hr class="docutils" />
+<section id="significado-de-la-respuesta-de-la-cuenca">
+<h2>6. Significado de la Respuesta de la Cuenca<a class="headerlink" href="#significado-de-la-respuesta-de-la-cuenca" title="Link to this heading">#</a></h2>
+<p>La <strong>respuesta</strong> de una cuenca es la forma en que transforma una entrada de precipitación (lluvia) en una salida de caudal (el hidrograma).</p>
+<p>Cuando llueve, el agua sigue varias rutas antes de llegar al canal:</p>
+<ol class="arabic simple">
+<li><p><strong>Interceptación:</strong> El agua es capturada por la vegetación y se evapora (nunca toca el suelo).</p></li>
+<li><p><strong>Infiltración:</strong> El agua penetra en el suelo.</p></li>
+<li><p><strong>Escorrentía Superficial (Flujo <em>Overland</em>):</strong> Si la lluvia es más intensa que la capacidad de infiltración, el agua fluye sobre la superficie.</p></li>
+<li><p><strong>Flujo Subsuperficial (<em>Throughflow</em>):</strong> El agua se mueve lateralmente dentro del suelo.</p></li>
+<li><p><strong>Flujo Profundo (Agua Subterránea):</strong> El agua percola profundamente, recarga el acuífero y se mueve muy lentamente hacia el río.</p></li>
+</ol>
+<figure class="align-default" id="fig-8307">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/9a/5a/dc/9a5adcaebff1ed6dd88495cf94d1581a.jpg"><img alt="https://i.pinimg.com/736x/9a/5a/dc/9a5adcaebff1ed6dd88495cf94d1581a.jpg" src="https://i.pinimg.com/736x/9a/5a/dc/9a5adcaebff1ed6dd88495cf94d1581a.jpg" style="width: 700px;" />
+</a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="respuesta-lenta-vs-respuesta-rapida">
+<h2>7. Respuesta Lenta vs. Respuesta Rápida<a class="headerlink" href="#respuesta-lenta-vs-respuesta-rapida" title="Link to this heading">#</a></h2>
+<p>El hidrograma (gráfico de caudal vs. tiempo) muestra dos componentes:</p>
+<ul class="simple">
+<li><p><strong>Respuesta Rápida (Flujo Pico):</strong></p>
+<ul>
+<li><p><strong>Definición:</strong> El aumento rápido del caudal durante e inmediatamente después de una tormenta.</p></li>
+<li><p><strong>Flujo Dominante:</strong> Principalmente la <strong>Escorrentía Superficial</strong>. También incluye el flujo subsuperficial rápido (ver Q9).</p></li>
+<li><p><strong>Causa:</strong> La precipitación supera la capacidad de infiltración. Genera crecidas súbitas.</p></li>
+</ul>
+</li>
+<li><p><strong>Respuesta Lenta (Flujo Base):</strong></p>
+<ul>
+<li><p><strong>Definición:</strong> El caudal sostenido del río que existe antes y mucho después de la tormenta.</p></li>
+<li><p><strong>Flujo Dominante:</strong> <strong>Flujo Profundo</strong> (agua subterránea).</p></li>
+<li><p><strong>Causa:</strong> Liberación lenta y constante del agua almacenada en los acuíferos.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="variables-que-afectan-la-respuesta-de-la-cuenca">
+<h2>8. Variables que Afectan la Respuesta de la Cuenca<a class="headerlink" href="#variables-que-afectan-la-respuesta-de-la-cuenca" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Geología:</strong> Rocas permeables (calizas, areniscas) fomentan la infiltración y una respuesta <strong>lenta</strong>. Rocas impermeables (granitos, arcillolitas) fomentan la escorrentía y una respuesta <strong>rápida</strong>.</p></li>
+<li><p><strong>Suelos:</strong> Suelos gruesos y profundos = respuesta lenta. Suelos delgados o arcillosos = respuesta rápida.</p></li>
+<li><p><strong>Cobertura Vegetal:</strong> Los bosques interceptan la lluvia, protegen el suelo y sus raíces facilitan la infiltración. Una alta cobertura vegetal genera una respuesta <strong>lenta</strong>.</p></li>
+<li><p><strong>Pendiente:</strong> Pendientes fuertes = respuesta rápida.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="agua-en-el-suelo-y-permeabilidad-secundaria">
+<h2>9. Agua en el Suelo y Permeabilidad Secundaria<a class="headerlink" href="#agua-en-el-suelo-y-permeabilidad-secundaria" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Agua Higroscópica:</strong> Agua adherida fuertemente a las partículas del suelo; no disponible para las plantas.</p></li>
+<li><p><strong>Punto de Marchitez Permanente (PMP):</strong> Nivel de humedad donde solo queda agua higroscópica.</p></li>
+<li><p><strong>Agua Capilar:</strong> Agua retenida en los microporos por tensión superficial. Es el agua disponible para las plantas.</p></li>
+<li><p><strong>Capacidad de Campo (CC):</strong> Humedad que queda en el suelo después de que el agua gravitacional ha drenado.</p></li>
+<li><p><strong>Agua Gravitacional:</strong> Agua en los macroporos que drena por gravedad. Esta es el agua que se convierte en flujo subsuperficial y profundo.</p></li>
+<li><p><strong>Permeabilidad Secundaria:</strong> Se refiere a la infiltración y flujo que no ocurre a través de los poros del suelo (matriz), sino a través de <strong>macroporos</strong> (fracturas, grietas de desecación, canales de raíces, madrigueras). Esta permeabilidad tiene un efecto dual: permite que el agua se infiltre <em>rápidamente</em> (reduciendo la escorrentía superficial) pero también le permite moverse <em>rápidamente</em> como flujo subsuperficial, contribuyendo a la respuesta rápida del hidrograma.</p></li>
+</ul>
+<figure class="align-default" id="fig-3295">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/db/d6/58/dbd658e9049f882148da51be58eb5aa2.jpg"><img alt="https://i.pinimg.com/736x/db/d6/58/dbd658e9049f882148da51be58eb5aa2.jpg" src="https://i.pinimg.com/736x/db/d6/58/dbd658e9049f882148da51be58eb5aa2.jpg" style="width: 600px;" />
+</a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="forma-de-la-cuenca-y-su-respuesta">
+<h2>10. Forma de la Cuenca y su Respuesta<a class="headerlink" href="#forma-de-la-cuenca-y-su-respuesta" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Cuenca Ovalada (o Redondeada):</strong> Los tributarios tienen longitudes similares. El agua de todas las partes de la cuenca llega al punto de salida casi al mismo tiempo.</p>
+<ul>
+<li><p><strong>Respuesta:</strong> Muy <strong>rápida</strong> y <strong>picuda</strong>. Alto riesgo de crecidas.</p></li>
+</ul>
+</li>
+<li><p><strong>Cuenca Alargada:</strong> Los tributarios están escalonados. El agua de las cabeceras tarda mucho más en llegar a la salida que el agua de la parte baja.</p>
+<ul>
+<li><p><strong>Respuesta:</strong> Más <strong>lenta</strong> y <strong>atenuada</strong> (el pico es más bajo y se extiende por más tiempo).</p></li>
+</ul>
+</li>
+</ul>
+<figure class="align-default" id="fig-382">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/5b/b7/46/5bb746ebf650e27663fd8e64b25ea642.jpg"><img alt="https://i.pinimg.com/1200x/5b/b7/46/5bb746ebf650e27663fd8e64b25ea642.jpg" src="https://i.pinimg.com/1200x/5b/b7/46/5bb746ebf650e27663fd8e64b25ea642.jpg" style="width: 400px;" />
+</a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="efecto-de-la-urbanizacion-en-la-respuesta">
+<h2>11. Efecto de la Urbanización en la Respuesta<a class="headerlink" href="#efecto-de-la-urbanizacion-en-la-respuesta" title="Link to this heading">#</a></h2>
+<p>La urbanización (impermeabilización de suelos con concreto y asfalto) altera drásticamente la hidrología.</p>
+<ol class="arabic simple">
+<li><p><strong>Reduce la Infiltración:</strong> Casi a cero en áreas pavimentadas.</p></li>
+<li><p><strong>Reduce la Interceptación:</strong> Se elimina la cobertura vegetal.</p></li>
+<li><p><strong>Aumenta la Escorrentía:</strong> Todo lo que no se infiltra, se convierte en escorrentía superficial.</p></li>
+</ol>
+<p><strong>Resultado en el Hidrograma:</strong></p>
+<ul class="simple">
+<li><p>La respuesta es <strong>extremadamente rápida</strong>.</p></li>
+<li><p>El <strong>caudal pico es mucho mayor</strong> (más volumen de agua en menos tiempo).</p></li>
+<li><p>El flujo base desaparece (no hay recarga de acuíferos).</p></li>
+</ul>
+<p><strong>Efecto en los Periodos de Retorno:</strong>
+La urbanización <strong>aumenta la magnitud del caudal pico para un mismo periodo de retorno</strong>. Por ejemplo, una tormenta que antes (sin urbanizar) causaba una inundación con periodo de retorno de 10 años, ahora (urbanizada) puede causar un caudal pico que antes solo se veía cada 50 o 100 años. El sistema se vuelve mucho más propenso a inundaciones frecuentes y severas.</p>
+<figure class="align-default" id="fig-7885">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/b8/a9/60/b8a9603575787606d8caff50ed0deb49.jpg"><img alt="https://i.pinimg.com/736x/b8/a9/60/b8a9603575787606d8caff50ed0deb49.jpg" src="https://i.pinimg.com/736x/b8/a9/60/b8a9603575787606d8caff50ed0deb49.jpg" style="width: 700px;" />
+</a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="cuencas-hidrograficas-en-colombia">
+<h2>Cuencas Hidrográficas en Colombia<a class="headerlink" href="#cuencas-hidrograficas-en-colombia" title="Link to this heading">#</a></h2>
+<p>Colombia cuenta con cinco grandes regiones hidrográficas (Amazonas, Orinoco, Caribe, Pacífico y Catatumbo).</p>
+<ul class="simple">
+<li><p><strong>Cuenca del Magdalena-Cauca:</strong> Es la más importante desde el punto de vista socioeconómico, drenando el 24% del territorio nacional. Es una cuenca de gran complejidad tectónica y climática.</p></li>
+<li><p><strong>Cuencas del Pacífico:</strong> Caracterizadas por longitudes cortas, pendientes extremas y una de las pluviosidades más altas del mundo (ej. cuenca del río Atrato), lo que genera caudales específicos altísimos y gran transporte de sedimentos.</p></li>
+<li><p><strong>Gestión de Cuencas:</strong> En Colombia, las <strong>POMCA</strong> (Planes de Ordenación y Manejo de Cuencas Hidrográficas) son el instrumento legal para la gestión del riesgo y el recurso hídrico.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="morfometria-de-cuencas-mas-alla-del-orden-de-strahler">
+<h2>12. Morfometría de Cuencas: Más Allá del Orden de Strahler<a class="headerlink" href="#morfometria-de-cuencas-mas-alla-del-orden-de-strahler" title="Link to this heading">#</a></h2>
+<p>La jerarquización de Strahler (Sección 3) es solo el punto de partida de la <strong>morfometría de cuencas</strong>, el análisis cuantitativo sistemático de la geometría de las redes de drenaje. Robert Horton, precursor de este enfoque, observó que ciertas proporciones entre variables de la red de drenaje se mantienen notablemente constantes de una cuenca a otra, lo que sugiere que las redes fluviales no son aleatorias sino el resultado de procesos físicos que producen una organización jerárquica predecible <span class="bibtex-citation" id="id2">[<a class="reference internal" href="referencias.html#id52" title="Paul R. Bierman and David R. Montgomery. Key Concepts in Geomorphology. W. H. Freeman, New York, 2013.">Bierman and Montgomery, 2013</a>, <a class="reference internal" href="referencias.html#id47" title="A.N. Strahler. Quantitative analysis of watershed geomorphology. Eos, Transactions American Geophysical Union, 38(6):913–920, 1957. doi:10.1029/TR038i006p00913.">Strahler, 1957</a>]</span>.</p>
+<section id="leyes-de-horton">
+<h3>Leyes de Horton<a class="headerlink" href="#leyes-de-horton" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Ley de los Números de Canal:</strong> La razón entre el número de canales de un orden dado (<span class="math notranslate nohighlight">\(N_u\)</span>) y el número de canales del orden inmediatamente superior (<span class="math notranslate nohighlight">\(N_{u+1}\)</span>) es aproximadamente constante para todos los órdenes de una cuenca. Esta constante se conoce como la <strong>razón de bifurcación</strong> (<span class="math notranslate nohighlight">\(R_b\)</span>):</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[R_b=\frac{N_u}{N_{u+1}}\]</div>
+<ul class="simple">
+<li><p><strong>Ley de las Longitudes de Canal:</strong> De forma análoga, la longitud promedio de los canales tiende a aumentar geométricamente con el orden, según una razón de longitud (<span class="math notranslate nohighlight">\(R_L\)</span>) también aproximadamente constante entre órdenes sucesivos <span class="bibtex-citation" id="id3">[<a class="reference internal" href="referencias.html#id52" title="Paul R. Bierman and David R. Montgomery. Key Concepts in Geomorphology. W. H. Freeman, New York, 2013.">Bierman and Montgomery, 2013</a>]</span>.</p></li>
+</ul>
+<p>En la mayoría de las cuencas naturales, <span class="math notranslate nohighlight">\(R_b\)</span> toma valores entre 3 y 5. Valores de <span class="math notranslate nohighlight">\(R_b\)</span> inusualmente altos o bajos pueden indicar un fuerte control estructural o litológico sobre la red de drenaje (ver <a class="reference internal" href="morfotectonica.html#sec-morfotectonica"><span class="std std-ref">Morfotectónica y geomorfología estructural</span></a>), en lugar de un desarrollo puramente erosivo “libre”.</p>
+</section>
+<section id="la-ley-de-hack-longitud-del-cauce-principal-vs-area-de-la-cuenca">
+<h3>La Ley de Hack: Longitud del Cauce Principal vs. Área de la Cuenca<a class="headerlink" href="#la-ley-de-hack-longitud-del-cauce-principal-vs-area-de-la-cuenca" title="Link to this heading">#</a></h3>
+<p>Otra relación morfométrica robusta, documentada por John Hack, vincula la longitud del cauce principal (<span class="math notranslate nohighlight">\(L\)</span>) con el área de la cuenca que drena (<span class="math notranslate nohighlight">\(A\)</span>) mediante una ley de potencia <span class="bibtex-citation" id="id4">[<a class="reference internal" href="referencias.html#id52" title="Paul R. Bierman and David R. Montgomery. Key Concepts in Geomorphology. W. H. Freeman, New York, 2013.">Bierman and Montgomery, 2013</a>]</span>:</p>
+<div class="math notranslate nohighlight">
+\[L=cA^{h}\]</div>
+<p>Donde <span class="math notranslate nohighlight">\(c\)</span> es una constante y el exponente <span class="math notranslate nohighlight">\(h\)</span> toma típicamente valores cercanos a 0.6 en cuencas de todo el mundo, un valor notablemente consistente entre climas y litologías muy distintos. Este exponente, ligeramente mayor a 0.5 (el valor esperado si las cuencas fueran geométricamente similares en todas las escalas), implica que las cuencas grandes tienden a ser proporcionalmente más alargadas que las cuencas pequeñas, un patrón con implicaciones directas sobre la forma del hidrograma (ver Sección 10, arriba) <span class="bibtex-citation" id="id5">[<a class="reference internal" href="referencias.html#id52" title="Paul R. Bierman and David R. Montgomery. Key Concepts in Geomorphology. W. H. Freeman, New York, 2013.">Bierman and Montgomery, 2013</a>]</span>.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Herramienta Morfométrica</p></th>
+<th class="head text-left"><p>Qué Cuantifica</p></th>
+<th class="head text-left"><p>Aplicación Práctica</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Razón de Bifurcación (<span class="math notranslate nohighlight">\(R_b\)</span>)</p></td>
+<td class="text-left"><p>Grado de ramificación de la red de drenaje</p></td>
+<td class="text-left"><p>Detectar control estructural/litológico anómalo</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Razón de Longitud (<span class="math notranslate nohighlight">\(R_L\)</span>)</p></td>
+<td class="text-left"><p>Tasa de crecimiento de la longitud de canal con el orden</p></td>
+<td class="text-left"><p>Comparar la eficiencia de drenaje entre cuencas</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Curva/Integral Hipsométrico (ver <a class="reference internal" href="evolucion.html#sec-evolucion"><span class="std std-ref">Teorías Clásicas de la Evolución de Laderas</span></a>)</p></td>
+<td class="text-left"><p>Distribución de área con la elevación (etapa de disección)</p></td>
+<td class="text-left"><p>Inferir el “estado” evolutivo relativo de una cuenca</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Ley de Hack (<span class="math notranslate nohighlight">\(L=cA^h\)</span>)</p></td>
+<td class="text-left"><p>Relación entre longitud del cauce principal y área de cuenca</p></td>
+<td class="text-left"><p>Predecir la forma y el tiempo de concentración de una cuenca no instrumentada</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Estas herramientas morfométricas, calculables directamente a partir de un Modelo Digital de Elevación, permiten caracterizar objetivamente cuencas no instrumentadas —una situación común en buena parte del territorio colombiano— y son la base cuantitativa que sustenta muchos de los criterios cualitativos de forma y respuesta hidrológica discutidos en la Sección 10 <span class="bibtex-citation" id="id6">[<a class="reference internal" href="referencias.html#id52" title="Paul R. Bierman and David R. Montgomery. Key Concepts in Geomorphology. W. H. Freeman, New York, 2013.">Bierman and Montgomery, 2013</a>]</span>.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="taller-de-autoevaluacion">
+<h2>Taller de Autoevaluación<a class="headerlink" href="#taller-de-autoevaluacion" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Órdenes de Drenaje:</strong> Dado un mapa de una red de drenaje, identifique los canales de orden 1, 2 y 3 según Strahler. ¿De qué orden es la cuenca si su río principal es de orden 4?</p></li>
+<li><p><strong>Respuesta Hidrológica:</strong> Explique por qué una cuenca ovalada tiende a producir crecidas más peligrosas que una cuenca alargada.</p></li>
+<li><p><strong>Urbanización:</strong> ¿Cómo afecta la pavimentación de una cuenca al tiempo de retraso (<em>lag time</em>) entre la tormenta y el pico del hidrograma?</p></li>
+<li><p><strong>Perfil Longitudinal:</strong> Describa cómo cambia el sustrato del lecho desde la cuenca alta hasta la desembocadura. ¿Por qué ocurre este cambio?</p></li>
+<li><p><strong>Balance Hidráulico:</strong> Si un río tiene un área de sección de 50 m² y una velocidad de 2 m/s, ¿cuál es su caudal? Si aguas abajo el área aumenta a 100 m² y no hay tributarios, ¿cuál será la nueva velocidad promedio?</p></li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="eolica.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Erosión Eólica</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="torrencial.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Ambientes Torrenciales</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-una-cuenca-hidrografica">1. ¿Qué es una Cuenca Hidrográfica?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#partes-de-una-cuenca">2. Partes de una Cuenca</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ordenes-de-drenaje-strahler">3. Órdenes de Drenaje (Strahler)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cambios-del-canal-nacimiento-a-desembocadura">4. Cambios del Canal (Nacimiento a Desembocadura)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#respuesta-de-la-cuenca-y-medicion-de-caudal">5. Respuesta de la Cuenca y Medición de Caudal</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#caudal-solido-y-liquido">Caudal Sólido y Líquido</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medicion-de-caudal-aforo">Medición de Caudal (Aforo)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#significado-de-la-respuesta-de-la-cuenca">6. Significado de la Respuesta de la Cuenca</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#respuesta-lenta-vs-respuesta-rapida">7. Respuesta Lenta vs. Respuesta Rápida</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-que-afectan-la-respuesta-de-la-cuenca">8. Variables que Afectan la Respuesta de la Cuenca</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agua-en-el-suelo-y-permeabilidad-secundaria">9. Agua en el Suelo y Permeabilidad Secundaria</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forma-de-la-cuenca-y-su-respuesta">10. Forma de la Cuenca y su Respuesta</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#efecto-de-la-urbanizacion-en-la-respuesta">11. Efecto de la Urbanización en la Respuesta</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cuencas-hidrograficas-en-colombia">Cuencas Hidrográficas en Colombia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#morfometria-de-cuencas-mas-alla-del-orden-de-strahler">12. Morfometría de Cuencas: Más Allá del Orden de Strahler</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#leyes-de-horton">Leyes de Horton</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#la-ley-de-hack-longitud-del-cauce-principal-vs-area-de-la-cuenca">La Ley de Hack: Longitud del Cauce Principal vs. Área de la Cuenca</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taller-de-autoevaluacion">Taller de Autoevaluación</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por Edier V. Aristizábal G.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

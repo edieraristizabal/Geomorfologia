@@ -1,0 +1,792 @@
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Geomorfología de Ambientes Deltaicos &#8212; Geomorfología Aplicada</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="_static/documentation_options.js?v=78d55cf8"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Haz clic para mostrar';</script>
+    <script>let toggleHintHide = 'Haz clic para ocultar';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="_static/translations.js?v=d190bf04"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'delta';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="canonical" href="https://edieraristizabal.github.io/Geomorfologia/libro/delta.html" />
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Referencias" href="referencias.html" />
+    <link rel="prev" title="Geomorfología de Ambientes Fluviales" href="aluvial.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Navegación del sitio">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="En esta página">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Geomorfología Aplicada - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="Geomorfología Aplicada - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Búsqueda</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    GEOMORFOLOGÍA EN AMBIENTES TROPICALES
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte I: Fundamentos de Geomorfología</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="conceptos.html">Conceptos fundamentales en Geomorfología</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evolucion.html">Teorías Clásicas de la Evolución de Laderas</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte II: Procesos Endógenos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="morfotectonica.html">Morfotectónica y geomorfología estructural</a></li>
+<li class="toctree-l1"><a class="reference internal" href="volcanico.html">Geomorfología de Ambientes Volcánicos</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte III: Procesos Exógenos</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="glacial.html">Geomorfología Glacial y Periglacial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="meteorizacion.html">Meteorización: procesos, perfiles y geoformas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MenM.html">Geomorfología de Movimientos en Masa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pluvial.html">Erosión Pluvial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eolica.html">Erosión Eólica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cuencas.html">Geomorfología de Cuencas Hidrográficas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="torrencial.html">Ambientes Torrenciales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aluvial.html">Geomorfología de Ambientes Fluviales</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Geomorfología de Ambientes Deltaicos</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Referencias</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="referencias.html">Referencias</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/edieraristizabal/Geomorfologia" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Repositorio de origen"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/edieraristizabal/Geomorfologia/edit/master/libro/delta.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/edieraristizabal/Geomorfologia/issues/new?title=Issue%20on%20page%20%2Fdelta.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Abrir un problema"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/delta.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Tema" data-bs-title="Tema"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Claro"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Oscuro"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Sistema"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Geomorfología de Ambientes Deltaicos</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-un-delta">1. ¿Qué es un Delta?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proceso-de-formacion-de-un-delta">2. Proceso de Formación de un Delta</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#partes-de-un-delta-seccion-transversal">3. Partes de un Delta (Sección Transversal)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-delta-clasificacion-morfologica">4. Tipos de Delta (Clasificación Morfológica)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delta-dominado-por-el-rio-river-dominated-delta">4.1. Delta Dominado por el Río (<em>River-Dominated Delta</em>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delta-dominado-por-las-olas-wave-dominated-delta">4.2. Delta Dominado por las Olas (<em>Wave-Dominated Delta</em>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delta-dominado-por-las-mareas-tide-dominated-delta">4.3. Delta Dominado por las Mareas (<em>Tide-Dominated Delta</em>)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemas-deltaicos-en-colombia">Sistemas Deltaicos en Colombia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-balance-sedimentario-de-un-delta-progradacion-subsidencia-y-nivel-del-mar">5. El Balance Sedimentario de un Delta: Progradación, Subsidencia y Nivel del Mar</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#impactos-humanos-en-los-sistemas-deltaicos">6. Impactos Humanos en los Sistemas Deltaicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#avulsion-y-el-ciclo-de-lobulos-deltaicos">7. Avulsión y el Ciclo de Lóbulos Deltaicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taller-de-autoevaluacion">Taller de Autoevaluación</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="geomorfologia-de-ambientes-deltaicos">
+<span id="sec-delta"></span><h1>Geomorfología de Ambientes Deltaicos<a class="headerlink" href="#geomorfologia-de-ambientes-deltaicos" title="Link to this heading">#</a></h1>
+<p>Los <strong>deltas</strong> son uno de los ambientes de deposición más importantes y complejos de la Tierra, formados en la interfaz entre un río y un cuerpo de agua estancada (un mar, lago o estuario). Su morfología y estructura están controladas por un delicado balance entre la fuerza del río y la energía del cuerpo receptor (olas, mareas y densidad del agua) <span class="bibtex-citation" id="id1">[<a class="reference internal" href="referencias.html#id50" title="W.E. Galloway. Process framework for describing the morphologic and stratigraphic evolution of deltaic depositional systems. In M.L. Broussard, editor, Deltas, Models for Exploration, pages 87–98. Houston Geological Society, Houston, TX, 1975.">Galloway, 1975</a>]</span>.</p>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<p><strong>Objetivos de aprendizaje:</strong></p>
+<ul class="simple">
+<li><p>Comprender las condiciones necesarias para la formación y progradación de un delta.</p></li>
+<li><p>Identificar las partes de un delta en sección transversal (plano de delta, frente de delta, prodelta).</p></li>
+<li><p>Clasificar los deltas según el agente de control dominante (río, olas o mareas).</p></li>
+<li><p>Analizar ejemplos locales de sistemas deltaicos colombianos y su importancia ambiental.</p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<section id="que-es-un-delta">
+<h2>1. ¿Qué es un Delta?<a class="headerlink" href="#que-es-un-delta" title="Link to this heading">#</a></h2>
+<p>Un delta es un cuerpo de sedimento formado por la <strong>deposición aluvial</strong> de material transportado por un río que desemboca en un cuerpo de agua relativamente estancada. El término se deriva de la forma triangular (similar a la letra griega mayúscula delta, <span class="math notranslate nohighlight">\(\Delta\)</span>) del delta del Nilo.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/f5/0e/68/f50e68ca70fceeb82fd31650b806df7b.jpg"><img alt="https://i.pinimg.com/736x/f5/0e/68/f50e68ca70fceeb82fd31650b806df7b.jpg" src="https://i.pinimg.com/736x/f5/0e/68/f50e68ca70fceeb82fd31650b806df7b.jpg" style="width: 400px;" />
+</a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="proceso-de-formacion-de-un-delta">
+<h2>2. Proceso de Formación de un Delta<a class="headerlink" href="#proceso-de-formacion-de-un-delta" title="Link to this heading">#</a></h2>
+<p>La formación de un delta requiere dos condiciones fundamentales:</p>
+<ol class="arabic simple">
+<li><p><strong>Suministro Sólido (Carga de Sedimentos):</strong> El río debe transportar una cantidad significativa de sedimento (arena, limo y arcilla).</p></li>
+<li><p><strong>Baja Energía del Receptor:</strong> La energía del cuerpo receptor (olas, mareas) debe ser lo suficientemente baja para que los sedimentos se acumulen más rápido de lo que son removidos y dispersados.</p></li>
+</ol>
+<p>Cuando el río entra en el cuerpo de agua, su velocidad y turbulencia disminuyen abruptamente, haciendo que su capacidad de transporte colapse. Los sedimentos caen por decantación (suspensión) y se apilan, iniciando la <strong>progradación</strong> (crecimiento) del delta hacia el mar.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/65/35/0f/65350f6967145979ae46aa74a1935438.jpg"><img alt="https://i.pinimg.com/1200x/65/35/0f/65350f6967145979ae46aa74a1935438.jpg" src="https://i.pinimg.com/1200x/65/35/0f/65350f6967145979ae46aa74a1935438.jpg" style="width: 600px;" />
+</a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="partes-de-un-delta-seccion-transversal">
+<h2>3. Partes de un Delta (Sección Transversal)<a class="headerlink" href="#partes-de-un-delta-seccion-transversal" title="Link to this heading">#</a></h2>
+<p>Un delta activo se construye hacia el cuerpo receptor y exhibe una estructura clásica de tres capas o planos que reflejan la disminución progresiva de la energía del flujo <span class="bibtex-citation" id="id2">[<a class="reference internal" href="referencias.html#id50" title="W.E. Galloway. Process framework for describing the morphologic and stratigraphic evolution of deltaic depositional systems. In M.L. Broussard, editor, Deltas, Models for Exploration, pages 87–98. Houston Geological Society, Houston, TX, 1975.">Galloway, 1975</a>]</span>:</p>
+<ol class="arabic simple">
+<li><p><strong>Plano de Delta (Delta Plain):</strong></p>
+<ul class="simple">
+<li><p>Es la parte subaérea (por encima del agua), o superficialmente sumergida, más cercana a la tierra.</p></li>
+<li><p>Está dominada por la <strong>deposición fluvial</strong> (canales distributarios) y los procesos subaéreos (flujo en llanura de inundación, ciénagas, pantanos).</p></li>
+</ul>
+</li>
+<li><p><strong>Frente de Delta (Delta Front):</strong></p>
+<ul class="simple">
+<li><p>Es la porción más empinada y abrupta del delta, donde el material más grueso (arena) se deposita rápidamente después de que el río pierde velocidad.</p></li>
+<li><p>Es la zona de mayor inestabilidad, propensa a la falla y el deslizamiento de sedimentos.</p></li>
+</ul>
+</li>
+<li><p><strong>Prodelta (Prodelta):</strong></p>
+<ul class="simple">
+<li><p>Es la porción subacuática y de menor pendiente, más alejada del canal.</p></li>
+<li><p>Está compuesta por los sedimentos más finos (limo y arcilla) que son transportados en suspensión lejos del frente del delta.</p></li>
+</ul>
+</li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="https://i.pinimg.com/736x/48/ed/55/48ed559b01775c35a0ab91e39ecdfc13.jpg"><img alt="https://i.pinimg.com/736x/48/ed/55/48ed559b01775c35a0ab91e39ecdfc13.jpg" src="https://i.pinimg.com/736x/48/ed/55/48ed559b01775c35a0ab91e39ecdfc13.jpg" style="width: 700px;" />
+</a>
+</figure>
+</section>
+<hr class="docutils" />
+<section id="tipos-de-delta-clasificacion-morfologica">
+<h2>4. Tipos de Delta (Clasificación Morfológica)<a class="headerlink" href="#tipos-de-delta-clasificacion-morfologica" title="Link to this heading">#</a></h2>
+<p>La morfología de un delta es un reflejo del balance entre el <strong>Río</strong> (fuerza de deposición) y los <strong>Agentes Marinos</strong> (fuerzas de redistribución). La clasificación dominante se basa en el agente de control <span class="bibtex-citation" id="id3">[<a class="reference internal" href="referencias.html#id50" title="W.E. Galloway. Process framework for describing the morphologic and stratigraphic evolution of deltaic depositional systems. In M.L. Broussard, editor, Deltas, Models for Exploration, pages 87–98. Houston Geological Society, Houston, TX, 1975.">Galloway, 1975</a>]</span>:</p>
+<section id="delta-dominado-por-el-rio-river-dominated-delta">
+<h3>4.1. Delta Dominado por el Río (<em>River-Dominated Delta</em>)<a class="headerlink" href="#delta-dominado-por-el-rio-river-dominated-delta" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Proceso Dominante:</strong> La deposición del sedimento supera con creces la capacidad de redistribución de las olas y las mareas.</p></li>
+<li><p><strong>Morfología:</strong> Forma lobular o de <strong>pata de pájaro</strong> (<em>bird’s foot</em>), con múltiples canales distributarios largos y bien desarrollados que progradan hacia el mar.</p></li>
+<li><p><strong>Ejemplo Clásico:</strong> Delta del Mississippi.</p></li>
+</ul>
+</section>
+<section id="delta-dominado-por-las-olas-wave-dominated-delta">
+<h3>4.2. Delta Dominado por las Olas (<em>Wave-Dominated Delta</em>)<a class="headerlink" href="#delta-dominado-por-las-olas-wave-dominated-delta" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Proceso Dominante:</strong> Las olas redistribuyen los sedimentos a lo largo de la línea de costa tan pronto como son depositados por el río.</p></li>
+<li><p><strong>Morfología:</strong> La línea de costa es recta y suave. La acción de las olas forma <strong>barras de arena</strong> paralelas a la costa y un frente deltaico más compacto. Tiende a tener una forma <strong>triangular</strong> u ojival.</p></li>
+<li><p><strong>Ejemplo Clásico:</strong> Delta del Nilo.</p></li>
+</ul>
+</section>
+<section id="delta-dominado-por-las-mareas-tide-dominated-delta">
+<h3>4.3. Delta Dominado por las Mareas (<em>Tide-Dominated Delta</em>)<a class="headerlink" href="#delta-dominado-por-las-mareas-tide-dominated-delta" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Proceso Dominante:</strong> Las fuertes corrientes de marea transportan y reelaboran los sedimentos en dirección paralela y perpendicular a la costa.</p></li>
+<li><p><strong>Morfología:</strong> El delta tiene forma de <strong>embudo</strong> y está disectado por numerosos canales amplios y rectos (barras de arena y canales orientados perpendicularmente a la costa).</p></li>
+<li><p><strong>Ejemplo Clásico:</strong> Delta del Ganges/Brahmaputra (Bangladesh).</p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="https://i.pinimg.com/1200x/f0/3a/6b/f03a6bf1bb0c3aaa8c9d0a6e9ea4022c.jpg"><img alt="https://i.pinimg.com/1200x/f0/3a/6b/f03a6bf1bb0c3aaa8c9d0a6e9ea4022c.jpg" src="https://i.pinimg.com/1200x/f0/3a/6b/f03a6bf1bb0c3aaa8c9d0a6e9ea4022c.jpg" style="width: 600px;" />
+</a>
+</figure>
+</section>
+</section>
+<hr class="docutils" />
+<section id="sistemas-deltaicos-en-colombia">
+<h2>Sistemas Deltaicos en Colombia<a class="headerlink" href="#sistemas-deltaicos-en-colombia" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Delta del Río Magdalena:</strong> Es un sistema complejo. Su desembocadura actual (<strong>Bocas de Ceniza</strong>) ha sido modificada por tajamares, pero el sistema incluye el <strong>Canal del Dique</strong>, un brazo distributario que desemboca en la Bahía de Cartagena.</p></li>
+<li><p><strong>Delta del Río San Juan (Chocó):</strong> Es un ejemplo espectacular de un delta dominado por mareas y alta carga de sedimentos en un ambiente de selva húmeda tropical.</p></li>
+<li><p><strong>Importancia Ambiental:</strong> Los deltas colombianos albergan extensos bosques de manglar, ecosistemas críticos para la protección de la costa y la biodiversidad.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="el-balance-sedimentario-de-un-delta-progradacion-subsidencia-y-nivel-del-mar">
+<h2>5. El Balance Sedimentario de un Delta: Progradación, Subsidencia y Nivel del Mar<a class="headerlink" href="#el-balance-sedimentario-de-un-delta-progradacion-subsidencia-y-nivel-del-mar" title="Link to this heading">#</a></h2>
+<p>La forma y la extensión de un delta en un momento dado no dependen únicamente del suministro de sedimento y la energía del cuerpo receptor (Secciones 2 y 4); dependen de un <strong>balance sedimentario</strong> entre tres términos que compiten entre sí <span class="bibtex-citation" id="id4">[<a class="reference internal" href="referencias.html#id52" title="Paul R. Bierman and David R. Montgomery. Key Concepts in Geomorphology. W. H. Freeman, New York, 2013.">Bierman and Montgomery, 2013</a>]</span>:</p>
+<div class="math notranslate nohighlight">
+\[\Delta z_{superficie}=\text{Aporte de sedimento} - \text{Subsidencia} - \text{Ascenso relativo del nivel del mar}\]</div>
+<ul class="simple">
+<li><p><strong>Aporte de Sedimento:</strong> El volumen de sedimento que el río deposita, que construye elevación y hace <strong>prograr</strong> (avanzar) la línea de costa.</p></li>
+<li><p><strong>Subsidencia:</strong> El hundimiento gradual de la superficie del delta, causado por la compactación natural de los sedimentos finos y orgánicos recién depositados (que pierden agua de poro y se consolidan bajo su propio peso) y, a escalas mayores, por el ajuste isostático de la corteza bajo la carga del propio delta (ver el concepto de isostasia en <a class="reference internal" href="morfotectonica.html#sec-morfotectonica"><span class="std std-ref">Morfotectónica y geomorfología estructural</span></a>).</p></li>
+<li><p><strong>Ascenso Relativo del Nivel del Mar:</strong> La combinación del ascenso eustático (global) del nivel del mar con la subsidencia regional de la cuenca.</p></li>
+</ul>
+<p>Cuando el aporte de sedimento supera a la suma de la subsidencia y el ascenso del nivel del mar, el delta <strong>prograda</strong> (crece hacia el mar), como se describe en la Sección 2. Cuando ocurre lo contrario, el delta <strong>retrograda</strong>: la línea de costa retrocede, las zonas del plano deltaico se inundan permanentemente, y el sistema puede entrar en una fase de abandono y erosión, generando <strong>deltas destructivos</strong> dominados por procesos costeros que retrabajan el sedimento previamente depositado <span class="bibtex-citation" id="id5">[<a class="reference internal" href="referencias.html#id52" title="Paul R. Bierman and David R. Montgomery. Key Concepts in Geomorphology. W. H. Freeman, New York, 2013.">Bierman and Montgomery, 2013</a>, <a class="reference internal" href="referencias.html#id50" title="W.E. Galloway. Process framework for describing the morphologic and stratigraphic evolution of deltaic depositional systems. In M.L. Broussard, editor, Deltas, Models for Exploration, pages 87–98. Houston Geological Society, Houston, TX, 1975.">Galloway, 1975</a>]</span>.</p>
+</section>
+<section id="impactos-humanos-en-los-sistemas-deltaicos">
+<h2>6. Impactos Humanos en los Sistemas Deltaicos<a class="headerlink" href="#impactos-humanos-en-los-sistemas-deltaicos" title="Link to this heading">#</a></h2>
+<p>Los deltas modernos están entre los paisajes más intensamente modificados por la actividad humana del planeta, principalmente porque la construcción de represas en las cuencas altas y medias intercepta una fracción creciente de la carga de sedimentos que históricamente alimentaba la progradación deltaica <span class="bibtex-citation" id="id6">[<a class="reference internal" href="referencias.html#id52" title="Paul R. Bierman and David R. Montgomery. Key Concepts in Geomorphology. W. H. Freeman, New York, 2013.">Bierman and Montgomery, 2013</a>]</span>. Este fenómeno, conocido como <strong>inanición de sedimentos</strong> (<em>sediment starvation</em>), rompe el balance sedimentario descrito arriba incluso sin que cambien la subsidencia natural o el nivel del mar:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Factor Antrópico</p></th>
+<th class="head text-left"><p>Efecto sobre el Balance Sedimentario</p></th>
+<th class="head text-left"><p>Ejemplo Global</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Represas en la cuenca alta</p></td>
+<td class="text-left"><p>Reduce drásticamente el aporte de sedimento; atrapa la carga de fondo y buena parte de la carga en suspensión</p></td>
+<td class="text-left"><p>Delta del Nilo (tras la Presa de Asuán); reducción de más del 95 % del aporte histórico de sedimento</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Extracción de agua subterránea/hidrocarburos bajo el delta</p></td>
+<td class="text-left"><p>Acelera la subsidencia artificial, sumándose a la compactación natural</p></td>
+<td class="text-left"><p>Delta del Mississippi; algunas zonas subsidiendo varios cm/año</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Diques y canalización de distributarios</p></td>
+<td class="text-left"><p>Impide la avulsión natural (ver el taller de autoevaluación) y concentra el sedimento en un solo canal, en vez de distribuirlo sobre el plano deltaico</p></td>
+<td class="text-left"><p>Delta del Mississippi (diques del <em>Bird’s Foot</em>)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Deforestación/erosión acelerada en la cuenca alta</p></td>
+<td class="text-left"><p>Puede aumentar temporalmente el aporte de sedimento, contrarrestando parcialmente otros efectos</p></td>
+<td class="text-left"><p>Varía según cuenca; efecto generalmente transitorio frente al represamiento aguas abajo</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>Compilado a partir de <span class="bibtex-citation" id="id7">Bierman and Montgomery [<a class="reference internal" href="referencias.html#id52" title="Paul R. Bierman and David R. Montgomery. Key Concepts in Geomorphology. W. H. Freeman, New York, 2013.">2013</a>]</span>.</em></p>
+<p>El caso del delta del Mississippi es el más documentado a nivel mundial: la combinación de diques que confinan el río a un único canal, represas en la cuenca del Misuri-Misisipi que retienen sedimento, y subsidencia acelerada por extracción de hidrocarburos ha resultado en la pérdida de miles de kilómetros cuadrados de humedales deltaicos desde mediados del siglo XX, convirtiendo a un delta históricamente progradante en uno claramente retrogradante <span class="bibtex-citation" id="id8">[<a class="reference internal" href="referencias.html#id52" title="Paul R. Bierman and David R. Montgomery. Key Concepts in Geomorphology. W. H. Freeman, New York, 2013.">Bierman and Montgomery, 2013</a>]</span>. Este mismo principio —la vulnerabilidad de los deltas a la reducción del aporte sedimentario aguas arriba— es directamente relevante para el Canal del Dique en el sistema deltaico del río Magdalena (ver más abajo), donde el manejo de sedimentos tiene efectos documentados sobre los ecosistemas costeros receptores.</p>
+</section>
+<section id="avulsion-y-el-ciclo-de-lobulos-deltaicos">
+<h2>7. Avulsión y el Ciclo de Lóbulos Deltaicos<a class="headerlink" href="#avulsion-y-el-ciclo-de-lobulos-deltaicos" title="Link to this heading">#</a></h2>
+<p>Uno de los mecanismos más importantes para el crecimiento lateral (no solo frontal) de un delta es la <strong>avulsión</strong>: el abandono súbito de un canal distributario activo y su reemplazo por un nuevo curso que sigue una ruta topográficamente más favorable (más corta o de mayor pendiente) hacia el cuerpo receptor <span class="bibtex-citation" id="id9">[<a class="reference internal" href="referencias.html#id53" title="Andrew S. (ed.) Goudie. Encyclopedia of Geomorphology. Routledge, International Association of Geomorphologists, London and New York, 2004.">Goudie, 2004</a>, <a class="reference internal" href="referencias.html#id54" title="John F. (ed.) Shroder. Treatise on Geomorphology. Academic Press, San Diego, 2013. 14 volumes.">Shroder, 2013</a>]</span>.</p>
+<p>La causa física de la avulsión está directamente ligada al balance sedimentario descrito arriba: a medida que un canal distributario deposita sedimento en su propio lecho y en sus diques naturales (ver <a class="reference internal" href="aluvial.html#sec-aluvial"><span class="std std-ref">Geomorfología de Ambientes Fluviales</span></a>), su cauce se va elevando gradualmente por encima de la llanura deltaica circundante, quedando “encaramado” sobre una cresta topográfica propia. Este proceso incrementa progresivamente la inestabilidad del canal, hasta que una crecida extraordinaria rompe el dique natural en un punto débil y el flujo encuentra una ruta alternativa con mayor pendiente y menor distancia al mar, abandonando el canal antiguo casi por completo <span class="bibtex-citation" id="id10">[<a class="reference internal" href="referencias.html#id54" title="John F. (ed.) Shroder. Treatise on Geomorphology. Academic Press, San Diego, 2013. 14 volumes.">Shroder, 2013</a>]</span>.</p>
+<p>Este ciclo de avulsión repetido a lo largo de miles de años es el mecanismo responsable de la construcción de la forma característica en abanico o triangular de un delta maduro: cada avulsión sucesiva construye un nuevo <strong>lóbulo deltaico</strong> en una posición angular distinta, mientras el lóbulo previamente activo, ya sin aporte de sedimento fresco, deja de prograr y comienza a subsidir y ser retrabajado por el cuerpo receptor (Sección 4), formando bahías someras o completándose el ciclo de abandono descrito en la Sección 5 <span class="bibtex-citation" id="id11">[<a class="reference internal" href="referencias.html#id53" title="Andrew S. (ed.) Goudie. Encyclopedia of Geomorphology. Routledge, International Association of Geomorphologists, London and New York, 2004.">Goudie, 2004</a>]</span>. El delta del Mississippi es, de nuevo, el ejemplo mejor documentado: su llanura deltaica actual es un mosaico de al menos seis lóbulos sucesivos, cada uno formado y luego abandonado por avulsión en los últimos ~7 000 años, un patrón que solo es visible al analizar la estratigrafía y la edad relativa de sus distintos sectores <span class="bibtex-citation" id="id12">[<a class="reference internal" href="referencias.html#id54" title="John F. (ed.) Shroder. Treatise on Geomorphology. Academic Press, San Diego, 2013. 14 volumes.">Shroder, 2013</a>]</span>.</p>
+</section>
+<hr class="docutils" />
+<section id="taller-de-autoevaluacion">
+<h2>Taller de Autoevaluación<a class="headerlink" href="#taller-de-autoevaluacion" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Condiciones de Formación:</strong> Si un mar tiene olas extremadamente fuertes y corrientes constantes que barren la costa, ¿es probable que se forme un delta de tipo “pata de pájaro”?</p></li>
+<li><p><strong>Estructura:</strong> Describa la secuencia de sedimentos que esperaría encontrar si perforamos un delta que está progradando (creciendo hacia el mar), desde el prodelta hasta el plano deltaico.</p></li>
+<li><p><strong>Clasificación:</strong> ¿En qué se diferencia visualmente un delta dominado por el río de uno dominado por las mareas?</p></li>
+<li><p><strong>Dinámica:</strong> ¿Qué es la <strong>avulsión</strong> en un delta y por qué es importante para su crecimiento lateral?</p></li>
+<li><p><strong>Caso Local:</strong> El Canal del Dique es un “brazo distributario artificializado”. ¿Qué impacto ha tenido el aumento de su carga de sedimentos en los arrecifes de coral de las islas del Rosario?</p></li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="aluvial.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Geomorfología de Ambientes Fluviales</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="referencias.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Referencias</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-un-delta">1. ¿Qué es un Delta?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proceso-de-formacion-de-un-delta">2. Proceso de Formación de un Delta</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#partes-de-un-delta-seccion-transversal">3. Partes de un Delta (Sección Transversal)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-delta-clasificacion-morfologica">4. Tipos de Delta (Clasificación Morfológica)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delta-dominado-por-el-rio-river-dominated-delta">4.1. Delta Dominado por el Río (<em>River-Dominated Delta</em>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delta-dominado-por-las-olas-wave-dominated-delta">4.2. Delta Dominado por las Olas (<em>Wave-Dominated Delta</em>)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delta-dominado-por-las-mareas-tide-dominated-delta">4.3. Delta Dominado por las Mareas (<em>Tide-Dominated Delta</em>)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemas-deltaicos-en-colombia">Sistemas Deltaicos en Colombia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-balance-sedimentario-de-un-delta-progradacion-subsidencia-y-nivel-del-mar">5. El Balance Sedimentario de un Delta: Progradación, Subsidencia y Nivel del Mar</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#impactos-humanos-en-los-sistemas-deltaicos">6. Impactos Humanos en los Sistemas Deltaicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#avulsion-y-el-ciclo-de-lobulos-deltaicos">7. Avulsión y el Ciclo de Lóbulos Deltaicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#taller-de-autoevaluacion">Taller de Autoevaluación</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por Edier V. Aristizábal G.
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
